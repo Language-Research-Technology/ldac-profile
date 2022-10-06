@@ -1,0 +1,25 @@
+{
+  "name": "ldac-profile",
+  "version": "0.1.0",
+  "description": "LDAC Profile to validate an RO Crate",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github"
+  },
+  "keywords": [
+    "rocrate",
+    "validator"
+  ],
+  "author": "Alvin Sebastian (https://orcid.org/0000-0002-9086-1722)",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "ro-crate": "^3.1.0"
+  }
+}
