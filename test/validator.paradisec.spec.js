@@ -8,7 +8,7 @@ describe("PARADISEC", function () {
   var opt = {alwaysAsArray: true, link: true};
   it("can check a PARADISEC Collection", function () {
     const crate = new ROCrate(JSON.parse(fs.readFileSync("test-data/paradisec/collection/NT1/ro-crate-metadata.json")), opt);
-    var result = LdacProfile.validate(crate.rootDataset);
+    var result = LdacProfile.validate(crate);
 
     console.log("Checking PARADISEC data");
     console.log(result);
@@ -17,11 +17,11 @@ describe("PARADISEC", function () {
     // No conforms to, so add it
     console.log("Adding conformsTo");
     crate.rootDataset.conformsTo = {'@id': LdacProfile.CollectionProfileUrl};
-    result = LdacProfile.validate(crate.rootDataset);
+    result = LdacProfile.validate(crate);
 
     assert.equal(result.errors[0].clause, LdacProfile.RepositoryCollection.datePublished.clause);
     crate.rootDataset.datePublished = crate.rootDataset.dateModified;
-    result = LdacProfile.validate(crate.rootDataset);
+    result = LdacProfile.validate(crate);
 
     console.log(crate.rootDataset.datePublished);  
     console.log(result);

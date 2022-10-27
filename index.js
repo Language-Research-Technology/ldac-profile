@@ -1,1 +1,2 @@
-module.exports = { ...require('./lib/validator') };
+const {LdacProfile} = require('./lib/profile')
+module.exports = { LdacProfile };

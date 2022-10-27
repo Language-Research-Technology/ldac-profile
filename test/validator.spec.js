@@ -1,31 +1,63 @@
 const {ROCrate} = require('ro-crate');
 const {LdacProfile} = require('../index.js');
+const rules = require('../lib/rules');
+const constants = require('../lib/constants');
 const assert = require('assert');
 const fs = require('fs');
 
-describe("Profile", function () {
-  var opt = {alwaysAsArray: true, link: true};
+const opt = {alwaysAsArray: true, link: true};
 
-  it("fails the check on empty crate cos no name", function () {
+function hasClause(results, rule) {
+  return results.some(r => r.clause === rule.clause);
+}
+
+describe("Dataset", function () {
+
+  it("must have type", function () {
     const crate = new ROCrate({}, opt);
-    const result = LdacProfile.validate(crate.rootDataset);
-    console.log(result);
-    
-    assert.equal(result.errors[0].clause, LdacProfile.Common.name.clause);
+    const result = LdacProfile.validate(crate);
+    //const result = LdacProfile.validateEntity(crate.getEntity('adfs'));
+    assert(hasClause(result.errors, rules.Dataset['@type']));
   });
 
-  it("has conformsTo", function () {
+  it("must have correct @id", function () {
     const crate = new ROCrate({}, opt);
+    crate.rootDataset['@id'] = 'abc';
+    const result = LdacProfile.validate(crate);
+    //const result = LdacProfile.validateEntity(crate.getEntity('adfs'));
+    assert(hasClause(result.errors, rules.Common['@id']));
+  });
 
-    crate.rootDataset.conformsTo = {'@id': LdacProfile.CollectionProfileUrl};
-    var result = LdacProfile.validate(crate.rootDataset);
-    assert.equal(result.errors[1].clause, LdacProfile.RepositoryCollection.datePublished.clause);
+  it("must have name", function () {
+    const crate = new ROCrate({}, opt);
+    const result = LdacProfile.validate(crate);
+    //const result = LdacProfile.validateEntity(crate.getEntity('adfs'));
+    assert(hasClause(result.errors, rules.Common.name));
+  });
+});
+
+describe("Collection", function () {
+    it("has conformsTo", function () {
+    const crate = new ROCrate({}, opt);
+    assert(crate.rootDataset);
+    crate.rootDataset['@type'] = ['Dataset', 'RepositoryCollection'];
+    crate.rootDataset.conformsTo = {'@id': constants.CollectionProfileUrl};
+    var result = LdacProfile.validate(crate);
+    console.log(result.errors)
+    assert(hasClause(result.errors, rules.RepositoryCollection.datePublished));
 
     crate.rootDataset.datePublished = "2020";
     crate.rootDataset.name = "2020"
-    result = LdacProfile.validate(crate.rootDataset);
+    result = LdacProfile.validate(crate);
+    console.log(result)
     assert.equal(result.errors.length, 0);
   });
 });
 
 
+describe("generateSpec", function () {
+  it("can generate spec text", function () {
+    const text = LdacProfile.generateSpec();
+    //console.log(text);
+  });
+});
