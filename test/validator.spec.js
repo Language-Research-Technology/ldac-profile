@@ -36,7 +36,7 @@ describe("Dataset", function () {
   });
 });
 
-describe("Collection", function () {
+describe("RepositoryCollection", function () {
     it("has conformsTo", function () {
     const crate = new ROCrate({}, opt);
     assert(crate.rootDataset);
@@ -47,9 +47,11 @@ describe("Collection", function () {
     assert(hasClause(result.errors, rules.RepositoryCollection.datePublished));
 
     crate.rootDataset.datePublished = "2020";
-    crate.rootDataset.name = "2020"
+    crate.rootDataset.name = "2020";
+    crate.rootDataset.description = "SOMETHING";
+    crate.rootDataset.license = {"@id": "http://example.com/license"};
     result = LdacProfile.validate(crate);
-    console.log(result)
+    console.log(result);
     assert.equal(result.errors.length, 0);
   });
 });
