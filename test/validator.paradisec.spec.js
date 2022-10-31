@@ -56,10 +56,57 @@ describe("PARADISEC", function () {
 
     console.log(result);
     assert.equal(result.errors.length, 0);
-
-
-   
+  });
   });
 
-});
 
+
+  describe("RepositoryObject", function () {
+
+
+    it("can check a PARADISEC Object", function () {
+      var opt = {alwaysAsArray: true, link: true};
+
+      const crate = new ROCrate(JSON.parse(fs.readFileSync("test-data/paradisec/item/NT1-001/ro-crate-metadata.json")), opt);
+      var result = LdacProfile.validate(crate);
+
+      // No conforms to indicating that the collection conforms to this profile we're validating here
+      assert(hasClause(result.errors, rules.RepositoryObject.conformsTo));
+      // so add it
+      crate.rootDataset.conformsTo = {'@id': constants.ObjectProfileUrl};
+      result = LdacProfile.validate(crate);
+      assert(!hasClause(result.errors, rules.RepositoryObject.conformsTo));
+
+
+      // No dataPublished (this is an RO-Crate requirement)
+      assert(hasClause(result.errors, rules.RepositoryObject.datePublished));
+      //Add it by copying from dateModified
+      crate.rootDataset.datePublished = crate.rootDataset.dateModified;
+      result = LdacProfile.validate(crate);
+      assert(!hasClause(result.errors, rules.RepositoryObject.datePublished));
+      
+      // License is present but does not have a URL for an @id
+      assert(hasClause(result.errors, rules.RepositoryObject.license));
+
+      // There is a license present so give that URL
+      crate.updateEntityId("_:b0", "https://www.paradisec.org.au/deposit/access-conditions/");
+      result = LdacProfile.validate(crate);
+
+      // Publisher is present already - so there should be no error
+      assert(!hasClause(result.errors, rules.RepositoryCollection.publisher));
+   
+      result = LdacProfile.validate(crate);
+
+      assert(hasMessage(result.info, "Does not have a `language` property"));
+
+      crate.rootDataset.language = crate.rootDataset.subjectLanguages
+      result = LdacProfile.validate(crate);
+ 
+      assert(hasMessage(result.info, "Does have a `language` property"));
+  
+      // Final check of fixed data
+      
+      console.log(result);
+      assert.equal(result.errors.length, 0);
+});
+  });

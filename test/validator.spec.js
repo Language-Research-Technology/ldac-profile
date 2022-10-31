@@ -8,6 +8,9 @@ const fs = require('fs');
 const opt = {alwaysAsArray: true, link: true};
 
 function hasClause(results, rule) {
+  if (!rule.clause) {
+    "cannot find": rule;
+  }
   return results.some(r => r.clause === rule.clause);
 }
 
