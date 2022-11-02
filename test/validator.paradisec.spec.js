@@ -4,6 +4,7 @@ const assert = require('assert');
 const fs = require('fs');
 const rules = require('../lib/rules');
 const constants = require('../lib/constants');
+const { createHash } = require('crypto');
 
 function hasClause(results, rule) {
   return  results.some(r => r.clause === rule.clause);
@@ -15,7 +16,9 @@ function hasMessage(results, message) {
 
 describe("PARADISEC", function () {
   var opt = {alwaysAsArray: true, link: true};
-  it("can check a PARADISEC Collection", function () {
+  it("can check a PARADISEC Collection", async function () {
+    this.timeout(50000);
+
     const crate = new ROCrate(JSON.parse(fs.readFileSync("test-data/paradisec/collection/NT1/ro-crate-metadata.json")), opt);
     var result = LdacProfile.validate(crate);
 
@@ -49,22 +52,31 @@ describe("PARADISEC", function () {
      assert(hasMessage(result.info, "Does not have a `language` property"));
 
      crate.rootDataset.language = crate.rootDataset.subjectLanguages
+     crate.deleteProperty(crate.rootDataset, "contentLanguages");
+
      result = LdacProfile.validate(crate);
 
      assert(hasMessage(result.info, "Does have a `language` property"));
 
-
     console.log(result);
+
+   
+
+
     assert.equal(result.errors.length, 0);
+
+    // TODO - output "fixed" crate
   });
   });
 
 
 
-  describe("RepositoryObject", function () {
+  describe("RepositoryObject", async function () {
 
 
-    it("can check a PARADISEC Object", function () {
+    it("can check a PARADISEC Object", async function () {
+      this.timeout(50000);
+
       var opt = {alwaysAsArray: true, link: true};
 
       const crate = new ROCrate(JSON.parse(fs.readFileSync("test-data/paradisec/item/NT1-001/ro-crate-metadata.json")), opt);
@@ -97,15 +109,26 @@ describe("PARADISEC", function () {
    
       result = LdacProfile.validate(crate);
 
-      assert(hasMessage(result.info, "Does not have a `language` property"));
+      assert(hasMessage(result.info, 'Does not have a `language` property'));
 
-      crate.rootDataset.language = crate.rootDataset.subjectLanguages
+      crate.rootDataset.language = crate.rootDataset.contentLanguages;
+      //crate.deleteProperty(crate.rootDataset, 'contentLanguages');
+
       result = LdacProfile.validate(crate);
  
-      assert(hasMessage(result.info, "Does have a `language` property"));
-  
-      // Final check of fixed data
+      assert(hasMessage(result.info, 'Does have a `language` property'));
+      console.log(result.warnings)
+
+      // Does not havae the right context
+      assert(hasMessage(result.warnings,  "Property `speaker` is not defined in the crate's context"));
+
       
+      crate.addContext("http://purl.archive.org/language-data-commons/context.json");
+      await crate.resolveContext();
+      // Final check of fixed data
+
+      result = LdacProfile.validate(crate);
+      assert(!hasMessage(result.warnings,  "Property `speaker` is not defined in the crate's context"));
       console.log(result);
       assert.equal(result.errors.length, 0);
 });
