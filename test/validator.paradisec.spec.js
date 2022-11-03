@@ -6,11 +6,18 @@ const rules = require('../lib/rules');
 const constants = require('../lib/constants');
 const { createHash } = require('crypto');
 
-function hasClause(results, rule) {
+function hasClause(results, rule, id) {
+  if (id) {
+    results.some(r => r.clause === rule.clause && rule.entity === id)
+  }
   return  results.some(r => r.clause === rule.clause);
 }
 
-function hasMessage(results, message) {
+function hasMessage(results, message, id) {
+  
+  if (id) {
+    return  results.some(r => r.message === message && r.entity === id)
+  }
   return  results.some(r => r.message === message);
 }
 
@@ -86,7 +93,9 @@ describe("PARADISEC", function () {
       assert(hasClause(result.errors, rules.RepositoryObject.conformsTo));
       // so add it
       crate.rootDataset.conformsTo = {'@id': constants.ObjectProfileUrl};
+      // Validate again
       result = LdacProfile.validate(crate);
+      // Now it does have a conforms to
       assert(!hasClause(result.errors, rules.RepositoryObject.conformsTo));
 
 
@@ -103,6 +112,7 @@ describe("PARADISEC", function () {
       // There is a license present so give that URL
       crate.updateEntityId("_:b0", "https://www.paradisec.org.au/deposit/access-conditions/");
       result = LdacProfile.validate(crate);
+      assert(!hasClause(result.errors, rules.RepositoryObject.license));
 
       // Publisher is present already - so there should be no error
       assert(!hasClause(result.errors, rules.RepositoryCollection.publisher));
@@ -110,26 +120,74 @@ describe("PARADISEC", function () {
       result = LdacProfile.validate(crate);
 
       assert(hasMessage(result.info, 'Does not have a `language` property'));
-
       crate.rootDataset.language = crate.rootDataset.contentLanguages;
       //crate.deleteProperty(crate.rootDataset, 'contentLanguages');
-
       result = LdacProfile.validate(crate);
- 
       assert(hasMessage(result.info, 'Does have a `language` property'));
-      console.log(result.warnings)
 
-      // Does not havae the right context
+      // Does not have the right context - so lots of qarnings
       assert(hasMessage(result.warnings,  "Property `speaker` is not defined in the crate's context"));
 
-      
       crate.addContext("http://purl.archive.org/language-data-commons/context.json");
       await crate.resolveContext();
       // Final check of fixed data
 
       result = LdacProfile.validate(crate);
+      // Now some of the warnings are gone but there are still a lot of unknown props
       assert(!hasMessage(result.warnings,  "Property `speaker` is not defined in the crate's context"));
-      console.log(result);
       assert.equal(result.errors.length, 0);
+      fs.writeFileSync("examples/paradisec/item/NT1-001/ro-crate-metadata.json", JSON.stringify(crate.toJSON(), null, 2) )
+
+
+      // Now show what it would look like with more detailed description of files
+      const wav = crate.getEntity("NT1-001-001A.wav");
+      wav["@type"] = ["File", "PrimaryMaterial"];
+      result = LdacProfile.validate(crate);
+      // Even though this file does not have a language it should be inherited from the Object
+      assert(!hasClause(result.errors, rules.PrimaryMaterial.language));
+      // Doesn't have a Modality
+      assert(hasMessage(result.info, "Does not have a modality property" , "NT1-001-001A.wav" ));
+
+      // Try a dodgy value for modality
+      wav.modality = "AString";
+      result = LdacProfile.validate(crate);
+      assert(hasMessage(result.warnings, `Modality value is not expected: "${wav.modality}"` , "NT1-001-001A.wav" ));
+
+      wav.modality = {"@id": "http://purl.archive.org/language-data-commons/terms#SpokenLanguage"};
+      result = LdacProfile.validate(crate);
+
+      const mp3 = crate.getEntity('NT1-001-001A.mp3');
+      mp3['@type'] = ['File', 'DerivedMaterial'];
+      result = LdacProfile.validate(crate);
+      assert(hasMessage(result.warnings, "Does not have a derivedFrom property" , "NT1-001-001A.mp3" ));
+
+      mp3.derivedFrom = "someValue";
+      result = LdacProfile.validate(crate);
+      assert(hasMessage(result.warnings, `Property value is not a reference to another entity: ${mp3.derivedFrom}` , "NT1-001-001A.mp3" ));
+
+      // Now we add a derivedFrom which which points somewhere else - Not a error, but we can't validate it
+      mp3.derivedFrom = {'@id': "http://example.com/some/id"};
+      result = LdacProfile.validate(crate);
+      assert(hasMessage(result.info, 'Property value does not resolve to another entity in this crate: {"@id":"http://example.com/some/id"}' , "NT1-001-001A.mp3" ));
+
+
+      mp3.derivedFrom = wav;
+      result = LdacProfile.validate(crate);
+      
+      assert(result.errors.length === 0);
+
+      console.log(result)
+
+
+
+
+      
+
+      // 
+
+
+
+
+
 });
   });

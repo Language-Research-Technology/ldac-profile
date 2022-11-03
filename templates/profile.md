@@ -1,4 +1,7 @@
 # Language Data Commons RO-Crate Profile
+## Introduction
+
+COPY TEXT FROM GOOGLE DOC
 
 ## Collection
 
