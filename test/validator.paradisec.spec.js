@@ -37,7 +37,7 @@ describe("PARADISEC", function () {
     assert(!hasClause(result.errors, rules.RepositoryCollection.conformsTo));
 
 
-    // No dataPublished (this is an RO-Crate requirement)
+    // No datePublished (this is an RO-Crate requirement)
     assert(hasClause(result.errors, rules.RepositoryCollection.datePublished));
     //Add it by copying from dateModified
     crate.rootDataset.datePublished = crate.rootDataset.dateModified;
@@ -49,17 +49,19 @@ describe("PARADISEC", function () {
     crate.updateEntityId("_:b1", "https://www.paradisec.org.au/deposit/access-conditions/");
     result = LdacProfile.validate(crate);
 
+    // TODO: DO we need to check if there is a local copy of the license? (For long term presevation you might want to keep a copy with the data)
+
      // No publisher is present
      assert(hasClause(result.errors, rules.RepositoryCollection.publisher));
      // Add one (luckily there is a handy university entity in the metadata that is not being used)
      crate.rootDataset.publisher = {"@id": "http://nla.gov.au/nla.party-593909"}
      result = LdacProfile.validate(crate);
+     assert(!hasClause(result.errors, rules.RepositoryCollection.publisher));
+
 
      //No language prop - (not an error - reported)
      assert(hasMessage(result.info, "Does not have a `language` property"));
-
      crate.rootDataset.language = crate.rootDataset.subjectLanguages
-     crate.deleteProperty(crate.rootDataset, "contentLanguages");
 
      result = LdacProfile.validate(crate);
 
@@ -125,7 +127,7 @@ describe("PARADISEC", function () {
       result = LdacProfile.validate(crate);
       assert(hasMessage(result.info, 'Does have a `language` property'));
 
-      // Does not have the right context - so lots of qarnings
+      // Does not have the right context - so lots of warnings
       assert(hasMessage(result.warnings,  "Property `speaker` is not defined in the crate's context"));
 
       crate.addContext("http://purl.archive.org/language-data-commons/context.json");
