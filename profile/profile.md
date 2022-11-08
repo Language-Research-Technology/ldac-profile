@@ -208,7 +208,7 @@ property, but this is not required.
 The root dataset must have at least these @type values: ["Dataset",
 "RepositoryCollection"]
 
-### A RepositoryCollection entity:
+### A RepositoryCollection:
 
 - MUST have an @id property and the value must be a valid URI or "./"
 
@@ -340,19 +340,19 @@ analysis of the PrimaryMaterial or DerivedMaterial.
 ### PrimaryMaterial
 
 PrimaryMaterial MAY be a video or audio file if it is available (see
-[[example]{.underline}](#paradisec-item)) or MAY be a ContextualEntity
+[[example]](#paradisec-item)) or MAY be a ContextualEntity
 referencing a primary text such as a book (see
-[[example](#primarymaterial-as-a-contextual-entity)[)](#paradisec-item)]{.underline}.
+[[example](#primarymaterial-as-a-contextual-entity)[)](#cooee-item)].
+
+TODO: Add examples
 
 #### A [File, PrimaryMaterial]:
 
-- MUST have a @type value of “DerivedMaterial" and MAY have other @type values
+- MUST have a @type value of “PrimaryMaterial" and MAY have other @type values
 
 - MAY have a `modality` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
 
 - MUST a language property, or the RepositoryObject that is `partOf` MUST have a language property, referencing a Language item (language my be inhereted from the parent RepoObject)
-
-- SHOULD have a derivedFrom property which references a PrimaryMaterial entity
 
 
 
@@ -361,7 +361,7 @@ referencing a primary text such as a book (see
 DerivedMaterial MAY be a down-sampled or excepted video or audio file
 (see [[example]{.underline}](#paradisec-item)) or MAY be a
 ContextualEntity referencing a primary text such as a book (see
-[[example](#primarymaterial-as-a-contextual-entity)[)](#paradisec-item)]{.underline}.
+[[example](#primarymaterial-as-a-contextual-entity)[)](#paradisec-item)].
 
 #### a [File, DerivedMaterial]:
 
@@ -376,6 +376,21 @@ ContextualEntity referencing a primary text such as a book (see
 
 
 
+### Annotation
+
+An annotation is a description or analysis of other material. More than one type of annotation may be present in a file.
+
+
+#### a [File, Annotation]:
+
+- MUST have a @type value of “Annotation" and MAY have other @type values
+
+- MAY have an `annotationType` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
+
+- SHOULD have an `annotationOf` property which references another entity
+
+
+
 ## Languages
 
 ### A [Language] entity:
@@ -387,9 +402,6 @@ ContextualEntity referencing a primary text such as a book (see
 ## Places
 
 TODO: Paradisec example
-
-
-
 
 
 # Identifiers

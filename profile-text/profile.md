@@ -208,7 +208,7 @@ property, but this is not required.
 The root dataset must have at least these \@type values: \["Dataset",
 "RepositoryCollection"\]
 
-### A RepositoryCollection entity:
+### A RepositoryCollection:
 
 ${rules.RepositoryCollection}
 
@@ -300,25 +300,36 @@ analysis of the PrimaryMaterial or DerivedMaterial.
 ### PrimaryMaterial
 
 PrimaryMaterial MAY be a video or audio file if it is available (see
-[[example]{.underline}](#paradisec-item)) or MAY be a ContextualEntity
+[[example]](#paradisec-item)) or MAY be a ContextualEntity
 referencing a primary text such as a book (see
-[[example](#primarymaterial-as-a-contextual-entity)[)](#paradisec-item)]{.underline}.
+[[example](#primarymaterial-as-a-contextual-entity)[)](#cooee-item)].
+
+TODO: Add examples
 
 #### A [File, PrimaryMaterial]:
 
-${rules.DerivedMaterial}
+${rules.PrimaryMaterial}
 
 ### DerivedMaterial
 
 DerivedMaterial MAY be a down-sampled or excepted video or audio file
 (see [[example]{.underline}](#paradisec-item)) or MAY be a
 ContextualEntity referencing a primary text such as a book (see
-[[example](#primarymaterial-as-a-contextual-entity)[)](#paradisec-item)]{.underline}.
+[[example](#primarymaterial-as-a-contextual-entity)[)](#paradisec-item)].
 
 #### a [File, DerivedMaterial]:
 
 ${rules.DerivedMaterial}
 
+
+### Annotation
+
+An annotation is a description or analysis of other material. More than one type of annotation may be present in a file.
+
+
+#### a [File, Annotation]:
+
+${rules.Annotation}
 
 ## Languages
 
@@ -329,9 +340,6 @@ ${rules.Language}
 ## Places
 
 TODO: Paradisec example
-
-
-
 
 
 # Identifiers
