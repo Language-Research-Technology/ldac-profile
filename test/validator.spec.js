@@ -7,11 +7,11 @@ const fs = require('fs');
 
 const opt = {alwaysAsArray: true, link: true};
 
-function hasClause(results, rule) {
-  if (!rule.clause) {
-    "cannot find": rule;
+function hasClause(results, rule, id) {
+  if (id) {
+    results.some((r) => r.clause === rule.clause && rule.entity === id);
   }
-  return results.some(r => r.clause === rule.clause);
+  return results.some((r) => r.clause === rule.clause);
 }
 
 describe("Dataset", function () {

@@ -281,7 +281,7 @@
       ],
       "languageAsGiven": "Nafsan",
       "license": {
-        "@id": "https://www.paradisec.org.au/deposit/access-conditions/"
+        "@id": "LICENSE.txt"
       },
       "memberOf": {
         "@id": "https://catalog.paradisec.org.au/collections/NT1"
@@ -1317,9 +1317,14 @@
       }
     },
     {
-      "@id": "https://www.paradisec.org.au/deposit/access-conditions/",
-      "@type": "CreativeWork",
-      "name": "Open (subject to agreeing to PDSC access conditions)"
+      "@id": "LICENSE.txt",
+      "@type": [
+        "File",
+        "DataReuseLicense"
+      ],
+      "name": "PARADISEC Public Access Conditions",
+      "Description": "Put a summary of the licence conditions here",
+      "URL": "http://paradisec.org/path/to/public/license.txt"
     }
   ]
 }
