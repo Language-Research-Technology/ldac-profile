@@ -94,6 +94,124 @@ describe('PARADISEC', function () {
 });
 
 describe('RepositoryObject', async function () {
+  it('can check a Simple PARADISEC Root Dataset', async function () {
+    this.timeout(50000);
+
+    var opt = { alwaysAsArray: true, link: true };
+
+    const crate = new ROCrate();
+    crate.rootDataset =  {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "RepositoryObject"
+      ],
+      "additionalType": "item",
+      "bornDigital": 0,
+      "collector": {
+        "@id": "http://nla.gov.au/nla.party-479603"
+      },
+      "contentLanguages": [
+        {
+          "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
+        },
+        {
+          "@id": "https://glottolog.org/resource/languoid/id/sout2856"
+        }
+      ],
+      "countries": {
+        "@id": "https://www.ethnologue.com/country/VU"
+      },
+      "dateCreated": "2012-09-27T10:08:00.000Z",
+      "dateModified": "2019-09-25T23:52:02.000Z",
+      "depositor": {
+        "@id": "http://nla.gov.au/nla.party-479603"
+      },
+      "description": "Elicitation with Silas Alban at Eratap village, Efate. (side B) 11/10/1995. Reading a wordlist in Nafsan.",
+      "digitisedOn": "Mon Jan 01 2001 00:00:00 GMT+1100 (Australian Eastern Daylight Time)",
+      "external": 0,
+      "hasPart": [
+        {
+          "@id": "NT1-001-001A.wav"
+        },
+        {
+          "@id": "NT1-001-001B.mp3"
+        },
+        {
+          "@id": "NT1-001-001B.wav"
+        },
+        {
+          "@id": "NT1-001-001A.mp3"
+        }
+      ],
+      "identifier": [
+        {
+          "@id": "#identifier_domain"
+        },
+        {
+          "@id": "#identifier_id"
+        },
+        {
+          "@id": "#identifier_hashid"
+        },
+        {
+          "@id": "#identifier_itemId"
+        },
+        {
+          "@id": "#identifier_collectionId"
+        }
+      ],
+      "languageAsGiven": "Nafsan",
+      "license": {
+        "@id": "LICENSE.txt"
+      },
+      "memberOf": {
+        "@id": "https://catalog.paradisec.org.au/collections/NT1"
+      },
+      "metadataExportable": 1,
+      "name": "Elicitation with Silas Alban",
+      "operator": {
+        "@id": "jommij@yahoo.com"
+      },
+      "originalMedia": "audiocassette",
+      "originatedOn": "1995-08-16",
+      "private": 0,
+      "publisher": {
+        "@id": "http://nla.gov.au/nla.party-593909"
+      },
+      "recorder": {
+        "@id": "http://nla.gov.au/nla.party-479603"
+      },
+      "speaker": {
+        "@id": "#Sailas Alban"
+      },
+      "subjectLanguages": {
+        "@id": "https://glottolog.org/resource/languoid/id/sout2856"
+      },
+      "tapesReturned": 0,
+      "conformsTo": {
+        "@id": "https://purl.archive.org/language-data-commons/profile#Object"
+      },
+      "datePublished": "2019-09-25T23:52:02.000Z",
+      "language": [
+        {
+          "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
+        },
+        {
+          "@id": "https://glottolog.org/resource/languoid/id/sout2856"
+        }
+      ]
+    }
+
+
+    var result = LdacProfile.validate(crate);
+    console.log(result);
+
+
+  });
+});
+
+describe('RepositoryObject', async function () {
   it('can check a PARADISEC Object 1', async function () {
     this.timeout(50000);
 

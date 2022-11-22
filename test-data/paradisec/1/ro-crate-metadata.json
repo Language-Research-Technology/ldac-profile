@@ -1,0 +1,25 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      },
+      "identifier": [
+        {
+          "@id": "#:localid:describo:96c87ebb-146c-4757-9277-7b435a5fe1a6"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "my Research Object Crate"
+    }
+  ]
+}
