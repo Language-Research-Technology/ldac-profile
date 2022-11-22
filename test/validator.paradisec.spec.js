@@ -38,7 +38,7 @@ describe('PARADISEC', function () {
     // No conforms to indicating that the collection conforms to this profile we're validating here
     assert(hasClause(result.errors, rules.RepositoryCollection.conformsTo));
     // so add it
-    crate.rootDataset.conformsTo = { '@id': constants.CollectionProfileUrl };
+    crate.rootDataset.conformsTo = [{ '@id': constants.CollectionProfileUrl }];
     result = LdacProfile.validate(crate);
     assert(!hasClause(result.errors, rules.RepositoryCollection.conformsTo));
 
@@ -112,7 +112,7 @@ describe('RepositoryObject', async function () {
     // No conforms to indicating that the collection conforms to this profile we're validating here
     assert(hasClause(result.errors, rules.RepositoryObject.conformsTo));
     // so add it
-    crate.rootDataset.conformsTo = { '@id': constants.ObjectProfileUrl };
+    crate.rootDataset.conformsTo = [{ '@id': constants.ObjectProfileUrl }];
     // Validate again
     result = LdacProfile.validate(crate);
     // Now it does have a conforms to
@@ -280,7 +280,7 @@ describe('RepositoryObject', async function () {
     // No conforms to indicating that the collection conforms to this profile we're validating here
     assert(hasClause(result.errors, rules.RepositoryObject.conformsTo));
     // so add it
-    crate.rootDataset.conformsTo = { '@id': constants.ObjectProfileUrl };
+    crate.rootDataset.conformsTo = [{ '@id': constants.ObjectProfileUrl }];
     // Validate again
     result = LdacProfile.validate(crate);
     // Now it does have a conforms to

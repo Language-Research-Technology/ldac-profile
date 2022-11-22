@@ -222,8 +222,7 @@ The root dataset must have at least these @type values: ["Dataset",
 
 - MUST have at least one `description` value which is a string with one or more characters
 
-- MUST have a single `license` property which has @id which is a URL
-
+- MUST have a `license` property which has a value which references a DataReuseLicense entity@id which is a URL and which 
 
 - MUST have a `publisher` property (per RO-Crate) which MUST be have an ID which is a URL
 
@@ -316,8 +315,7 @@ these use the schema.org mechanism of DefinedTerm and DefinedTermSet.
 
 - MUST have  a `datePublished` property (per RO-Crate) exactly one value which is a string that parses as ISO-8601 to the level of at least a year. E.g.: 2000, 2000-10, 2000-10-01T12:34:56+10
 
-- MUST have a single `license` property which has @id which is a URL
-
+- MUST have a `license` property with reference to an entity of type [File, DataReuseLicense] with an `@id` property that starts with `LICENSE.` and a `URL` property that is a valid URL
 
 - MUST have a `publisher` property (per RO-Crate) which MUST be have an ID which is a URL
 
