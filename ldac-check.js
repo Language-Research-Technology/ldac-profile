@@ -11,36 +11,23 @@ program
     'Checks an RO-Crate metadata document; a (ro-crate-metadata.json) file'
   )
   .arguments('<path>')
-  .option(
-    '-e,  --errors',
-    'Output Errors only'
-  )
-  
+  .option('-e,  --errors', 'Output Errors only')
 
   .action((path) => {
     cratePath = path;
   });
 
 program.parse(process.argv);
-const outPath = program.outputPath ? program.outputPath : './';
 
 async function main() {
   var opt = { alwaysAsArray: true, link: true };
-  const crate = new ROCrate(
-    JSON.parse(
-      fs.readFileSync(
-        'test-data/paradisec/collection/NT1/ro-crate-metadata.json'
-      )
-    ),
-    opt
-  );
+  const crate = new ROCrate(JSON.parse(fs.readFileSync(cratePath)), opt);
   var result = LdacProfile.validate(crate);
   if (program.errors) {
-    console.log(result.errors)
+    console.log(result.errors);
   } else {
     console.log(result);
   }
-
 }
 
 main();
