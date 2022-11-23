@@ -15,6 +15,7 @@ To get just the errors:
 node ldac-check.js -e  test-data/paradisec/1/ro-crate-metadata.json
 `
 
+Which should produce this output:
 ```
 
 [
