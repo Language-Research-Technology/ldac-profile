@@ -1,3 +1,9 @@
+// This test suite checks some known non-conformant PARADISEC examples 
+//and makes them conformant
+
+
+
+
 const { ROCrate } = require('ro-crate');
 const { LdacProfile } = require('../index.js');
 const assert = require('assert');
@@ -25,6 +31,7 @@ describe('PARADISEC', function () {
   it('can check a PARADISEC Collection', async function () {
     this.timeout(50000);
 
+
     const crate = new ROCrate(
       JSON.parse(
         fs.readFileSync(
@@ -36,11 +43,12 @@ describe('PARADISEC', function () {
     var result = LdacProfile.validate(crate);
 
     // No conforms to indicating that the collection conforms to this profile we're validating here
-    assert(hasClause(result.errors, rules.RepositoryCollection.conformsTo));
+    assert(hasClause(result.errors, rules.RepositoryCollection.conformsTo)); // Fails to conform
+
     // so add it
     crate.rootDataset.conformsTo = [{ '@id': constants.CollectionProfileUrl }];
     result = LdacProfile.validate(crate);
-    assert(!hasClause(result.errors, rules.RepositoryCollection.conformsTo));
+    assert(!hasClause(result.errors, rules.RepositoryCollection.conformsTo)); // Conforms (no error)
 
     // No datePublished (this is an RO-Crate requirement)
     assert(hasClause(result.errors, rules.RepositoryCollection.datePublished));
