@@ -1,33 +1,43 @@
 #!/usr/bin/env node
-
-const program = require('commander');
+/**
+ * A CLI that uses the ldac profile validator to check an RO-Crate metadata document.
+ */
+const { program } = require('commander');
 const fs = require('fs');
 const path = require('path');
-const ROCrate = require('ro-crate').ROCrate;
+const { ROCrate } = require('ro-crate');
 const { LdacProfile } = require('./index.js');
+const { version } = require('./package.json');
 
 program
+  .showHelpAfterError()
   .description(
     'Checks an RO-Crate metadata document; a (ro-crate-metadata.json) file'
   )
-  .arguments('<path>')
-  .option('-e,  --errors', 'Output Errors only')
+  .version(version)
+  .argument('<path>', 'Path to the RO-Crate metadata file')
+  .option('-e, --errors', 'Output errors only')
 
-  .action((path) => {
-    cratePath = path;
-  });
+  .action(main);
 
 program.parse(process.argv);
 
-async function main() {
-  var opt = { alwaysAsArray: true, link: true };
-  const crate = new ROCrate(JSON.parse(fs.readFileSync(cratePath)), opt);
-  var result = LdacProfile.validate(crate);
-  if (program.errors) {
-    console.log(result.errors);
-  } else {
-    console.log(result);
+function main(cratePath, options) {
+  try {
+    const opt = { alwaysAsArray: true, link: true };
+    const crate = new ROCrate(JSON.parse(fs.readFileSync(cratePath, 'utf8')), opt);
+    var result = LdacProfile.validate(crate);
+    if (options.errors) {
+      console.log(result.errors);
+    } else {
+      console.log(result);
+    }
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.error(`Error: File not found - '${cratePath}'`);
+    } else {
+      console.error(error);
+    }
   }
 }
 
-main();

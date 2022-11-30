@@ -1317,6 +1317,9 @@
       }
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/profile#Object"
+    },
+    {
       "@id": "LICENSE.txt",
       "@type": [
         "File",
@@ -1325,6 +1328,18 @@
       "name": "PARADISEC Public Access Conditions",
       "Description": "Put a summary of the licence conditions here",
       "URL": "http://paradisec.org/path/to/public/license.txt"
+    },
+    {
+      "@id": "http://purl.archive.org/language-data-commons/terms#SpokenLanguage"
+    },
+    {
+      "@id": "http://purl.archive.org/language-data-commons/terms#Translation"
+    },
+    {
+      "@id": "http://purl.archive.org/language-data-commons/terms#Transcription"
+    },
+    {
+      "@id": "http://purl.archive.org/language-data-commons/terms#Prosodic"
     }
   ]
 }

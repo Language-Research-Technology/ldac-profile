@@ -357,6 +357,9 @@
       "name": "University of Melbourne"
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/profile#Object"
+    },
+    {
       "@id": "LICENSE.txt",
       "@type": [
         "File",

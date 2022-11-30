@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "LDAC Profile to validate an RO Crate",
   "main": "index.js",
+  "bin": {
+    "ldac-check": "./ldac-check.js"
+  },
   "scripts": {
     "test": "mocha"
   },
@@ -20,6 +23,7 @@
     "mocha": "^10.0.0"
   },
   "dependencies": {
+    "commander": "^9.4.1",
     "ro-crate": "^3.1.0"
   }
 }
