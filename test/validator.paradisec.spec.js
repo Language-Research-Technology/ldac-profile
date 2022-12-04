@@ -1,9 +1,6 @@
 // This test suite checks some known non-conformant PARADISEC examples 
 //and makes them conformant
 
-
-
-
 const { ROCrate } = require('ro-crate');
 const { LdacProfile } = require('../index.js');
 const assert = require('assert');
