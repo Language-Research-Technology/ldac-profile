@@ -1,4 +1,7 @@
+---
+title: Language Data Commons RO-Crate Profile
 
+---
 
 This document is a DRAFT RO-Crate profile for Language Data resources.
 The profile specifies the contents of an RO-Crate Metadata Document and
@@ -11,48 +14,26 @@ Arkisto platform, or similar compatible approaches are being used.
 The core metadata vocabularies for this profile are:
 
 -   RO-Crate recommendations for data packaging and basic
-    > discoverability metadata which is mostly Schema.org terms with a
-    > handful of additions. Following RO-Crate practice, basic metadata
-    > terms such as "who, what, where" and bibliographic-style
-    > descriptions are chosen from schema.org (in preference to other
-    > vocabularies such as Dublin Core or FOAF) where possible with
-    > domain specific vocabularies used for things which are not common
-    > across domains (such as types of language).
+    discoverability metadata which is mostly Schema.org terms with a
+    handful of additions. Following RO-Crate practice, basic metadata
+    terms such as "who, what, where" and bibliographic-style
+    descriptions are chosen from schema.org (in preference to other
+    vocabularies such as Dublin Core or FOAF) where possible with
+    domain specific vocabularies used for things which are not common
+    across domains (such as types of language).
 
 -   An updated version of the Open Language Archives community (OLAC)
-    > vocabularies
-    > [[http://www.language-archives.org]{.underline}](http://www.language-archives.org);
-    > originally expressed as XML schemas. The new vocabulary is under
-    > development under here:
-    > [[https://purl.archive.org/language-data-commons/terms]{.underline}](https://purl.archive.org/textcommons/terms)
+    vocabularies
+    [[http://www.language-archives.org]{.underline}](http://www.language-archives.org);
+    originally expressed as XML schemas. The new vocabulary is under
+    development under here:
+    [[https://purl.archive.org/language-data-commons/terms]{.underline}](https://purl.archive.org/textcommons/terms)
 
 # Audience
 
 This document is primarily for use by tool developers, data scientists
 and metadata specialists developing scripts or systems for user
-communities; this document is not intended for use by non-specialists.
-
-# About this profile
-
-This profile covers various kinds of crate metadata:
-
--   **Structural** RO-Crate metadata - how does the root dataset link to
-    > files, and what is the abstract structure of nested collections
-    > (eg collections/corpora or other curated datasets) and objects or
-    > study; linguistic Items, Sessions or Texts). This profile assumes
-    > that a repository (for example, an OCFL storage root, with an API
-    > for accessing it) exists and that it can at a minimum support (a)
-    > listing all items of the repository and returning their RO-Crate
-    > metadata, and (b) retrieving an item given its ID. See [[Appendix
-    > 1: Building and index or map of a repository that follows the
-    > specifications here]{.underline}](#_r0r0md9rpt0u).
-
--   T**ypes of language data** - is this resource a dialogue? A written
-    > text? A transcript etc - which file has which kind of data in it?
-    > What is inside CSV and other structured files?
-
--   **Contextual metadata** - how to link people who had speaking,
-    > authoring, collection roles, places, subjects.
+communities. It is not intended for use by non-specialists.
 
 Just as we would not expect repository users to type in DublinCore
 metadata in XML format by hand we do not expect our users to have to
@@ -60,20 +41,44 @@ deal directly with the JSON-LD presented here, this document is for tool
 developers to build systems that crosswalk data from existing systems,
 or allow for user-friendly data entry.
 
+# About this profile
+
+This profile covers various kinds of crate metadata:
+
+-   **Structural** RO-Crate metadata - how the root dataset links to
+    files, and the abstract structure of nested collections
+    (eg collections/corpora or other curated datasets) and objects or
+    study; linguistic Items, Sessions or Texts). This profile assumes
+    that a repository (for example, an OCFL storage root, with an API
+    for accessing it) exists and that it can at a minimum support (a)
+    listing all items of the repository and returning their RO-Crate
+    metadata, and (b) retrieving an item given its ID. See [[Appendix
+    1: Building and index or map of a repository that follows the
+    specifications here]{.underline}](#_r0r0md9rpt0u).
+
+-   **Types of language data** - is this resource a dialogue? A written
+    text? A transcript or other annotation - which file has which kind of data in it?
+    What is inside CSV and other structured files?
+
+-   **Contextual metadata** - how to link people who had speaking,
+    authoring, collection roles, places, subjects.
+
+
+
 # Structural metadata
 
 The structural elements of a Text Commons RO-Crate are:
 
 -   A Collection / Object hierarchy to allow language data to be
-    > grouped - for example a corpus with sub-corpora, or collections of
-    > items from a region or collection for data collected in the field.
+    grouped - for example a corpus with sub-corpora, or collections of
+    items (objects) from a particualr region.
 
 -   Dataset and File entities (as per RO-Crate). Files may be referenced
-    > locally or via URI - eg from an API. If an RO-Crate contains files
-    > they MUST be linked to the root dataset using hasPart
-    > relationships as per the RO-Crate specification.
+    locally or via URI - eg from an API. If an RO-Crate contains files
+    they MUST be linked to the root dataset using `hasPart`
+    relationships as per the RO-Crate specification.
 
-NOTE: The terms Collection and Object are used here for brevity - these
+NOTE: The terms Collection and Object
 are encoded in RO-Crate metadata using RepositoryCollection and
 RepositoryObject types respectively. These in turn are re-named versions
 of the Portland Common Data Model types,
@@ -81,27 +86,37 @@ of the Portland Common Data Model types,
 and
 [[pcdm:Object]{.underline}](https://pcdm.org/2016/04/18/models#Object).
 
--   Conformant Text Commons Crates MUST describe either an Object or a
-    > Collection.
+A conformant RO-Crate:
 
--   An RO-Crate which conforms to this profile may contain at its top
-    > level root dataset that conformsTo one of the following:
-    > [[https://purl.archive.org/language-data-commons/profile#Collection]{.underline}](https://purl.archive.org/textcommons/profile#Collection)
-    > or
-    > [[https://purl.archive.org/language-data-commons/profile#Object]{.underline}](https://purl.archive.org/textcommons/profile#Object)
+- MUST have a `@type` attribute that that includes in its values `Dataset` and either `RepositoryCollection` or `RepositoryObject`
+
+- MUST have a conformsTo which references the profile URL for either a Collection (https://purl.archive.org/language-data-commons/profile#Collection) or an Object (https://purl.archive.org/language-data-commons/profile#Object) but not both
+
+- All property names used with the crate SHOULD resolve using the supplied context
+
+- MUST have  a `datePublished` property (per RO-Crate) exactly one value which is a string that parses as ISO-8601 to the level of at least a year. E.g.: 2000, 2000-10, 2000-10-01T12:34:56+10
+
+- MUST have a `publisher` property (per RO-Crate) which MUST be have an ID which is a URL
+
+
+
+
 
 ![](media/image4.png){width="4.802083333333333in"
 height="4.489583333333333in"}
+
+
+
 
 A collection such as a corpus may be stored in a repository or
 transmitted either as
 
 -   A **distributed** collection: a set of individual RO-Crates which
-    > reference separate collection records with ONE Object and one
-    > Collection per crate
+    reference separate collection records with ONE Object and one
+    Collection per crate
 
 -   A **bundled** single crate which contains all the Collection and
-    > Object data.
+    Object data.
 
 Distributed Collections MAY reference member collections or Objects in
 hasMember property but SHOULD NOT include descriptions of Objects that
@@ -118,71 +133,33 @@ repository developers.
 ![](media/image5.png){width="7.067708880139983in"
 height="3.37784886264217in"}
 
-## Access control and licensing
-
-Repositories MAY implement access control in whatever way is required
-for their operations but this profile aims to specify a standard way to
-specify licenses that is independent of the implementation of an access
-control system.
-
-Both Object and Collections SHOULD have an open license OR a
-[[DataReuseLicense]{.underline}](https://purl.archive.org/language-data-commons/terms#DataReuseLicense)
-linked via the license property.
-
-+-----------+-----------------------------+-------+-------------------+
-| **Prop**  | **Value**                   | **Mu  | **Notes**         |
-|           |                             | st?** |                   |
-+===========+=============================+=======+===================+
-| @id      | A URI                       | MUST  | -   An identifier |
-|           |                             |       |     > which can   |
-|           |                             |       |     > be used to  |
-|           |                             |       |     > match with  |
-|           |                             |       |     > an          |
-|           |                             |       |                   |
-|           |                             |       |   > authorization |
-|           |                             |       |     > system.     |
-+-----------+-----------------------------+-------+-------------------+
-| @type    | ["File",                   | MUST  |                   |
-|           | "DataReuseLicense"]        |       |                   |
-+-----------+-----------------------------+-------+-------------------+
-|           |                             |       |                   |
-+-----------+-----------------------------+-------+-------------------+
-
-A DataReuseLicense SHOULD describe a document which is included in the
-Crate and specify:
-
--   Indicate whether the metadata for the item may be made openly
-    > available
-
--   Indicate whether the item may be full-text indexed (or otherwise
-    > indexed) for discovery.
 
 ## When to choose collection-as-crate ("bundled") vs collection-in-multiple crates ("distributed")
 
 -   Choose to use a single bundled crate for a collection when:
 
     -   The collection final and is expected to be stable, ie here is
-        > negligible chance of having to withdraw any of its contents or
-        > files
+    negligible chance of having to withdraw any of its contents or
+    files
 
     -   The collection and all its files can easily be transferred in a
-        > single transaction - say 20Gb total
+    single transaction - say 20Gb total
 
     -   All the material in the corpus shares the same license for reuse
 
 -   Split a collection into fragmented RepositoryCollection and
-    > RepositoryObject crates - with one crate per repository object
-    > when:
+    RepositoryObject crates - with one crate per repository object
+    when:
 
     -   The collection is not yet stable
 
         -   New items being added or changed.
 
         -   There is a chance that some data may have to be taken down
-            > or withdrawn at the request of participants.
+    or withdrawn at the request of participants.
 
     -   The total size of the collection will present challenges for
-        > data transfer.
+    data transfer.
 
     -   There is more than one data reuse license applicable.
 
@@ -194,10 +171,10 @@ objects such as PARADISEC collections which bring together items
 collected in a region or on a session with informants. This follows the
 Alveo usage:
 
-> Items [*Objects* in this model] are grouped into collections which
-> might correspond to curated corpora such as ACE or informal
-> collections such as a sample of documents from the AustLit archive
-> ([[http://www.austlit.edu.au/]{.underline}](http://www.austlit.edu.au/)).
+    Items [*Objects* in this model] are grouped into collections which
+    might correspond to curated corpora such as ACE or informal
+    collections such as a sample of documents from the AustLit archive
+    ([[http://www.austlit.edu.au/]{.underline}](http://www.austlit.edu.au/)).
 
 When an RO-Crate is used to package a collection which is part of
 another Collection it MUST have a memberOf property which references a
@@ -222,7 +199,7 @@ The root dataset must have at least these @type values: ["Dataset",
 
 - MUST have at least one `description` value which is a string with one or more characters
 
-- MUST have a `license` property which has a value which references a DataReuseLicense entity@id which is a URL and which 
+- MUST have a `license` property with reference to an entity of type [File, DataReuseLicense] with an `@id` property that starts with `LICENSE.` and a `URL` property that is a valid URL
 
 - MUST have a `publisher` property (per RO-Crate) which MUST be have an ID which is a URL
 
@@ -244,18 +221,18 @@ An Object is a single unit linked to tightly related files for example -
 a dialogue or session in a speech study, a work (document) in a written
 corpus. This is based on work in Alveo which used the term *Item*:
 
-> The data model that we have developed for the storage of language
-> resources is built around the concept of an item which corresponds
-> (loosely) to a record of a single communication event. An item is
-> often associated with a single text, audio or video resource but could
-> include a number of resources, for example the different channels of
-> audio recording or an audio recording and associated textual
-> transcript. Items are grouped into collections which might correspond
-> to curated corpora such as ACE or informal collections such as a
-> sample of documents from the AustLit archive
-> (http://www.austlit.edu.au/).
+    The data model that we have developed for the storage of language
+    resources is built around the concept of an item which corresponds
+    (loosely) to a record of a single communication event. An item is
+    often associated with a single text, audio or video resource but could
+    include a number of resources, for example the different channels of
+    audio recording or an audio recording and associated textual
+    transcript. Items are grouped into collections which might correspond
+    to curated corpora such as ACE or informal collections such as a
+    sample of documents from the AustLit archive
+    (http://www.austlit.edu.au/).
 >
-> [[https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01]{.underline}](https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01)
+    [[https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01]{.underline}](https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01)
 
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
@@ -311,7 +288,7 @@ these use the schema.org mechanism of DefinedTerm and DefinedTermSet.
 
 ### A RepositoryObject:
 
-- MUST have a conformsTo which references the Collection profile URL
+- MUST have a conformsTo which references the Object profile URL
 
 - MUST have  a `datePublished` property (per RO-Crate) exactly one value which is a string that parses as ISO-8601 to the level of at least a year. E.g.: 2000, 2000-10, 2000-10-01T12:34:56+10
 
@@ -412,21 +389,21 @@ MAY use the arcp scheme - which allows for a DNS-like namespacing of
 identifiers. For example for the Sydney Speaks corpus the top level
 collection would have the ID:
 
-> arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)
+    arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)
 
 A sub-corpus (collection) would have an ID like:
 
-> arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/collection/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)SSP
-> (TODO PROPER URI)
+    arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/collection/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)SSP
+    (TODO PROPER URI)
 
 An object:
 
-> arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/object/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)331(TODO
-> PROPER URI)
+    arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/object/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)331(TODO
+    PROPER URI)
 
 A person:
 
-> arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)person/TODO
+    arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)person/TODO
 
 Optionally, an arcp:// may have a version parameter ?version=2
 
@@ -442,34 +419,34 @@ There are three levels at which contributions to an object can be
 modeled:
 
 1.  Include one or more Person items as context in a crate and reference
-    > them with properties such as schema:creator or the
-    > language-data-commons contribution properties such as txc:compiler
-    > or txc:depositor. The @id of the person MUST be a URI and SHOULD
-    > be re-used where the same person appears in multiple objects in a
-    > collection or repository.
+    them with properties such as schema:creator or the
+    language-data-commons contribution properties such as txc:compiler
+    or txc:depositor. The @id of the person MUST be a URI and SHOULD
+    be re-used where the same person appears in multiple objects in a
+    collection or repository.
 
 2.  For longitudinal studies where it is important to record changing
-    > demographic information for a Person, or where precision is
-    > required in listing contributions to a work use
-    > txc:ContributingPerson (new Class being proposed by Peter Sefton).
-    > See the example in SydneySpeaks (TODO).
+    demographic information for a Person, or where precision is
+    required in listing contributions to a work use
+    txc:ContributingPerson (new Class being proposed by Peter Sefton).
+    See the example in SydneySpeaks (TODO).
 
 3.  If it is important to record lots of contributions to a work (eg in
-    > analysis of a joint work) use schema:Action If more precision is
-    > required in describing the provenance of items - eg this work on
-    > [[The declaration of the rights of man and of the
-    > citizen]{.underline}](https://www.uts.edu.au/about/faculty-design-architecture-and-building/staff-showcase/writing-rights)
-    > (Lorber-Kasunic & Sweetapple ), showing contributions over time
-    > such as edits, then we can use Actions - this approach is used by
-    > preservation systems to keep track of contributions over time - it
-    > can help to describe how a resource has been created and updated
-    > in a series of events.
+    analysis of a joint work) use schema:Action If more precision is
+    required in describing the provenance of items - eg this work on
+    [[The declaration of the rights of man and of the
+    citizen]{.underline}](https://www.uts.edu.au/about/faculty-design-architecture-and-building/staff-showcase/writing-rights)
+    (Lorber-Kasunic & Sweetapple ), showing contributions over time
+    such as edits, then we can use Actions - this approach is used by
+    preservation systems to keep track of contributions over time - it
+    can help to describe how a resource has been created and updated
+    in a series of events.
 
-> NOTE: if this approach is used special care will have to be taken in
-> developing user interfaces and/or training communities to use this way
-> of modelling metadata - the user need not see the underlying
-> structure. This profile does not give advice about how to do this as
-> we have not seen a use case that requires it.
+    NOTE: if this approach is used special care will have to be taken in
+    developing user interfaces and/or training communities to use this way
+    of modelling metadata - the user need not see the underlying
+    structure. This profile does not give advice about how to do this as
+    we have not seen a use case that requires it.
 
 ## Collection events such as "Sessions"
 
