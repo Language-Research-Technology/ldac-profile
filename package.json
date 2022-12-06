@@ -7,7 +7,8 @@
     "ldac-check": "./ldac-check.js"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build-spec": "node make-profile.js"
   },
   "repository": {
     "type": "git",

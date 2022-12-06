@@ -262,7 +262,7 @@ works) that may be included - \`PrimaryMaterial\` - which is a recording or
 original text, or a citation of or proxy for it, \`DerivedMaterial\` which
 has been generated or sampled from primary material by a process such as format
 conversion or digitization, and \`Annotation\`, which contains one or more types of
-analysis of the `\PrimaryMaterial`\ or `\DerivedMaterial`\.
+analysis of the \`PrimaryMaterial\` or \`DerivedMaterial\`.
 
 ### PrimaryMaterial
 

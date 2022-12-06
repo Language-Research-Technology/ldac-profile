@@ -29,3 +29,5 @@ ${rules.PrimaryMaterial}
 
 ${rules.DerivedMaterial}
 
+test abc
+${exampleEntities('art', 'art_schema.json')}

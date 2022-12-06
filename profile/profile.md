@@ -101,11 +101,8 @@ A conformant RO-Crate:
 
 
 
-
 ![](media/image4.png){width="4.802083333333333in"
 height="4.489583333333333in"}
-
-
 
 
 A collection such as a corpus may be stored in a repository or
@@ -195,14 +192,7 @@ The root dataset must have at least these @type values: ["Dataset",
 
 - MUST have a conformsTo which references the Collection profile URL
 
-- MUST have  a `datePublished` property (per RO-Crate) exactly one value which is a string that parses as ISO-8601 to the level of at least a year. E.g.: 2000, 2000-10, 2000-10-01T12:34:56+10
-
 - MUST have at least one `description` value which is a string with one or more characters
-
-- MUST have a `license` property with reference to an entity of type [File, DataReuseLicense] with an `@id` property that starts with `LICENSE.` and a `URL` property that is a valid URL
-
-- MUST have a `publisher` property (per RO-Crate) which MUST be have an ID which is a URL
-
 
 - MAY have one or more references to Collection or Object entities, which may be included in the crate or have MUST have @id properties which are URIs
 
@@ -237,11 +227,12 @@ corpus. This is based on work in Alveo which used the term *Item*:
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
 
-If an RO-Crate contains a single Object the Root Dataset must have a
-@type property of (at least) "Dataset" and "RepositoryObject" with a
+If an RO-Crate contains a single Object the Root Dataset wouldt have a
+`@type` property of ["Dataset", "RepositoryObject"] with a
 conformsTo property pointing to the language-data-commons Object profile
 (this document).
 
+```
 {
 
 "@id": "arcp://name,some-corpus/item/1-001",
@@ -251,14 +242,16 @@ conformsTo property pointing to the language-data-commons Object profile
 "name": "Text 1-001",
 
 "conformsTo": { "@id":
-"[[https://purl.archive.org/language-data-commons/profile#]{.underline}](https://purl.archive.org/textcommons/profile#Object)Object"}
+"[[https://purl.archive.org/language-data-commons/profile#Object]](https://purl.archive.org/textcommons/profile#Object)}
 
 },
+```
 
-If an RO-Crate contains an entire collection then each Object SHOULD
-have "RepositoryObject" as one of its @type values and conformsTo
+If an RO-Crate contains an entire collection then each Object has a
+`@type` property of ["Dataset", "RepositoryObject" and a conformsTo
 property referencing this document. For example:
 
+```
 {
 
 "@id": "arcp://name,some-corpus/corpus",
@@ -271,6 +264,7 @@ property referencing this document. For example:
 "[[https://purl.archive.org/language-data-commons/profile#Collection]{.underline}](https://purl.archive.org/textcommons/profile#Object)"}
 
 },
+```
 
 Objects SHOULD have files (which may be included in an RO-Crate for the
 object, or as part of a collection crate).
@@ -290,13 +284,6 @@ these use the schema.org mechanism of DefinedTerm and DefinedTermSet.
 
 - MUST have a conformsTo which references the Object profile URL
 
-- MUST have  a `datePublished` property (per RO-Crate) exactly one value which is a string that parses as ISO-8601 to the level of at least a year. E.g.: 2000, 2000-10, 2000-10-01T12:34:56+10
-
-- MUST have a `license` property with reference to an entity of type [File, DataReuseLicense] with an `@id` property that starts with `LICENSE.` and a `URL` property that is a valid URL
-
-- MUST have a `publisher` property (per RO-Crate) which MUST be have an ID which is a URL
-
-
 - MAY have a `language` property which is a reference to one or more Language items
 
 - SHOULD have a hasPart property referencing at least one item of type [File, PrimaryMaterial] and MAY have [File, Annotation] and [File, DerivedMaterial] items which are inter-related using annotionOf, derivedFrom properties.
@@ -305,19 +292,16 @@ these use the schema.org mechanism of DefinedTerm and DefinedTermSet.
 
 ## Files
 
-There are three important @types of files (or references to other
-works) that may be included - PrimaryMaterial - which is a recording or
-original text, or a citation of or proxy for it, DerivedMaterial which
-has been generated from a PrimaryMaterial by a process such as format
-conversion or digitization, and Annotation, which contains any kind of
-analysis of the PrimaryMaterial or DerivedMaterial.
+There are three important types of files (or references to other
+works) that may be included - `PrimaryMaterial` - which is a recording or
+original text, or a citation of or proxy for it, `DerivedMaterial` which
+has been generated or sampled from primary material by a process such as format
+conversion or digitization, and `Annotation`, which contains one or more types of
+analysis of the `PrimaryMaterial` or `DerivedMaterial`.
 
 ### PrimaryMaterial
 
-PrimaryMaterial MAY be a video or audio file if it is available (see
-[[example]](#paradisec-item)) or MAY be a ContextualEntity
-referencing a primary text such as a book (see
-[[example](#primarymaterial-as-a-contextual-entity)[)](#cooee-item)].
+`PrimaryMaterial` MAY be a video or audio file if it is available or MAY be a ContextualEntity referencing a primary text such as a book.
 
 TODO: Add examples
 
@@ -333,7 +317,17 @@ TODO: Add examples
 
 ### DerivedMaterial
 
-DerivedMaterial MAY be a down-sampled or excepted video or audio file
+- MUST have a @type value of “DerivedMaterial" and MAY have other @type values
+
+- MAY have a `modality` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
+
+- MUST a language property, or the RepositoryObject that is `partOf` MUST have a language property, referencing a Language item (language my be inhereted from the parent RepoObject)
+
+- SHOULD have a derivedFrom property which references a PrimaryMaterial entity
+
+
+
+DerivedMaterial MAY be a down-sampled or edited video or audio file
 (see [[example]{.underline}](#paradisec-item)) or MAY be a
 ContextualEntity referencing a primary text such as a book (see
 [[example](#primarymaterial-as-a-contextual-entity)[)](#paradisec-item)].
@@ -362,6 +356,8 @@ An annotation is a description or analysis of other material. More than one type
 
 - MAY have an `annotationType` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
 
+- MAY have a `conformsTo` property which references a schema file which in turn MUST have `conformsTo` property of  {"@id": "https://specs.frictionlessdata.io/table-schema/"} 
+
 - SHOULD have an `annotationOf` property which references another entity
 
 
@@ -381,24 +377,23 @@ TODO: Paradisec example
 
 # Identifiers
 
-Identifiers for Objects and Collections MUST be URIs - HTTP URIs SHOULD
-be used but if that is not possible ARCP identifiers SHOULD be used.
+Identifiers for Objects and Collections MUST be URIs. 
 
 Internally, identifiers for all entities that do not have their own URIs
 MAY use the arcp scheme - which allows for a DNS-like namespacing of
 identifiers. For example for the Sydney Speaks corpus the top level
 collection would have the ID:
 
-    arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)
+    arcp://name,[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)
 
 A sub-corpus (collection) would have an ID like:
 
-    arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/collection/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)SSP
+    arcp://name,[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/collection/](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)SSP
     (TODO PROPER URI)
 
 An object:
 
-    arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/object/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)331(TODO
+    arcp://name,[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/object/](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)331(TODO
     PROPER URI)
 
 A person:
@@ -434,13 +429,9 @@ modeled:
 3.  If it is important to record lots of contributions to a work (eg in
     analysis of a joint work) use schema:Action If more precision is
     required in describing the provenance of items - eg this work on
-    [[The declaration of the rights of man and of the
-    citizen]{.underline}](https://www.uts.edu.au/about/faculty-design-architecture-and-building/staff-showcase/writing-rights)
-    (Lorber-Kasunic & Sweetapple ), showing contributions over time
-    such as edits, then we can use Actions - this approach is used by
-    preservation systems to keep track of contributions over time - it
-    can help to describe how a resource has been created and updated
-    in a series of events.
+    [The declaration of the rights of man and of the
+    citizen](https://www.uts.edu.au/about/faculty-design-architecture-and-building/staff-showcase/writing-rights)
+    (Lorber-Kasunic & Sweetapple)
 
     NOTE: if this approach is used special care will have to be taken in
     developing user interfaces and/or training communities to use this way
@@ -451,141 +442,24 @@ modeled:
 ## Collection events such as "Sessions"
 
 Where data is collected from participants in a speech study with
-elicitation tasks such as "sessions" (see this [[IMDI
-document]{.underline}](https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf))
+elicitation tasks such as "sessions" (see this [IMDI
+document]](https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf))
 or field interviews this can be recorded in metadata via the
 CollectionEvent class.
 
-TODO:
 
-Elicitation tasks and collection protocols
-
-To specify the protocol for collecting data
-
-collectionProtocolType: Elicitation Task, CorpusCriteria (eg how
-documents were selected TODO: make a set of DefinedTerms for these.
 
 # Describing the columns in CSV or other tabular data
 
 CSV or similar tabular files are often used to represent transcribed
 speech or sign language data, sometimes also with time codes. To enable
-automated location of which column is which, use a [[frictionless Table
-Schema:]{.underline}](https://specs.frictionlessdata.io/table-schema/)
+automated location of which column is which, use a [frictionless Table
+Schema](https://specs.frictionlessdata.io/table-schema/)
 
-For example a file called art_schema.json:
-
-  -----------------------------------------------------------------------------
-  {     
-  ----- -----------------------------------------------------------------------
-        "fields": [
-
-        {
-
-        "name": "Person",
-
-        "type": "string",
-
-        "format": "default",
-
-        "rdfType": "http://schema.org/Person"
-
-        },
-
-        {
-
-        "name": "Speech",
-
-        "type": "string",
-
-        "format": "default",
-
-        "rdfType":
-        "https://purl.archive.org/language-data-commons/terms#Orthography",
-
-        "description": "This column contains transcribed speech"
-
-        },
-
-        {
-
-        "name": "events",
-
-        "type": "any",
-
-        "format": "default"
-
-        }
-
-        ],
-
-        "missingValues": [
-
-        ""
-
-        ]
-
-        }
-  -----------------------------------------------------------------------------
-
-The schema should be included in every Object stored in a repository,
-whether the Collection is being stored as a bundled crate, in which case
-there need only be one copy of the schema file or a fragmented crate
-where there will be one per repository object.
-
-A csv file that uses this profile MUST reference a Contextual Entity for
-the schema (TODO: paste in actual examples from ART here.
 
 ![](media/image3.png){width="8.979166666666666in"
 height="0.5208333333333334in"}
 
-{
-
-"@id": "conversation1.csv",
-
-"@type" :["File"],
-
-"encodingFormat": "text/csv",
-
-"name": "Transcript of conversation 1".
-
-"conformsTo": {"@id" : "arcp://name,ausnc.ary/csv_schema")
-
-}
-
-{
-
-"@id": "arcp://name,ausnc.ary/csv_schema", ← REPOSITORY-UNIQUE NAME
-
-"Type": "CreativeWork",
-
-"Name": "Frictionless Table Schema for CSV transcription files in the
-ART corpus"
-
-"sameAs": "art_schema.json". ← Reference to the schema file above TODO:
-is this the best link?
-
-"conformsTo": {"@id" :
-"https://specs.frictionlessdata.io/table-schema/")
-
-}
-
-{
-
-"@id": "art_schema.json",
-
-"@type" :["File"],
-
-"encodingFormat": "text/csv",
-
-"name": "Frictionless Table Schema **file** for CSV transcription files
-in the ART corpus".
-
-"conformsTo": {"@id" :
-"https://specs.frictionlessdata.io/table-schema/")
-
-}
-
-## 
 
 The indirection in this conforms-to relationship is to allow multiple
 objects to have a conformsTo property which indicates that they conform
@@ -607,284 +481,4 @@ Dakota: The University of North Dakota M.A.
 
 # EXAMPLES
 
-## PrimaryMaterial as a contextual entity
-
-This example comes from COOEE, where the primary text
-
-{
-
-'@type' :[ 'CreativeWork', "PrimaryMaterial"],
-
-partOf: { '@id': 'arcp://name,cooee-corpus/work/Hale1950' },
-
-name: 'Hale, 1950',
-
-'@id': 'arcp://name,cooee-corpus/work/Hale1950p120-27',
-
-pageStart: '120',
-
-pageEnd: '127'
-
-},
-
-{
-
-'@type': 'CreativeWork',
-
-author: 'Hale, John,',
-
-datePublished: '1950',
-
-name: 'Settlers: Being Extracts from the Journals and letters of early
-colonists in Canada, Australia, South Africa and New Zealand,',
-
-publisher: 'London: Faber & Faber.',
-
-wordCount: '17,598',
-
-'@id': 'arcp://name,cooee-corpus/work/Hale1950'
-
-}
-
-### PARADISEC Item
-
-{
-
-"@id": "NT1-004-004A.eaf",
-
-"@type": ["File","Annotation"],
-
-"contentSize": 115784,
-
-"dateCreated": "2016-08-01T06:00:06.000Z",
-
-"dateModified": "2019-04-11T15:04:12.000Z",
-
-"encodingFormat": "application/xml",
-
-"name": "NT1-004-004A.eaf",
-
-"doi": "10.4225/72/579F720F4898C",
-
-"essenceId": 1100497,
-
-"annotationOf": [ { "@id": "NT1-004-004A.wav" }]
-
-},
-
-{
-
-"@id": "NT1-004-004A.mp3",
-
-"@type": ["File", "DerivedMaterial"],
-
-"bitrate": 128007,
-
-"contentSize": 45150336,
-
-"dateCreated": "2012-09-27T10:08:00.000Z",
-
-"dateModified": "2019-11-29T08:09:15.000Z",
-
-"duration": 2821.73,
-
-"encodingFormat": "audio/mpeg",
-
-"name": "NT1-004-004A.mp3",
-
-"channels": 2,
-
-"doi": "10.4225/72/575C6E9CC9B6A",
-
-"essenceId": 1010232,
-
-"sampleRate": 44100,
-
-derivedFrom: [ { @id: NT1-004-004A.wav }]
-
-},
-
-{
-
-"@id": "NT1-004-004A.wav",
-
-"@type": [ "File", "PrimaryMaterial"],
-
-"bitrate": 4608000,
-
-"contentSize": 1625299802,
-
-"dateCreated": "2012-09-27T10:08:00.000Z",
-
-"dateModified": "2019-11-29T08:13:31.000Z",
-
-"duration": 2821.7,
-
-"encodingFormat": "audio/x-wav",
-
-"name": "NT1-004-004A.wav",
-
-"channels": 2,
-
-"doi": "10.4225/72/575C6EA269CE2",
-
-"essenceId": 1010233,
-
-"sampleRate": 96000,
-
-"hasAnnotation": { "@id": "NT1-004-004A.eaf" }
-
-},
-
-### Example: Sydney Speaks
-
-Example: Farms To Freeways
-
-{
-
-"@id":
-"arcp://name,farms-to-freeways/interview-item/arcp://name,farms-to-freeways/collection/transcriptofinterviewwithjuditheastwell",
-
-"@type": "RepositoryObject",
-
-"name": "Interview with Judith Eastwell",
-
-"speaker": {
-
-"@id": "arcp://name,farms-to-freeways/collection/joywillis"
-
-},
-
-"hasPart": [
-
-{
-
-"@id": "files/530/original_80ded52c7051eaccb29939c8d829b92b.mp3"
-
-},
-
-{
-
-"@id": "files/430/original_6475a7d80e7124941f0039730e570c04.pdf"
-
-},
-
-{
-
-"@id": "files/430/original_6475a7d80e7124941f0039730e570c04.csv"
-
-}
-
-],
-
-"conformsTo":
-"https://purl.archive.org/language-data-commons/profile#Object",
-
-"dateCreated": "1992-03-05",
-
-"interviewer": "Robyn Arrowsmith",
-
-"publisher": "University of Western Sydney",
-
-"license": "Content in the Western Sydney Women's Oral History
-Project: From farms to freeways collection is licensed under a Creative
-Commons CC BY 3.0 AU licence
-(https://creativecommons.org/licenses/by/3.0/au/).",
-
-"contentLocation": {
-
-"@id": "http://omeka.uws.edu.au/farmstofreeways/api/geolocations/10"
-
-},
-
-"description": "Judith Eastwell was born on 14th September, 1945, and
-lived in Quakers Hill from age 2. Judith's father was the Postmaster at
-Quakers Hill post office from about 1950 onwards. Judith married and had
-six children, and eventually took over as Postmistress at Quakers
-Hill.",
-
-"language": {
-
-"@id": "https://www.ethnologue.com/language/eng"
-
-},
-
-"encodingFormat": "audio/MPEG",
-
-"linguisticGenre": {
-
-"@id": "txc:Interview"
-
-},
-
-"indexableText": {
-
-"@id": "files/430/original_6475a7d80e7124941f0039730e570c04.csv"
-
-}
-
-},
-
-{
-
-"@id": "files/430/original_6475a7d80e7124941f0039730e570c04.csv",
-
-"@type": [
-
-"File",
-
-"Annotation"
-
-],
-
-"name": "Transcript of interview with Judith Eastwell full text
-transcription (CSV)",
-
-"encodingFormat": "text/csv",
-
-"annotationType": [
-
-{
-
-"@id": "txc:Transcription"
-
-},
-
-{
-
-"@id": "txc:TimeAligned"
-
-}
-
-],
-
-"modality": {
-
-"@id": "txc:Orthography"
-
-},
-
-"annotationOf": {
-
-"@id": "files/530/original_80ded52c7051eaccb29939c8d829b92b.mp3"
-
-},
-
-"language": {
-
-"@id": "https://www.ethnologue.com/language/eng"
-
-},
-
-"csvw:tableSchema": {
-
-"@id": "#dialog_schema"
-
-},
-
-"size": 58117
-
-},
-
-TODO:
-[[https://www.mpi.nl/ISLE/documents/docs_frame.html]{.underline}](https://www.mpi.nl/ISLE/documents/docs_frame.html)
+[https://www.mpi.nl/ISLE/documents/docs_frame.html](https://www.mpi.nl/ISLE/documents/docs_frame.html)
