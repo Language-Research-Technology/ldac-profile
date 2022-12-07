@@ -48,39 +48,41 @@ describe('PARADISEC', function () {
     assert(!hasClause(result.errors, rules.RepositoryCollection.conformsTo)); // Conforms (no error)
 
     // No datePublished (this is an RO-Crate requirement)
-    assert(hasClause(result.errors, rules.RepositoryCollection.datePublished));
+
+    assert(hasClause(result.errors, rules.Dataset.datePublished));
     //Add it by copying from dateModified
     crate.rootDataset.datePublished = crate.rootDataset.dateModified;
     result = LdacProfile.validate(crate);
-    assert(!hasClause(result.errors, rules.RepositoryCollection.datePublished));
+    assert(!hasClause(result.errors, rules.Dataset.datePublished));
 
     // License is present but does not have a URL for an @id
-    assert(hasClause(result.errors, rules.RepositoryCollection.license));
+    assert(hasClause(result.errors, rules.License.license));
     crate.updateEntityId(
       '_:b1',
-      'https://www.paradisec.org.au/deposit/access-conditions/'
+      'LICENSE'
     );
     const license = crate.getEntity(
-      'https://www.paradisec.org.au/deposit/access-conditions/'
+      'LICENSE'
     );
+    license.URL = "https://www.paradisec.org.au/deposit/access-conditions/";
     // I am not a lawyer, but IMO the name on this license is not suitable
     // The term Open should be used for CC or GPL type licenses where data can be used without having to agree via a click-through
     // Also the use of the term "Open" may imply to some people that redistribution is permitted
     license.name = 'PARADISEC Public Access Conditions'; // Or something like that
-    license['@type'] = ['DataReuseLicense'];
+    license['@type'] = ['File', 'DataReuseLicense'];
     license['Description'] = 'Put a summary of the licence conditions here';
     license['text'] = 'Put the license conditions here ... ';
 
     result = LdacProfile.validate(crate);
 
     // No publisher is present
-    assert(hasClause(result.errors, rules.RepositoryCollection.publisher));
+    assert(hasClause(result.errors, rules.Dataset.publisher));
     // Add one (luckily there is a handy university entity in the metadata that is not being used)
     crate.rootDataset.publisher = {
       '@id': 'http://nla.gov.au/nla.party-593909',
     };
     result = LdacProfile.validate(crate);
-    assert(!hasClause(result.errors, rules.RepositoryCollection.publisher));
+    assert(!hasClause(result.errors, rules.Dataset.publisher));
 
     //No language prop - (not an error - reported)
     assert(hasMessage(result.info, 'Does not have a `language` property'));
@@ -90,10 +92,12 @@ describe('PARADISEC', function () {
 
     assert(hasMessage(result.info, 'Does have a `language` property'));
 
-    console.log(result);
 
     assert.equal(result.errors.length, 0);
 
+    fs.writeFileSync(
+          'examples/paradisec-collection-NT1', 'ro-crate-metadata.json'
+        )
     // TODO - output "fixed" crate
   });
 });
@@ -125,16 +129,16 @@ describe('RepositoryObject', async function () {
     assert(!hasClause(result.errors, rules.RepositoryObject.conformsTo));
 
     // No dataPublished (this is an RO-Crate requirement)
-    assert(hasClause(result.errors, rules.RepositoryObject.datePublished));
+    assert(hasClause(result.errors, rules.Dataset.datePublished));
     //Add it by copying from dateModified
     crate.rootDataset.datePublished = crate.rootDataset.dateModified;
     result = LdacProfile.validate(crate);
-    assert(!hasClause(result.errors, rules.RepositoryObject.datePublished));
+    assert(!hasClause(result.errors, rules.Dataset.datePublished));
 
     // License is present but does not have a URL for an @id
 
     // License is present but does not have a URL for an @id
-    assert(hasClause(result.errors, rules.RepositoryObject.license));
+    assert(hasClause(result.errors, rules.License.license));
 
     crate.updateEntityId(
       '_:b0',
@@ -151,9 +155,8 @@ describe('RepositoryObject', async function () {
     license['URL'] = 'http://paradisec.org/path/to/public/license.txt'
 
     result = LdacProfile.validate(crate);
-    console.log(result.errors)
 
-    assert(!hasClause(result.errors, rules.RepositoryObject.license));
+    assert(!hasClause(result.errors, rules.License.license));
 
     // Publisher is present already - so there should be no error
     assert(!hasClause(result.errors, rules.RepositoryCollection.publisher));
@@ -190,7 +193,7 @@ describe('RepositoryObject', async function () {
     );
     assert.equal(result.errors.length, 0);
     fs.writeFileSync(
-      'examples/paradisec/item/NT1-001/ro-crate-metadata.json',
+      'examples/paradisec-item-NT1-001/ro-crate-metadata.json',
       JSON.stringify(crate.toJSON(), null, 2)
     );
 
@@ -261,7 +264,6 @@ describe('RepositoryObject', async function () {
     mp3.derivedFrom = wav;
     result = LdacProfile.validate(crate);
 
-    console.log(result.errors);
 
     assert(result.errors.length === 0);
 
@@ -293,14 +295,14 @@ describe('RepositoryObject', async function () {
     assert(!hasClause(result.errors, rules.RepositoryObject.conformsTo));
 
     // No dataPublished (this is an RO-Crate requirement)
-    assert(hasClause(result.errors, rules.RepositoryObject.datePublished));
+    assert(hasClause(result.errors, rules.Dataset.datePublished));
     //Add it by copying from dateModified
     crate.rootDataset.datePublished = crate.rootDataset.dateModified;
     result = LdacProfile.validate(crate);
-    assert(!hasClause(result.errors, rules.RepositoryObject.datePublished));
+    assert(!hasClause(result.errors, rules.Dataset.datePublished));
 
     // License is present but does not have a URL for an @id
-    assert(hasClause(result.errors, rules.RepositoryObject.license));
+    assert(hasClause(result.errors, rules.License.license));
     
     crate.updateEntityId(
       '_:b0',
@@ -317,7 +319,7 @@ describe('RepositoryObject', async function () {
     license['URL'] = 'http://paradisec.org/path/to/public/license.txt'
     result = LdacProfile.validate(crate);
 
-    assert(!hasClause(result.errors, rules.RepositoryObject.license));
+    assert(!hasClause(result.errors, rules.License.license));
 
     // Publisher is present already - so there should be no error
     assert(!hasClause(result.errors, rules.RepositoryCollection.publisher));
@@ -411,7 +413,6 @@ describe('RepositoryObject', async function () {
     eaf['@type'] = ['File', 'Annotation'];
 
     result = LdacProfile.validate(crate);
-    console.log(result.warnings);
     assert(
       hasMessage(
         result.warnings,
@@ -464,10 +465,9 @@ describe('RepositoryObject', async function () {
 
     result = LdacProfile.validate(crate);
 
-    console.log(result);
 
     fs.writeFileSync(
-      'examples/paradisec/item/NT1-98007/ro-crate-metadata.json',
+      'examples/paradisec-item-NT1-98007/ro-crate-metadata.json',
       JSON.stringify(crate.toJSON(), null, 2)
     );
 

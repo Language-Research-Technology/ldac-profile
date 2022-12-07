@@ -177,20 +177,17 @@ An Object is a single unit linked to tightly related files for example -
 a dialogue or session in a speech study, a work (document) in a written
 corpus. This is based on work in Alveo which used the term _Item_:
 
-    The data model that we have developed for the storage of language
-    resources is built around the concept of an item which corresponds
-    (loosely) to a record of a single communication event. An item is
-    often associated with a single text, audio or video resource but could
-    include a number of resources, for example the different channels of
-    audio recording or an audio recording and associated textual
-    transcript. Items are grouped into collections which might correspond
-    to curated corpora such as ACE or informal collections such as a
-    sample of documents from the AustLit archive
-    (http://www.austlit.edu.au/).
-
->
-
-    [[https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01]{.underline}](https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01)
+>The data model that we have developed for the storage of language
+>resources is built around the concept of an item which corresponds
+>(loosely) to a record of a single communication event. An item is
+>often associated with a single text, audio or video resource but could
+>include a number of resources, for example the different channels of
+>audio recording or an audio recording and associated textual
+>transcript. Items are grouped into collections which might correspond
+>to curated corpora such as ACE or informal collections such as a
+>sample of documents from the AustLit archive
+>(<http://www.austlit.edu.au/>).
+>[https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01]{(https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01)
 
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
@@ -200,39 +197,9 @@ If an RO-Crate contains a single Object the Root Dataset wouldt have a
 conformsTo property pointing to the language-data-commons Object profile
 (this document).
 
-\`\`\`
-{
-
-"@id": \"arcp://name,some-corpus/item/1-001\",
-
-\"@type\": \[\"Dataset\",\"RepositoryObject\"\],
-
-\"name\": \"Text 1-001\",
-
-\"conformsTo\": { \"@id\":
-\"[[https://purl.archive.org/language-data-commons/profile#Object]](https://purl.archive.org/textcommons/profile#Object)}
-
-},
-\`\`\`
-
 If an RO-Crate contains an entire collection then each Object has a
-\`@type\` property of ["Dataset", "RepositoryObject" and a conformsTo
+\`@type\` property of ["Dataset", "RepositoryObject"] and a conformsTo
 property referencing this document. For example:
-
-\`\`\`
-{
-
-\"@id\": \"arcp://name,some-corpus/corpus\",
-
-\"@type\": \[\"Dataset\",\"RepositoryObject\"\],
-
-\"name\": \"Text 1-001\",
-
-\"conformsTo\": { \"@id\":
-\"[[https://purl.archive.org/language-data-commons/profile#Collection]{.underline}](https://purl.archive.org/textcommons/profile#Object)\"}
-
-},
-\`\`\`
 
 Objects SHOULD have files (which may be included in an RO-Crate for the
 object, or as part of a collection crate).
@@ -300,11 +267,11 @@ automated location of which column is which, use a [frictionless Table
 Schema](https://specs.frictionlessdata.io/table-schema/)described by a File entity in the crate. 
 
 For example:
+${exampleEntities('art', ['art_schema.json'])}
 
 
 If a collection is distributed accross multiple crates use TODO:
 
-${exampleEntities('art', ['art_schema.json'])}
 
 
 

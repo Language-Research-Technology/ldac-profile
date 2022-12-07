@@ -1,6 +1,5 @@
 ---
 title: Language Data Commons RO-Crate Profile
-
 ---
 
 This document is a DRAFT RO-Crate profile for Language Data resources.
@@ -13,21 +12,21 @@ Arkisto platform, or similar compatible approaches are being used.
 
 The core metadata vocabularies for this profile are:
 
--   RO-Crate recommendations for data packaging and basic
-    discoverability metadata which is mostly Schema.org terms with a
-    handful of additions. Following RO-Crate practice, basic metadata
-    terms such as "who, what, where" and bibliographic-style
-    descriptions are chosen from schema.org (in preference to other
-    vocabularies such as Dublin Core or FOAF) where possible with
-    domain specific vocabularies used for things which are not common
-    across domains (such as types of language).
+- RO-Crate recommendations for data packaging and basic
+  discoverability metadata which is mostly Schema.org terms with a
+  handful of additions. Following RO-Crate practice, basic metadata
+  terms such as "who, what, where" and bibliographic-style
+  descriptions are chosen from schema.org (in preference to other
+  vocabularies such as Dublin Core or FOAF) where possible with
+  domain specific vocabularies used for things which are not common
+  across domains (such as types of language).
 
--   An updated version of the Open Language Archives community (OLAC)
-    vocabularies
-    [[http://www.language-archives.org]{.underline}](http://www.language-archives.org);
-    originally expressed as XML schemas. The new vocabulary is under
-    development under here:
-    [[https://purl.archive.org/language-data-commons/terms]{.underline}](https://purl.archive.org/textcommons/terms)
+- An updated version of the Open Language Archives community (OLAC)
+  vocabularies
+  [[http://www.language-archives.org]{.underline}](http://www.language-archives.org);
+  originally expressed as XML schemas. The new vocabulary is under
+  development under here:
+  [[https://purl.archive.org/language-data-commons/terms]{.underline}](https://purl.archive.org/textcommons/terms)
 
 # Audience
 
@@ -45,38 +44,36 @@ or allow for user-friendly data entry.
 
 This profile covers various kinds of crate metadata:
 
--   **Structural** RO-Crate metadata - how the root dataset links to
-    files, and the abstract structure of nested collections
-    (eg collections/corpora or other curated datasets) and objects or
-    study; linguistic Items, Sessions or Texts). This profile assumes
-    that a repository (for example, an OCFL storage root, with an API
-    for accessing it) exists and that it can at a minimum support (a)
-    listing all items of the repository and returning their RO-Crate
-    metadata, and (b) retrieving an item given its ID. See [[Appendix
-    1: Building and index or map of a repository that follows the
-    specifications here]{.underline}](#_r0r0md9rpt0u).
+- **Structural** RO-Crate metadata - how the root dataset links to
+  files, and the abstract structure of nested collections
+  (eg collections/corpora or other curated datasets) and objects or
+  study; linguistic Items, Sessions or Texts). This profile assumes
+  that a repository (for example, an OCFL storage root, with an API
+  for accessing it) exists and that it can at a minimum support (a)
+  listing all items of the repository and returning their RO-Crate
+  metadata, and (b) retrieving an item given its ID. See [[Appendix
+  1: Building and index or map of a repository that follows the
+  specifications here]{.underline}](#_r0r0md9rpt0u).
 
--   **Types of language data** - is this resource a dialogue? A written
-    text? A transcript or other annotation - which file has which kind of data in it?
-    What is inside CSV and other structured files?
+- **Types of language data** - is this resource a dialogue? A written
+  text? A transcript or other annotation - which file has which kind of data in it?
+  What is inside CSV and other structured files?
 
--   **Contextual metadata** - how to link people who had speaking,
-    authoring, collection roles, places, subjects.
-
-
+- **Contextual metadata** - how to link people who had speaking,
+  authoring, collection roles, places, subjects.
 
 # Structural metadata
 
 The structural elements of a Text Commons RO-Crate are:
 
--   A Collection / Object hierarchy to allow language data to be
-    grouped - for example a corpus with sub-corpora, or collections of
-    items (objects) from a particualr region.
+- A Collection / Object hierarchy to allow language data to be
+  grouped - for example a corpus with sub-corpora, or collections of
+  items (objects) from a particualr region.
 
--   Dataset and File entities (as per RO-Crate). Files may be referenced
-    locally or via URI - eg from an API. If an RO-Crate contains files
-    they MUST be linked to the root dataset using `hasPart`
-    relationships as per the RO-Crate specification.
+- Dataset and File entities (as per RO-Crate). Files may be referenced
+  locally or via URI - eg from an API. If an RO-Crate contains files
+  they MUST be linked to the root dataset using `hasPart`
+  relationships as per the RO-Crate specification.
 
 NOTE: The terms Collection and Object
 are encoded in RO-Crate metadata using RepositoryCollection and
@@ -92,6 +89,8 @@ A conformant RO-Crate:
 
 - MUST have a conformsTo which references the profile URL for either a Collection (https://purl.archive.org/language-data-commons/profile#Collection) or an Object (https://purl.archive.org/language-data-commons/profile#Object) but not both
 
+- MUST have a `license` property with reference to an entity of type [File, DataReuseLicense] with an `@id` property that starts with `LICENSE.` and a `URL` property that is a valid URL
+
 - All property names used with the crate SHOULD resolve using the supplied context
 
 - MUST have  a `datePublished` property (per RO-Crate) exactly one value which is a string that parses as ISO-8601 to the level of at least a year. E.g.: 2000, 2000-10, 2000-10-01T12:34:56+10
@@ -104,16 +103,15 @@ A conformant RO-Crate:
 ![](media/image4.png){width="4.802083333333333in"
 height="4.489583333333333in"}
 
-
 A collection such as a corpus may be stored in a repository or
 transmitted either as
 
--   A **distributed** collection: a set of individual RO-Crates which
-    reference separate collection records with ONE Object and one
-    Collection per crate
+- A **distributed** collection: a set of individual RO-Crates which
+  reference separate collection records with ONE Object and one
+  Collection per crate
 
--   A **bundled** single crate which contains all the Collection and
-    Object data.
+- A **bundled** single crate which contains all the Collection and
+  Object data.
 
 Distributed Collections MAY reference member collections or Objects in
 hasMember property but SHOULD NOT include descriptions of Objects that
@@ -130,35 +128,35 @@ repository developers.
 ![](media/image5.png){width="7.067708880139983in"
 height="3.37784886264217in"}
 
-
 ## When to choose collection-as-crate ("bundled") vs collection-in-multiple crates ("distributed")
 
--   Choose to use a single bundled crate for a collection when:
+- Choose to use a single bundled crate for a collection when:
 
-    -   The collection final and is expected to be stable, ie here is
+  - The collection final and is expected to be stable, ie here is
     negligible chance of having to withdraw any of its contents or
     files
 
-    -   The collection and all its files can easily be transferred in a
+  - The collection and all its files can easily be transferred in a
     single transaction - say 20Gb total
 
-    -   All the material in the corpus shares the same license for reuse
+  - All the material in the corpus shares the same license for reuse
 
--   Split a collection into fragmented RepositoryCollection and
-    RepositoryObject crates - with one crate per repository object
-    when:
+- Split a collection into fragmented RepositoryCollection and
+  RepositoryObject crates - with one crate per repository object
+  when:
 
-    -   The collection is not yet stable
+  - The collection is not yet stable
 
         -   New items being added or changed.
 
         -   There is a chance that some data may have to be taken down
+
     or withdrawn at the request of participants.
 
-    -   The total size of the collection will present challenges for
+  - The total size of the collection will present challenges for
     data transfer.
 
-    -   There is more than one data reuse license applicable.
+  - There is more than one data reuse license applicable.
 
 ## Collection (#Collection)
 
@@ -204,25 +202,23 @@ The root dataset must have at least these @type values: ["Dataset",
 
 
 
-
 ## Objects (#Object)
 
 An Object is a single unit linked to tightly related files for example -
 a dialogue or session in a speech study, a work (document) in a written
-corpus. This is based on work in Alveo which used the term *Item*:
+corpus. This is based on work in Alveo which used the term _Item_:
 
-    The data model that we have developed for the storage of language
-    resources is built around the concept of an item which corresponds
-    (loosely) to a record of a single communication event. An item is
-    often associated with a single text, audio or video resource but could
-    include a number of resources, for example the different channels of
-    audio recording or an audio recording and associated textual
-    transcript. Items are grouped into collections which might correspond
-    to curated corpora such as ACE or informal collections such as a
-    sample of documents from the AustLit archive
-    (http://www.austlit.edu.au/).
->
-    [[https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01]{.underline}](https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01)
+>The data model that we have developed for the storage of language
+>resources is built around the concept of an item which corresponds
+>(loosely) to a record of a single communication event. An item is
+>often associated with a single text, audio or video resource but could
+>include a number of resources, for example the different channels of
+>audio recording or an audio recording and associated textual
+>transcript. Items are grouped into collections which might correspond
+>to curated corpora such as ACE or informal collections such as a
+>sample of documents from the AustLit archive
+>(<http://www.austlit.edu.au/>).
+>[https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01]{(https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01)
 
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
@@ -232,39 +228,9 @@ If an RO-Crate contains a single Object the Root Dataset wouldt have a
 conformsTo property pointing to the language-data-commons Object profile
 (this document).
 
-```
-{
-
-"@id": "arcp://name,some-corpus/item/1-001",
-
-"@type": ["Dataset","RepositoryObject"],
-
-"name": "Text 1-001",
-
-"conformsTo": { "@id":
-"[[https://purl.archive.org/language-data-commons/profile#Object]](https://purl.archive.org/textcommons/profile#Object)}
-
-},
-```
-
 If an RO-Crate contains an entire collection then each Object has a
-`@type` property of ["Dataset", "RepositoryObject" and a conformsTo
+`@type` property of ["Dataset", "RepositoryObject"] and a conformsTo
 property referencing this document. For example:
-
-```
-{
-
-"@id": "arcp://name,some-corpus/corpus",
-
-"@type": ["Dataset","RepositoryObject"],
-
-"name": "Text 1-001",
-
-"conformsTo": { "@id":
-"[[https://purl.archive.org/language-data-commons/profile#Collection]{.underline}](https://purl.archive.org/textcommons/profile#Object)"}
-
-},
-```
 
 Objects SHOULD have files (which may be included in an RO-Crate for the
 object, or as part of a collection crate).
@@ -344,11 +310,9 @@ ContextualEntity referencing a primary text such as a book (see
 
 
 
-
 ### Annotation
 
 An annotation is a description or analysis of other material. More than one type of annotation may be present in a file.
-
 
 #### a [File, Annotation]:
 
@@ -359,6 +323,36 @@ An annotation is a description or analysis of other material. More than one type
 - MAY have a `conformsTo` property which references a schema file which in turn MUST have `conformsTo` property of  {"@id": "https://specs.frictionlessdata.io/table-schema/"} 
 
 - SHOULD have an `annotationOf` property which references another entity
+
+
+
+#### Describing the columns in CSV or other tabular data Annotation
+
+CSV or similar tabular files are often used to represent transcribed
+speech or sign language data, sometimes also with time codes. To enable
+automated location of which column is which, use a [frictionless Table
+Schema](https://specs.frictionlessdata.io/table-schema/)described by a File entity in the crate. 
+
+For example:
+```json
+{
+  "@id": "art_schema.json",
+  "@type": "File",
+  "name": "Frictionless Data Schema for CSV transcript files",
+  "encodingFormat": "application/json",
+  "conformsTo": {
+    "@id": "https://specs.frictionlessdata.io/table-schema/"
+  }
+}
+```
+[source](../example/art/README.md)
+
+
+
+
+If a collection is distributed accross multiple crates use TODO:
+
+
 
 
 
@@ -374,10 +368,9 @@ An annotation is a description or analysis of other material. More than one type
 
 TODO: Paradisec example
 
-
 # Identifiers
 
-Identifiers for Objects and Collections MUST be URIs. 
+Identifiers for Objects and Collections MUST be URIs.
 
 Internally, identifiers for all entities that do not have their own URIs
 MAY use the arcp scheme - which allows for a DNS-like namespacing of
@@ -447,34 +440,20 @@ document]](https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf))
 or field interviews this can be recorded in metadata via the
 CollectionEvent class.
 
-
-
-# Describing the columns in CSV or other tabular data
-
-CSV or similar tabular files are often used to represent transcribed
-speech or sign language data, sometimes also with time codes. To enable
-automated location of which column is which, use a [frictionless Table
-Schema](https://specs.frictionlessdata.io/table-schema/)
-
-
-![](media/image3.png){width="8.979166666666666in"
-height="0.5208333333333334in"}
-
-
 The indirection in this conforms-to relationship is to allow multiple
 objects to have a conformsTo property which indicates that they conform
-to the *same* schema while having a local copy of the schema, as per
+to the _same_ schema while having a local copy of the schema, as per
 RO-Crate best practice of having all local context to use a data
 packages in the package where possible.
 
 # References
 
 Himmelmann, Nikolaus P. 2012. Linguistic data types and the interface
-between language documentation and description. *Language documentation
-& conservation*. University of Hawai'i Press 6. 187--207.
+between language documentation and description. _Language documentation
+& conservation_. University of Hawai'i Press 6. 187--207.
 
-Paterson, Hugh Joseph. 2021. *Language Archive Records: Interoperability
-of Referencing Practices and Metadata Models*. United States -- North
+Paterson, Hugh Joseph. 2021. _Language Archive Records: Interoperability
+of Referencing Practices and Metadata Models_. United States -- North
 Dakota: The University of North Dakota M.A.
 [[https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1]{.underline}](https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1)
 (3 May, 2022).

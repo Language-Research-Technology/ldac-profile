@@ -45,20 +45,39 @@ describe('Dataset', function () {
 });
 
 describe('RepositoryCollection', function () {
-  it('has conformsTo', function () {
+  it('Has all the things it needs', function () {
     const crate = new ROCrate({}, opt);
     assert(crate.rootDataset);
     crate.rootDataset['@type'] = ['Dataset', 'RepositoryCollection'];
     crate.rootDataset.conformsTo = { '@id': constants.CollectionProfileUrl };
     var result = LdacProfile.validate(crate);
-    console.log(result.errors);
-    assert(hasClause(result.errors, rules.RepositoryCollection.datePublished));
+    assert(hasClause(result.errors, rules.Dataset.datePublished));
     crate.rootDataset.datePublished = '2020';
     crate.rootDataset.name = '2020';
     crate.rootDataset.description = 'SOMETHING';
-    crate.rootDataset.license = { '@id': 'http://example.com/license' };
+    crate.rootDataset.publisher = {
+      '@id': 'http://nla.gov.au/nla.party-593909',
+      'name': 'The University of Melbourne'
+    };
+    crate.rootDataset.license = { 
+      '@id': 'LICENSE.txt',
+      '@type': ['File', 'DataReuseLicense'],
+      'URL': 'https://example.com/access-conditions/',
+      'name': 'License for dataset XXX',
+      'Description':'Put a summary of the licence conditions here',
+       'text': 'Put the license conditions here ... '
+    }
     result = LdacProfile.validate(crate);
-    console.log(result);
+
+    crate.rootDataset.hasMember = {
+        "@id": "arcp://name,someting/some/object",
+        "@type": "RepositoryObject",
+        "conformsTo": { '@id': constants.ObjectProfileUrl },
+        "name": "A name",
+        "description": "blah"
+    }
+    result = LdacProfile.validate(crate);
+    assert(hasMessage(result.info, 'Does not have a `hasPart` property'));
     assert.equal(result.errors.length, 0);
   });
 });
