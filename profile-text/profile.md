@@ -46,7 +46,7 @@ This profile covers various kinds of crate metadata:
 
 - **Structural** RO-Crate metadata - how the root dataset links to
   files, and the abstract structure of nested collections
-  (eg collections/corpora or other curated datasets) and objects or
+  (eg collections/corpora or other curated datasets) and objects of
   study; linguistic Items, Sessions or Texts). This profile assumes
   that a repository (for example, an OCFL storage root, with an API
   for accessing it) exists and that it can at a minimum support (a)
@@ -64,7 +64,7 @@ This profile covers various kinds of crate metadata:
 
 # Structural metadata
 
-The structural elements of a Text Commons RO-Crate are:
+The structural elements of a Language Data Commons RO-Crate are:
 
 - A Collection / Object hierarchy to allow language data to be
   grouped - for example a corpus with sub-corpora, or collections of
@@ -177,17 +177,17 @@ An Object is a single unit linked to tightly related files for example -
 a dialogue or session in a speech study, a work (document) in a written
 corpus. This is based on work in Alveo which used the term _Item_:
 
->The data model that we have developed for the storage of language
->resources is built around the concept of an item which corresponds
->(loosely) to a record of a single communication event. An item is
->often associated with a single text, audio or video resource but could
->include a number of resources, for example the different channels of
->audio recording or an audio recording and associated textual
->transcript. Items are grouped into collections which might correspond
->to curated corpora such as ACE or informal collections such as a
->sample of documents from the AustLit archive
->(<http://www.austlit.edu.au/>).
->[https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01]{(https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01)
+> The data model that we have developed for the storage of language
+> resources is built around the concept of an item which corresponds
+> (loosely) to a record of a single communication event. An item is
+> often associated with a single text, audio or video resource but could
+> include a number of resources, for example the different channels of
+> audio recording or an audio recording and associated textual
+> transcript. Items are grouped into collections which might correspond
+> to curated corpora such as ACE or informal collections such as a
+> sample of documents from the AustLit archive
+> (<http://www.austlit.edu.au/>).
+> [https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01]{(https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01)
 
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
@@ -264,17 +264,12 @@ ${rules.Annotation}
 CSV or similar tabular files are often used to represent transcribed
 speech or sign language data, sometimes also with time codes. To enable
 automated location of which column is which, use a [frictionless Table
-Schema](https://specs.frictionlessdata.io/table-schema/)described by a File entity in the crate. 
+Schema](https://specs.frictionlessdata.io/table-schema/)described by a File entity in the crate.
 
 For example:
 ${exampleEntities('art', ['art_schema.json'])}
 
-
 If a collection is distributed accross multiple crates use TODO:
-
-
-
-
 
 ## Languages
 
