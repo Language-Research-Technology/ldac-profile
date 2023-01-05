@@ -51,9 +51,7 @@ This profile covers various kinds of crate metadata:
   that a repository (for example, an OCFL storage root, with an API
   for accessing it) exists and that it can at a minimum support (a)
   listing all items of the repository and returning their RO-Crate
-  metadata, and (b) retrieving an item given its ID. See [[Appendix
-  1: Building and index or map of a repository that follows the
-  specifications here]{.underline}](#_r0r0md9rpt0u).
+  metadata, and (b) retrieving an item given its ID. 
 
 - **Types of language data** - is this resource a dialogue? A written
   text? A transcript or other annotation - which file has which kind of data in it?
@@ -100,8 +98,7 @@ A conformant RO-Crate:
 
 
 
-![](media/image4.png){width="4.802083333333333in"
-height="4.489583333333333in"}
+![](media/image4.png)
 
 A collection such as a corpus may be stored in a repository or
 transmitted either as
@@ -117,7 +114,7 @@ Distributed Collections MAY reference member collections or Objects in
 hasMember property but SHOULD NOT include descriptions of Objects that
 are stored elsewhere in the repository.
 
-![](media/image2.png){width="6.510416666666667in" height="4.53125in"}
+![](media/image2.png)
 
 Objects MUST be linked to collections using memberOf and MAY
 additionally be linked to collections using hasMember references.
@@ -125,8 +122,7 @@ additionally be linked to collections using hasMember references.
 Which linking strategy is used is an implementation choice for
 repository developers.
 
-![](media/image5.png){width="7.067708880139983in"
-height="3.37784886264217in"}
+![](media/image5.png)
 
 ## When to choose collection-as-crate ("bundled") vs collection-in-multiple crates ("distributed")
 
@@ -218,7 +214,7 @@ corpus. This is based on work in Alveo which used the term _Item_:
 >to curated corpora such as ACE or informal collections such as a
 >sample of documents from the AustLit archive
 >(<http://www.austlit.edu.au/>).
->[https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01]{(https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01)
+><https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01>
 
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
@@ -241,7 +237,7 @@ the object and its files (and the contextual metadata of a Person who
 takes the role of the speaker/informant (discussed in more detail
 below).
 
-![](media/image1.png){width="5.427083333333333in" height="4.46875in"}
+![](media/image1.png)
 
 There are a number of terms that can be used to characterize resources -
 these use the schema.org mechanism of DefinedTerm and DefinedTermSet.
@@ -364,7 +360,7 @@ For example:
 
 
 The place in which data was collected may be indicated using the `contentLocation` property. 
-
+x
 ```json
 {
   "@id": "./",
