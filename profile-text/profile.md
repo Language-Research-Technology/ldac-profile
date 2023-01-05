@@ -23,10 +23,10 @@ The core metadata vocabularies for this profile are:
 
 - An updated version of the Open Language Archives community (OLAC)
   vocabularies
-  [[http://www.language-archives.org]{.underline}](http://www.language-archives.org);
+  [http://www.language-archives.org](http://www.language-archives.org);
   originally expressed as XML schemas. The new vocabulary is under
   development under here:
-  [[https://purl.archive.org/language-data-commons/terms]{.underline}](https://purl.archive.org/textcommons/terms)
+  [https://purl.archive.org/language-data-commons/terms](https://purl.archive.org/textcommons/terms)
 
 # Audience
 
@@ -46,7 +46,7 @@ This profile covers various kinds of crate metadata:
 
 - **Structural** RO-Crate metadata - how the root dataset links to
   files, and the abstract structure of nested collections
-  (eg collections/corpora or other curated datasets) and objects or
+  (eg collections/corpora or other curated datasets) and objects of
   study; linguistic Items, Sessions or Texts). This profile assumes
   that a repository (for example, an OCFL storage root, with an API
   for accessing it) exists and that it can at a minimum support (a)
@@ -64,7 +64,7 @@ This profile covers various kinds of crate metadata:
 
 # Structural metadata
 
-The structural elements of a Text Commons RO-Crate are:
+The structural elements of a Language Data Commons RO-Crate are:
 
 - A Collection / Object hierarchy to allow language data to be
   grouped - for example a corpus with sub-corpora, or collections of
@@ -79,9 +79,9 @@ NOTE: The terms Collection and Object
 are encoded in RO-Crate metadata using RepositoryCollection and
 RepositoryObject types respectively. These in turn are re-named versions
 of the Portland Common Data Model types,
-[[pcdm:Collection]{.underline}](https://pcdm.org/2016/04/18/models#Collection)
+[pcdm:Collection](https://pcdm.org/2016/04/18/models#Collection)
 and
-[[pcdm:Object]{.underline}](https://pcdm.org/2016/04/18/models#Object).
+[pcdm:Object](https://pcdm.org/2016/04/18/models#Object).
 
 A conformant RO-Crate:
 
@@ -117,7 +117,7 @@ height="3.37784886264217in"}
 
 ## When to choose collection-as-crate ("bundled") vs collection-in-multiple crates ("distributed")
 
-- Choose to use a single bundled crate for a collection when:
+- Choose to use a single bundled crate for a collection when all of these conditions are true:
 
   - The collection final and is expected to be stable, ie here is
     negligible chance of having to withdraw any of its contents or
@@ -130,15 +130,13 @@ height="3.37784886264217in"}
 
 - Split a collection into fragmented RepositoryCollection and
   RepositoryObject crates - with one crate per repository object
-  when:
+  when any of these conditions are true:
 
   - The collection is not yet stable
 
         -   New items being added or changed.
 
-        -   There is a chance that some data may have to be taken down
-
-    or withdrawn at the request of participants.
+        -   There is a chance that some data may have to be taken down or withdrawn at the request of participants.
 
   - The total size of the collection will present challenges for
     data transfer.
@@ -156,7 +154,7 @@ Alveo usage:
     Items \[*Objects* in this model\] are grouped into collections which
     might correspond to curated corpora such as ACE or informal
     collections such as a sample of documents from the AustLit archive
-    ([[http://www.austlit.edu.au/]{.underline}](http://www.austlit.edu.au/)).
+    ([http://www.austlit.edu.au/](http://www.austlit.edu.au/)).
 
 When an RO-Crate is used to package a collection which is part of
 another Collection it MUST have a memberOf property which references a
@@ -232,7 +230,6 @@ analysis of the \`PrimaryMaterial\` or \`DerivedMaterial\`.
 
 \`PrimaryMaterial\` MAY be a video or audio file if it is available or MAY be a ContextualEntity referencing a primary text such as a book.
 
-TODO: Add examples
 
 #### A [File, PrimaryMaterial]:
 
@@ -240,12 +237,12 @@ ${rules.PrimaryMaterial}
 
 ### DerivedMaterial
 
+DerivedMaterial is a non-alaytical derviation from PrimaryMaterial for example downsampled video or excerpted text.
+
+
 ${rules.DerivedMaterial}
 
-DerivedMaterial MAY be a down-sampled or edited video or audio file
-(see [[example]{.underline}](#paradisec-item)) or MAY be a
-ContextualEntity referencing a primary text such as a book (see
-[[example](#primarymaterial-as-a-contextual-entity)[)](#paradisec-item)].
+
 
 #### a [File, DerivedMaterial]:
 
@@ -270,56 +267,53 @@ For example:
 ${exampleEntities('art', ['art_schema.json'])}
 
 
-If a collection is distributed accross multiple crates use TODO:
+### Language
 
-
-
-
-
-## Languages
-
-### A [Language] entity:
+#### A [Language] entity:
 
 ${rules.Language}
 
 ## Places
 
-TODO: Paradisec example
+
+
+The place in which data was collected may be indicated using the \`contentLocation\` property. 
+
+${exampleEntities('paradisec-item-NT1-001', ['./', 'https://www.ethnologue.com/country/VU', '#Vanuatu'])}
+
+
 
 # Identifiers
 
 Identifiers for Objects and Collections MUST be URIs.
 
 Internally, identifiers for all entities that do not have their own URIs
-MAY use the arcp scheme - which allows for a DNS-like namespacing of
+MAY use the Archive and Packaging identifier scheme ([ARCP]) - which allows for a DNS-like namespacing of
 identifiers. For example for the Sydney Speaks corpus the top level
 collection would have the ID:
 
-    arcp://name,[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)
+    arcp://name,http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/
 
 A sub-corpus (collection) would have an ID like:
 
-    arcp://name,[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/collection/](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)SSP
-    (TODO PROPER URI)
+    arcp://name,http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/collection/SSP
 
 An object:
 
-    arcp://name,[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/object/](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)331(TODO
-    PROPER URI)
+    arcp://name,http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/object/331
 
 A person:
 
-    arcp://name,[[http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/]{.underline}](http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/sydney-speaks)person/TODO
+    arcp://name,http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/person/54
 
-Optionally, an arcp:// may have a version parameter ?version=2
 
 ## How to record people's contributions
 
 Some corpora express ages and other demographics of participants - this
-presents a modeling challenge as age and some other variables change
+presents a data modeling challenge, as age and some other variables change
 over time so if the same person appears over time then we need to have a
 base Person with DoB etc and then time-based instances of the person
-with an age, social status, gender etc AT THAT TIME.
+with an age, social status, gender etc *at that time*.
 
 There are three levels at which contributions to an object can be
 modeled:
@@ -334,8 +328,7 @@ modeled:
 2.  For longitudinal studies where it is important to record changing
     demographic information for a Person, or where precision is
     required in listing contributions to a work use
-    txc:ContributingPerson (new Class being proposed by Peter Sefton).
-    See the example in SydneySpeaks (TODO).
+    [ldac:PersonSnapshot].
 
 3.  If it is important to record lots of contributions to a work (eg in
     analysis of a joint work) use schema:Action If more precision is
@@ -373,9 +366,14 @@ between language documentation and description. _Language documentation
 Paterson, Hugh Joseph. 2021. _Language Archive Records: Interoperability
 of Referencing Practices and Metadata Models_. United States \-- North
 Dakota: The University of North Dakota M.A.
-[[https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1]{.underline}](https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1)
+[https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1](https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1)
 (3 May, 2022).
 
 # EXAMPLES
 
 [https://www.mpi.nl/ISLE/documents/docs_frame.html](https://www.mpi.nl/ISLE/documents/docs_frame.html)
+
+
+
+
+[ldac:PersonSnapshot]: https://purl.archive.org/language-data-commons/terms#PersonSnapshot

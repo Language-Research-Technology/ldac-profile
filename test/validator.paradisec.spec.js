@@ -91,6 +91,9 @@ describe('PARADISEC', function () {
     result = LdacProfile.validate(crate);
 
     assert(hasMessage(result.info, 'Does have a `language` property'));
+    assert(hasMessage(result.info, 'Does have a `contentLocation` property'));
+
+
 
 
     assert.equal(result.errors.length, 0);
@@ -135,7 +138,6 @@ describe('RepositoryObject', async function () {
     result = LdacProfile.validate(crate);
     assert(!hasClause(result.errors, rules.Dataset.datePublished));
 
-    // License is present but does not have a URL for an @id
 
     // License is present but does not have a URL for an @id
     assert(hasClause(result.errors, rules.License.license));
@@ -168,6 +170,14 @@ describe('RepositoryObject', async function () {
     //crate.deleteProperty(crate.rootDataset, 'contentLanguages');
     result = LdacProfile.validate(crate);
     assert(hasMessage(result.info, 'Does have a `language` property'));
+
+    // Check location -- is missing from this test data
+    assert(hasMessage(result.info, 'Does not have a `contentLocation` property'));
+    crate.rootDataset.contentLocation = crate.rootDataset.countries;
+    delete crate.rootDataset.countries;
+    result = LdacProfile.validate(crate);
+    assert(hasMessage(result.info, 'Does have a `contentLocation` property'));
+
 
     // Does not have the right context - so lots of warnings
     assert(
