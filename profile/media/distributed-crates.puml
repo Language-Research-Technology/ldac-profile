@@ -1,0 +1,50 @@
+
+@startuml
+title: Complete corpus collection metadata-only crate w/ links to object packages
+package "name My Corpus" as mc {
+   rectangle "@type: [Dataset, RepositoryCollection]\nconformsTo: ./#Collection" as cc {
+
+   }
+}
+
+package "ROCrate: Collection A" as cAc {
+
+   rectangle "@type:  [Dataset, RepositoryCollection]\nconformsTo: ./#Collection" as ca {
+
+   }
+  
+}
+
+
+package "ROCrate: Collection B" as cBc {
+
+   rectangle "@type:  [Dataset, RepositoryCollection]\nconformsTo: ./#Collection" as cb {
+
+   }
+  
+}
+
+
+package "RO Crate: Interview #1" as ec2 {
+  rectangle "@type: RepositoryObject\nconformsTo: ./#Object\nmodailty: Speech\nlingusiticGenre: Interview" as eo1 {
+
+   }
+   rectangle "@type: [File, PrinaryText]:  files/audio1.wav" as ea1
+   rectangle "@type: [File, Annotation]: files/csv1.csv" as ecsv1
+   }
+
+
+
+eo1 -down-> ea1 : hasPart
+eo1 -down-> ecsv1 : hasPart
+
+eo1 -up-> ca : memberOf
+ca -up-> cc : memberOf
+cb -up-> cc : memberOf
+
+note right of cc : Repository Collection:\n- MUST contain descriptive metadata\n  for the corpus/collection\n- MAY contain hasMember relationships\n  listing child Collections or Objects
+
+ 
+note bottom of ec2 : Individual object with file data
+
+@enduml

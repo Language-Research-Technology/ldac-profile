@@ -1,0 +1,27 @@
+
+@startuml
+
+rectangle "RO-Crate Profile (this document)" {
+rectangle " #Collection" as procoll
+rectangle "    #Object" as proobj
+}
+
+
+rectangle "Collection" as coll {
+}
+rectangle "Object" as obj {
+}
+rectangle "File" as file {
+}
+coll -----> coll : hasMember
+coll -> coll : memberOfq
+
+
+coll -down-> obj : hasMember
+obj -up-> coll : memberOf
+coll -up-> procoll : conformsTo
+obj -right-> proobj : conformsTo
+obj -down-> file : hasPart
+
+
+@enduml

@@ -1,2 +1,4 @@
 md:
-	node make-profile.js ; pandoc profile/profile.md -o profile/test.html
+	plantuml profile/media/*.puml -tsvg
+	node make-profile.js
+	pandoc profile/profile.md -o profile/test.html

@@ -1,0 +1,39 @@
+
+@startuml
+title: Self contained corpus crate with all resources
+package "ROCrate: My Corpus" {
+   rectangle "RepositoryCollection: MyCorpus" as cc {
+
+   }
+   rectangle "RepositoryObject, Dialogue: #1" as o1 {
+
+   }
+   rectangle "RepositoryObject, Dialogue: #2" as o2 {
+
+   }
+   rectangle "File, Audio:  files/audio1.wav" as a1
+   rectangle "File, OthographicTranscription: files/csv1.csv" as csv1
+   rectangle "Dataset: files" as files
+
+
+
+   rectangle "RepositoryCollection: Collection A" as c2 {
+
+   }
+   cc -down-> c2 : hasMember
+
+   c2 -down-> o1 : hasMember
+   c2 -down-> o2 : hasMember
+
+   o1 -down-> a1 : hasPart
+   o1 -down-> csv1 : hasPart
+
+
+   cc -down-> files : hasPart
+   files -down-> csv1 : hasPart
+   files -down-> a1 : hasPart
+
+
+}
+
+@enduml

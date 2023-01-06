@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="645px" preserveAspectRatio="none" style="width:942px;height:645px;background:#FFFFFF;" version="1.1" viewBox="0 0 942 645" width="942px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.4883" id="_title" style="stroke:none;stroke-width:1.0;" width="565" x="181.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="555" x="186.5" y="23.5352">Complete corpus collection metadata-only crate w/ links to object packages</text><!--MD5=[5bc1160419a35f57896d40e7b7e2464d]
+cluster mc--><g id="cluster_mc"><path d="M248.5,43.4883 L370.5,43.4883 A3.75,3.75 0 0 1 373,45.9883 L380,65.9766 L555.5,65.9766 A2.5,2.5 0 0 1 558,68.4766 L558,144.9883 A2.5,2.5 0 0 1 555.5,147.4883 L248.5,147.4883 A2.5,2.5 0 0 1 246,144.9883 L246,45.9883 A2.5,2.5 0 0 1 248.5,43.4883 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="246" x2="380" y1="65.9766" y2="65.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="121" x="250" y="59.0234">name My Corpus</text></g><!--MD5=[05e270d30c6d41cac6652d6ccc952a6d]
+cluster cAc--><g id="cluster_cAc"><path d="M47.5,211.4883 L204.5,211.4883 A3.75,3.75 0 0 1 207,213.9883 L214,233.9766 L358.5,233.9766 A2.5,2.5 0 0 1 361,236.4766 L361,312.9883 A2.5,2.5 0 0 1 358.5,315.4883 L47.5,315.4883 A2.5,2.5 0 0 1 45,312.9883 L45,213.9883 A2.5,2.5 0 0 1 47.5,211.4883 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="45" x2="214" y1="233.9766" y2="233.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="156" x="49" y="227.0234">ROCrate: Collection A</text></g><!--MD5=[aaad14aa974d83bbb434fe8535803e06]
+cluster cBc--><g id="cluster_cBc"><path d="M387.5,211.4883 L543.5,211.4883 A3.75,3.75 0 0 1 546,213.9883 L553,233.9766 L698.5,233.9766 A2.5,2.5 0 0 1 701,236.4766 L701,312.9883 A2.5,2.5 0 0 1 698.5,315.4883 L387.5,315.4883 A2.5,2.5 0 0 1 385,312.9883 L385,213.9883 A2.5,2.5 0 0 1 387.5,211.4883 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="385" x2="553" y1="233.9766" y2="233.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="155" x="389" y="227.0234">ROCrate: Collection B</text></g><!--MD5=[1606ee4a18a4891c5748f78e9aa84b3c]
+cluster ec2--><g id="cluster_ec2"><path d="M8.5,372.4883 L172.5,372.4883 A3.75,3.75 0 0 1 175,374.9883 L182,394.9766 L696.5,394.9766 A2.5,2.5 0 0 1 699,397.4766 L699,635.9883 A2.5,2.5 0 0 1 696.5,638.4883 L8.5,638.4883 A2.5,2.5 0 0 1 6,635.9883 L6,374.9883 A2.5,2.5 0 0 1 8.5,372.4883 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="182" y1="394.9766" y2="394.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="163" x="10" y="388.0234">RO Crate: Interview #1</text></g><!--MD5=[db956f40f2dc50163091c98812b3e6f0]
+entity cc--><g id="elem_cc"><rect fill="#F1F1F1" height="52.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="280" x="262" y="78.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="260" x="272" y="102.0234">@type: [Dataset, RepositoryCollection]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="272" y="118.5117">conformsTo: ./#Collection</text></g><!--MD5=[956469d7f1aec4a2c079fbcba97d3a0f]
+entity ca--><g id="elem_ca"><rect fill="#F1F1F1" height="52.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="284" x="61" y="246.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="71" y="270.0234">@type:  [Dataset, RepositoryCollection]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="71" y="286.5117">conformsTo: ./#Collection</text></g><!--MD5=[b1bb34d5f6a5f9f0e50b702338f741d1]
+entity cb--><g id="elem_cb"><rect fill="#F1F1F1" height="52.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="284" x="401" y="246.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="411" y="270.0234">@type:  [Dataset, RepositoryCollection]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="411" y="286.5117">conformsTo: ./#Collection</text></g><!--MD5=[210fb71e2e95b35fc1d2987553ee68e5]
+entity ea1--><g id="elem_ea1"><rect fill="#F1F1F1" height="36.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="315" x="30.5" y="578.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="295" x="40.5" y="602.0234">@type: [File, PrinaryText]:  files/audio1.wav</text></g><!--MD5=[81fe3615aca6adc9148a0f609567f723]
+entity ecsv1--><g id="elem_ecsv1"><rect fill="#F1F1F1" height="36.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="286" x="381" y="578.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="266" x="391" y="602.0234">@type: [File, Annotation]: files/csv1.csv</text></g><!--MD5=[b93866ba80b87a4b9838127be97d1901]
+entity eo1--><g id="elem_eo1"><rect fill="#F1F1F1" height="85.9531" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="193" x="106.5" y="415.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="116.5" y="439.0234">@type: RepositoryObject</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="116.5" y="455.5117">conformsTo: ./#Object</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="116.5" y="472">modailty: Speech</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="116.5" y="488.4883">lingusiticGenre: Interview</text></g><g id="elem_GMN52"><path d="M577,61.4883 L577,148.041 L851,148.041 L851,71.4883 L841,61.4883 L577,61.4883 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M841,61.4883 L841,71.4883 L851,71.4883 L841,61.4883 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="139" x="583" y="79.0566">Repository Collection:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="233" x="583" y="94.3672">- MUST contain descriptive metadata</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="158" x="591" y="109.6777">for the corpus/collection</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="253" x="583" y="124.9883">- MAY contain hasMember relationships</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="219" x="591" y="140.2988">listing child Collections or Objects</text></g><g id="elem_GMN55"><path d="M723,583.9883 L723,609.2988 L935,609.2988 L935,593.9883 L925,583.9883 L723,583.9883 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M925,583.9883 L925,593.9883 L935,593.9883 L925,583.9883 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="191" x="729" y="601.5566">Individual object with file data</text></g><!--MD5=[1cf7466719dd33eec30766bd2cc23a29]
+link eo1 to ea1--><g id="link_eo1_ea1"><path d="M198.34,501.7783 C195.73,525.4383 192.58,553.9683 190.45,573.2883 " fill="none" id="eo1-to-ea1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="189.88,578.4783,194.8575,569.9798,190.4369,573.5094,186.9072,569.0888,189.88,578.4783" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="197" y="545.0566">hasPart</text></g><!--MD5=[132858a43c4b19790d8b80674ae29626]
+link eo1 to ecsv1--><g id="link_eo1_ecsv1"><path d="M299.75,500.4783 C359.18,525.6583 432.53,556.7383 478.81,576.3383 " fill="none" id="eo1-to-ecsv1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="483.48,578.3183,476.7644,571.114,478.8791,576.3608,473.6324,578.4755,483.48,578.3183" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="412" y="545.0566">hasPart</text></g><!--MD5=[c29f3c109500165fabbca2f867a76e7f]
+reverse link ca to eo1--><g id="link_ca_eo1"><path d="M203,304.5883 C203,334.8783 203,381.4783 203,415.2783 " fill="none" id="ca-backto-eo1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="203,299.4983,199,308.4983,203,304.4983,207,308.4983,203,299.4983" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="204" y="345.0566">memberOf</text></g><!--MD5=[4a82eaeeae340e92fee55c075466f7d4]
+reverse link cc to ca--><g id="link_cc_ca"><path d="M367.31,134.9283 C329.56,166.4183 269.79,216.2783 233.69,246.3883 " fill="none" id="cc-backto-ca" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="371.34,131.5583,361.8643,134.2436,367.4977,134.7578,366.9835,140.3912,371.34,131.5583" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="315" y="192.0566">memberOf</text></g><!--MD5=[f6832e6bfdedaeb2095be69530b9fdc8]
+reverse link cc to cb--><g id="link_cc_cb"><path d="M427.23,135.6983 C454.01,167.2183 495.88,216.5183 521.25,246.3883 " fill="none" id="cc-backto-cb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="423.72,131.5583,426.5196,141.0009,426.9657,135.3616,432.6049,135.8077,423.72,131.5583" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="477" y="192.0566">memberOf</text></g><!--MD5=[07a7977f4dd0d2d446da2771f9131fa7]
+link cc to GMN52--><g id="link_cc_GMN52"><path d="M542.16,104.9883 C553.68,104.9883 565.2,104.9883 576.73,104.9883 " fill="none" id="cc-GMN52" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[a3017a1462d31cebf86b64f2fb461ed5]
+link ec2 to GMN55--><g id="link_ec2_GMN55"><path d="M699.1184,467.4896 C699.3363,467.7043 699.558,467.9228 699.7834,468.1449 C700.2344,468.5893 700.7004,469.0485 701.1809,469.5221 C703.1031,471.4162 705.2576,473.5393 707.6095,475.8569 C717.0172,485.1273 729.5831,497.5102 743.0688,510.7995 C770.04,537.3783 800.69,567.5833 817.11,583.7683 " fill="none" id="ec2-GMN55" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[e915bfb362946d7e800bb29097fd1d9b]
+@startuml
+title: Complete corpus collection metadata-only crate w/ links to object packages
+package "name My Corpus" as mc {
+   rectangle "@type: [Dataset, RepositoryCollection]\nconformsTo: ./#Collection" as cc {
+
+   }
+}
+
+package "ROCrate: Collection A" as cAc {
+
+   rectangle "@type:  [Dataset, RepositoryCollection]\nconformsTo: ./#Collection" as ca {
+
+   }
+  
+}
+
+
+package "ROCrate: Collection B" as cBc {
+
+   rectangle "@type:  [Dataset, RepositoryCollection]\nconformsTo: ./#Collection" as cb {
+
+   }
+  
+}
+
+
+package "RO Crate: Interview #1" as ec2 {
+  rectangle "@type: RepositoryObject\nconformsTo: ./#Object\nmodailty: Speech\nlingusiticGenre: Interview" as eo1 {
+
+   }
+   rectangle "@type: [File, PrinaryText]:  files/audio1.wav" as ea1
+   rectangle "@type: [File, Annotation]: files/csv1.csv" as ecsv1
+   }
+
+
+
+eo1 -down-> ea1 : hasPart
+eo1 -down-> ecsv1 : hasPart
+
+eo1 -up-> ca : memberOf
+ca -up-> cc : memberOf
+cb -up-> cc : memberOf
+
+note right of cc : Repository Collection:\n- MUST contain descriptive metadata\n  for the corpus/collection\n- MAY contain hasMember relationships\n  listing child Collections or Objects
+
+ 
+note bottom of ec2 : Individual object with file data
+
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 03:01:30 AEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: AU
+--></g></svg>

@@ -66,7 +66,7 @@ The structural elements of a Language Data Commons RO-Crate are:
 
 - A Collection / Object hierarchy to allow language data to be
   grouped - for example a corpus with sub-corpora, or collections of
-  items (objects) from a particualr region.
+  items (objects) from a particular region.
 
 - Dataset and File entities (as per RO-Crate). Files may be referenced
   locally or via URI - eg from an API. If an RO-Crate contains files
@@ -98,7 +98,7 @@ A conformant RO-Crate:
 
 
 
-![](media/image4.png)
+![](media/structure.svg)
 
 A collection such as a corpus may be stored in a repository or
 transmitted either as
@@ -114,7 +114,7 @@ Distributed Collections MAY reference member collections or Objects in
 hasMember property but SHOULD NOT include descriptions of Objects that
 are stored elsewhere in the repository.
 
-![](media/image2.png)
+![](media/bundled-crate.svg)
 
 Objects MUST be linked to collections using memberOf and MAY
 additionally be linked to collections using hasMember references.
@@ -122,7 +122,7 @@ additionally be linked to collections using hasMember references.
 Which linking strategy is used is an implementation choice for
 repository developers.
 
-![](media/image5.png)
+![](media/distributed-crates.svg)
 
 ## When to choose collection-as-crate ("bundled") vs collection-in-multiple crates ("distributed")
 
@@ -237,7 +237,7 @@ the object and its files (and the contextual metadata of a Person who
 takes the role of the speaker/informant (discussed in more detail
 below).
 
-![](media/image1.png)
+![](media/object-structure.svg)
 
 There are a number of terms that can be used to characterize resources -
 these use the schema.org mechanism of DefinedTerm and DefinedTermSet.

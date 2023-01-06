@@ -1,0 +1,45 @@
+
+@startuml
+
+actor "Speaker 1" as s1
+actor "Speaker 2" as s2
+
+rectangle "RO-Crate Profile (this document)" {
+rectangle "#Collection" as procoll
+rectangle "#Object" as proobj
+}
+
+rectangle "Conversation" as c1 {
+
+ 
+ rectangle "@type: [RepositoryObject]" 
+
+}
+rectangle "Audio File" as audio1 {
+   rectangle "@id: [file.wav]\n@type: [File, PrimaryText]\nmodality: [Speech]\ncommunicationGenre: [Interview]\nresourceType: [PrimaryText]\nencodingFormat: [audio/x-wav]" 
+
+
+}
+rectangle "PDF File" as pdf1 {
+   rectangle "@id: [file.pdf]\n@type: [File, Annotation]\nannotationType: [Transcription]\nmodality: [Orthography]\nresourceType: [DerivedText]\nencodingFormat: [text/pdf]" as pt 
+
+}
+
+rectangle "CSV File" as csv1 {
+   rectangle "@id: [file.csv]\n@type: [File, Annotation, DerivedText]\nannotationType: [Transcription]\nmodality: [Orthography]\nresourceType: [DerivedText]\nencodingFormat: [text/csv]" 
+}
+
+c1 -down-> pdf1 : hasPart
+
+pdf1 -up-> audio1 : annotationOf
+c1 -down-> audio1 : hasPart
+c1 -down-> csv1 : hasPart
+csv1 -up-> audio1 : annotationOf
+csv1 -up-> pdf1 : derivedFrom
+
+c1 -left-> s1 : interviewer
+c1 -right-> s2 : interviewee
+c1 ->  proobj: conformsTo
+
+
+@enduml
