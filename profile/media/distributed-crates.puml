@@ -1,6 +1,6 @@
 
 @startuml
-title: Complete corpus collection metadata-only crate w/ links to object packages
+title: Distributed crate with links to object crates
 package "name My Corpus" as mc {
    rectangle "@type: [Dataset, RepositoryCollection]\nconformsTo: ./#Collection" as cc {
 

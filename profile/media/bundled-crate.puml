@@ -1,7 +1,7 @@
 
 @startuml
-title: Self contained corpus crate with all resources
-package "ROCrate: My Corpus" {
+title: Self contained collection crate with all resources
+package "ROCrate: MyCorpus" {
    rectangle "RepositoryCollection: MyCorpus" as cc {
 
    }

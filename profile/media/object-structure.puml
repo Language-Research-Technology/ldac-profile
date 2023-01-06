@@ -1,5 +1,7 @@
 
 @startuml
+title: Structure of an Object crate
+
 
 actor "Speaker 1" as s1
 actor "Speaker 2" as s2
