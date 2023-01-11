@@ -26,10 +26,10 @@ package "ROCrate: Collection B" as cBc {
 
 
 package "RO Crate: Interview #1" as ec2 {
-  rectangle "@type: RepositoryObject\nconformsTo: ./#Object\nmodailty: Speech\nlingusiticGenre: Interview" as eo1 {
+  rectangle "@type: RepositoryObject\nconformsTo: ./#Object\nmodality: Speech\nlingusiticGenre: Interview" as eo1 {
 
    }
-   rectangle "@type: [File, PrinaryText]:  files/audio1.wav" as ea1
+   rectangle "@type: [File, PrinaryMaterial]:  files/audio1.wav" as ea1
    rectangle "@type: [File, Annotation]: files/csv1.csv" as ecsv1
    }
 

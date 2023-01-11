@@ -2,30 +2,28 @@
 title: Language Data Commons RO-Crate Profile
 ---
 
-This document is a DRAFT RO-Crate profile for Language Data resources.
-The profile specifies the contents of an RO-Crate Metadata Document and
-gives guidance on how to structure language data collections both at the
-RO-Crate package level and in a repository containing multiple packages.
+This document is a DRAFT RO-Crate profile for Language Data resources. The
+profile specifies the contents RO-Crate Metadata Documents for language
+resources and gives guidance on how to structure language data collections both
+at the RO-Crate package level and in a repository containing multiple packages.
 
-This profile assumes that the principles and standards set out in the
-Arkisto platform, or similar compatible approaches are being used.
+This profile assumes that the principles and standards set out in the Arkisto
+platform, or similar compatible approaches are being used.
 
 The core metadata vocabularies for this profile are:
 
-- RO-Crate recommendations for data packaging and basic
-  discoverability metadata which is mostly Schema.org terms with a
-  handful of additions. Following RO-Crate practice, basic metadata
-  terms such as "who, what, where" and bibliographic-style
-  descriptions are chosen from schema.org (in preference to other
-  vocabularies such as Dublin Core or FOAF) where possible with
-  domain specific vocabularies used for things which are not common
-  across domains (such as types of language).
+- RO-Crate recommendations for data packaging and basic discoverability metadata
+  which is mostly Schema.org terms with a handful of additions. Following
+  RO-Crate practice, basic metadata terms such as "who, what, where" and
+  bibliographic-style descriptions are chosen from schema.org (in preference to
+  other vocabularies such as Dublin Core or FOAF) where possible with domain
+  specific vocabularies used for things which are not common across domains
+  (such as types of language).
 
-- An updated version of the Open Language Archives community (OLAC)
-  vocabularies
+- An updated version of the Open Language Archives community (OLAC) vocabularies
   [http://www.language-archives.org](http://www.language-archives.org);
-  originally expressed as XML schemas. The new vocabulary is under
-  development under here:
+  originally expressed as XML schemas. The new vocabulary is under development
+  under here:
   [https://purl.archive.org/language-data-commons/terms](https://purl.archive.org/textcommons/terms)
 
 # Audience
@@ -34,7 +32,7 @@ This document is primarily for use by tool developers, data scientists
 and metadata specialists developing scripts or systems for user
 communities. It is not intended for use by non-specialists.
 
-Just as we would not expect repository users to type in DublinCore
+Just as we would not expect repository users to type in Dublin Core
 metadata in XML format by hand we do not expect our users to have to
 deal directly with the JSON-LD presented here, this document is for tool
 developers to build systems that crosswalk data from existing systems,
@@ -44,18 +42,21 @@ or allow for user-friendly data entry.
 
 This profile covers various kinds of crate metadata:
 
-- **Structural** RO-Crate metadata - how the root dataset links to
-  files, and the abstract structure of nested collections
-  (eg collections/corpora or other curated datasets) and objects of
-  study; linguistic Items, Sessions or Texts). This profile assumes
-  that a repository (for example, an OCFL storage root, with an API
-  for accessing it) exists and that it can at a minimum support (a)
-  listing all items of the repository and returning their RO-Crate
-  metadata, and (b) retrieving an item given its ID. 
+- **Structural** RO-Crate metadata - how the root dataset links to files, and
+  the abstract structure of nested collections (eg collections/corpora or other
+  curated datasets) and objects of study; linguistic Items, Sessions or Texts).
+  This profile assumes that a repository (for example, an OCFL storage root,
+  with an API for accessing it) exists and that it can at a minimum support 
+  (a)  listing all items of the repository and returning their RO-Crate metadata, and 
+  (b) retrieving an item given its ID.
 
-- **Types of language data** - is this resource a dialogue? A written
-  text? A transcript or other annotation - which file has which kind of data in it?
-  What is inside CSV and other structured files?
+- **Types of language data** - is this resource a dialogue? A written text? A
+  transcript or other annotation - which file has which kind of data in it? What
+  is inside CSV and other structured files? The vocabulary used for
+  language-specific data is the
+  [Language Data Commons vocabulary](http://purl.archive.org/language-data-commons/terms)
+  which is being developed alongside this profile. The vocabulary is described
+  here: <http://purl.archive.org/language-data-commons/terms>
 
 - **Contextual metadata** - how to link people who had speaking,
   authoring, collection roles, places, subjects.
@@ -88,7 +89,7 @@ ${rules.Dataset}
 ![](media/structure.svg)
 
 A collection such as a corpus may be stored in a repository or
-transmitted either as
+transmitted either as:
 
 - A **distributed** collection: a set of individual RO-Crates which
   reference separate collection records with ONE Object and one
@@ -97,19 +98,23 @@ transmitted either as
 - A **bundled** single crate which contains all the Collection and
   Object data.
 
-Distributed Collections MAY reference member collections or Objects in
-hasMember property but SHOULD NOT include descriptions of Objects that
+Distributed Collections may reference member collections or Objects in
+hasMember property but should not include descriptions of Objects that
 are stored elsewhere in the repository.
+
+Objects are placed in a Collection using the \`memberOf\` property (\`pcdm:memberOf\`), which is rewuired. The reverse may also be encoded using the \`hasMember\` property on a Collection.
+
+The following diagram show how these relationships are encoded in a single "bundled" RO-Crate.
 
 ![](media/bundled-crate.svg)
 
-Objects MUST be linked to collections using memberOf and MAY
-additionally be linked to collections using hasMember references.
+The next diagram shows how distributed crates (with one RO-Crate per Object and Collection) are linked.
+
+![](media/distributed-crates.svg)
 
 Which linking strategy is used is an implementation choice for
 repository developers.
 
-![](media/distributed-crates.svg)
 
 ## When to choose collection-as-crate ("bundled") vs collection-in-multiple crates ("distributed")
 
@@ -130,9 +135,9 @@ repository developers.
 
   - The collection is not yet stable
 
-        -   New items being added or changed.
+    -   New items being added or changed.
 
-        -   There is a chance that some data may have to be taken down or withdrawn at the request of participants.
+    -   There is a chance that some data may have to be taken down or withdrawn at the request of participants.
 
   - The total size of the collection will present challenges for
     data transfer.
@@ -147,15 +152,15 @@ objects such as PARADISEC collections which bring together items
 collected in a region or on a session with informants. This follows the
 Alveo usage:
 
-    Items \[*Objects* in this model\] are grouped into collections which
-    might correspond to curated corpora such as ACE or informal
-    collections such as a sample of documents from the AustLit archive
-    ([http://www.austlit.edu.au/](http://www.austlit.edu.au/)).
+> Items \[*Objects* in this model\] are grouped into collections which might
+> correspond to curated corpora such as ACE or informal collections such as a
+> sample of documents from the AustLit archive
+> ([http://www.austlit.edu.au/](http://www.austlit.edu.au/)).
 
 When an RO-Crate is used to package a collection which is part of
-another Collection it MUST have a memberOf property which references a
+another Collection it has a memberOf property which references a
 resolvable ID (within the context of a repository or service) of the
-parent Collection. The Collection MAY list its members in a hasMember
+parent Collection. The Collection may also list its members in a hasMember
 property, but this is not required.
 
 The root dataset must have at least these \@type values: \["Dataset",
@@ -169,7 +174,7 @@ ${rules.RepositoryCollection}
 
 An Object is a single unit linked to tightly related files for example -
 a dialogue or session in a speech study, a work (document) in a written
-corpus. This is based on work in Alveo which used the term _Item_:
+corpus. This is based on the use if the term _Item_ in Alveo:
 
 >The data model that we have developed for the storage of language
 >resources is built around the concept of an item which corresponds
@@ -239,7 +244,6 @@ DerivedMaterial is a non-alaytical derviation from PrimaryMaterial for example d
 ${rules.DerivedMaterial}
 
 
-
 #### a [File, DerivedMaterial]:
 
 ${rules.DerivedMaterial}
@@ -274,7 +278,8 @@ ${rules.Language}
 
 
 The place in which data was collected may be indicated using the \`contentLocation\` property. 
-x
+
+
 ${exampleEntities('paradisec-item-NT1-001', ['./', 'https://www.ethnologue.com/country/VU', '#Vanuatu'])}
 
 

@@ -15,11 +15,11 @@ rectangle "Object" as obj {
 rectangle "File" as file {
 }
 coll -----> coll : hasMember
-coll -> coll : memberOfq
+coll .> coll : memberOf (Optional)
 
 
 coll -down-> obj : hasMember
-obj -up-> coll : memberOf
+obj .up.> coll : memberOf (Optional)
 coll -up-> procoll : conformsTo
 obj -right-> proobj : conformsTo
 obj -down-> file : hasPart
