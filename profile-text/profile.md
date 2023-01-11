@@ -238,7 +238,7 @@ ${rules.PrimaryMaterial}
 
 ### DerivedMaterial
 
-DerivedMaterial is a non-alaytical derviation from PrimaryMaterial for example downsampled video or excerpted text.
+DerivedMaterial is a non-analytical derviation from PrimaryMaterial for example downsampled video or excerpted text.
 
 
 ${rules.DerivedMaterial}
@@ -321,8 +321,8 @@ modeled:
 
 1.  Include one or more Person items as context in a crate and reference
     them with properties such as schema:creator or the
-    language-data-commons contribution properties such as txc:compiler
-    or txc:depositor. The \@id of the person MUST be a URI and SHOULD
+    language-data-commons contribution properties such as [ldac:compiler]
+    or [ldac:depositor]. The \@id of the person MUST be a URI and SHOULD
     be re-used where the same person appears in multiple objects in a
     collection or repository.
 
@@ -378,3 +378,5 @@ Dakota: The University of North Dakota M.A.
 
 
 [ldac:PersonSnapshot]: https://purl.archive.org/language-data-commons/terms#PersonSnapshot
+[ldac:depositor]: https://purl.archive.org/language-data-commons/terms#depositor
+[ldac:compiler]: https://purl.archive.org/language-data-commons/terms#compiler

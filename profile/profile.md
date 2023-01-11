@@ -207,7 +207,7 @@ The root dataset must have at least these @type values: ["Dataset",
 
 An Object is a single unit linked to tightly related files for example -
 a dialogue or session in a speech study, a work (document) in a written
-corpus. This is based on work in Alveo which used the term _Item_:
+corpus. This is based on the use if the term _Item_ in Alveo:
 
 >The data model that we have developed for the storage of language
 >resources is built around the concept of an item which corresponds
@@ -285,7 +285,7 @@ analysis of the `PrimaryMaterial` or `DerivedMaterial`.
 
 ### DerivedMaterial
 
-DerivedMaterial is a non-alaytical derviation from PrimaryMaterial for example downsampled video or excerpted text.
+DerivedMaterial is a non-analytical derviation from PrimaryMaterial for example downsampled video or excerpted text.
 
 
 - MUST have a @type value of “DerivedMaterial" and MAY have other @type values
@@ -295,7 +295,6 @@ DerivedMaterial is a non-alaytical derviation from PrimaryMaterial for example d
 - MUST a language property, or the RepositoryObject that is `partOf` MUST have a language property, referencing a Language item (language my be inhereted from the parent RepoObject)
 
 - SHOULD have a derivedFrom property which references a PrimaryMaterial entity
-
 
 
 
@@ -534,8 +533,8 @@ modeled:
 
 1.  Include one or more Person items as context in a crate and reference
     them with properties such as schema:creator or the
-    language-data-commons contribution properties such as txc:compiler
-    or txc:depositor. The @id of the person MUST be a URI and SHOULD
+    language-data-commons contribution properties such as [ldac:compiler]
+    or [ldac:depositor]. The @id of the person MUST be a URI and SHOULD
     be re-used where the same person appears in multiple objects in a
     collection or repository.
 
@@ -591,3 +590,5 @@ Dakota: The University of North Dakota M.A.
 
 
 [ldac:PersonSnapshot]: https://purl.archive.org/language-data-commons/terms#PersonSnapshot
+[ldac:depositor]: https://purl.archive.org/language-data-commons/terms#depositor
+[ldac:compiler]: https://purl.archive.org/language-data-commons/terms#compiler
