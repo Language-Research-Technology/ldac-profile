@@ -322,7 +322,7 @@
         "@id": "https://purl.archive.org/language-data-commons/profile#Object"
       },
       "datePublished": "2018-05-17T04:13:04.000Z",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -402,7 +402,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010709,
       "name": "NT1-98007-001.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -421,7 +421,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010710,
       "name": "NT1-98007-002.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -440,7 +440,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010711,
       "name": "NT1-98007-003.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -459,7 +459,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010712,
       "name": "NT1-98007-004.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -478,7 +478,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010713,
       "name": "NT1-98007-005.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -497,7 +497,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010714,
       "name": "NT1-98007-006.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -516,7 +516,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010715,
       "name": "NT1-98007-007.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -535,7 +535,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010716,
       "name": "NT1-98007-008.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -554,7 +554,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010717,
       "name": "NT1-98007-009.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -573,7 +573,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010718,
       "name": "NT1-98007-010.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -592,7 +592,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010719,
       "name": "NT1-98007-011.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -611,7 +611,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010720,
       "name": "NT1-98007-012.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -630,7 +630,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010721,
       "name": "NT1-98007-013.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -649,7 +649,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010722,
       "name": "NT1-98007-014.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -668,7 +668,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010723,
       "name": "NT1-98007-015.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -687,7 +687,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010724,
       "name": "NT1-98007-016.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -706,7 +706,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010725,
       "name": "NT1-98007-017.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -725,7 +725,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010726,
       "name": "NT1-98007-018.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -744,7 +744,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010727,
       "name": "NT1-98007-019.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -763,7 +763,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010728,
       "name": "NT1-98007-020.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -782,7 +782,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010729,
       "name": "NT1-98007-021.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -801,7 +801,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010730,
       "name": "NT1-98007-022.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -820,7 +820,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010731,
       "name": "NT1-98007-023.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -839,7 +839,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010732,
       "name": "NT1-98007-024.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -858,7 +858,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010733,
       "name": "NT1-98007-025.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -877,7 +877,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010734,
       "name": "NT1-98007-026.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -896,7 +896,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010735,
       "name": "NT1-98007-027.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -915,7 +915,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010736,
       "name": "NT1-98007-028.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -934,7 +934,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010737,
       "name": "NT1-98007-029.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -953,7 +953,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010738,
       "name": "NT1-98007-030.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -972,7 +972,7 @@
       "encodingFormat": "image/jpeg",
       "essenceId": 1010739,
       "name": "NT1-98007-031.jpg",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -998,7 +998,7 @@
       "essenceId": 1010740,
       "name": "NT1-98007-98007A.mp3",
       "sampleRate": 44100,
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1027,7 +1027,7 @@
       "essenceId": 1010741,
       "name": "NT1-98007-98007A.wav",
       "sampleRate": 96000,
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1035,7 +1035,7 @@
           "@id": "https://glottolog.org/resource/languoid/id/sout2856"
         }
       ],
-      "modality": {
+      "communicationMode": {
         "@id": "http://purl.archive.org/language-data-commons/terms#SpokenLanguage"
       }
     },
@@ -1053,7 +1053,7 @@
       "essenceId": 1010742,
       "name": "NT1-98007-98007B.mp3",
       "sampleRate": 44100,
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1076,7 +1076,7 @@
       "essenceId": 1010743,
       "name": "NT1-98007-98007B.wav",
       "sampleRate": 96000,
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1095,7 +1095,7 @@
       "encodingFormat": "application/xml",
       "essenceId": 1010744,
       "name": "NT1-98007-98007az.xml",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1114,7 +1114,7 @@
       "encodingFormat": "text/plain",
       "essenceId": 1010746,
       "name": "NT1-98007-A.tab",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1133,7 +1133,7 @@
       "encodingFormat": "application/xml",
       "essenceId": 1010747,
       "name": "NT1-98007-A.xml",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1152,7 +1152,7 @@
       "encodingFormat": "text/plain",
       "essenceId": 1010748,
       "name": "NT1-98007-B.tab",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1171,7 +1171,7 @@
       "encodingFormat": "application/xml",
       "essenceId": 1010749,
       "name": "NT1-98007-B.xml",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1190,7 +1190,7 @@
       "encodingFormat": "application/xml",
       "essenceId": 1085095,
       "name": "NT1-98007-98007A.ixt",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1209,7 +1209,7 @@
       "encodingFormat": "application/xml",
       "essenceId": 1085293,
       "name": "NT1-98007-98007A.trs",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1228,7 +1228,7 @@
       "encodingFormat": "application/xml",
       "essenceId": 1086277,
       "name": "NT1-98007-98007A.flextext",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1250,7 +1250,7 @@
       "encodingFormat": "application/xml",
       "essenceId": 1100487,
       "name": "NT1-98007-98007A.eaf",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1284,7 +1284,7 @@
       "encodingFormat": "application/xml",
       "essenceId": 1100493,
       "name": "NT1-98007-98007B.eaf",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -1317,9 +1317,6 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/profile#Object"
-    },
-    {
       "@id": "LICENSE.txt",
       "@type": [
         "File",
@@ -1328,18 +1325,6 @@
       "name": "PARADISEC Public Access Conditions",
       "Description": "Put a summary of the licence conditions here",
       "URL": "http://paradisec.org/path/to/public/license.txt"
-    },
-    {
-      "@id": "http://purl.archive.org/language-data-commons/terms#SpokenLanguage"
-    },
-    {
-      "@id": "http://purl.archive.org/language-data-commons/terms#Translation"
-    },
-    {
-      "@id": "http://purl.archive.org/language-data-commons/terms#Transcription"
-    },
-    {
-      "@id": "http://purl.archive.org/language-data-commons/terms#Prosodic"
     }
   ]
 }

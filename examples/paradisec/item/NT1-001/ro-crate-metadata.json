@@ -47,9 +47,6 @@
           "@id": "https://glottolog.org/resource/languoid/id/sout2856"
         }
       ],
-      "countries": {
-        "@id": "https://www.ethnologue.com/country/VU"
-      },
       "dateCreated": "2012-09-27T10:08:00.000Z",
       "dateModified": "2019-09-25T23:52:02.000Z",
       "depositor": {
@@ -121,14 +118,17 @@
         "@id": "https://purl.archive.org/language-data-commons/profile#Object"
       },
       "datePublished": "2019-09-25T23:52:02.000Z",
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
         {
           "@id": "https://glottolog.org/resource/languoid/id/sout2856"
         }
-      ]
+      ],
+      "contentLocation": {
+        "@id": "https://www.ethnologue.com/country/VU"
+      }
     },
     {
       "@id": "#Bislama",
@@ -265,7 +265,7 @@
       "essenceId": 1010221,
       "name": "NT1-001-001A.wav",
       "sampleRate": 96000,
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -288,7 +288,7 @@
       "essenceId": 1010222,
       "name": "NT1-001-001B.mp3",
       "sampleRate": 44100,
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -311,7 +311,7 @@
       "essenceId": 1010223,
       "name": "NT1-001-001B.wav",
       "sampleRate": 96000,
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },
@@ -334,7 +334,7 @@
       "essenceId": 1036822,
       "name": "NT1-001-001A.mp3",
       "sampleRate": 44100,
-      "language": [
+      "inLanguage": [
         {
           "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
         },

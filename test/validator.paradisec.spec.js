@@ -85,12 +85,12 @@ describe('PARADISEC', function () {
     assert(!hasClause(result.errors, rules.Dataset.publisher));
 
     //No language prop - (not an error - reported)
-    assert(hasMessage(result.info, 'Does not have a `language` property'));
-    crate.rootDataset.language = crate.rootDataset.subjectLanguages;
+    assert(hasMessage(result.info, 'Does not have a `subjectLanguage` property'));
+    crate.rootDataset.subjectLanguage = crate.rootDataset.subjectLanguages;
 
     result = LdacProfile.validate(crate);
 
-    assert(hasMessage(result.info, 'Does have a `language` property'));
+    assert(hasMessage(result.info, 'Does have a `subjectLanguage` property'));
     assert(hasMessage(result.info, 'Does have a `contentLocation` property'));
 
 
@@ -98,9 +98,9 @@ describe('PARADISEC', function () {
 
     assert.equal(result.errors.length, 0);
 
-    fs.writeFileSync(
-          'examples/paradisec-collection-NT1', 'ro-crate-metadata.json'
-        )
+    // fs.writeFileSync(
+    //       'examples/paradisec-collection-NT1', 'ro-crate-metadata.json'
+    //     )
     // TODO - output "fixed" crate
   });
 });
@@ -165,11 +165,11 @@ describe('RepositoryObject', async function () {
 
     result = LdacProfile.validate(crate);
 
-    assert(hasMessage(result.info, 'Does not have a `language` property'));
-    crate.rootDataset.language = crate.rootDataset.contentLanguages;
+    assert(hasMessage(result.info, 'Does not have an `inLanguage` property'));
+    crate.rootDataset.inLanguage = crate.rootDataset.contentLanguages;
     //crate.deleteProperty(crate.rootDataset, 'contentLanguages');
     result = LdacProfile.validate(crate);
-    assert(hasMessage(result.info, 'Does have a `language` property'));
+    assert(hasMessage(result.info, 'Does have an `inLanguage` property'));
 
     // Check location -- is missing from this test data
     assert(hasMessage(result.info, 'Does not have a `contentLocation` property'));
@@ -203,7 +203,7 @@ describe('RepositoryObject', async function () {
     );
     assert.equal(result.errors.length, 0);
     fs.writeFileSync(
-      'examples/paradisec-item-NT1-001/ro-crate-metadata.json',
+      'examples/paradisec/item/NT1-001/ro-crate-metadata.json',
       JSON.stringify(crate.toJSON(), null, 2)
     );
 
@@ -217,23 +217,24 @@ describe('RepositoryObject', async function () {
     assert(
       hasMessage(
         result.info,
-        'Does not have a modality property',
+        'Does not have a communicationMode property',
         'NT1-001-001A.wav'
       )
     );
 
     // Try a dodgy value for modality
-    wav.modality = 'AString';
+    wav.communicationMode = 'AString';
     result = LdacProfile.validate(crate);
+    //console.log(result.warnings);
     assert(
       hasMessage(
         result.warnings,
-        `Modality value is not expected: "${wav.modality}"`,
+        `communicationMode value is not expected: "${wav.communicationMode}"`,
         'NT1-001-001A.wav'
       )
     );
 
-    wav.modality = {
+    wav.communicationMode = {
       '@id':
         'http://purl.archive.org/language-data-commons/terms#SpokenLanguage',
     };
@@ -336,11 +337,11 @@ describe('RepositoryObject', async function () {
 
     result = LdacProfile.validate(crate);
 
-    assert(hasMessage(result.info, 'Does not have a `language` property'));
-    crate.rootDataset.language = crate.rootDataset.contentLanguages;
+    assert(hasMessage(result.info, 'Does not have an `inLanguage` property'));
+    crate.rootDataset.inLanguage = crate.rootDataset.contentLanguages;
     //crate.deleteProperty(crate.rootDataset, 'contentLanguages');
     result = LdacProfile.validate(crate);
-    assert(hasMessage(result.info, 'Does have a `language` property'));
+    assert(hasMessage(result.info, 'Does have an `inLanguage` property'));
 
     // Does not have the right context - so lots of warnings
     assert(
@@ -376,23 +377,23 @@ describe('RepositoryObject', async function () {
     assert(
       hasMessage(
         result.info,
-        'Does not have a modality property',
+        'Does not have a communicationMode property',
         'NT1-98007-98007A.wav'
       )
     );
 
     // Try a dodgy value for modality
-    wav.modality = 'AString';
+    wav.communicationMode = 'AString';
     result = LdacProfile.validate(crate);
     assert(
       hasMessage(
         result.warnings,
-        `Modality value is not expected: "${wav.modality}"`,
+        `communicationMode value is not expected: "${wav.communicationMode}"`,
         'NT1-98007-98007A.wav'
       )
     );
 
-    wav.modality = {
+    wav.communicationMode = {
       '@id':
         'http://purl.archive.org/language-data-commons/terms#SpokenLanguage',
     };
@@ -477,7 +478,7 @@ describe('RepositoryObject', async function () {
 
 
     fs.writeFileSync(
-      'examples/paradisec-item-NT1-98007/ro-crate-metadata.json',
+      'examples/paradisec/item/NT1-98007/ro-crate-metadata.json',
       JSON.stringify(crate.toJSON(), null, 2)
     );
 
