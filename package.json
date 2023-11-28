@@ -25,6 +25,8 @@
   },
   "dependencies": {
     "commander": "^9.4.1",
-    "ro-crate": "^3.1.0"
+    "lodash": "^4.17.21",
+    "ro-crate": "^3.1.0",
+    "ro-crate-editor-profiles": "github:Language-Research-Technology/ro-crate-editor-profiles"
   }
 }

@@ -84,20 +84,7 @@ and
 
 A conformant RO-Crate:
 
-- MUST have a `@type` attribute that that includes in its values `Dataset` and either `RepositoryCollection` or `RepositoryObject`
-
-- MUST have a conformsTo which references the profile URL for either a Collection (https://purl.archive.org/language-data-commons/profile#Collection) or an Object (https://purl.archive.org/language-data-commons/profile#Object) but not both
-
-- MUST have a `license` property with reference to an entity of type [File, DataReuseLicense] with an `@id` property that starts with `LICENSE` and a `URL` property that is a valid URL
-
-- MUST have  a `datePublished` property (per RO-Crate) exactly one value which is a string that parses as ISO-8601 to the level of at least a year. E.g.: 2000, 2000-10, 2000-10-01T12:34:56+10
-
-- MUST have a `publisher` property (per RO-Crate) which MUST be have an ID which is a URL
-
-
-- SHOULD have property names which resolve using the supplied context
-
-
+undefined
 
 ![](media/structure.svg)
 
@@ -181,27 +168,7 @@ The root dataset must have at least these @type values: ["Dataset",
 
 ### A RepositoryCollection:
 
-- MUST have an @id property and the value must be a valid URI or "./"
-
-- MUST have a type value of “RepositoryCollection” and MUST NOT have a type of “RepositoryObject”
-
-- MUST have a single name value which is a string with one or more characters
-
-- MUST have a conformsTo which references the Collection profile URL
-
-- MUST have at least one `description` value which is a string with one or more characters
-
-- MAY have one or more references to Collection or Object entities, which may be included in the crate or have MUST have @id properties which are URIs
-
-- MAY have a `modality` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
-
-- MAY have a `linguisticGenre` property which is a reference to one or more of the Langauge Data Commons LinguistGenre Terms:  Formulaic, Thesaurus, Dialogue, Oratory, Report, Ludic, Procedural, Narrative, Interview, Drama, Informational (this information may be summarisable from collection members)
-
-- MAY have a `language` property which is a reference to one or more Language items
-
-- MAY have a `contentLocation` property which is a reference to one or more `Place` items
-
-
+undefined
 
 ## Objects (#Object)
 
@@ -249,15 +216,7 @@ these use the schema.org mechanism of DefinedTerm and DefinedTermSet.
 
 ### A RepositoryObject:
 
-- MUST have a conformsTo which references the Object profile URL
-
-- MAY have a `language` property which is a reference to one or more Language items
-
-- MAY have a `contentLocation` property which is a reference to one or more `Place` items
-
-- SHOULD have a hasPart property referencing at least one item of type [File, PrimaryMaterial] and MAY have [File, Annotation] and [File, DerivedMaterial] items which are inter-related using annotionOf, derivedFrom properties.
-
-
+undefined
 
 ## Files
 
@@ -275,41 +234,19 @@ analysis of the `PrimaryMaterial` or `DerivedMaterial`.
 
 #### A [File, PrimaryMaterial]:
 
-- MUST have a @type value of “PrimaryMaterial" and MAY have other @type values
-
-- MAY have a `modality` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
-
-- MUST a language property, or the RepositoryObject that is `partOf` MUST have a language property, referencing a Language item (language my be inhereted from the parent RepoObject)
-
-
+undefined
 
 ### DerivedMaterial
 
 DerivedMaterial is a non-analytical derviation from PrimaryMaterial for example downsampled video or excerpted text.
 
 
-- MUST have a @type value of “DerivedMaterial" and MAY have other @type values
-
-- MAY have a `modality` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
-
-- MUST a language property, or the RepositoryObject that is `partOf` MUST have a language property, referencing a Language item (language my be inhereted from the parent RepoObject)
-
-- SHOULD have a derivedFrom property which references a PrimaryMaterial entity
-
-
+undefined
 
 
 #### a [File, DerivedMaterial]:
 
-- MUST have a @type value of “DerivedMaterial" and MAY have other @type values
-
-- MAY have a `modality` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
-
-- MUST a language property, or the RepositoryObject that is `partOf` MUST have a language property, referencing a Language item (language my be inhereted from the parent RepoObject)
-
-- SHOULD have a derivedFrom property which references a PrimaryMaterial entity
-
-
+undefined
 
 ### Annotation
 
@@ -317,15 +254,7 @@ An annotation is a description or analysis of other material. More than one type
 
 #### a [File, Annotation]:
 
-- MUST have a @type value of “Annotation" and MAY have other @type values
-
-- MAY have an `annotationType` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
-
-- MAY have a `conformsTo` property which references a schema file which in turn MUST have `conformsTo` property of  {"@id": "https://specs.frictionlessdata.io/table-schema/"} 
-
-- SHOULD have an `annotationOf` property which references another entity
-
-
+undefined
 
 #### Describing the columns in CSV or other tabular data Annotation
 
@@ -355,9 +284,7 @@ For example:
 
 #### A [Language] entity:
 
-- MUST have an @id property and the value must start with `https://collection.aiatsis.gov.au/austlang/language/` or `https://glottolog.org/resource/`
-
-
+undefined
 
 ## Places
 
@@ -457,7 +384,7 @@ The place in which data was collected may be indicated using the `contentLocatio
     "@id": "https://purl.archive.org/language-data-commons/profile#Object"
   },
   "datePublished": "2019-09-25T23:52:02.000Z",
-  "language": [
+  "inLanguage": [
     {
       "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
     },
@@ -592,3 +519,5 @@ Dakota: The University of North Dakota M.A.
 [ldac:PersonSnapshot]: https://purl.archive.org/language-data-commons/terms#PersonSnapshot
 [ldac:depositor]: https://purl.archive.org/language-data-commons/terms#depositor
 [ldac:compiler]: https://purl.archive.org/language-data-commons/terms#compiler
+
+undefined
