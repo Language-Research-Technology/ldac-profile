@@ -3,7 +3,7 @@ title: Language Data Commons RO-Crate Profile
 ---
 
 This document is a DRAFT RO-Crate profile for Language Data resources. The
-profile specifies the contents RO-Crate Metadata Documents for language
+profile specifies the contents of RO-Crate Metadata Documents for language
 resources and gives guidance on how to structure language data collections both
 at the RO-Crate package level and in a repository containing multiple packages.
 
@@ -16,14 +16,14 @@ The core metadata vocabularies for this profile are:
   which is mostly Schema.org terms with a handful of additions. Following
   RO-Crate practice, basic metadata terms such as "who, what, where" and
   bibliographic-style descriptions are chosen from schema.org (in preference to
-  other vocabularies such as Dublin Core or FOAF) where possible with domain
-  specific vocabularies used for things which are not common across domains
+  other vocabularies such as Dublin Core or FOAF) where possible with domain-specific
+  vocabularies used for things which are not common across domains
   (such as types of language).
 
-- An updated version of the Open Language Archives community (OLAC) vocabularies
+- An updated version of the Open Language Archives Community (OLAC) vocabularies
   [http://www.language-archives.org](http://www.language-archives.org);
   originally expressed as XML schemas. The new vocabulary is under development
-  under here:
+  here:
   [https://purl.archive.org/language-data-commons/terms](https://purl.archive.org/textcommons/terms)
 
 # Audience
@@ -43,7 +43,7 @@ or allow for user-friendly data entry.
 This profile covers various kinds of crate metadata:
 
 - **Structural** RO-Crate metadata - how the root dataset links to files, and
-  the abstract structure of nested collections (eg collections/corpora or other
+  the abstract structure of nested collections (e.g. collections/corpora or other
   curated datasets) and objects of study; linguistic Items, Sessions or Texts).
   This profile assumes that a repository (for example, an OCFL storage root,
   with an API for accessing it) exists and that it can at a minimum support 
@@ -66,11 +66,11 @@ This profile covers various kinds of crate metadata:
 The structural elements of a Language Data Commons RO-Crate are:
 
 - A Collection / Object hierarchy to allow language data to be
-  grouped - for example a corpus with sub-corpora, or collections of
+  grouped - for example, a corpus with sub-corpora, or collections of
   items (objects) from a particular region.
 
 - Dataset and File entities (as per RO-Crate). Files may be referenced
-  locally or via URI - eg from an API. If an RO-Crate contains files
+  locally or via URI - e.g. from an API. If an RO-Crate contains files
   they MUST be linked to the root dataset using `hasPart`
   relationships as per the RO-Crate specification.
 
@@ -126,9 +126,9 @@ Distributed Collections may reference member collections or Objects in
 hasMember property but should not include descriptions of Objects that
 are stored elsewhere in the repository.
 
-Objects are placed in a Collection using the `memberOf` property (`pcdm:memberOf`), which is rewuired. The reverse may also be encoded using the `hasMember` property on a Collection.
+Objects are placed in a Collection using the `memberOf` property (`pcdm:memberOf`), which is required. The reverse may also be encoded using the `hasMember` property on a Collection.
 
-The following diagram show how these relationships are encoded in a single "bundled" RO-Crate.
+The following diagram shows how these relationships are encoded in a single "bundled" RO-Crate.
 
 ![](media/bundled-crate.svg)
 
@@ -144,7 +144,7 @@ repository developers.
 
 - Choose to use a single bundled crate for a collection when all of these conditions are true:
 
-  - The collection final and is expected to be stable, ie here is
+  - The collection is final and is expected to be stable, i.e. there is
     negligible chance of having to withdraw any of its contents or
     files
 
@@ -159,7 +159,7 @@ repository developers.
 
   - The collection is not yet stable
 
-    -   New items being added or changed.
+    -   New items are being added or changed.
 
     -   There is a chance that some data may have to be taken down or withdrawn at the request of participants.
 
@@ -218,15 +218,15 @@ The root dataset must have at least these @type values: ["Dataset",
 
 ## Objects (#Object)
 
-An Object is a single unit linked to tightly related files for example -
-a dialogue or session in a speech study, a work (document) in a written
-corpus. This is based on the use if the term _Item_ in Alveo:
+An Object is a single unit linked to tightly related files, for example -
+a dialogue or session in a speech study, or a work (document) in a written
+corpus. This is based on the use of the term _Item_ in Alveo:
 
 >The data model that we have developed for the storage of language
 >resources is built around the concept of an item which corresponds
 >(loosely) to a record of a single communication event. An item is
 >often associated with a single text, audio or video resource but could
->include a number of resources, for example the different channels of
+>include a number of resources, for example, the different channels of
 >audio recording or an audio recording and associated textual
 >transcript. Items are grouped into collections which might correspond
 >to curated corpora such as ACE or informal collections such as a
@@ -237,7 +237,7 @@ corpus. This is based on the use if the term _Item_ in Alveo:
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
 
-If an RO-Crate contains a single Object the Root Dataset wouldt have a
+If an RO-Crate contains a single Object the Root Dataset would have a
 `@type` property of ["Dataset", "RepositoryObject"] with a
 conformsTo property pointing to the language-data-commons Object profile
 (this document).
@@ -257,7 +257,7 @@ below).
 
 ![](media/object-structure.svg)
 
-There are a number of terms that can be used to characterize resources -
+There are a number of terms that can be used to characterise resources -
 these use the schema.org mechanism of DefinedTerm and DefinedTermSet.
 
 ### A RepositoryObject:
@@ -290,7 +290,7 @@ undefined
 
 ### DerivedMaterial
 
-DerivedMaterial is a non-analytical derviation from PrimaryMaterial for example downsampled video or excerpted text.
+DerivedMaterial is a non-analytical derivation from PrimaryMaterial for example downsampled video or excerpted text.
 
 
 undefined
@@ -313,7 +313,7 @@ undefined
 CSV or similar tabular files are often used to represent transcribed
 speech or sign language data, sometimes also with time codes. To enable
 automated location of which column is which, use a [frictionless Table
-Schema](https://specs.frictionlessdata.io/table-schema/)described by a File entity in the crate. 
+Schema](https://specs.frictionlessdata.io/table-schema/) described by a File entity in the crate. 
 
 For example:
 ```json
@@ -487,7 +487,7 @@ Identifiers for Objects and Collections MUST be URIs.
 
 Internally, identifiers for all entities that do not have their own URIs
 MAY use the Archive and Packaging identifier scheme ([ARCP]) - which allows for a DNS-like namespacing of
-identifiers. For example for the Sydney Speaks corpus the top level
+identifiers. For example, for the Sydney Speaks corpus the top-level
 collection would have the ID:
 
     arcp://name,http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/
@@ -508,13 +508,13 @@ A person:
 ## How to record people's contributions
 
 Some corpora express ages and other demographics of participants - this
-presents a data modeling challenge, as age and some other variables change
+presents a data modelling challenge, as age and some other variables change
 over time so if the same person appears over time then we need to have a
 base Person with DoB etc and then time-based instances of the person
 with an age, social status, gender etc *at that time*.
 
 There are three levels at which contributions to an object can be
-modeled:
+modelled:
 
 1.  Include one or more Person items as context in a crate and reference
     them with properties such as schema:creator or the
@@ -528,12 +528,12 @@ modeled:
     required in listing contributions to a work use
     [ldac:PersonSnapshot].
 
-3.  If it is important to record lots of contributions to a work (eg in
-    analysis of a joint work) use schema:Action If more precision is
-    required in describing the provenance of items - eg this work on
-    [The declaration of the rights of man and of the
-    citizen](https://www.uts.edu.au/about/faculty-design-architecture-and-building/staff-showcase/writing-rights)
-    (Lorber-Kasunic & Sweetapple)
+3.  If it is important to record lots of contributions to a work (e.g. in
+    analysis of a joint work) use schema:Action. If more precision is
+    required in describing the provenance of items - e.g. this work on
+    [The Declaration of Rights of Man and of the
+    Citizen](https://www.uts.edu.au/about/faculty-design-architecture-and-building/staff-showcase/writing-rights)
+    (Lorber-Kasunic & Sweetapple).
 
     NOTE: if this approach is used special care will have to be taken in
     developing user interfaces and/or training communities to use this way
@@ -565,7 +565,7 @@ Paterson, Hugh Joseph. 2021. _Language Archive Records: Interoperability
 of Referencing Practices and Metadata Models_. United States -- North
 Dakota: The University of North Dakota M.A.
 [https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1](https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1)
-(3 May, 2022).
+(3 May 2022).
 
 # EXAMPLES
 
