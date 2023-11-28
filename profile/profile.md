@@ -84,7 +84,31 @@ and
 
 A conformant RO-Crate:
 
-undefined
+
+
+<table>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td>name</td><td>MUST</td><td>Text</td><td>The name of this dataset.</td></tr>
+<tr><td>license</td><td>MUST</td><td><a href="#type-CreativeWork">CreativeWork</a></td><td>Link to a document that describes the rights and obligations for users of this collection record. NOTE: This is does not necessarily cover the license terms that may apply to Objects in the collection which MAY have specific licensing. Licensing on other obkjects over-rides the license attached to a collection record.</td></tr>
+<tr><td>rightsHolder</td><td>MUST</td><td>Text, <a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>A person or organization owning or managing rights over the resource.</td></tr>
+<tr><td>author</td><td>MUST</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation responsible for creating this collection of data.</td></tr>
+<tr><td>accountablePerson</td><td>MUST</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation who is the data steward for this resource.</td></tr>
+<tr><td>publisher</td><td>MUST</td><td><a href="#type-Organization">Organization</a></td><td>The organisation responsible for releasing this dataset.</td></tr>
+<tr><td>description</td><td>MUST</td><td>TextArea</td><td>An abstract of the collection. Include as much detail as possible about the motivation and use of the dataset, including things that we do not yet have properties for. Max limit 200 words.</td></tr>
+<tr><td>isAccessibleForFree</td><td>MAY</td><td>Boolean</td><td>This is available under an Open Access license.</td></tr>
+<tr><td>isBasedOn</td><td>MAY</td><td>Text, URL</td><td>Link to or description of the an original resource at an institution that holds it. </td></tr>
+<tr><td>usageInfo</td><td>MAY</td><td>Text</td><td>This field should contain either a free text bibliographic citation for this material, e.g. 'Cite as: Musgrave (2023). Title of work. DOI' or provide additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'. If both are needed, use two fields.</td></tr>
+<tr><td>funder</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The organisation(s) responsible for funding the creation or collection of this dataset.</td></tr>
+<tr><td>citation</td><td>MAY</td><td><a href="#type-CreativeWork">CreativeWork</a></td><td>Associated publications.</td></tr>
+<tr><td>temporalCoverage</td><td>MAY</td><td>DateTime, Text</td><td>The range of years of creation for items in this dataset using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level.</td></tr>
+<tr><td>spatialCoverage</td><td>MAY</td><td><a href="#type-Place">Place</a></td><td>The place(s) that are the focus of the content. It is a sub-property of contentLocation intended primarily for more technical and detailed materials. For example with a dataset, it indicates areas that the dataset describes: a dataset Cape York languages would have spatialCoverage which was the place: the outline of the Cape.</td></tr>
+<tr><td>hasCollectionProtocol</td><td>MAY</td><td><a href="#type-CollectionProtocol">CollectionProtocol</a></td><td>A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection.</td></tr>
+<tr><td>contentLocation</td><td>MAY</td><td>ContentLocation</td><td>The location depicted or described in the content. For example, the location in a photograph or painting.</td></tr>
+<tr><td>hasMember</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a></td><td>The sub-collections, if any, associated with this collection.</td></tr>
+<tr><td>hasPart</td><td>MAY</td><td><a href="#type-File">File</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
+</table>
+
+
 
 ![](media/structure.svg)
 
@@ -168,7 +192,29 @@ The root dataset must have at least these @type values: ["Dataset",
 
 ### A RepositoryCollection:
 
-undefined
+
+
+<table>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td>inLanguage</td><td>MUST</td><td><a href="#type-Language">Language</a></td><td>The language(s) of the materials (including PromaryMaterials, DerivedMaterials and Annotations) in this collection.</td></tr>
+<tr><td>subjectLanguage</td><td>MUST</td><td><a href="#type-Language">Language</a></td><td>The languages that the materials in the collection are about (not the language that it is in). This is particularly used on Annotations that may talk about PrimaryMaterials or Derived </td></tr>
+<tr><td>name</td><td>MUST</td><td>Text</td><td>The name of this collection.</td></tr>
+<tr><td>accountablePerson</td><td>MUST</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation who is the data steward for this resource.</td></tr>
+<tr><td>conformsTo</td><td>MAY</td><td>Select</td><td>A link to the Text Commons RO-Crate profile for collections.</td></tr>
+<tr><td>author</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR.</td></tr>
+<tr><td>funder</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The organisation(s) responsible for funding the creation or collection of this data.</td></tr>
+<tr><td>citation</td><td>MAY</td><td><a href="#type-CreativeWork">CreativeWork</a></td><td>Associated publications.</td></tr>
+<tr><td>isBasedOn</td><td>MAY</td><td>Text, URL</td><td>Link to or description of the an original resource at an institution that holds it.</td></tr>
+<tr><td>description</td><td>MAY</td><td>TextArea</td><td>A description of the collection.</td></tr>
+<tr><td>temporalCoverage</td><td>MAY</td><td>DateTime, Text</td><td>The range of years of creation for items in this collection using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level.</td></tr>
+<tr><td>hasCollectionProtocol</td><td>MAY</td><td><a href="#type-CollectionProtocol">CollectionProtocol</a></td><td>A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection.</td></tr>
+<tr><td>hasMember</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a></td><td>The sub-collection.</td></tr>
+<tr><td>dateCreated</td><td>MAY</td><td>Date</td><td>The (earliest) date the data in this dataset were created.</td></tr>
+<tr><td>dateFreeText</td><td>MAY</td><td>Text</td><td>Date information which cannot be put in one of that standard date formats, eg 'mid 1970s' or it is not clear for example if it is a creation or publication date.</td></tr>
+<tr><td>holdingArchive</td><td>MAY</td><td><a href="#type-Organization">Organization</a>, Text</td><td>Organization where the original of this work or collection is housed</td></tr>
+</table>
+
+
 
 ## Objects (#Object)
 
@@ -216,7 +262,13 @@ these use the schema.org mechanism of DefinedTerm and DefinedTermSet.
 
 ### A RepositoryObject:
 
-undefined
+
+
+<table>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+</table>
+
+
 
 ## Files
 
@@ -284,7 +336,13 @@ For example:
 
 #### A [Language] entity:
 
-undefined
+
+
+<table>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+</table>
+
+
 
 ## Places
 
@@ -519,5 +577,3 @@ Dakota: The University of North Dakota M.A.
 [ldac:PersonSnapshot]: https://purl.archive.org/language-data-commons/terms#PersonSnapshot
 [ldac:depositor]: https://purl.archive.org/language-data-commons/terms#depositor
 [ldac:compiler]: https://purl.archive.org/language-data-commons/terms#compiler
-
-undefined
