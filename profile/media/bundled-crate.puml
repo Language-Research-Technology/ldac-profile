@@ -20,6 +20,9 @@ package "ROCrate: MyCorpus" {
    rectangle "RepositoryCollection: Collection A" as c2 {
 
    }
+
+
+   
    cc -down-> c2 : hasMember
 
    c2 -down-> o1 : hasMember
