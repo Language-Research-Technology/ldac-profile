@@ -11,11 +11,11 @@ package "ROCrate: MyCorpus" {
    rectangle "RepositoryObject, Dialogue: #2" as o2 {
 
    }
-   rectangle "File, Audio:  files/audio1.wav" as a1
-   rectangle "File, OthographicTranscription: files/csv1.csv" as csv1
+   rectangle "File: files/audio1.wav\nmaterialType: PrimaryMaterial\ncommunicationMode: SpokenLanguage" as a1
+   rectangle "File: files/csv1.csv\nmaterialType: Annotation" as csv1
    rectangle "Dataset: files" as files
 
-
+  csv1 -> a1: annotationOf
 
    rectangle "RepositoryCollection: Collection A" as c2 {
 
