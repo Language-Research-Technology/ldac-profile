@@ -203,7 +203,7 @@ describe('RepositoryObject', async function () {
     );
     assert.equal(result.errors.length, 0);
     fs.writeFileSync(
-      'examples/paradisec/item/NT1-001/ro-crate-metadata.json',
+      'examples/paradisec-item-NT1-001/ro-crate-metadata.json',
       JSON.stringify(crate.toJSON(), null, 2)
     );
 
@@ -478,7 +478,7 @@ describe('RepositoryObject', async function () {
 
 
     fs.writeFileSync(
-      'examples/paradisec/item/NT1-98007/ro-crate-metadata.json',
+      'examples/paradisec-item-NT1-98007/ro-crate-metadata.json',
       JSON.stringify(crate.toJSON(), null, 2)
     );
 
