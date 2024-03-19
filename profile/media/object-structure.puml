@@ -18,17 +18,17 @@ rectangle "Conversation" as c1 {
 
 }
 rectangle "Audio File" as audio1 {
-   rectangle "@id: [file.wav]\n@type: [File, PrimaryMaterial]\nmodality: [Speech]\ncommunicationGenre: [Interview]\nresourceType: [PrimaryMaterial]\nencodingFormat: [audio/x-wav]" 
+   rectangle "@id: [file.wav]\n@type: [File, PrimaryMaterial]\ncommunicationsMode: [SpokenLanguage]\ncommunicationGenre: [Interview]\nresourceType: [PrimaryMaterial]\nencodingFormat: [audio/x-wav]" 
 
 
 }
 rectangle "PDF File" as pdf1 {
-   rectangle "@id: [file.pdf]\n@type: [File, Annotation]\nannotationType: [Transcription]\nmodality: [Orthography]\nresourceType: [DerivedMaterial]\nencodingFormat: [Material/pdf]" as pt 
+   rectangle "@id: [file.pdf]\n@type: [File, Annotation]\nannotationType: [Transcription]\ncommunicationMode: [WrittenLanguage]\nresourceType: [DerivedMaterial]\nencodingFormat: [Material/pdf]" as pt 
 
 }
 
 rectangle "CSV File" as csv1 {
-   rectangle "@id: [file.csv]\n@type: [File, Annotation, DerivedMaterial]\nannotationType: [Transcription]\nmodality: [Orthography]\nresourceType: [DerivedMaterial]\nencodingFormat: [Material/csv]" 
+   rectangle "@id: [file.csv]\n@type: [File, Annotation, DerivedMaterial]\nannotationType: [Transcription]\ncommunicationMode: [WrittenLanguage]\nresourceType: [DerivedMaterial]\nencodingFormat: [text/csv]" 
 }
 
 c1 -down-> pdf1 : hasPart

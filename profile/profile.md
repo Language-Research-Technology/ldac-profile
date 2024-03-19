@@ -3,7 +3,7 @@ title: Language Data Commons RO-Crate Profile
 ---
 
 This document is a DRAFT RO-Crate profile for Language Data resources. The
-profile specifies the contents RO-Crate Metadata Documents for language
+profile specifies the contents of RO-Crate Metadata Documents for language
 resources and gives guidance on how to structure language data collections both
 at the RO-Crate package level and in a repository containing multiple packages.
 
@@ -16,14 +16,14 @@ The core metadata vocabularies for this profile are:
   which is mostly Schema.org terms with a handful of additions. Following
   RO-Crate practice, basic metadata terms such as "who, what, where" and
   bibliographic-style descriptions are chosen from schema.org (in preference to
-  other vocabularies such as Dublin Core or FOAF) where possible with domain
-  specific vocabularies used for things which are not common across domains
+  other vocabularies such as Dublin Core or FOAF) where possible with domain-specific
+  vocabularies used for things which are not common across domains
   (such as types of language).
 
-- An updated version of the Open Language Archives community (OLAC) vocabularies
+- An updated version of the Open Language Archives Community (OLAC) vocabularies
   [http://www.language-archives.org](http://www.language-archives.org);
   originally expressed as XML schemas. The new vocabulary is under development
-  under here:
+  here:
   [https://purl.archive.org/language-data-commons/terms](https://purl.archive.org/textcommons/terms)
 
 # Audience
@@ -43,7 +43,7 @@ or allow for user-friendly data entry.
 This profile covers various kinds of crate metadata:
 
 - **Structural** RO-Crate metadata - how the root dataset links to files, and
-  the abstract structure of nested collections (eg collections/corpora or other
+  the abstract structure of nested collections (e.g. collections/corpora or other
   curated datasets) and objects of study; linguistic Items, Sessions or Texts).
   This profile assumes that a repository (for example, an OCFL storage root,
   with an API for accessing it) exists and that it can at a minimum support 
@@ -66,11 +66,11 @@ This profile covers various kinds of crate metadata:
 The structural elements of a Language Data Commons RO-Crate are:
 
 - A Collection / Object hierarchy to allow language data to be
-  grouped - for example a corpus with sub-corpora, or collections of
+  grouped - for example, a corpus with sub-corpora, or collections of
   items (objects) from a particular region.
 
 - Dataset and File entities (as per RO-Crate). Files may be referenced
-  locally or via URI - eg from an API. If an RO-Crate contains files
+  locally or via URI - e.g. from an API. If an RO-Crate contains files
   they MUST be linked to the root dataset using `hasPart`
   relationships as per the RO-Crate specification.
 
@@ -84,18 +84,29 @@ and
 
 A conformant RO-Crate:
 
-- MUST have a `@type` attribute that that includes in its values `Dataset` and either `RepositoryCollection` or `RepositoryObject`
-
-- MUST have a conformsTo which references the profile URL for either a Collection (https://purl.archive.org/language-data-commons/profile#Collection) or an Object (https://purl.archive.org/language-data-commons/profile#Object) but not both
-
-- MUST have a `license` property with reference to an entity of type [File, DataReuseLicense] with an `@id` property that starts with `LICENSE` and a `URL` property that is a valid URL
-
-- MUST have  a `datePublished` property (per RO-Crate) exactly one value which is a string that parses as ISO-8601 to the level of at least a year. E.g.: 2000, 2000-10, 2000-10-01T12:34:56+10
-
-- MUST have a `publisher` property (per RO-Crate) which MUST be have an ID which is a URL
 
 
-- SHOULD have property names which resolve using the supplied context
+<table>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td>name</td><td>MUST</td><td>Text</td><td>The name of this dataset.</td></tr>
+<tr><td>license</td><td>MUST</td><td><a href="#type-CreativeWork">CreativeWork</a></td><td>Link to a document that describes the rights and obligations for users of this collection record. NOTE: This is does not necessarily cover the license terms that may apply to Objects in the collection which MAY have specific licensing. Licensing on other obkjects over-rides the license attached to a collection record.</td></tr>
+<tr><td>rightsHolder</td><td>MUST</td><td>Text, <a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>A person or organization owning or managing rights over the resource.</td></tr>
+<tr><td>author</td><td>MUST</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation responsible for creating this collection of data.</td></tr>
+<tr><td>accountablePerson</td><td>MUST</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation who is the data steward for this resource.</td></tr>
+<tr><td>publisher</td><td>MUST</td><td><a href="#type-Organization">Organization</a></td><td>The organisation responsible for releasing this dataset.</td></tr>
+<tr><td>description</td><td>MUST</td><td>TextArea</td><td>An abstract of the collection. Include as much detail as possible about the motivation and use of the dataset, including things that we do not yet have properties for. Max limit 200 words.</td></tr>
+<tr><td>isAccessibleForFree</td><td>MAY</td><td>Boolean</td><td>This is available under an Open Access license.</td></tr>
+<tr><td>isBasedOn</td><td>MAY</td><td>Text, URL</td><td>Link to or description of the an original resource at an institution that holds it. </td></tr>
+<tr><td>usageInfo</td><td>MAY</td><td>Text</td><td>This field should contain either a free text bibliographic citation for this material, e.g. 'Cite as: Musgrave (2023). Title of work. DOI' or provide additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'. If both are needed, use two fields.</td></tr>
+<tr><td>funder</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The organisation(s) responsible for funding the creation or collection of this dataset.</td></tr>
+<tr><td>citation</td><td>MAY</td><td><a href="#type-CreativeWork">CreativeWork</a></td><td>Associated publications.</td></tr>
+<tr><td>temporalCoverage</td><td>MAY</td><td>DateTime, Text</td><td>The range of years of creation for items in this dataset using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level.</td></tr>
+<tr><td>spatialCoverage</td><td>MAY</td><td><a href="#type-Place">Place</a></td><td>The place(s) that are the focus of the content. It is a sub-property of contentLocation intended primarily for more technical and detailed materials. For example with a dataset, it indicates areas that the dataset describes: a dataset Cape York languages would have spatialCoverage which was the place: the outline of the Cape.</td></tr>
+<tr><td>hasCollectionProtocol</td><td>MAY</td><td><a href="#type-CollectionProtocol">CollectionProtocol</a></td><td>A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection.</td></tr>
+<tr><td>contentLocation</td><td>MAY</td><td>ContentLocation</td><td>The location depicted or described in the content. For example, the location in a photograph or painting.</td></tr>
+<tr><td>hasMember</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a></td><td>The sub-collections, if any, associated with this collection.</td></tr>
+<tr><td>hasPart</td><td>MAY</td><td><a href="#type-File">File</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
+</table>
 
 
 
@@ -115,9 +126,9 @@ Distributed Collections may reference member collections or Objects in
 hasMember property but should not include descriptions of Objects that
 are stored elsewhere in the repository.
 
-Objects are placed in a Collection using the `memberOf` property (`pcdm:memberOf`), which is rewuired. The reverse may also be encoded using the `hasMember` property on a Collection.
+Objects are placed in a Collection using the `memberOf` property (`pcdm:memberOf`), which is required. The reverse may also be encoded using the `hasMember` property on a Collection.
 
-The following diagram show how these relationships are encoded in a single "bundled" RO-Crate.
+The following diagram shows how these relationships are encoded in a single "bundled" RO-Crate.
 
 ![](media/bundled-crate.svg)
 
@@ -133,7 +144,7 @@ repository developers.
 
 - Choose to use a single bundled crate for a collection when all of these conditions are true:
 
-  - The collection final and is expected to be stable, ie here is
+  - The collection is final and is expected to be stable, i.e. there is
     negligible chance of having to withdraw any of its contents or
     files
 
@@ -148,7 +159,7 @@ repository developers.
 
   - The collection is not yet stable
 
-    -   New items being added or changed.
+    -   New items are being added or changed.
 
     -   There is a chance that some data may have to be taken down or withdrawn at the request of participants.
 
@@ -181,39 +192,41 @@ The root dataset must have at least these @type values: ["Dataset",
 
 ### A RepositoryCollection:
 
-- MUST have an @id property and the value must be a valid URI or "./"
 
-- MUST have a type value of “RepositoryCollection” and MUST NOT have a type of “RepositoryObject”
 
-- MUST have a single name value which is a string with one or more characters
-
-- MUST have a conformsTo which references the Collection profile URL
-
-- MUST have at least one `description` value which is a string with one or more characters
-
-- MAY have one or more references to Collection or Object entities, which may be included in the crate or have MUST have @id properties which are URIs
-
-- MAY have a `modality` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
-
-- MAY have a `linguisticGenre` property which is a reference to one or more of the Langauge Data Commons LinguistGenre Terms:  Formulaic, Thesaurus, Dialogue, Oratory, Report, Ludic, Procedural, Narrative, Interview, Drama, Informational (this information may be summarisable from collection members)
-
-- MAY have a `language` property which is a reference to one or more Language items
-
-- MAY have a `contentLocation` property which is a reference to one or more `Place` items
+<table>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td>inLanguage</td><td>MUST</td><td><a href="#type-Language">Language</a></td><td>The language(s) of the materials (including PromaryMaterials, DerivedMaterials and Annotations) in this collection.</td></tr>
+<tr><td>subjectLanguage</td><td>MUST</td><td><a href="#type-Language">Language</a></td><td>The languages that the materials in the collection are about (not the language that it is in). This is particularly used on Annotations that may talk about PrimaryMaterials or Derived </td></tr>
+<tr><td>name</td><td>MUST</td><td>Text</td><td>The name of this collection.</td></tr>
+<tr><td>accountablePerson</td><td>MUST</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation who is the data steward for this resource.</td></tr>
+<tr><td>conformsTo</td><td>MAY</td><td>Select</td><td>A link to the Text Commons RO-Crate profile for collections.</td></tr>
+<tr><td>author</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR.</td></tr>
+<tr><td>funder</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The organisation(s) responsible for funding the creation or collection of this data.</td></tr>
+<tr><td>citation</td><td>MAY</td><td><a href="#type-CreativeWork">CreativeWork</a></td><td>Associated publications.</td></tr>
+<tr><td>isBasedOn</td><td>MAY</td><td>Text, URL</td><td>Link to or description of the an original resource at an institution that holds it.</td></tr>
+<tr><td>description</td><td>MAY</td><td>TextArea</td><td>A description of the collection.</td></tr>
+<tr><td>temporalCoverage</td><td>MAY</td><td>DateTime, Text</td><td>The range of years of creation for items in this collection using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level.</td></tr>
+<tr><td>hasCollectionProtocol</td><td>MAY</td><td><a href="#type-CollectionProtocol">CollectionProtocol</a></td><td>A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection.</td></tr>
+<tr><td>hasMember</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a></td><td>The sub-collection.</td></tr>
+<tr><td>dateCreated</td><td>MAY</td><td>Date</td><td>The (earliest) date the data in this dataset were created.</td></tr>
+<tr><td>dateFreeText</td><td>MAY</td><td>Text</td><td>Date information which cannot be put in one of that standard date formats, eg 'mid 1970s' or it is not clear for example if it is a creation or publication date.</td></tr>
+<tr><td>holdingArchive</td><td>MAY</td><td><a href="#type-Organization">Organization</a>, Text</td><td>Organization where the original of this work or collection is housed</td></tr>
+</table>
 
 
 
 ## Objects (#Object)
 
-An Object is a single unit linked to tightly related files for example -
-a dialogue or session in a speech study, a work (document) in a written
-corpus. This is based on the use if the term _Item_ in Alveo:
+An Object is a single unit linked to tightly related files, for example -
+a dialogue or session in a speech study, or a work (document) in a written
+corpus. This is based on the use of the term _Item_ in Alveo:
 
 >The data model that we have developed for the storage of language
 >resources is built around the concept of an item which corresponds
 >(loosely) to a record of a single communication event. An item is
 >often associated with a single text, audio or video resource but could
->include a number of resources, for example the different channels of
+>include a number of resources, for example, the different channels of
 >audio recording or an audio recording and associated textual
 >transcript. Items are grouped into collections which might correspond
 >to curated corpora such as ACE or informal collections such as a
@@ -224,7 +237,7 @@ corpus. This is based on the use if the term _Item_ in Alveo:
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
 
-If an RO-Crate contains a single Object the Root Dataset wouldt have a
+If an RO-Crate contains a single Object the Root Dataset would have a
 `@type` property of ["Dataset", "RepositoryObject"] with a
 conformsTo property pointing to the language-data-commons Object profile
 (this document).
@@ -244,18 +257,16 @@ below).
 
 ![](media/object-structure.svg)
 
-There are a number of terms that can be used to characterize resources -
+There are a number of terms that can be used to characterise resources -
 these use the schema.org mechanism of DefinedTerm and DefinedTermSet.
 
 ### A RepositoryObject:
 
-- MUST have a conformsTo which references the Object profile URL
 
-- MAY have a `language` property which is a reference to one or more Language items
 
-- MAY have a `contentLocation` property which is a reference to one or more `Place` items
-
-- SHOULD have a hasPart property referencing at least one item of type [File, PrimaryMaterial] and MAY have [File, Annotation] and [File, DerivedMaterial] items which are inter-related using annotionOf, derivedFrom properties.
+<table>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+</table>
 
 
 
@@ -275,41 +286,19 @@ analysis of the `PrimaryMaterial` or `DerivedMaterial`.
 
 #### A [File, PrimaryMaterial]:
 
-- MUST have a @type value of “PrimaryMaterial" and MAY have other @type values
-
-- MAY have a `modality` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
-
-- MUST a language property, or the RepositoryObject that is `partOf` MUST have a language property, referencing a Language item (language my be inhereted from the parent RepoObject)
-
-
+undefined
 
 ### DerivedMaterial
 
-DerivedMaterial is a non-analytical derviation from PrimaryMaterial for example downsampled video or excerpted text.
+DerivedMaterial is a non-analytical derivation from PrimaryMaterial for example downsampled video or excerpted text.
 
 
-- MUST have a @type value of “DerivedMaterial" and MAY have other @type values
-
-- MAY have a `modality` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
-
-- MUST a language property, or the RepositoryObject that is `partOf` MUST have a language property, referencing a Language item (language my be inhereted from the parent RepoObject)
-
-- SHOULD have a derivedFrom property which references a PrimaryMaterial entity
-
-
+undefined
 
 
 #### a [File, DerivedMaterial]:
 
-- MUST have a @type value of “DerivedMaterial" and MAY have other @type values
-
-- MAY have a `modality` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
-
-- MUST a language property, or the RepositoryObject that is `partOf` MUST have a language property, referencing a Language item (language my be inhereted from the parent RepoObject)
-
-- SHOULD have a derivedFrom property which references a PrimaryMaterial entity
-
-
+undefined
 
 ### Annotation
 
@@ -317,22 +306,14 @@ An annotation is a description or analysis of other material. More than one type
 
 #### a [File, Annotation]:
 
-- MUST have a @type value of “Annotation" and MAY have other @type values
-
-- MAY have an `annotationType` property which SHOULD be a reference to one or more of the Language Data Commons Modality Terms: SpokenLanguage,  WrittenLanguage,  Song,  Gesture,  SignLanguage,  WhistledLanguage (this information may be summarisable from collection members)
-
-- MAY have a `conformsTo` property which references a schema file which in turn MUST have `conformsTo` property of  {"@id": "https://specs.frictionlessdata.io/table-schema/"} 
-
-- SHOULD have an `annotationOf` property which references another entity
-
-
+undefined
 
 #### Describing the columns in CSV or other tabular data Annotation
 
 CSV or similar tabular files are often used to represent transcribed
 speech or sign language data, sometimes also with time codes. To enable
 automated location of which column is which, use a [frictionless Table
-Schema](https://specs.frictionlessdata.io/table-schema/)described by a File entity in the crate. 
+Schema](https://specs.frictionlessdata.io/table-schema/) described by a File entity in the crate. 
 
 For example:
 ```json
@@ -355,7 +336,11 @@ For example:
 
 #### A [Language] entity:
 
-- MUST have an @id property and the value must start with `https://collection.aiatsis.gov.au/austlang/language/` or `https://glottolog.org/resource/`
+
+
+<table>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+</table>
 
 
 
@@ -457,7 +442,7 @@ The place in which data was collected may be indicated using the `contentLocatio
     "@id": "https://purl.archive.org/language-data-commons/profile#Object"
   },
   "datePublished": "2019-09-25T23:52:02.000Z",
-  "language": [
+  "inLanguage": [
     {
       "@id": "https://glottolog.org/resource/languoid/id/bisl1239"
     },
@@ -502,7 +487,7 @@ Identifiers for Objects and Collections MUST be URIs.
 
 Internally, identifiers for all entities that do not have their own URIs
 MAY use the Archive and Packaging identifier scheme ([ARCP]) - which allows for a DNS-like namespacing of
-identifiers. For example for the Sydney Speaks corpus the top level
+identifiers. For example, for the Sydney Speaks corpus the top-level
 collection would have the ID:
 
     arcp://name,http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/
@@ -523,13 +508,13 @@ A person:
 ## How to record people's contributions
 
 Some corpora express ages and other demographics of participants - this
-presents a data modeling challenge, as age and some other variables change
+presents a data modelling challenge, as age and some other variables change
 over time so if the same person appears over time then we need to have a
 base Person with DoB etc and then time-based instances of the person
 with an age, social status, gender etc *at that time*.
 
 There are three levels at which contributions to an object can be
-modeled:
+modelled:
 
 1.  Include one or more Person items as context in a crate and reference
     them with properties such as schema:creator or the
@@ -543,12 +528,12 @@ modeled:
     required in listing contributions to a work use
     [ldac:PersonSnapshot].
 
-3.  If it is important to record lots of contributions to a work (eg in
-    analysis of a joint work) use schema:Action If more precision is
-    required in describing the provenance of items - eg this work on
-    [The declaration of the rights of man and of the
-    citizen](https://www.uts.edu.au/about/faculty-design-architecture-and-building/staff-showcase/writing-rights)
-    (Lorber-Kasunic & Sweetapple)
+3.  If it is important to record lots of contributions to a work (e.g. in
+    analysis of a joint work) use schema:Action. If more precision is
+    required in describing the provenance of items - e.g. this work on
+    [The Declaration of Rights of Man and of the
+    Citizen](https://www.uts.edu.au/about/faculty-design-architecture-and-building/staff-showcase/writing-rights)
+    (Lorber-Kasunic & Sweetapple).
 
     NOTE: if this approach is used special care will have to be taken in
     developing user interfaces and/or training communities to use this way
@@ -580,7 +565,7 @@ Paterson, Hugh Joseph. 2021. _Language Archive Records: Interoperability
 of Referencing Practices and Metadata Models_. United States -- North
 Dakota: The University of North Dakota M.A.
 [https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1](https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1)
-(3 May, 2022).
+(3 May 2022).
 
 # EXAMPLES
 
