@@ -8,14 +8,14 @@ resources and gives guidance on how to structure language data collections both
 at the RO-Crate package level and in a repository containing multiple packages.
 
 This profile assumes that the principles and standards set out in the Arkisto
-platform, or similar compatible approaches are being used.
+platform, or similar compatible approaches, are being used.
 
 The core metadata vocabularies for this profile are:
 
 - RO-Crate recommendations for data packaging and basic discoverability metadata
   which is mostly Schema.org terms with a handful of additions. Following
   RO-Crate practice, basic metadata terms such as "who, what, where" and
-  bibliographic-style descriptions are chosen from schema.org (in preference to
+  bibliographic-style descriptions are chosen from Schema.org (in preference to
   other vocabularies such as Dublin Core or FOAF) where possible with domain-specific
   vocabularies used for things which are not common across domains
   (such as types of language).
@@ -70,7 +70,7 @@ The structural elements of a Language Data Commons RO-Crate are:
   items (objects) from a particular region.
 
 - Dataset and File entities (as per RO-Crate). Files may be referenced
-  locally or via URI - e.g. from an API. If an RO-Crate contains files
+  locally or via URI, e.g. from an API. If an RO-Crate contains files
   they MUST be linked to the root dataset using `hasPart`
   relationships as per the RO-Crate specification.
 
@@ -116,8 +116,8 @@ A collection such as a corpus may be stored in a repository or
 transmitted either as:
 
 - A **distributed** collection: a set of individual RO-Crates which
-  reference separate collection records with ONE Object and one
-  Collection per crate
+  reference separate collection records with one Object and one
+  Collection per crate.
 
 - A **bundled** single crate which contains all the Collection and
   Object data.
@@ -142,22 +142,22 @@ repository developers.
 
 ## When to choose collection-as-crate ("bundled") vs collection-in-multiple crates ("distributed")
 
-- Choose to use a single bundled crate for a collection when all of these conditions are true:
+- Use a single bundled crate for a collection when all of these conditions are true:
 
   - The collection is final and is expected to be stable, i.e. there is
     negligible chance of having to withdraw any of its contents or
-    files
+    files.
 
   - The collection and all its files can easily be transferred in a
-    single transaction - say 20Gb total
+    single transaction - say 20Gb total.
 
-  - All the material in the corpus shares the same license for reuse
+  - All the material in the corpus shares the same license for reuse.
 
 - Split a collection into fragmented RepositoryCollection and
-  RepositoryObject crates - with one crate per repository object
+  RepositoryObject crates, with one crate per repository object,
   when any of these conditions are true:
 
-  - The collection is not yet stable
+  - The collection is not yet stable:
 
     -   New items are being added or changed.
 
@@ -168,7 +168,7 @@ repository developers.
 
   - There is more than one data reuse license applicable.
 
-## Collection (#Collection)
+## Collection
 
 A collection is a group of related Objects. Examples of collections
 include corpora, and sub-corpora, as well as aggregations of cultural
@@ -181,7 +181,7 @@ Alveo usage:
 > sample of documents from the AustLit archive
 > ([http://www.austlit.edu.au/](http://www.austlit.edu.au/)).
 
-When an RO-Crate is used to package a collection which is part of
+When an RO-Crate is used to package a collection that is part of
 another Collection it has a memberOf property which references a
 resolvable ID (within the context of a repository or service) of the
 parent Collection. The Collection may also list its members in a hasMember
@@ -216,9 +216,9 @@ The root dataset must have at least these @type values: ["Dataset",
 
 
 
-## Objects (#Object)
+## Object
 
-An Object is a single unit linked to tightly related files, for example -
+An Object is a single unit linked to tightly related files, for example,
 a dialogue or session in a speech study, or a work (document) in a written
 corpus. This is based on the use of the term _Item_ in Alveo:
 
@@ -227,7 +227,7 @@ corpus. This is based on the use of the term _Item_ in Alveo:
 >(loosely) to a record of a single communication event. An item is
 >often associated with a single text, audio or video resource but could
 >include a number of resources, for example, the different channels of
->audio recording or an audio recording and associated textual
+>audio recording, or an audio recording and associated textual
 >transcript. Items are grouped into collections which might correspond
 >to curated corpora such as ACE or informal collections such as a
 >sample of documents from the AustLit archive
@@ -250,7 +250,7 @@ Objects SHOULD have files (which may be included in an RO-Crate for the
 object, or as part of a collection crate).
 
 In this example the Object in question is an interview from a speech
-corpus with three files - the diagram shows the relationships between
+corpus with three files. The diagram shows the relationships between
 the object and its files (and the contextual metadata of a Person who
 takes the role of the speaker/informant (discussed in more detail
 below).
@@ -258,7 +258,7 @@ below).
 ![](media/object-structure.svg)
 
 There are a number of terms that can be used to characterise resources -
-these use the schema.org mechanism of DefinedTerm and DefinedTermSet.
+these use the Schema.org mechanism of DefinedTerm and DefinedTermSet.
 
 ### A RepositoryObject:
 
@@ -273,7 +273,7 @@ these use the schema.org mechanism of DefinedTerm and DefinedTermSet.
 ## Files
 
 There are three important types of files (or references to other
-works) that may be included - `PrimaryMaterial` - which is a recording or
+works) that may be included: `PrimaryMaterial` which is a recording or
 original text, or a citation of or proxy for it, `DerivedMaterial` which
 has been generated or sampled from primary material by a process such as format
 conversion or digitization, and `Annotation`, which contains one or more types of
@@ -281,7 +281,7 @@ analysis of the `PrimaryMaterial` or `DerivedMaterial`.
 
 ### PrimaryMaterial
 
-`PrimaryMaterial` MAY be a video or audio file if it is available or MAY be a ContextualEntity referencing a primary text such as a book.
+`PrimaryMaterial` may be a video or audio file if it is available or may be a ContextualEntity referencing a primary text such as a book.
 
 
 #### A [File, PrimaryMaterial]:
@@ -290,7 +290,7 @@ undefined
 
 ### DerivedMaterial
 
-DerivedMaterial is a non-analytical derivation from PrimaryMaterial for example downsampled video or excerpted text.
+DerivedMaterial is a non-analytical derivation from PrimaryMaterial, for example, downsampled video or excerpted text.
 
 
 undefined
@@ -486,8 +486,8 @@ The place in which data was collected may be indicated using the `contentLocatio
 Identifiers for Objects and Collections MUST be URIs.
 
 Internally, identifiers for all entities that do not have their own URIs
-MAY use the Archive and Packaging identifier scheme ([ARCP]) - which allows for a DNS-like namespacing of
-identifiers. For example, for the Sydney Speaks corpus the top-level
+may use the Archive and Packaging identifier scheme ([ARCP]), which allows for a DNS-like namespacing of
+identifiers. For example, the Sydney Speaks corpus top-level
 collection would have the ID:
 
     arcp://name,http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/
@@ -509,9 +509,9 @@ A person:
 
 Some corpora express ages and other demographics of participants - this
 presents a data modelling challenge, as age and some other variables change
-over time so if the same person appears over time then we need to have a
-base Person with DoB etc and then time-based instances of the person
-with an age, social status, gender etc *at that time*.
+over time, so if the same person appears over time then we need to have a
+base Person with DoB etc. and then time-based instances of the person
+with an age, social status, gender etc. *at that time*.
 
 There are three levels at which contributions to an object can be
 modelled:
@@ -530,14 +530,14 @@ modelled:
 
 3.  If it is important to record lots of contributions to a work (e.g. in
     analysis of a joint work) use schema:Action. If more precision is
-    required in describing the provenance of items - e.g. this work on
+    required in describing the provenance of items, e.g. this work on
     [The Declaration of Rights of Man and of the
     Citizen](https://www.uts.edu.au/about/faculty-design-architecture-and-building/staff-showcase/writing-rights)
     (Lorber-Kasunic & Sweetapple).
 
-    NOTE: if this approach is used special care will have to be taken in
+    NOTE: If this approach is used, special care will have to be taken in
     developing user interfaces and/or training communities to use this way
-    of modelling metadata - the user need not see the underlying
+    of modelling metadata; the user need not see the underlying
     structure. This profile does not give advice about how to do this as
     we have not seen a use case that requires it.
 
