@@ -22,15 +22,16 @@ program
 
 program.parse(process.argv);
 
+
 function main(cratePath, options) {
   try {
     const opt = { alwaysAsArray: true, link: true };
     const crate = new ROCrate(JSON.parse(fs.readFileSync(cratePath, 'utf8')), opt);
     var result = LdacProfile.validate(crate);
     if (options.errors) {
-      console.log(result.errors);
+      console.log(JSON.stringify(result.errors, null, 4));
     } else {
-      console.log(result);
+      console.log(JSON.stringify(result, null, 4));
     }
   } catch (error) {
     if (error.code === 'ENOENT') {
