@@ -26,6 +26,8 @@ The core metadata vocabularies for this profile are:
   here:
   [https://purl.archive.org/language-data-commons/terms](https://purl.archive.org/textcommons/terms)
 
+<br>
+
 # Audience
 
 This document is primarily for use by tool developers, data scientists
@@ -37,6 +39,8 @@ metadata in XML format by hand we do not expect our users to have to
 deal directly with the JSON-LD presented here, this document is for tool
 developers to build systems that crosswalk data from existing systems,
 or allow for user-friendly data entry.
+
+<br>
 
 # About this profile
 
@@ -60,6 +64,8 @@ This profile covers various kinds of crate metadata:
 
 - **Contextual metadata** - how to link people who had speaking,
   authoring, collection roles, places, subjects.
+
+<br>
 
 # Structural metadata
 
@@ -86,7 +92,7 @@ A conformant RO-Crate:
 
 ${rules.Dataset}
 
-![](media/structure.svg)
+![Structure of collections that conform to the Language Data Commons Profile](media/structure.svg)
 
 A collection such as a corpus may be stored in a repository or
 transmitted either as:
@@ -106,15 +112,16 @@ Objects are placed in a Collection using the \`memberOf\` property (\`pcdm:membe
 
 The following diagram shows how these relationships are encoded in a single "bundled" RO-Crate.
 
-![](media/bundled-crate.svg)
+![Self-contained collection crate with all resources](media/bundled-crate.svg)
 
 The next diagram shows how distributed crates (with one RO-Crate per Object and Collection) are linked.
 
-![](media/distributed-crates.svg)
+![Distributed crate with links to object crates](media/distributed-crates.svg)
 
 Which linking strategy is used is an implementation choice for
 repository developers.
 
+<br>
 
 ## When to choose collection-as-crate ("bundled") vs collection-in-multiple crates ("distributed")
 
@@ -144,6 +151,8 @@ repository developers.
 
   - There is more than one data reuse license applicable.
 
+<br>
+
 ## Collection
 
 A collection is a group of related Objects. Examples of collections
@@ -169,6 +178,8 @@ The root dataset must have at least these \@type values: \["Dataset",
 ### A RepositoryCollection:
 
 ${rules.RepositoryCollection}
+
+<br>
 
 ## Object
 
@@ -203,13 +214,13 @@ property referencing this document. For example:
 Objects SHOULD have files (which may be included in an RO-Crate for the
 object, or as part of a collection crate).
 
-In this example the Object in question is an interview from a speech
+In this example, the Object in question is an interview from a speech
 corpus with three files. The diagram shows the relationships between
 the object and its files (and the contextual metadata of a Person who
 takes the role of the speaker/informant (discussed in more detail
 below).
 
-![](media/object-structure.svg)
+![Structure of an Object crate](media/object-structure.svg)
 
 There are a number of terms that can be used to characterise resources -
 these use the Schema.org mechanism of DefinedTerm and DefinedTermSet.
@@ -217,6 +228,8 @@ these use the Schema.org mechanism of DefinedTerm and DefinedTermSet.
 ### A RepositoryObject:
 
 ${rules.RepositoryObject}
+
+<br>
 
 ## Files
 
@@ -244,7 +257,7 @@ DerivedMaterial is a non-analytical derivation from PrimaryMaterial, for example
 ${rules.DerivedMaterial}
 
 
-#### a [File, DerivedMaterial]:
+#### A [File, DerivedMaterial]:
 
 ${rules.DerivedMaterial}
 
@@ -252,7 +265,7 @@ ${rules.DerivedMaterial}
 
 An annotation is a description or analysis of other material. More than one type of annotation may be present in a file.
 
-#### a [File, Annotation]:
+#### A [File, Annotation]:
 
 ${rules.Annotation}
 
@@ -273,16 +286,15 @@ ${exampleEntities('art', ['art_schema.json'])}
 
 ${rules.Language}
 
+<br>
+
 ## Places
-
-
 
 The place in which data was collected may be indicated using the \`contentLocation\` property. 
 
-
 ${exampleEntities('paradisec-item-NT1-001', ['./', 'https://www.ethnologue.com/country/VU', '#Vanuatu'])}
 
-
+<br>
 
 # Identifiers
 
@@ -307,6 +319,7 @@ A person:
 
     arcp://name,http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/person/54
 
+<br>
 
 ## How to record people's contributions
 
@@ -344,6 +357,8 @@ modelled:
     structure. This profile does not give advice about how to do this as
     we have not seen a use case that requires it.
 
+<br>
+
 ## Collection events such as "Sessions"
 
 Where data is collected from participants in a speech study with
@@ -358,6 +373,8 @@ to the _same_ schema while having a local copy of the schema, as per
 RO-Crate best practice of having all local context to use a data
 packages in the package where possible.
 
+<br>
+
 # References
 
 Himmelmann, Nikolaus P. 2012. Linguistic data types and the interface
@@ -369,6 +386,8 @@ of Referencing Practices and Metadata Models_. United States \-- North
 Dakota: The University of North Dakota M.A.
 [https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1](https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1)
 (3 May 2022).
+
+<br>
 
 # EXAMPLES
 
