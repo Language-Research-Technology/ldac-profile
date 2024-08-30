@@ -76,9 +76,9 @@ The structural elements of a Language Data Commons RO-Crate are:
   items (objects) from a particular region.
 
 - Dataset and File entities (as per RO-Crate). Files may be referenced
-  locally or via URI, e.g. from an API. If an RO-Crate contains files
-  they MUST be linked to the root dataset using \`hasPart\`
-  relationships as per the RO-Crate specification.
+  locally or via URI, e.g. from an API. If an RO-Crate contains files they MUST be linked to the root dataset as per the RO-Crate specification using either:
+  - \`hasPart\` relationships on the object(s), or
+  - \`isPartOf\` relationships on the file(s).
 
 NOTE: The terms Collection and Object
 are encoded in RO-Crate metadata using RepositoryCollection and
