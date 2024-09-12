@@ -112,7 +112,7 @@ are stored elsewhere in the repository.
 
 ## Bi-directional relationships
 
-| Term          | Inverse Of | Micro        |
+| Superset Term | Inverse Of | Subset Term  |
 | ------------- | ---------- | ------------ |
 | \`hasPart\`   | ⟷          | \`isPartOf\` |
 | \`hasMember\` | ⟷          | \`memberOf\` |
