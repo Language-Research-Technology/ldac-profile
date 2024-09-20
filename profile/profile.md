@@ -149,7 +149,7 @@ repository developers.
     files.
 
   - The collection and all its files can easily be transferred in a
-    single transaction - say 20Gb total.
+    single transaction - say 2Gb total.
 
   - All the material in the corpus shares the same license for reuse.
 
