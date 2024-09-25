@@ -26,6 +26,8 @@ The core metadata vocabularies for this profile are:
   here:
   [https://purl.archive.org/language-data-commons/terms](https://purl.archive.org/textcommons/terms)
 
+<br>
+
 # Audience
 
 This document is primarily for use by tool developers, data scientists
@@ -38,6 +40,8 @@ deal directly with the JSON-LD presented here, this document is for tool
 developers to build systems that crosswalk data from existing systems,
 or allow for user-friendly data entry.
 
+<br>
+
 # About this profile
 
 This profile covers various kinds of crate metadata:
@@ -46,8 +50,8 @@ This profile covers various kinds of crate metadata:
   the abstract structure of nested collections (e.g. collections/corpora or other
   curated datasets) and objects of study; linguistic Items, Sessions or Texts).
   This profile assumes that a repository (for example, an OCFL storage root,
-  with an API for accessing it) exists and that it can at a minimum support 
-  (a)  listing all items of the repository and returning their RO-Crate metadata, and 
+  with an API for accessing it) exists and that it can at a minimum support
+  (a) listing all items of the repository and returning their RO-Crate metadata, and
   (b) retrieving an item given its ID.
 
 - **Types of language data** - is this resource a dialogue? A written text? A
@@ -61,6 +65,8 @@ This profile covers various kinds of crate metadata:
 - **Contextual metadata** - how to link people who had speaking,
   authoring, collection roles, places, subjects.
 
+<br>
+
 # Structural metadata
 
 The structural elements of a Language Data Commons RO-Crate are:
@@ -70,9 +76,9 @@ The structural elements of a Language Data Commons RO-Crate are:
   items (objects) from a particular region.
 
 - Dataset and File entities (as per RO-Crate). Files may be referenced
-  locally or via URI, e.g. from an API. If an RO-Crate contains files
-  they MUST be linked to the root dataset using \`hasPart\`
-  relationships as per the RO-Crate specification.
+  locally or via URI, e.g. from an API. If an RO-Crate contains files they MUST be linked to the root dataset as per the RO-Crate specification using either:
+  - \`hasPart\` relationships on the object(s), or
+  - \`isPartOf\` relationships on the file(s).
 
 NOTE: The terms Collection and Object
 are encoded in RO-Crate metadata using RepositoryCollection and
@@ -86,7 +92,7 @@ A conformant RO-Crate:
 
 ${rules.Dataset}
 
-![](media/structure.svg)
+![Structure of collections that conform to the Language Data Commons Profile](media/structure.svg)
 
 A collection such as a corpus may be stored in a repository or
 transmitted either as:
@@ -99,22 +105,34 @@ transmitted either as:
   Object data.
 
 Distributed Collections may reference member collections or Objects in
-hasMember property but should not include descriptions of Objects that
+\`hasMember\` property but should not include descriptions of Objects that
 are stored elsewhere in the repository.
 
-Objects are placed in a Collection using the \`memberOf\` property (\`pcdm:memberOf\`), which is required. The reverse may also be encoded using the \`hasMember\` property on a Collection.
+<br>
+
+## Bi-directional relationships
+
+| Superset Term | Inverse Of | Subset Term  |
+| ------------- | ---------- | ------------ |
+| \`hasPart\`   | ⟷          | \`isPartOf\` |
+| \`hasMember\` | ⟷          | \`memberOf\` |
+
+Objects are placed in a Collection using the \`memberOf\` property (\`pcdm:memberOf\`), which is required. The inverse will be encoded automatically using the \`hasMember\` property on a Collection. Similarly, if using \`hasMember\`, \`memberOf\` will also be automatically encoded.
+
+Depending on the data, one term relationship may be preferable. For example, if you are describing multiple files in a spreadsheet, it is easier to use \`isPartOf\` at the file level referencing the object it belongs to, rather than listing all the \`hasPart\` entries at the object level.
 
 The following diagram shows how these relationships are encoded in a single "bundled" RO-Crate.
 
-![](media/bundled-crate.svg)
+![Self-contained collection crate with all resources](media/bundled-crate.svg)
 
 The next diagram shows how distributed crates (with one RO-Crate per Object and Collection) are linked.
 
-![](media/distributed-crates.svg)
+![Distributed crate with links to object crates](media/distributed-crates.svg)
 
 Which linking strategy is used is an implementation choice for
 repository developers.
 
+<br>
 
 ## When to choose collection-as-crate ("bundled") vs collection-in-multiple crates ("distributed")
 
@@ -125,7 +143,7 @@ repository developers.
     files.
 
   - The collection and all its files can easily be transferred in a
-    single transaction - say 2Gb total.
+    single transaction - say 20 GB total.
 
   - All the material in the corpus shares the same license for reuse.
 
@@ -135,14 +153,16 @@ repository developers.
 
   - The collection is not yet stable:
 
-    -   New items are being added or changed.
+    - New items are being added or changed.
 
-    -   There is a chance that some data may have to be taken down or withdrawn at the request of participants.
+    - There is a chance that some data may have to be taken down or withdrawn at the request of participants.
 
   - The total size of the collection will present challenges for
     data transfer.
 
   - There is more than one data reuse license applicable.
+
+<br>
 
 ## Collection
 
@@ -152,7 +172,7 @@ objects such as PARADISEC collections which bring together items
 collected in a region or on a session with informants. This follows the
 Alveo usage:
 
-> Items \[*Objects* in this model\] are grouped into collections which might
+> Items \[_Objects_ in this model\] are grouped into collections which might
 > correspond to curated corpora such as ACE or informal collections such as a
 > sample of documents from the AustLit archive
 > ([http://www.austlit.edu.au/](http://www.austlit.edu.au/)).
@@ -163,12 +183,14 @@ resolvable ID (within the context of a repository or service) of the
 parent Collection. The Collection may also list its members in a hasMember
 property, but this is not required.
 
-The root dataset must have at least these \@type values: \["Dataset",
+The root dataset must have at least these \`@type\` values: \["Dataset",
 "RepositoryCollection"\]
 
 ### A RepositoryCollection:
 
 ${rules.RepositoryCollection}
+
+<br>
 
 ## Object
 
@@ -176,40 +198,40 @@ An Object is a single unit linked to tightly related files, for example,
 a dialogue or session in a speech study, or a work (document) in a written
 corpus. This is based on the use of the term _Item_ in Alveo:
 
->The data model that we have developed for the storage of language
->resources is built around the concept of an item which corresponds
->(loosely) to a record of a single communication event. An item is
->often associated with a single text, audio or video resource but could
->include a number of resources, for example, the different channels of
->audio recording, or an audio recording and associated textual
->transcript. Items are grouped into collections which might correspond
->to curated corpora such as ACE or informal collections such as a
->sample of documents from the AustLit archive
->(<http://www.austlit.edu.au/>).
-><https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01>
+> The data model that we have developed for the storage of language
+> resources is built around the concept of an item which corresponds
+> (loosely) to a record of a single communication event. An item is
+> often associated with a single text, audio or video resource but could
+> include a number of resources, for example, the different channels of
+> audio recording, or an audio recording and associated textual
+> transcript. Items are grouped into collections which might correspond
+> to curated corpora such as ACE or informal collections such as a
+> sample of documents from the AustLit archive
+> (<http://www.austlit.edu.au/>).
+> <https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01>
 
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
 
 If an RO-Crate contains a single Object the Root Dataset would have a
 \`@type\` property of ["Dataset", "RepositoryObject"] with a
-conformsTo property pointing to the language-data-commons Object profile
+\`conformsTo\` property pointing to the language-data-commons Object profile
 (this document).
 
 If an RO-Crate contains an entire collection then each Object has a
-\`@type\` property of ["Dataset", "RepositoryObject"] and a conformsTo
+\`@type\` property of ["Dataset", "RepositoryObject"] and a \`conformsTo\`
 property referencing this document. For example:
 
 Objects SHOULD have files (which may be included in an RO-Crate for the
 object, or as part of a collection crate).
 
-In this example the Object in question is an interview from a speech
+In this example, the Object in question is an interview from a speech
 corpus with three files. The diagram shows the relationships between
 the object and its files (and the contextual metadata of a Person who
 takes the role of the speaker/informant (discussed in more detail
 below).
 
-![](media/object-structure.svg)
+![Structure of an Object crate](media/object-structure.svg)
 
 There are a number of terms that can be used to characterise resources -
 these use the Schema.org mechanism of DefinedTerm and DefinedTermSet.
@@ -217,6 +239,8 @@ these use the Schema.org mechanism of DefinedTerm and DefinedTermSet.
 ### A RepositoryObject:
 
 ${rules.RepositoryObject}
+
+<br>
 
 ## Files
 
@@ -231,7 +255,6 @@ analysis of the \`PrimaryMaterial\` or \`DerivedMaterial\`.
 
 \`PrimaryMaterial\` may be a video or audio file if it is available or may be a ContextualEntity referencing a primary text such as a book.
 
-
 #### A [File, PrimaryMaterial]:
 
 ${rules.PrimaryMaterial}
@@ -240,11 +263,9 @@ ${rules.PrimaryMaterial}
 
 DerivedMaterial is a non-analytical derivation from PrimaryMaterial, for example, downsampled video or excerpted text.
 
-
 ${rules.DerivedMaterial}
 
-
-#### a [File, DerivedMaterial]:
+#### A [File, DerivedMaterial]:
 
 ${rules.DerivedMaterial}
 
@@ -252,7 +273,7 @@ ${rules.DerivedMaterial}
 
 An annotation is a description or analysis of other material. More than one type of annotation may be present in a file.
 
-#### a [File, Annotation]:
+#### A [File, Annotation]:
 
 ${rules.Annotation}
 
@@ -261,11 +282,10 @@ ${rules.Annotation}
 CSV or similar tabular files are often used to represent transcribed
 speech or sign language data, sometimes also with time codes. To enable
 automated location of which column is which, use a [frictionless Table
-Schema](https://specs.frictionlessdata.io/table-schema/) described by a File entity in the crate. 
+Schema](https://specs.frictionlessdata.io/table-schema/) described by a File entity in the crate.
 
 For example:
 ${exampleEntities('art', ['art_schema.json'])}
-
 
 ### Language
 
@@ -273,23 +293,22 @@ ${exampleEntities('art', ['art_schema.json'])}
 
 ${rules.Language}
 
+<br>
+
 ## Places
 
-
-
-The place in which data was collected may be indicated using the \`contentLocation\` property. 
-
+The place in which data was collected may be indicated using the \`contentLocation\` property.
 
 ${exampleEntities('paradisec-item-NT1-001', ['./', 'https://www.ethnologue.com/country/VU', '#Vanuatu'])}
 
-
+<br>
 
 # Identifiers
 
 Identifiers for Objects and Collections MUST be URIs.
 
 Internally, identifiers for all entities that do not have their own URIs
-may use the Archive and Packaging identifier scheme ([ARCP]), which allows for a DNS-like namespacing of
+may use the Archive and Packaging identifier scheme (ARCP), which allows for a DNS-like namespacing of
 identifiers. For example, the Sydney Speaks corpus top-level
 collection would have the ID:
 
@@ -307,6 +326,7 @@ A person:
 
     arcp://name,http://www.dynamicsoflanguage.edu.au/sydney-speaks/corpus/person/54
 
+<br>
 
 ## How to record people's contributions
 
@@ -314,7 +334,7 @@ Some corpora express ages and other demographics of participants - this
 presents a data modelling challenge, as age and some other variables change
 over time, so if the same person appears over time then we need to have a
 base Person with DoB etc. and then time-based instances of the person
-with an age, social status, gender etc. *at that time*.
+with an age, social status, gender etc. _at that time_.
 
 There are three levels at which contributions to an object can be
 modelled:
@@ -322,7 +342,7 @@ modelled:
 1.  Include one or more Person items as context in a crate and reference
     them with properties such as schema:creator or the
     language-data-commons contribution properties such as [ldac:compiler]
-    or [ldac:depositor]. The \@id of the person MUST be a URI and SHOULD
+    or [ldac:depositor]. The \`@id\` of the person MUST be a URI and SHOULD
     be re-used where the same person appears in multiple objects in a
     collection or repository.
 
@@ -344,19 +364,23 @@ modelled:
     structure. This profile does not give advice about how to do this as
     we have not seen a use case that requires it.
 
+<br>
+
 ## Collection events such as "Sessions"
 
 Where data is collected from participants in a speech study with
 elicitation tasks such as "sessions" (see this [IMDI
-document]](https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf))
+document](https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf))
 or field interviews this can be recorded in metadata via the
 CollectionEvent class.
 
 The indirection in this conforms-to relationship is to allow multiple
-objects to have a conformsTo property which indicates that they conform
+objects to have a \`conformsTo\` property which indicates that they conform
 to the _same_ schema while having a local copy of the schema, as per
 RO-Crate best practice of having all local context to use a data
 packages in the package where possible.
+
+<br>
 
 # References
 
@@ -370,12 +394,11 @@ Dakota: The University of North Dakota M.A.
 [https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1](https://www.proquest.com/docview/2550236802/abstract/22686A0E508D4E5CPQ/1)
 (3 May 2022).
 
+<br>
+
 # EXAMPLES
 
 [https://www.mpi.nl/ISLE/documents/docs_frame.html](https://www.mpi.nl/ISLE/documents/docs_frame.html)
-
-
-
 
 [ldac:PersonSnapshot]: https://purl.archive.org/language-data-commons/terms#PersonSnapshot
 [ldac:depositor]: https://purl.archive.org/language-data-commons/terms#depositor
