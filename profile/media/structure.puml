@@ -2,7 +2,7 @@
 @startuml
 title: Structure of Collections that conform to the Language Data Commons Profile
 
-rectangle "Lanaguage Data Commons RO-Crate Profile Document" {
+rectangle "Language Data Commons RO-Crate Profile Document" {
 rectangle " #Collection" as procoll
 rectangle "    #Object" as proobj
 }

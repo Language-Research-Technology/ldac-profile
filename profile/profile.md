@@ -1,6 +1,4 @@
----
-title: Language Data Commons RO-Crate Profile
----
+# Language Data Commons RO-Crate Profile
 
 This document is a DRAFT RO-Crate profile for Language Data resources. The
 profile specifies the contents of RO-Crate Metadata Documents for language
@@ -12,7 +10,7 @@ platform, or similar compatible approaches, are being used.
 
 The core metadata vocabularies for this profile are:
 
-- RO-Crate recommendations for data packaging and basic discoverability metadata
+- RO-Crate recommendations for data packaging and basic discoverability metadata,
   which is mostly Schema.org terms with a handful of additions. Following
   RO-Crate practice, basic metadata terms such as "who, what, where" and
   bibliographic-style descriptions are chosen from Schema.org (in preference to
@@ -20,8 +18,7 @@ The core metadata vocabularies for this profile are:
   vocabularies used for things which are not common across domains
   (such as types of language).
 
-- An updated version of the Open Language Archives Community (OLAC) vocabularies
-  [http://www.language-archives.org](http://www.language-archives.org);
+- An updated version of the [Open Language Archives Community](http://www.language-archives.org) (OLAC) vocabularies;
   originally expressed as XML schemas. The new vocabulary is under development
   here:
   [https://purl.archive.org/language-data-commons/terms](https://purl.archive.org/textcommons/terms)
@@ -35,8 +32,8 @@ and metadata specialists developing scripts or systems for user
 communities. It is not intended for use by non-specialists.
 
 Just as we would not expect repository users to type in Dublin Core
-metadata in XML format by hand we do not expect our users to have to
-deal directly with the JSON-LD presented here, this document is for tool
+metadata in XML format by hand, we do not expect our users to have to
+deal directly with the JSON-LD presented here. This document is for tool
 developers to build systems that crosswalk data from existing systems,
 or allow for user-friendly data entry.
 
@@ -46,23 +43,24 @@ or allow for user-friendly data entry.
 
 This profile covers various kinds of crate metadata:
 
-- **Structural** RO-Crate metadata - how the root dataset links to files, and
+- **Structural RO-Crate metadata**: how the root dataset links to files, and
   the abstract structure of nested collections (e.g. collections/corpora or other
   curated datasets) and objects of study; linguistic Items, Sessions or Texts).
   This profile assumes that a repository (for example, an OCFL storage root,
   with an API for accessing it) exists and that it can at a minimum support
+
   (a) listing all items of the repository and returning their RO-Crate metadata, and
+
   (b) retrieving an item given its ID.
 
-- **Types of language data** - is this resource a dialogue? A written text? A
-  transcript or other annotation - which file has which kind of data in it? What
+- **Types of language data**: is this resource a dialogue? A written text? A
+  transcript or other annotation? Which file has which kind of data in it? What
   is inside CSV and other structured files? The vocabulary used for
   language-specific data is the
   [Language Data Commons vocabulary](http://purl.archive.org/language-data-commons/terms)
-  which is being developed alongside this profile. The vocabulary is described
-  here: <http://purl.archive.org/language-data-commons/terms>
+  which is being developed alongside this profile.
 
-- **Contextual metadata** - how to link people who had speaking,
+- **Contextual metadata**: how to link people who had speaking,
   authoring, collection roles, places, subjects.
 
 <br>
@@ -71,18 +69,18 @@ This profile covers various kinds of crate metadata:
 
 The structural elements of a Language Data Commons RO-Crate are:
 
-- A Collection / Object hierarchy to allow language data to be
-  grouped - for example, a corpus with sub-corpora, or collections of
+- **A Collection / Object hierarchy** to allow language data to be
+  grouped. For example, a corpus with sub-corpora, or collections of
   items (objects) from a particular region.
 
-- Dataset and File entities (as per RO-Crate). Files may be referenced
-  locally or via URI, e.g. from an API. If an RO-Crate contains files they MUST be linked to the root dataset as per the RO-Crate specification using either:
+- **Dataset and File entities** (as per RO-Crate). Files may be referenced
+  locally or via URI, for example, from an API. If an RO-Crate contains files, they MUST be linked to the root dataset as per the RO-Crate specification using either:
   - `hasPart` relationships on the object(s), or
   - `isPartOf` relationships on the file(s).
 
 NOTE: The terms Collection and Object
-are encoded in RO-Crate metadata using RepositoryCollection and
-RepositoryObject types respectively. These in turn are re-named versions
+are encoded in RO-Crate metadata using `RepositoryCollection` and
+`RepositoryObject` types respectively. These in turn are re-named versions
 of the Portland Common Data Model types,
 [pcdm:Collection](https://pcdm.org/2016/04/18/models#Collection)
 and
@@ -112,7 +110,7 @@ A conformant RO-Crate:
 <tr><td>hasCollectionProtocol</td><td>MAY</td><td><a href="#type-CollectionProtocol">CollectionProtocol</a></td><td>A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection.</td></tr>
 <tr><td>hasMember</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a></td><td>The sub-collections, if any, associated with this collection.</td></tr>
 <tr><td>hasPart</td><td>MAY</td><td><a href="#type-File">File</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
-<tr><td>isPartOf</td><td>MAY</td><td>URL, <a href="#type-CreativeWork">CreativeWork</a></td><td>Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of.</td></tr>
+<tr><td>isPartOf</td><td>MAY</td><td>URL, <a href="#type-CreativeWork">CreativeWork</a></td><td>An item or CreativeWork that this item, or CreativeWork (in some sense), is part of.</td></tr>
 <tr><td>memberOf</td><td>MAY</td><td><a href="#type-RepositoryObject">RepositoryObject</a></td><td>Links from a Repository Object or Collection to a containing Repository Object or Collection.</td></tr>
 <tr><td>annotator</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant produced an annotation of this or a related resource.</td></tr>
 <tr><td>compiler</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately.</td></tr>
@@ -124,7 +122,7 @@ A conformant RO-Crate:
 <tr><td>illustrator</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant contributed drawings or other illustrations to the resource.</td></tr>
 <tr><td>interviewee</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant was a respondent in an interview.</td></tr>
 <tr><td>interviewer</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant conducted an interview that forms part of the resource.</td></tr>
-<tr><td>participant</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present.</td></tr>
+<tr><td>participant</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>This role is intended for minor participants such as audience members or other peripherally involved participants in the event. These interlocutors need not have been physically present.</td></tr>
 <tr><td>performer</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.</td></tr>
 <tr><td>photographer</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant took the photograph, or shot the film, that appears in or constitutes the resource.</td></tr>
 <tr><td>recorder</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant operated the recording machinery used to create the resource.</td></tr>
@@ -141,6 +139,8 @@ A conformant RO-Crate:
 
 
 
+<br>
+
 ![Structure of collections that conform to the Language Data Commons Profile](media/structure.svg)
 
 A collection such as a corpus may be stored in a repository or
@@ -150,25 +150,36 @@ transmitted either as:
   reference separate collection records with one Object and one
   Collection per crate.
 
-- A **bundled** single crate which contains all the Collection and
+- A **bundled** single crate: contains all the Collection and
   Object data.
 
-Distributed Collections may reference member collections or Objects in
+Distributed collections may reference member collections or Objects in
 `hasMember` property but should not include descriptions of Objects that
 are stored elsewhere in the repository.
 
 <br>
 
-## Bi-directional relationships
+## Bidirectional relationships
+
+The relational hierachy between Collections, Objects and Files are represented bidirectionally in an RO-Crate by the terms `hasPart`/`isPartOf` and `hasMember`/`memberOf`.
 
 | Superset Term | Inverse Of | Subset Term  |
 | ------------- | ---------- | ------------ |
-| `hasPart`   | ⟷          | `isPartOf` |
 | `hasMember` | ⟷          | `memberOf` |
+| `hasPart`   | ⟷          | `isPartOf` |
 
 Objects are placed in a Collection using the `memberOf` property (`pcdm:memberOf`), which is required. The inverse will be encoded automatically using the `hasMember` property on a Collection. Similarly, if using `hasMember`, `memberOf` will also be automatically encoded.
 
-Depending on the data, one term relationship may be preferable. For example, if you are describing multiple files in a spreadsheet, it is easier to use `isPartOf` at the file level referencing the object it belongs to, rather than listing all the `hasPart` entries at the object level.
+The same relationship applies for `hasPart` and `isPartOf` at the Object and File levels.
+
+| Superset Level |     | Relationship  |     | Subset Level |
+| -------------- | --- | ------------- | --- | ------------ |
+| Collection     | →   | `hasMember` | →   | Object       |
+| Collection     | ←   | `memberOf`  | ←   | Object       |
+| Object         | →   | `hasPart`   | →   | File         |
+| Object         | ←   | `isPartOf`  | ←   | File         |
+
+Depending on the data, using one term over another may be preferable when creating the hierarchical relationship. For example, if you are describing multiple files in a spreadsheet, it is easier to use `isPartOf` at the File level referencing the Object it belongs to, rather than listing all the `hasPart` entries at the Object level.
 
 The following diagram shows how these relationships are encoded in a single "bundled" RO-Crate.
 
@@ -183,9 +194,9 @@ repository developers.
 
 <br>
 
-## When to choose collection-as-crate ("bundled") vs collection-in-multiple crates ("distributed")
+## When to choose collection-as-crate ("bundled") vs collection-in-multiple-crates ("distributed")
 
-- Use a single bundled crate for a collection when all of these conditions are true:
+- Use a single **bundled crate** for a collection when all of these conditions are true:
 
   - The collection is final and is expected to be stable, i.e. there is
     negligible chance of having to withdraw any of its contents or
@@ -196,8 +207,8 @@ repository developers.
 
   - All the material in the corpus shares the same license for reuse.
 
-- Split a collection into fragmented RepositoryCollection and
-  RepositoryObject crates, with one crate per repository object,
+- Split a collection into **distributed RepositoryCollection and
+  RepositoryObject crates**, with one crate per repository object,
   when any of these conditions are true:
 
   - The collection is not yet stable:
@@ -223,17 +234,16 @@ Alveo usage:
 
 > Items [_Objects_ in this model] are grouped into collections which might
 > correspond to curated corpora such as ACE or informal collections such as a
-> sample of documents from the AustLit archive
-> ([http://www.austlit.edu.au/](http://www.austlit.edu.au/)).
+> sample of documents from the [AustLit](http://www.austlit.edu.au/) archive.
 
 When an RO-Crate is used to package a collection that is part of
-another Collection it has a memberOf property which references a
+another Collection it has a `memberOf` property which references a
 resolvable ID (within the context of a repository or service) of the
-parent Collection. The Collection may also list its members in a hasMember
+parent Collection. The Collection may also list its members in a `hasMember`
 property, but this is not required.
 
-The root dataset must have at least these `@type` values: ["Dataset",
-"RepositoryCollection"]
+The root dataset must have at least these `@type` values: `["Dataset",
+"RepositoryCollection"]`
 
 ### A RepositoryCollection:
 
@@ -256,7 +266,7 @@ The root dataset must have at least these `@type` values: ["Dataset",
 <tr><td>hasCollectionProtocol</td><td>MAY</td><td><a href="#type-CollectionProtocol">CollectionProtocol</a></td><td>A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection.</td></tr>
 <tr><td>hasMember</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a></td><td>The sub-collection.</td></tr>
 <tr><td>dateCreated</td><td>MAY</td><td>Date</td><td>The (earliest) date the data in this dataset were created.</td></tr>
-<tr><td>dateFreeText</td><td>MAY</td><td>Text</td><td>Date information which cannot be put in one of that standard date formats, e.g. 'mid-1970s', or it is not clear, for example if it is a creation or publication date.</td></tr>
+<tr><td>dateFreeText</td><td>MAY</td><td>Text</td><td>Date information which cannot be put in one of the standard date formats, e.g. 'mid-1970s', or it is not clear, for example, if it is a creation or publication date.</td></tr>
 <tr><td>holdingArchive</td><td>MAY</td><td><a href="#type-Organization">Organization</a>, Text</td><td>Organisation where the original of this work or collection is housed.</td></tr>
 </table>
 
@@ -278,20 +288,19 @@ corpus. This is based on the use of the term _Item_ in Alveo:
 > audio recording, or an audio recording and associated textual
 > transcript. Items are grouped into collections which might correspond
 > to curated corpora such as ACE or informal collections such as a
-> sample of documents from the AustLit archive
-> (<http://www.austlit.edu.au/>).
+> sample of documents from the [AustLit](http://www.austlit.edu.au/) archive.
 > <https://www.researchonline.mq.edu.au/vital/access/services/Download/mq:37347/DS01>
 
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
 
 If an RO-Crate contains a single Object the Root Dataset would have a
-`@type` property of ["Dataset", "RepositoryObject"] with a
+`@type` property of `["Dataset", "RepositoryObject"]` with a
 `conformsTo` property pointing to the language-data-commons Object profile
 (this document).
 
 If an RO-Crate contains an entire collection then each Object has a
-`@type` property of ["Dataset", "RepositoryObject"] and a `conformsTo`
+`@type` property of `["Dataset", "RepositoryObject"]` and a `conformsTo`
 property referencing this document. For example:
 
 Objects SHOULD have files (which may be included in an RO-Crate for the
@@ -306,7 +315,7 @@ below).
 ![Structure of an Object crate](media/object-structure.svg)
 
 There are a number of terms that can be used to characterise resources -
-these use the Schema.org mechanism of DefinedTerm and DefinedTermSet.
+these use the Schema.org mechanism of `DefinedTerm` and `DefinedTermSet`.
 
 ### A RepositoryObject:
 
@@ -314,12 +323,11 @@ these use the Schema.org mechanism of DefinedTerm and DefinedTermSet.
 
 <table>
 <tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td><strong>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
-<tr><td>hasPart</td><td>MAY</td><td><a href="#type-File">File</a>, <a href="#type-PrimaryMaterial">PrimaryMaterial</a></td><td>Indicates an item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
-<tr><td>hasMember</td><td>MAY</td><td>Text</td><td>UNDOCUMENTED</td></tr>
-<tr><td>conformsTo</td><td>MAY</td><td>Text</td><td>UNDOCUMENTED</td></tr>
+<tr><td>hasPart</td><td>MAY</td><td><a href="#type-File">File</a>, <a href="#type-PrimaryMaterial">PrimaryMaterial</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
+<tr><td>conformsTo</td><td>MAY</td><td>Text</td><td>A link to the Text Commons RO-Crate profile for collections.</td></tr>
 <tr><td>publisher</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The publisher of the creative work.</td></tr>
 <tr><td>creator</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.</td></tr>
-<tr><td>compiler</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>...</td></tr>
+<tr><td>compiler</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The contributor responsible for collecting the sub-parts of the resource together.</td></tr>
 <tr><td>description</td><td>MAY</td><td>Text</td><td>A description of the item.</td></tr>
 <tr><td>datePublished</td><td>MAY</td><td>Text</td><td>Date of first broadcast/publication.</td></tr>
 <tr><td>temporalCoverage</td><td>MAY</td><td>Text</td><td>The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In
@@ -333,8 +341,8 @@ Open-ended date ranges can be written with ".." in place of the end date. For ex
 <tr><td>dateCreated</td><td>MAY</td><td>Text</td><td>The date on which the CreativeWork was created or the item was added to a DataFeed.</td></tr>
 <tr><td>name</td><td>MAY</td><td>Text</td><td>The name of the item.</td></tr>
 <tr><td>license</td><td>MAY</td><td>OrganizationReuseLicense</td><td>A license document that applies to this content, typically indicated by URL.</td></tr>
-<tr><td>hasAnnotation</td><td>MAY</td><td>Text</td><td>...</td></tr>
-<tr><td>speaker</td><td>MAY</td><td>Speaker</td><td>...</td></tr>
+<tr><td>hasAnnotation</td><td>MAY</td><td>Text</td><td>This resource is referenced by another resource that adds information to it such as a translation, transcription or other analysis.</td></tr>
+<tr><td>speaker</td><td>MAY</td><td>Speaker</td><td>The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource.</td></tr>
 <tr><td>identifier</td><td>MAY</td><td>PropertyValue</td><td>The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.
         </td></tr>
 </table>
@@ -364,18 +372,17 @@ analysis of the `PrimaryMaterial` or `DerivedMaterial`.
 <tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td><strong>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
 <tr><td>name</td><td>MAY</td><td>Text</td><td>The name of the item.</td></tr>
 <tr><td>license</td><td>MAY</td><td>OrganizationReuseLicense</td><td>A license document that applies to this content, typically indicated by URL.</td></tr>
-<tr><td>communicationModeldac</td><td>MAY</td><td>DefinedTerm</td><td>...</td></tr>
-<tr><td>linguisticGenre</td><td>MAY</td><td>DefinedTerm</td><td>...</td></tr>
+<tr><td>communicationMode</td><td>MAY</td><td>DefinedTerm</td><td>The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.</td></tr>
+<tr><td>linguisticGenre</td><td>MAY</td><td>DefinedTerm</td><td>A linguistic classification of the genre of this resource.</td></tr>
 <tr><td>encodingFormat</td><td>MAY</td><td>Text</td><td>The media type typically expressed using a MIME format.</td></tr>
-<tr><td>size</td><td>MAY</td><td>Text</td><td>A standardized size of a product or creative work, specified either through a simple textual string (for example 'XL', '32Wx34L'), a  QuantitativeValue with a unitCode, or a comprehensive and structured [[SizeSpecification]]; in other cases, the [[width]], [[height]], [[depth]] and [[weight]] properties may be more applicable. </td></tr>
-<tr><td>extent</td><td>MAY</td><td>Text</td><td>...</td></tr>
+<tr><td>size</td><td>MAY</td><td>Text</td><td>The size in bytes.</td></tr>
 </table>
 
 
 
 ### DerivedMaterial
 
-DerivedMaterial is a non-analytical derivation from PrimaryMaterial, for example, downsampled video or excerpted text.
+`DerivedMaterial` is a non-analytical derivation from `PrimaryMaterial`, for example, downsampled video or excerpted text.
 
 undefined
 
@@ -385,18 +392,31 @@ undefined
 
 ### Annotation
 
-An annotation is a description or analysis of other material. More than one type of annotation may be present in a file.
+`Annotation` is a description or analysis of other material. More than one type of annotation may be present in a file.
 
 #### A [File, Annotation]:
 
-undefined
+
+
+<table>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td><strong>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td>name</td><td>MAY</td><td>Text</td><td>The name of the item.</td></tr>
+<tr><td>license</td><td>MAY</td><td>OrganizationReuseLicense</td><td>A license document that applies to this content, typically indicated by URL.</td></tr>
+<tr><td>encodingFormat</td><td>MAY</td><td>Text</td><td>The media type typically expressed using a MIME format.</td></tr>
+<tr><td>communicationMode</td><td>MAY</td><td>DefinedTerm</td><td>The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.</td></tr>
+<tr><td>linguisticGenre</td><td>MAY</td><td>DefinedTerm</td><td>A linguistic classification of the genre of this resource.</td></tr>
+<tr><td>annotationType</td><td>MAY</td><td>DefinedTerm</td><td>Specifies the type of an Annotation resource.</td></tr>
+<tr><td>size</td><td>MAY</td><td>Text</td><td>The size in bytes.</td></tr>
+</table>
+
+
 
 #### Describing the columns in CSV or other tabular data Annotation
 
 CSV or similar tabular files are often used to represent transcribed
 speech or sign language data, sometimes also with time codes. To enable
 automated location of which column is which, use a [frictionless Table
-Schema](https://specs.frictionlessdata.io/table-schema/) described by a File entity in the crate.
+Schema](https://specs.frictionlessdata.io/table-schema/) described by a `File` entity in the crate.
 
 For example:
 ```json
@@ -422,13 +442,10 @@ For example:
 
 <table>
 <tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td><strong>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
-<tr><td>languageCode</td><td>MAY</td><td>Text</td><td>...</td></tr>
 <tr><td>name</td><td>MAY</td><td>Text</td><td>The name of the item.</td></tr>
-<tr><td>geo</td><td>MAY</td><td>GeoCoordinates</td><td>The geo coordinates of the place.</td></tr>
-<tr><td>source</td><td>MAY</td><td>Text</td><td>...</td></tr>
+<tr><td>geo</td><td>MAY</td><td>GeoCoordinates</td><td>The geographic coordinates of the place.</td></tr>
 <tr><td>sameAs</td><td>MAY</td><td>Text</td><td>URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.</td></tr>
 <tr><td>alternateName</td><td>MAY</td><td>Text</td><td>An alias for the item.</td></tr>
-<tr><td>iso639-3</td><td>MAY</td><td>Text</td><td>...</td></tr>
 </table>
 
 
@@ -599,13 +616,13 @@ A person:
 Some corpora express ages and other demographics of participants - this
 presents a data modelling challenge, as age and some other variables change
 over time, so if the same person appears over time then we need to have a
-base Person with DoB etc. and then time-based instances of the person
+base `Person` with DoB etc. and then time-based instances of the person
 with an age, social status, gender etc. _at that time_.
 
 There are three levels at which contributions to an object can be
 modelled:
 
-1.  Include one or more Person items as context in a crate and reference
+1.  Include one or more `Person` items as context in a crate and reference
     them with properties such as schema:creator or the
     language-data-commons contribution properties such as [ldac:compiler]
     or [ldac:depositor]. The `@id` of the person MUST be a URI and SHOULD
@@ -613,7 +630,7 @@ modelled:
     collection or repository.
 
 2.  For longitudinal studies where it is important to record changing
-    demographic information for a Person, or where precision is
+    demographic information for a `Person`, or where precision is
     required in listing contributions to a work use
     [ldac:PersonSnapshot].
 
@@ -638,7 +655,7 @@ Where data is collected from participants in a speech study with
 elicitation tasks such as "sessions" (see this [IMDI
 document](https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf))
 or field interviews this can be recorded in metadata via the
-CollectionEvent class.
+`CollectionEvent` class.
 
 The indirection in this conforms-to relationship is to allow multiple
 objects to have a `conformsTo` property which indicates that they conform
