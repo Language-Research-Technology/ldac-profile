@@ -1,5 +1,5 @@
-const {Profile} = require('ro-crate-editor-profiles');
+const {Profile} = require('ro-crate-modes');
 const fs = require("fs")
 
-profile = require('ro-crate-editor-profiles/profiles/language-data-commons-collection-profile.json')
-fs.writeFileSync("profile/profile.md", Profile.generateSpec(profile, "profile-text/profile.md", "examples"));
+mode = require('ro-crate-modes/modes/comprehensive-ldac.json')
+fs.writeFileSync("profile/profile.md", Profile.generateSpec(mode, "profile-text/profile.md", "examples"));
