@@ -91,7 +91,7 @@ A conformant RO-Crate:
 
 
 <table>
-<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td><strong>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
 <tr><td>name</td><td>MUST</td><td>Text</td><td>The name of this dataset.</td></tr>
 <tr><td>license</td><td>MUST</td><td>DataReuseLicense</td><td>Link to a document that describes the rights and obligations for users of this collection record. NOTE: This does not necessarily cover the license terms that may apply to Objects in the collection which may have specific licensing. Licensing on other objects overrides the license attached to a collection record.</td></tr>
 <tr><td>rightsHolder</td><td>MUST</td><td>Text, <a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>A person or organisation owning or managing rights over the resource.</td></tr>
@@ -250,7 +250,7 @@ The root dataset must have at least these `@type` values: `["Dataset",
 
 
 <table>
-<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td><strong>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
 <tr><td>inLanguage</td><td>MUST</td><td><a href="#type-Language">Language</a></td><td>The language(s) of the materials (including PrimaryMaterials, DerivedMaterials and Annotations) in this collection.</td></tr>
 <tr><td>subjectLanguage</td><td>MUST</td><td><a href="#type-Language">Language</a></td><td>The languages that the materials in the collection are about (not the language that it is in). This is particularly used on Annotations that may talk about PrimaryMaterials or DerivedMaterials.</td></tr>
 <tr><td>name</td><td>MUST</td><td>Text</td><td>The name of this collection.</td></tr>
@@ -322,8 +322,8 @@ these use the Schema.org mechanism of `DefinedTerm` and `DefinedTermSet`.
 
 
 <table>
-<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td><strong>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
-<tr><td>hasPart</td><td>MAY</td><td><a href="#type-File">File</a>, <a href="#type-PrimaryMaterial">PrimaryMaterial</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td>hasPart</td><td>MAY</td><td><a href="#type-File">File</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
 <tr><td>conformsTo</td><td>MAY</td><td>Text</td><td>A link to the Text Commons RO-Crate profile for collections.</td></tr>
 <tr><td>publisher</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The publisher of the creative work.</td></tr>
 <tr><td>creator</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.</td></tr>
@@ -364,31 +364,9 @@ analysis of the `PrimaryMaterial` or `DerivedMaterial`.
 
 `PrimaryMaterial` may be a video or audio file if it is available or may be a ContextualEntity referencing a primary text such as a book.
 
-#### A [File, PrimaryMaterial]:
-
-
-
-<table>
-<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td><strong>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
-<tr><td>name</td><td>MAY</td><td>Text</td><td>The name of the item.</td></tr>
-<tr><td>license</td><td>MAY</td><td>OrganizationReuseLicense</td><td>A license document that applies to this content, typically indicated by URL.</td></tr>
-<tr><td>communicationMode</td><td>MAY</td><td>DefinedTerm</td><td>The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.</td></tr>
-<tr><td>linguisticGenre</td><td>MAY</td><td>DefinedTerm</td><td>A linguistic classification of the genre of this resource.</td></tr>
-<tr><td>encodingFormat</td><td>MAY</td><td>Text</td><td>The media type typically expressed using a MIME format.</td></tr>
-<tr><td>size</td><td>MAY</td><td>Text</td><td>The size in bytes.</td></tr>
-</table>
-
-
-
 ### DerivedMaterial
 
 `DerivedMaterial` is a non-analytical derivation from `PrimaryMaterial`, for example, downsampled video or excerpted text.
-
-undefined
-
-#### A [File, DerivedMaterial]:
-
-undefined
 
 ### Annotation
 
@@ -399,7 +377,7 @@ undefined
 
 
 <table>
-<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td><strong>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
 <tr><td>name</td><td>MAY</td><td>Text</td><td>The name of the item.</td></tr>
 <tr><td>license</td><td>MAY</td><td>OrganizationReuseLicense</td><td>A license document that applies to this content, typically indicated by URL.</td></tr>
 <tr><td>encodingFormat</td><td>MAY</td><td>Text</td><td>The media type typically expressed using a MIME format.</td></tr>
@@ -441,7 +419,7 @@ For example:
 
 
 <table>
-<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td><strong>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
 <tr><td>name</td><td>MAY</td><td>Text</td><td>The name of the item.</td></tr>
 <tr><td>geo</td><td>MAY</td><td>GeoCoordinates</td><td>The geographic coordinates of the place.</td></tr>
 <tr><td>sameAs</td><td>MAY</td><td>Text</td><td>URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.</td></tr>

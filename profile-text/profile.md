@@ -264,19 +264,9 @@ analysis of the \`PrimaryMaterial\` or \`DerivedMaterial\`.
 
 \`PrimaryMaterial\` may be a video or audio file if it is available or may be a ContextualEntity referencing a primary text such as a book.
 
-#### A [File, PrimaryMaterial]:
-
-${rules.PrimaryMaterial}
-
 ### DerivedMaterial
 
 \`DerivedMaterial\` is a non-analytical derivation from \`PrimaryMaterial\`, for example, downsampled video or excerpted text.
-
-${rules.DerivedMaterial}
-
-#### A [File, DerivedMaterial]:
-
-${rules.DerivedMaterial}
 
 ### Annotation
 
