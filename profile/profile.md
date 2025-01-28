@@ -5,8 +5,7 @@ profile specifies the contents of RO-Crate Metadata Documents for language
 resources and gives guidance on how to structure language data collections both
 at the RO-Crate package level and in a repository containing multiple packages.
 
-This profile assumes that the principles and standards set out in the Arkisto
-platform, or similar compatible approaches, are being used.
+This profile assumes that the principles and standards set out in the [PILARS protocols](http://w3id.org/ldac/pilars), or similar compatible approaches, are being used.
 
 The core metadata vocabularies for this profile are:
 
@@ -21,7 +20,7 @@ The core metadata vocabularies for this profile are:
 - An updated version of the [Open Language Archives Community](http://www.language-archives.org) (OLAC) vocabularies;
   originally expressed as XML schemas. The new vocabulary is under development
   here:
-  [https://purl.archive.org/language-data-commons/terms](https://purl.archive.org/textcommons/terms)
+  [https://www.w3id.org/ldac/terms](https://www.w3id.org/ldac/terms)
 
 <br>
 
@@ -57,7 +56,7 @@ This profile covers various kinds of crate metadata:
   transcript or other annotation? Which file has which kind of data in it? What
   is inside CSV and other structured files? The vocabulary used for
   language-specific data is the
-  [Language Data Commons vocabulary](http://purl.archive.org/language-data-commons/terms)
+  [Language Data Commons vocabulary](https://www.w3id.org/ldac/terms)
   which is being developed alongside this profile.
 
 - **Contextual metadata**: how to link people who had speaking,
@@ -661,6 +660,6 @@ Dakota: The University of North Dakota M.A.
 
 [https://www.mpi.nl/ISLE/documents/docs_frame.html](https://www.mpi.nl/ISLE/documents/docs_frame.html)
 
-[ldac:PersonSnapshot]: https://purl.archive.org/language-data-commons/terms#PersonSnapshot
-[ldac:depositor]: https://purl.archive.org/language-data-commons/terms#depositor
-[ldac:compiler]: https://purl.archive.org/language-data-commons/terms#compiler
+[ldac:PersonSnapshot]: https://www.w3id.org/ldac/terms#PersonSnapshot
+[ldac:depositor]: https://www.w3id.org/ldac/terms#depositor
+[ldac:compiler]: https://www.w3id.org/ldac/terms#compiler
