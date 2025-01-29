@@ -20,7 +20,7 @@ The core metadata vocabularies for this profile are:
 - An updated version of the [Open Language Archives Community](http://www.language-archives.org) (OLAC) vocabularies;
   originally expressed as XML schemas. The new vocabulary is under development
   here:
-  [https://www.w3id.org/ldac/terms](https://www.w3id.org/ldac/terms)
+  [https://w3id.org/ldac/terms](https://w3id.org/ldac/terms)
 
 <br>
 
@@ -56,7 +56,7 @@ This profile covers various kinds of crate metadata:
   transcript or other annotation? Which file has which kind of data in it? What
   is inside CSV and other structured files? The vocabulary used for
   language-specific data is the
-  [Language Data Commons vocabulary](https://www.w3id.org/ldac/terms)
+  [Language Data Commons vocabulary](https://w3id.org/ldac/terms)
   which is being developed alongside this profile.
 
 - **Contextual metadata**: how to link people who had speaking,
@@ -398,6 +398,6 @@ Dakota: The University of North Dakota M.A.
 
 [https://www.mpi.nl/ISLE/documents/docs_frame.html](https://www.mpi.nl/ISLE/documents/docs_frame.html)
 
-[ldac:PersonSnapshot]: https://www.w3id.org/ldac/terms#PersonSnapshot
-[ldac:depositor]: https://www.w3id.org/ldac/terms#depositor
-[ldac:compiler]: https://www.w3id.org/ldac/terms#compiler
+[ldac:PersonSnapshot]: https://w3id.org/ldac/terms#PersonSnapshot
+[ldac:depositor]: https://w3id.org/ldac/terms#depositor
+[ldac:compiler]: https://w3id.org/ldac/terms#compiler
