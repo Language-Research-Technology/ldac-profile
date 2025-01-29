@@ -5,7 +5,7 @@ profile specifies the contents of RO-Crate Metadata Documents for language
 resources and gives guidance on how to structure language data collections both
 at the RO-Crate package level and in a repository containing multiple packages.
 
-This profile assumes that the principles and standards set out in the [PILARS protocols](http://w3id.org/ldac/pilars), or similar compatible approaches, are being used.
+This profile assumes that the principles and standards set out in the [PILARS protocols](https://w3id.org/ldac/pilars), or similar compatible approaches, are being used.
 
 The core metadata vocabularies for this profile are:
 
