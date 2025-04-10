@@ -2,7 +2,7 @@
 
 This repository is for hosting the [RO-Crate Metadata Profile for Language Data Commons](https://w3id.org/ldac/profile).
 
-This profile can also be updated using the Makefile to generate `profile/profile.md`.
+This profile can also be updated using the Makefile which generates `profile/profile.md`.
 
 <br>
 
