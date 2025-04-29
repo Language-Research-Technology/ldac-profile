@@ -1,37 +1,37 @@
 
 @startuml
 title: Distributed crate with links to object crates
-package "name My Corpus" as mc {
-   rectangle "@type: [Dataset, RepositoryCollection]\nconformsTo: ./#Collection" as cc {
+package "name: My Corpus" as mc {
+   rectangle "<b>@type:</b> [Dataset, RepositoryCollection]\n<b>conformsTo:</b> ./#Collection" as cc {
 
    }
 }
 
-package "ROCrate: Collection A" as cAc {
+package "RO-Crate: Collection A" as cAc {
 
-   rectangle "@type:  [Dataset, RepositoryCollection]\nconformsTo: ./#Collection" as ca {
-
-   }
-  
-}
-
-
-package "ROCrate: Collection B" as cBc {
-
-   rectangle "@type:  [Dataset, RepositoryCollection]\nconformsTo: ./#Collection" as cb {
+   rectangle "<b>@type:</b>  [Dataset, RepositoryCollection]\n<b>conformsTo:</b> ./#Collection" as ca {
 
    }
   
 }
 
 
-package "RO Crate: Interview #1" as ec2 {
-  rectangle "@type: RepositoryObject\nconformsTo: ./#Object\ncommuncationMode: SpokenLanguge\nlingusiticGenre: Interview" as eo1 {
+package "RO-Crate: Collection B" as cBc {
+
+   rectangle "<b>@type:</b>  [Dataset, RepositoryCollection]\n<b>conformsTo:</b> ./#Collection" as cb {
+
+   }
+  
+}
+
+
+package "RO-Crate: Interview #1" as ec2 {
+  rectangle "<b>@type:</b> RepositoryObject\n<b>conformsTo:</b> ./#Object\n<b>ldac:communcationMode:</b> ldac:SpokenLanguge\n<b>ldac:linguisticGenre:</b> ldac:Interview" as eo1 {
 
    }
    
- rectangle "File: files/audio1.wav\nmaterialType: PrimaryMaterial\ncommunicationMode: SpokenLanguage" as ea1
-   rectangle "File: files/csv1.csv\nmaterialType: Annotation" as ecsv1
+ rectangle "<b>File:</b> files/audio1.wav\n<b>ldac:materialType:</b> ldac:PrimaryMaterial\n<b>ldac:communicationMode:</b> ldac:SpokenLanguage" as ea1
+   rectangle "<b>File:</b> files/csv1.csv\n<b>ldac:materialType:</b> ldac:Annotation" as ecsv1
     
    
    
@@ -42,11 +42,11 @@ package "RO Crate: Interview #1" as ec2 {
 eo1 -down-> ea1 : hasPart
 eo1 -down-> ecsv1 : hasPart
 
-eo1 -up-> ca : memberOf
-ca -up-> cc : memberOf
-cb -up-> cc : memberOf
+eo1 -up-> ca : pcdm:memberOf
+ca -up-> cc : pcdm:memberOf
+cb -up-> cc : pcdm:memberOf
 
-note right of cc : Repository Collection:\n- MUST contain descriptive metadata\n  for the corpus/collection\n- MAY contain hasMember relationships\n  listing child Collections or Objects
+note right of cc : Repository Collection:\n- MUST contain descriptive metadata\n  for the corpus/collection\n- MAY contain pcdm:hasMember relationships\n  listing child Collections or Objects
 
  
 note bottom of ec2 : Individual object with file data

@@ -10,10 +10,10 @@ This profile assumes that the principles and standards set out in the [PILARS pr
 The core metadata vocabularies for this profile are:
 
 - RO-Crate recommendations for data packaging and basic discoverability metadata,
-  which is mostly Schema.org terms with a handful of additions. Following
+  which is mostly [Schema.org](https://schema.org/) terms with a handful of additions. Following
   RO-Crate practice, basic metadata terms such as "who, what, where" and
   bibliographic-style descriptions are chosen from Schema.org (in preference to
-  other vocabularies such as Dublin Core or FOAF) where possible with domain-specific
+  other vocabularies such as Dublin Core or FOAF) where possible, with domain-specific
   vocabularies used for things which are not common across domains
   (such as types of language).
 
@@ -30,7 +30,7 @@ This document is primarily for use by tool developers, data scientists
 and metadata specialists developing scripts or systems for user
 communities. It is not intended for use by non-specialists.
 
-Just as we would not expect repository users to type in Dublin Core
+Just as we would not expect repository users to type Dublin Core
 metadata in XML format by hand, we do not expect our users to have to
 deal directly with the JSON-LD presented here. This document is for tool
 developers to build systems that crosswalk data from existing systems,
@@ -38,7 +38,7 @@ or allow for user-friendly data entry.
 
 <br>
 
-# About this profile
+# About this Profile
 
 This profile covers various kinds of crate metadata:
 
@@ -64,7 +64,7 @@ This profile covers various kinds of crate metadata:
 
 <br>
 
-# Structural metadata
+# Structural Metadata
 
 The structural elements of a Language Data Commons RO-Crate are:
 
@@ -104,30 +104,30 @@ transmitted either as:
   Object data.
 
 Distributed collections may reference member collections or Objects in
-\`hasMember\` property but should not include descriptions of Objects that
+\`pcdm:hasMember\` property but should not include descriptions of Objects that
 are stored elsewhere in the repository.
 
 <br>
 
-## Bidirectional relationships
+## Bidirectional Relationships
 
-The relational hierachy between Collections, Objects and Files are represented bidirectionally in an RO-Crate by the terms \`hasPart\`/\`isPartOf\` and \`hasMember\`/\`memberOf\`.
+The relational hierachy between Collections, Objects and Files are represented bidirectionally in an RO-Crate by the terms \`hasPart\`/\`isPartOf\` and \`pcdm:hasMember\`/\`pcdm:memberOf\`.
 
-| Superset Term | Inverse Of | Subset Term  |
-| ------------- | ---------- | ------------ |
-| \`hasMember\` | ⟷          | \`memberOf\` |
-| \`hasPart\`   | ⟷          | \`isPartOf\` |
+| Superset Term      | Inverse Of | Subset Term       |
+| ------------------ | ---------- | ----------------- |
+| \`pcdm:hasMember\` | ⟷          | \`pcdm:memberOf\` |
+| \`hasPart\`        | ⟷          | \`isPartOf\`      |
 
-Objects are placed in a Collection using the \`memberOf\` property (\`pcdm:memberOf\`), which is required. The inverse will be encoded automatically using the \`hasMember\` property on a Collection. Similarly, if using \`hasMember\`, \`memberOf\` will also be automatically encoded.
+Objects are placed in a Collection using the \`pcdm:memberOf\` property, which is required. The inverse will be encoded automatically using the \`pcdm:hasMember\` property on a Collection. Similarly, if using \`pcdm:hasMember\`, \`pcdm:memberOf\` will also be automatically encoded.
 
 The same relationship applies for \`hasPart\` and \`isPartOf\` at the Object and File levels.
 
-| Superset Level |     | Relationship  |     | Subset Level |
-| -------------- | --- | ------------- | --- | ------------ |
-| Collection     | →   | \`hasMember\` | →   | Object       |
-| Collection     | ←   | \`memberOf\`  | ←   | Object       |
-| Object         | →   | \`hasPart\`   | →   | File         |
-| Object         | ←   | \`isPartOf\`  | ←   | File         |
+| Superset Level |     | Relationship       |     | Subset Level |
+| -------------- | --- | ------------------ | --- | ------------ |
+| Collection     | →   | \`pcdm:hasMember\` | →   | Object       |
+| Collection     | ←   | \`pcdm:memberOf\`  | ←   | Object       |
+| Object         | →   | \`hasPart\`        | →   | File         |
+| Object         | ←   | \`isPartOf\`       | ←   | File         |
 
 Depending on the data, using one term over another may be preferable when creating the hierarchical relationship. For example, if you are describing multiple files in a spreadsheet, it is easier to use \`isPartOf\` at the File level referencing the Object it belongs to, rather than listing all the \`hasPart\` entries at the Object level.
 
@@ -187,9 +187,9 @@ Alveo usage:
 > sample of documents from the [AustLit](http://www.austlit.edu.au/) archive.
 
 When an RO-Crate is used to package a collection that is part of
-another Collection it has a \`memberOf\` property which references a
+another Collection it has a \`pcdm:memberOf\` property which references a
 resolvable ID (within the context of a repository or service) of the
-parent Collection. The Collection may also list its members in a \`hasMember\`
+parent Collection. The Collection may also list its members in a \`pcdm:hasMember\`
 property, but this is not required.
 
 The root dataset must have at least these \`@type\` values: \`["Dataset",
@@ -221,12 +221,12 @@ corpus. This is based on the use of the term _Item_ in Alveo:
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
 
-If an RO-Crate contains a single Object the Root Dataset would have a
+If an RO-Crate contains a single Object, the Root Dataset would have a
 \`@type\` property of \`["Dataset", "RepositoryObject"]\` with a
 \`conformsTo\` property pointing to the language-data-commons Object profile
 (this document).
 
-If an RO-Crate contains an entire collection then each Object has a
+If an RO-Crate contains an entire collection, each Object has a
 \`@type\` property of \`["Dataset", "RepositoryObject"]\` and a \`conformsTo\`
 property referencing this document. For example:
 
@@ -253,29 +253,29 @@ ${rules.RepositoryObject}
 ## Files
 
 There are three important types of files (or references to other
-works) that may be included: \`PrimaryMaterial\` which is a recording or
-original text, or a citation of or proxy for it, \`DerivedMaterial\` which
+works) that may be included: \`ldac:PrimaryMaterial\` which is a recording or
+original text, or a citation of or proxy for it, \`ldac:DerivedMaterial\` which
 has been generated or sampled from primary material by a process such as format
-conversion or digitization, and \`Annotation\`, which contains one or more types of
-analysis of the \`PrimaryMaterial\` or \`DerivedMaterial\`.
+conversion or digitization, and \`ldac:Annotation\`, which contains one or more types of
+analysis of the \`ldac:PrimaryMaterial\` or \`ldac:DerivedMaterial\`.
 
-### PrimaryMaterial
+### A File:
 
-\`PrimaryMaterial\` may be a video or audio file if it is available or may be a ContextualEntity referencing a primary text such as a book.
+${rules.File}
 
-### DerivedMaterial
+### ldac:PrimaryMaterial
 
-\`DerivedMaterial\` is a non-analytical derivation from \`PrimaryMaterial\`, for example, downsampled video or excerpted text.
+\`ldac:PrimaryMaterial\` may be a video or audio file if it is available, or may be a ContextualEntity referencing a primary text such as a book.
 
-### Annotation
+### ldac:DerivedMaterial
 
-\`Annotation\` is a description or analysis of other material. More than one type of annotation may be present in a file.
+\`ldac:DerivedMaterial\` is a non-analytical derivation from \`ldac:PrimaryMaterial\`, for example, downsampled video or excerpted text.
 
-#### A [File, Annotation]:
+### ldac:Annotation
 
-${rules.Annotation}
+\`ldac:Annotation\` is a description or analysis of other material. More than one type of annotation may be present in a file.
 
-#### Describing the columns in CSV or other tabular data Annotation
+#### Describing the columns in CSV or other tabular data
 
 CSV or similar tabular files are often used to represent transcribed
 speech or sign language data, sometimes also with time codes. To enable
@@ -284,12 +284,6 @@ Schema](https://specs.frictionlessdata.io/table-schema/) described by a \`File\`
 
 For example:
 ${exampleEntities('art', ['art_schema.json'])}
-
-### Language
-
-#### A [Language] entity:
-
-${rules.Language}
 
 <br>
 
@@ -331,14 +325,14 @@ A person:
 Some corpora express ages and other demographics of participants - this
 presents a data modelling challenge, as age and some other variables change
 over time, so if the same person appears over time then we need to have a
-base \`Person\` with DoB etc. and then time-based instances of the person
+base \`Person\` with date of birth etc. as well as time-based instances of the person
 with an age, social status, gender etc. _at that time_.
 
 There are three levels at which contributions to an object can be
 modelled:
 
 1.  Include one or more \`Person\` items as context in a crate and reference
-    them with properties such as schema:creator or the
+    them with properties such as [creator](http://schema.org/creator) or the
     language-data-commons contribution properties such as [ldac:compiler]
     or [ldac:depositor]. The \`@id\` of the person MUST be a URI and SHOULD
     be re-used where the same person appears in multiple objects in a
@@ -350,7 +344,7 @@ modelled:
     [ldac:PersonSnapshot].
 
 3.  If it is important to record lots of contributions to a work (e.g. in
-    analysis of a joint work) use schema:Action. If more precision is
+    analysis of a joint work) use [Action](http://schema.org/Action). If more precision is
     required in describing the provenance of items, e.g. this work on
     [The Declaration of Rights of Man and of the
     Citizen](https://www.uts.edu.au/about/faculty-design-architecture-and-building/staff-showcase/writing-rights)
@@ -369,7 +363,7 @@ modelled:
 Where data is collected from participants in a speech study with
 elicitation tasks such as "sessions" (see this [IMDI
 document](https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf))
-or field interviews this can be recorded in metadata via the
+or field interviews, this can be recorded in metadata via the
 \`CollectionEvent\` class.
 
 The indirection in this conforms-to relationship is to allow multiple
@@ -394,7 +388,7 @@ Dakota: The University of North Dakota M.A.
 
 <br>
 
-# EXAMPLES
+# Examples
 
 [https://www.mpi.nl/ISLE/documents/docs_frame.html](https://www.mpi.nl/ISLE/documents/docs_frame.html)
 
