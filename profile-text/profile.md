@@ -109,6 +109,20 @@ are stored elsewhere in the repository.
 
 <br>
 
+## Classes
+
+In linked data, a class is a resource that represents a concept or entity. Classes specific to the Language Data Commons Schema include:
+
+| Class                                                                | Description                                                                                                                                                      |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [CollectionEvent](https://w3id.org/ldac/terms#CollectionEvent)       | A description of an event at which one or more PrimaryMaterials were captured, e.g. as video or audio.                                                           |
+| [CollectionProtocol](https://w3id.org/ldac/terms#CollectionProtocol) | A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants. |
+| [DataDepositLicense](https://w3id.org/ldac/terms#DataDepositLicense) | A license document setting out terms for deposit into a repository.                                                                                              |
+| [DataLicense](https://w3id.org/ldac/terms#DataLicense)               | A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.                                                          |
+| [DataReuseLicense](https://w3id.org/ldac/terms#DataReuseLicense)     | A license document, setting out terms for reuse of data.                                                                                                         |
+
+<br>
+
 ## Bidirectional Relationships
 
 The relational hierachy between Collections, Objects and Files are represented bidirectionally in an RO-Crate by the terms \`hasPart\`/\`isPartOf\` and \`pcdm:hasMember\`/\`pcdm:memberOf\`.
