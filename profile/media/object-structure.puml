@@ -7,40 +7,40 @@ actor "Speaker 1" as s1
 actor "Speaker 2" as s2
 
 rectangle "RO-Crate Profile" {
-rectangle "#Collection" as procoll
-rectangle "#Object" as proobj
+rectangle " #Collection" as procoll
+rectangle " #Object" as proobj
 }
 
 rectangle "Conversation" as c1 {
 
  
- rectangle "@type: [RepositoryObject]" 
+ rectangle "<b>@type:</b> RepositoryObject" 
 
 }
 rectangle "Audio File" as audio1 {
-   rectangle "@id: [file.wav]\n@type: [File, PrimaryMaterial]\ncommunicationsMode: [SpokenLanguage]\ncommunicationGenre: [Interview]\nresourceType: [PrimaryMaterial]\nencodingFormat: [audio/x-wav]" 
+   rectangle "<b>@id:</b> file.wav\n<b>@type:</b> [File, ldac:PrimaryMaterial]\n<b>ldac:communicationMode:</b> ldac:SpokenLanguage\n<b>ldac:linguisticGenre:</b> ldac:Interview\n<b>ldac:materialType:</b> ldac:PrimaryMaterial\n<b>encodingFormat:</b> audio/x-wav" 
 
 
 }
 rectangle "PDF File" as pdf1 {
-   rectangle "@id: [file.pdf]\n@type: [File, Annotation]\nannotationType: [Transcription]\ncommunicationMode: [WrittenLanguage]\nresourceType: [DerivedMaterial]\nencodingFormat: [Material/pdf]" as pt 
+   rectangle "<b>@id:</b> file.pdf\n<b>@type:</b> [File, ldac:Annotation]\n<b>ldac:annotationType:</b> ldac:Transcription\n<b>ldac:communicationMode:</b> ldac:WrittenLanguage\n<b>ldac:materialType:</b> ldac:DerivedMaterial\n<b>encodingFormat:</b> application/pdf" as pt 
 
 }
 
 rectangle "CSV File" as csv1 {
-   rectangle "@id: [file.csv]\n@type: [File, Annotation, DerivedMaterial]\nannotationType: [Transcription]\ncommunicationMode: [WrittenLanguage]\nresourceType: [DerivedMaterial]\nencodingFormat: [text/csv]" 
+   rectangle "<b>@id:</b> file.csv\n<b>@type:</b> [File, ldac:Annotation, ldac:DerivedMaterial]\n<b>ldac:annotationType:</b> ldac:Transcription\n<b>ldac:communicationMode:</b> ldac:WrittenLanguage\n<b>ldac:materialType:</b> ldac:DerivedMaterial\n<b>encodingFormat:</b> text/csv" 
 }
 
 c1 -down-> pdf1 : hasPart
 
-pdf1 -up-> audio1 : annotationOf
+pdf1 -up-> audio1 : ldac:annotationOf
 c1 -down-> audio1 : hasPart
 c1 -down-> csv1 : hasPart
-csv1 -up-> audio1 : annotationOf
-csv1 -up-> pdf1 : derivedFrom
+csv1 -up-> audio1 : ldac:annotationOf
+csv1 -up-> pdf1 : ldac:derivationOf
 
-c1 -left-> s1 : interviewer
-c1 -right-> s2 : interviewee
+c1 -left-> s1 : ldac:interviewer
+c1 -right-> s2 : ldac:interviewee
 c1 ->  proobj: conformsTo
 
 

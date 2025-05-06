@@ -55,6 +55,14 @@ For Mac:
 
 <br>
 
+### Install Node packages
+
+```
+npm install
+```
+
+<br>
+
 ### Run the Makefile script
 
 ```

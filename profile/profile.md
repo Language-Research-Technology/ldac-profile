@@ -10,10 +10,10 @@ This profile assumes that the principles and standards set out in the [PILARS pr
 The core metadata vocabularies for this profile are:
 
 - RO-Crate recommendations for data packaging and basic discoverability metadata,
-  which is mostly Schema.org terms with a handful of additions. Following
+  which is mostly [Schema.org](https://schema.org/) terms with a handful of additions. Following
   RO-Crate practice, basic metadata terms such as "who, what, where" and
   bibliographic-style descriptions are chosen from Schema.org (in preference to
-  other vocabularies such as Dublin Core or FOAF) where possible with domain-specific
+  other vocabularies such as Dublin Core or FOAF) where possible, with domain-specific
   vocabularies used for things which are not common across domains
   (such as types of language).
 
@@ -30,7 +30,7 @@ This document is primarily for use by tool developers, data scientists
 and metadata specialists developing scripts or systems for user
 communities. It is not intended for use by non-specialists.
 
-Just as we would not expect repository users to type in Dublin Core
+Just as we would not expect repository users to type Dublin Core
 metadata in XML format by hand, we do not expect our users to have to
 deal directly with the JSON-LD presented here. This document is for tool
 developers to build systems that crosswalk data from existing systems,
@@ -38,7 +38,7 @@ or allow for user-friendly data entry.
 
 <br>
 
-# About this profile
+# About this Profile
 
 This profile covers various kinds of crate metadata:
 
@@ -64,7 +64,7 @@ This profile covers various kinds of crate metadata:
 
 <br>
 
-# Structural metadata
+# Structural Metadata
 
 The structural elements of a Language Data Commons RO-Crate are:
 
@@ -92,48 +92,52 @@ A conformant RO-Crate:
 <table>
 <tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
 <tr><td>name</td><td>MUST</td><td>Text</td><td>The name of this dataset.</td></tr>
-<tr><td>license</td><td>MUST</td><td>DataReuseLicense</td><td>Link to a document that describes the rights and obligations for users of this collection record. NOTE: This does not necessarily cover the license terms that may apply to Objects in the collection which may have specific licensing. Licensing on other objects overrides the license attached to a collection record.</td></tr>
-<tr><td>rightsHolder</td><td>MUST</td><td>Text, <a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>A person or organisation owning or managing rights over the resource.</td></tr>
+<tr><td>license</td><td>MUST</td><td><a href="#type-DataReuseLicense">DataReuseLicense</a></td><td>Link to a document that describes the rights and obligations for users of this collection record. NOTE: This does not necessarily cover the license terms that may apply to Objects in the collection which may have specific licensing. Licensing on other objects overrides the license attached to a collection record.</td></tr>
+<tr><td>dct:rightsHolder</td><td>MUST</td><td>Text, <a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation owning or managing rights over the resource.</td></tr>
 <tr><td>author</td><td>MUST</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR.</td></tr>
 <tr><td>accountablePerson</td><td>MUST</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation who is the data steward for this resource.</td></tr>
 <tr><td>publisher</td><td>MUST</td><td><a href="#type-Organization">Organization</a></td><td>The organisation responsible for releasing this dataset.</td></tr>
 <tr><td>description</td><td>MUST</td><td>TextArea</td><td>An abstract of the collection. Include as much detail as possible about the motivation and use of the dataset, including things that we do not yet have properties for.</td></tr>
+<tr><td>datePublished</td><td>MUST</td><td>DateTime, Date</td><td>The (earliest) date this work was created.</td></tr>
 <tr><td>isAccessibleForFree</td><td>MAY</td><td>Boolean</td><td>This is available under an Open Access license.</td></tr>
-<tr><td>annotationOf</td><td>MAY</td><td><a href="#type-CreativeWork">CreativeWork</a></td><td>This resource contains some kind of description that adds information to the resource it references.</td></tr>
-<tr><td>isBasedOn</td><td>MAY</td><td>Text, URL</td><td>Link to or description of an original resource at an institution that holds it.</td></tr>
-<tr><td>usageInfo</td><td>MAY</td><td>Text</td><td>This field should contain either a free text bibliographic citation for this material, e.g. 'Cite as: Musgrave (2023). Title of work. DOI' or provide additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'. If both are needed, use two fields.</td></tr>
+<tr><td>ldac:annotationOf</td><td>MAY</td><td>PrimaryMaterial</td><td>This resource contains some kind of description that adds information to the resource it references.</td></tr>
+<tr><td>isBasedOn</td><td>MAY</td><td>Text, URL, <a href="#type-CreativeWork">CreativeWork</a>, <a href="#type-Dataset">Dataset</a>, <a href="#type-File">File</a></td><td>Link to or description of an original resource.</td></tr>
+<tr><td>creditText</td><td>MAY</td><td>Text</td><td>A free text bibliographic citation for this material, e.g. 'Cite as: Musgrave (2023). Title of work. DOI'.</td></tr>
+<tr><td>usageInfo</td><td>MAY</td><td>Text</td><td>Additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'.</td></tr>
 <tr><td>funder</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The organisation(s) responsible for funding the creation or collection of this dataset.</td></tr>
 <tr><td>citation</td><td>MAY</td><td><a href="#type-CreativeWork">CreativeWork</a></td><td>Associated publications.</td></tr>
+<tr><td>ldac:doi</td><td>MAY</td><td>Text</td><td>A Digital Object Identifier, e.g. https://doi.org/10.1000/182.</td></tr>
 <tr><td>temporalCoverage</td><td>MAY</td><td>DateTime, Text</td><td>The range of years of creation for items in this dataset using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level.</td></tr>
 <tr><td>spatialCoverage</td><td>MAY</td><td><a href="#type-Place">Place</a></td><td>The place(s) that are the focus of the content. It is a sub-property of contentLocation intended primarily for more technical and detailed materials. For example, with a dataset, it indicates areas that the dataset describes: a dataset Cape York languages would have spatialCoverage which was the place: the outline of the Cape.</td></tr>
-<tr><td>hasCollectionProtocol</td><td>MAY</td><td><a href="#type-CollectionProtocol">CollectionProtocol</a></td><td>A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection.</td></tr>
-<tr><td>hasMember</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a></td><td>The sub-collections, if any, associated with this collection.</td></tr>
-<tr><td>hasPart</td><td>MAY</td><td><a href="#type-File">File</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
+<tr><td>ldac:hasCollectionProtocol</td><td>MAY</td><td><a href="#type-ldac_CollectionProtocol">ldac:CollectionProtocol</a></td><td>A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection.</td></tr>
+<tr><td>pcdm:hasMember</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a>, <a href="#type-RepositoryObject">RepositoryObject</a></td><td>The sub-collections, if any, associated with this collection.</td></tr>
+<tr><td>hasPart</td><td>MAY</td><td><a href="#type-CreativeWork">CreativeWork</a>, <a href="#type-File">File</a>, <a href="#type-Dataset">Dataset</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
 <tr><td>isPartOf</td><td>MAY</td><td>URL, <a href="#type-CreativeWork">CreativeWork</a></td><td>An item or CreativeWork that this item, or CreativeWork (in some sense), is part of.</td></tr>
-<tr><td>memberOf</td><td>MAY</td><td><a href="#type-RepositoryObject">RepositoryObject</a></td><td>Links from a Repository Object or Collection to a containing Repository Object or Collection.</td></tr>
-<tr><td>annotator</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant produced an annotation of this or a related resource.</td></tr>
-<tr><td>compiler</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately.</td></tr>
-<tr><td>consultant</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>This term is commonly used by field linguists for the native speakers who work with them in describing and analysing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world, the preferred term for this role is 'informant'.</td></tr>
-<tr><td>dataInputter</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.</td></tr>
-<tr><td>depositor</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant was responsible for depositing the resource in an archive.</td></tr>
-<tr><td>developer</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>A software programmer, designer, or analyst; a designer of a questionnaire or research task.</td></tr>
-<tr><td>editor</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>This role includes anyone whose role was editorial in nature, such as proofreaders, debuggers, testers, etc. It may overlap the Compiler role in some cases.</td></tr>
-<tr><td>illustrator</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant contributed drawings or other illustrations to the resource.</td></tr>
-<tr><td>interviewee</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant was a respondent in an interview.</td></tr>
-<tr><td>interviewer</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant conducted an interview that forms part of the resource.</td></tr>
-<tr><td>participant</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>This role is intended for minor participants such as audience members or other peripherally involved participants in the event. These interlocutors need not have been physically present.</td></tr>
-<tr><td>performer</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.</td></tr>
-<tr><td>photographer</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant took the photograph, or shot the film, that appears in or constitutes the resource.</td></tr>
-<tr><td>recorder</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant operated the recording machinery used to create the resource.</td></tr>
-<tr><td>researcher</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.</td></tr>
-<tr><td>researchParticipant</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.</td></tr>
-<tr><td>responder</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of "uh-huh", "amen", "you don't say", etc. This role is sometimes referred to as a "yes-sayer", "backchanneler", or "co-conversant".</td></tr>
-<tr><td>signer</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>Those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording).</td></tr>
-<tr><td>singer</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.</td></tr>
-<tr><td>speaker</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>Those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording).</td></tr>
-<tr><td>sponsor</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant contributed financial support to the creation of the resource.</td></tr>
-<tr><td>transcriber</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant produced a transcription of this or a related resource.</td></tr>
-<tr><td>translator</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The participant produced a translation of this or a related resource.</td></tr>
+<tr><td>pcdm:memberOf</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a></td><td>Links from a Repository Object or Collection to a containing Repository Object or Collection.</td></tr>
+<tr><td>ldac:annotator</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant produced an annotation of this or a related resource.</td></tr>
+<tr><td>ldac:compiler</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant is responsible for collecting the sub-parts of the resource together.</td></tr>
+<tr><td>ldac:consultant</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language.</td></tr>
+<tr><td>ldac:dataInputter</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant responsible for entering, re-typing, and/or structuring the data contained in the resource.</td></tr>
+<tr><td>ldac:depositor</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant responsible for depositing the resource in an archive.</td></tr>
+<tr><td>ldac:developer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource.</td></tr>
+<tr><td>ldac:editor</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant reviewed, corrected, and/or tested the resource.</td></tr>
+<tr><td>ldac:illustrator</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant contributed drawings or other illustrations to the resource.</td></tr>
+<tr><td>ldac:interpreter</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource.</td></tr>
+<tr><td>ldac:interviewee</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant was a respondent in an interview.</td></tr>
+<tr><td>ldac:interviewer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant conducted an interview that forms part of the resource.</td></tr>
+<tr><td>ldac:participant</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant was present during the creation of the resource, but did not contribute substantially to its content.</td></tr>
+<tr><td>ldac:performer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.</td></tr>
+<tr><td>ldac:photographer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant took the photograph, or shot the film, that appears in or constitutes the resource.</td></tr>
+<tr><td>ldac:recorder</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant operated the recording machinery used to create the resource.</td></tr>
+<tr><td>ldac:researcher</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.</td></tr>
+<tr><td>ldac:researchParticipant</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.</td></tr>
+<tr><td>ldac:responder</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others.</td></tr>
+<tr><td>ldac:signer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).</td></tr>
+<tr><td>ldac:singer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.</td></tr>
+<tr><td>ldac:speaker</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).</td></tr>
+<tr><td>ldac:sponsor</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant contributed financial support to the creation of the resource.</td></tr>
+<tr><td>ldac:transcriber</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant produced a transcription of this or a related resource.</td></tr>
+<tr><td>ldac:translator</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant produced a translation of this or a related resource.</td></tr>
 </table>
 
 
@@ -153,30 +157,44 @@ transmitted either as:
   Object data.
 
 Distributed collections may reference member collections or Objects in
-`hasMember` property but should not include descriptions of Objects that
+`pcdm:hasMember` property but should not include descriptions of Objects that
 are stored elsewhere in the repository.
 
 <br>
 
-## Bidirectional relationships
+## Classes
 
-The relational hierachy between Collections, Objects and Files are represented bidirectionally in an RO-Crate by the terms `hasPart`/`isPartOf` and `hasMember`/`memberOf`.
+In linked data, a class is a resource that represents a concept or entity. Classes specific to the Language Data Commons Schema include:
 
-| Superset Term | Inverse Of | Subset Term  |
-| ------------- | ---------- | ------------ |
-| `hasMember` | ⟷          | `memberOf` |
-| `hasPart`   | ⟷          | `isPartOf` |
+| Class                                                                | Description                                                                                                                                                      |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [CollectionEvent](https://w3id.org/ldac/terms#CollectionEvent)       | A description of an event at which one or more PrimaryMaterials were captured, e.g. as video or audio.                                                           |
+| [CollectionProtocol](https://w3id.org/ldac/terms#CollectionProtocol) | A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants. |
+| [DataDepositLicense](https://w3id.org/ldac/terms#DataDepositLicense) | A license document setting out terms for deposit into a repository.                                                                                              |
+| [DataLicense](https://w3id.org/ldac/terms#DataLicense)               | A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.                                                          |
+| [DataReuseLicense](https://w3id.org/ldac/terms#DataReuseLicense)     | A license document, setting out terms for reuse of data.                                                                                                         |
 
-Objects are placed in a Collection using the `memberOf` property (`pcdm:memberOf`), which is required. The inverse will be encoded automatically using the `hasMember` property on a Collection. Similarly, if using `hasMember`, `memberOf` will also be automatically encoded.
+<br>
+
+## Bidirectional Relationships
+
+The relational hierachy between Collections, Objects and Files are represented bidirectionally in an RO-Crate by the terms `hasPart`/`isPartOf` and `pcdm:hasMember`/`pcdm:memberOf`.
+
+| Superset Term      | Inverse Of | Subset Term       |
+| ------------------ | ---------- | ----------------- |
+| `pcdm:hasMember` | ⟷          | `pcdm:memberOf` |
+| `hasPart`        | ⟷          | `isPartOf`      |
+
+Objects are placed in a Collection using the `pcdm:memberOf` property, which is required. The inverse will be encoded automatically using the `pcdm:hasMember` property on a Collection. Similarly, if using `pcdm:hasMember`, `pcdm:memberOf` will also be automatically encoded.
 
 The same relationship applies for `hasPart` and `isPartOf` at the Object and File levels.
 
-| Superset Level |     | Relationship  |     | Subset Level |
-| -------------- | --- | ------------- | --- | ------------ |
-| Collection     | →   | `hasMember` | →   | Object       |
-| Collection     | ←   | `memberOf`  | ←   | Object       |
-| Object         | →   | `hasPart`   | →   | File         |
-| Object         | ←   | `isPartOf`  | ←   | File         |
+| Superset Level |     | Relationship       |     | Subset Level |
+| -------------- | --- | ------------------ | --- | ------------ |
+| Collection     | →   | `pcdm:hasMember` | →   | Object       |
+| Collection     | ←   | `pcdm:memberOf`  | ←   | Object       |
+| Object         | →   | `hasPart`        | →   | File         |
+| Object         | ←   | `isPartOf`       | ←   | File         |
 
 Depending on the data, using one term over another may be preferable when creating the hierarchical relationship. For example, if you are describing multiple files in a spreadsheet, it is easier to use `isPartOf` at the File level referencing the Object it belongs to, rather than listing all the `hasPart` entries at the Object level.
 
@@ -236,9 +254,9 @@ Alveo usage:
 > sample of documents from the [AustLit](http://www.austlit.edu.au/) archive.
 
 When an RO-Crate is used to package a collection that is part of
-another Collection it has a `memberOf` property which references a
+another Collection it has a `pcdm:memberOf` property which references a
 resolvable ID (within the context of a repository or service) of the
-parent Collection. The Collection may also list its members in a `hasMember`
+parent Collection. The Collection may also list its members in a `pcdm:hasMember`
 property, but this is not required.
 
 The root dataset must have at least these `@type` values: `["Dataset",
@@ -250,23 +268,25 @@ The root dataset must have at least these `@type` values: `["Dataset",
 
 <table>
 <tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
-<tr><td>inLanguage</td><td>MUST</td><td><a href="#type-Language">Language</a></td><td>The language(s) of the materials (including PrimaryMaterials, DerivedMaterials and Annotations) in this collection.</td></tr>
-<tr><td>subjectLanguage</td><td>MUST</td><td><a href="#type-Language">Language</a></td><td>The languages that the materials in the collection are about (not the language that it is in). This is particularly used on Annotations that may talk about PrimaryMaterials or DerivedMaterials.</td></tr>
+<tr><td>inLanguage</td><td>MUST</td><td>Language</td><td>The language in which the resource is written.</td></tr>
 <tr><td>name</td><td>MUST</td><td>Text</td><td>The name of this collection.</td></tr>
 <tr><td>accountablePerson</td><td>MUST</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation who is the data steward for this resource.</td></tr>
 <tr><td>contentLocation</td><td>MAY</td><td><a href="#type-Place">Place</a></td><td>The location depicted or described in the content. For example, the location in a photograph or painting.</td></tr>
-<tr><td>conformsTo</td><td>MAY</td><td>Select</td><td>A link to the Text Commons RO-Crate profile for collections.</td></tr>
+<tr><td>conformsTo</td><td>MAY</td><td>Select</td><td>A link to the language data commons RO-Crate profile for collections.</td></tr>
+<tr><td>ldac:subjectLanguage</td><td>MAY</td><td>Language</td><td>The languages that the materials in the collection are about (not the language that it is in).</td></tr>
 <tr><td>author</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR.</td></tr>
 <tr><td>funder</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The organisation(s) responsible for funding the creation or collection of this data.</td></tr>
 <tr><td>citation</td><td>MAY</td><td><a href="#type-CreativeWork">CreativeWork</a></td><td>Associated publications.</td></tr>
-<tr><td>isBasedOn</td><td>MAY</td><td>Text, URL</td><td>Link to or description of an original resource at an institution that holds it.</td></tr>
+<tr><td>isBasedOn</td><td>MAY</td><td>Text, URL, <a href="#type-CreativeWork">CreativeWork</a>, <a href="#type-Dataset">Dataset</a>, <a href="#type-File">File</a></td><td>Link to or description of an original resource at an institution that holds it.</td></tr>
 <tr><td>description</td><td>MAY</td><td>TextArea</td><td>A description of the collection.</td></tr>
 <tr><td>temporalCoverage</td><td>MAY</td><td>DateTime, Text</td><td>The range of years of creation for items in this collection using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level.</td></tr>
-<tr><td>hasCollectionProtocol</td><td>MAY</td><td><a href="#type-CollectionProtocol">CollectionProtocol</a></td><td>A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection.</td></tr>
-<tr><td>hasMember</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a></td><td>The sub-collection.</td></tr>
+<tr><td>ldac:hasCollectionProtocol</td><td>MAY</td><td><a href="#type-ldac_CollectionProtocol">ldac:CollectionProtocol</a></td><td>A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection.</td></tr>
+<tr><td>pcdm:hasMember</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a>, <a href="#type-RepositoryObject">RepositoryObject</a></td><td>The sub-collection.</td></tr>
 <tr><td>dateCreated</td><td>MAY</td><td>Date</td><td>The (earliest) date the data in this dataset were created.</td></tr>
-<tr><td>dateFreeText</td><td>MAY</td><td>Text</td><td>Date information which cannot be put in one of the standard date formats, e.g. 'mid-1970s', or it is not clear, for example, if it is a creation or publication date.</td></tr>
+<tr><td>ldac:dateFreeText</td><td>MAY</td><td>Text</td><td>Date information which cannot be put in one of the standard date formats, e.g. 'mid-1970s', or it is not clear, for example, if it is a creation or publication date.</td></tr>
 <tr><td>holdingArchive</td><td>MAY</td><td><a href="#type-Organization">Organization</a>, Text</td><td>Organisation where the original of this work or collection is housed.</td></tr>
+<tr><td>ldac:itemLocation</td><td>MAY</td><td><a href="#type-Place">Place</a>, <a href="#type-Organization">Organization</a></td><td>Current location of the item, e.g. where a set of audio tapes are stored.</td></tr>
+<tr><td>ldac:doi</td><td>MAY</td><td>Text</td><td>A Digital Object Identifier, e.g. https://doi.org/10.1000/182.</td></tr>
 </table>
 
 
@@ -293,12 +313,12 @@ corpus. This is based on the use of the term _Item_ in Alveo:
 The definition of an object is necessarily loose and needs to reflect
 what data owners have chosen to do with their collections in the past.
 
-If an RO-Crate contains a single Object the Root Dataset would have a
+If an RO-Crate contains a single Object, the Root Dataset would have a
 `@type` property of `["Dataset", "RepositoryObject"]` with a
 `conformsTo` property pointing to the language-data-commons Object profile
 (this document).
 
-If an RO-Crate contains an entire collection then each Object has a
+If an RO-Crate contains an entire collection, each Object has a
 `@type` property of `["Dataset", "RepositoryObject"]` and a `conformsTo`
 property referencing this document. For example:
 
@@ -322,27 +342,51 @@ these use the Schema.org mechanism of `DefinedTerm` and `DefinedTermSet`.
 
 <table>
 <tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
-<tr><td>hasPart</td><td>MAY</td><td><a href="#type-File">File</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
-<tr><td>conformsTo</td><td>MAY</td><td>Text</td><td>A link to the Text Commons RO-Crate profile for collections.</td></tr>
+<tr><td>hasPart</td><td>MAY</td><td><a href="#type-CreativeWork">CreativeWork</a>, <a href="#type-File">File</a>, <a href="#type-Dataset">Dataset</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
+<tr><td>conformsTo</td><td>MAY</td><td>Text</td><td>A link to the language data commons RO-Crate profile for collections.</td></tr>
 <tr><td>publisher</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The publisher of the creative work.</td></tr>
 <tr><td>creator</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.</td></tr>
-<tr><td>compiler</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The contributor responsible for collecting the sub-parts of the resource together.</td></tr>
+<tr><td>ldac:compiler</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant is responsible for collecting the sub-parts of the resource together.</td></tr>
 <tr><td>description</td><td>MAY</td><td>Text</td><td>A description of the item.</td></tr>
-<tr><td>datePublished</td><td>MAY</td><td>Text</td><td>Date of first broadcast/publication.</td></tr>
+<tr><td>datePublished</td><td>MAY</td><td>DateTime, Date</td><td>The (earliest) date this work was created.</td></tr>
 <tr><td>temporalCoverage</td><td>MAY</td><td>Text</td><td>The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In
       the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written "2011/2012"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL.
       Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via "1939/1945".
 
 Open-ended date ranges can be written with ".." in place of the end date. For example, "2015-11/.." indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated.</td></tr>
-<tr><td>language</td><td>MAY</td><td><a href="#type-Language">Language</a></td><td>A sub property of instrument. The language used on this action.</td></tr>
-<tr><td>memberOf</td><td>MAY</td><td>Text</td><td>An Organization (or ProgramMembership) to which this Person or Organization belongs.</td></tr>
-<tr><td>inLanguage</td><td>MAY</td><td><a href="#type-Language">Language</a></td><td>The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].</td></tr>
+<tr><td>pcdm:memberOf</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a></td><td>Links from a Repository Object or Collection to a containing Repository Object or Collection.</td></tr>
+<tr><td>inLanguage</td><td>MAY</td><td>Language</td><td>The language in which the resource is written.</td></tr>
+<tr><td>ldac:subjectLanguage</td><td>MAY</td><td>Language</td><td>The languages that the materials in the collection are about (not the language that it is in).</td></tr>
 <tr><td>dateCreated</td><td>MAY</td><td>Text</td><td>The date on which the CreativeWork was created or the item was added to a DataFeed.</td></tr>
 <tr><td>name</td><td>MAY</td><td>Text</td><td>The name of the item.</td></tr>
 <tr><td>license</td><td>MAY</td><td>OrganizationReuseLicense</td><td>A license document that applies to this content, typically indicated by URL.</td></tr>
-<tr><td>hasAnnotation</td><td>MAY</td><td>Text</td><td>This resource is referenced by another resource that adds information to it such as a translation, transcription or other analysis.</td></tr>
-<tr><td>speaker</td><td>MAY</td><td>Speaker</td><td>The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource.</td></tr>
-<tr><td>identifier</td><td>MAY</td><td>PropertyValue</td><td>The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.
+<tr><td>ldac:hasAnnotation</td><td>MAY</td><td>Annotation</td><td>This resource is referenced by another resource that adds information to it such as a translation, transcription or other analysis.</td></tr>
+<tr><td>ldac:annotator</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant produced an annotation of this or a related resource.</td></tr>
+<tr><td>author</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation responsible for creating this work. Authors should be identified using URIs such as ORCiD or ROR.</td></tr>
+<tr><td>ldac:consultant</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language.</td></tr>
+<tr><td>ldac:dataInputter</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant responsible for entering, re-typing, and/or structuring the data contained in the resource.</td></tr>
+<tr><td>ldac:depositor</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant responsible for depositing the resource in an archive.</td></tr>
+<tr><td>ldac:developer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource.</td></tr>
+<tr><td>ldac:editor</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant reviewed, corrected, and/or tested the resource.</td></tr>
+<tr><td>ldac:illustrator</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant contributed drawings or other illustrations to the resource.</td></tr>
+<tr><td>ldac:interpreter</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource.</td></tr>
+<tr><td>ldac:interviewee</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant was a respondent in an interview.</td></tr>
+<tr><td>ldac:interviewer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant conducted an interview that forms part of the resource.</td></tr>
+<tr><td>ldac:itemLocation</td><td>MAY</td><td><a href="#type-Place">Place</a>, <a href="#type-Organization">Organization</a></td><td>Current location of the item, e.g. where a set of audio tapes are stored.</td></tr>
+<tr><td>ldac:participant</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant was present during the creation of the resource, but did not contribute substantially to its content.</td></tr>
+<tr><td>ldac:performer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.</td></tr>
+<tr><td>ldac:photographer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant took the photograph, or shot the film, that appears in or constitutes the resource.</td></tr>
+<tr><td>ldac:recorder</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant operated the recording machinery used to create the resource.</td></tr>
+<tr><td>ldac:researcher</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.</td></tr>
+<tr><td>ldac:researchParticipant</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.</td></tr>
+<tr><td>ldac:responder</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others.</td></tr>
+<tr><td>ldac:signer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).</td></tr>
+<tr><td>ldac:singer</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.</td></tr>
+<tr><td>ldac:speaker</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).</td></tr>
+<tr><td>ldac:sponsor</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant contributed financial support to the creation of the resource.</td></tr>
+<tr><td>ldac:transcriber</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant produced a transcription of this or a related resource.</td></tr>
+<tr><td>ldac:translator</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The participant produced a translation of this or a related resource.</td></tr>
+<tr><td>identifier</td><td>MAY</td><td>PropertyValue, Text, URL</td><td>The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.
         </td></tr>
 </table>
 
@@ -353,42 +397,56 @@ Open-ended date ranges can be written with ".." in place of the end date. For ex
 ## Files
 
 There are three important types of files (or references to other
-works) that may be included: `PrimaryMaterial` which is a recording or
-original text, or a citation of or proxy for it, `DerivedMaterial` which
+works) that may be included: `ldac:PrimaryMaterial` which is a recording or
+original text, or a citation of or proxy for it, `ldac:DerivedMaterial` which
 has been generated or sampled from primary material by a process such as format
-conversion or digitization, and `Annotation`, which contains one or more types of
-analysis of the `PrimaryMaterial` or `DerivedMaterial`.
+conversion or digitization, and `ldac:Annotation`, which contains one or more types of
+analysis of the `ldac:PrimaryMaterial` or `ldac:DerivedMaterial`.
 
-### PrimaryMaterial
-
-`PrimaryMaterial` may be a video or audio file if it is available or may be a ContextualEntity referencing a primary text such as a book.
-
-### DerivedMaterial
-
-`DerivedMaterial` is a non-analytical derivation from `PrimaryMaterial`, for example, downsampled video or excerpted text.
-
-### Annotation
-
-`Annotation` is a description or analysis of other material. More than one type of annotation may be present in a file.
-
-#### A [File, Annotation]:
+### A File:
 
 
 
 <table>
 <tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td>encodingFormat</td><td>MAY</td><td>Text, WebPage, Standard</td><td>The media type typically expressed using a MIME format.</td></tr>
+<tr><td>ldac:communicationMode</td><td>MAY</td><td><a href="#object-ldac_Gesture">Gesture</a>, <a href="#object-ldac_SignedLanguage">SignedLanguage</a>, <a href="#object-ldac_Song">Song</a>, <a href="#object-ldac_SpokenLanguage">SpokenLanguage</a>, <a href="#object-ldac_WhistledLanguage">WhistledLanguage</a>, <a href="#object-ldac_WrittenLanguage">WrittenLanguage</a></td><td>The mode(s) (spoken, written, signed, etc.) used in the interaction represented by this resource.</td></tr>
 <tr><td>name</td><td>MAY</td><td>Text</td><td>The name of the item.</td></tr>
 <tr><td>license</td><td>MAY</td><td>OrganizationReuseLicense</td><td>A license document that applies to this content, typically indicated by URL.</td></tr>
-<tr><td>encodingFormat</td><td>MAY</td><td>Text</td><td>The media type typically expressed using a MIME format.</td></tr>
-<tr><td>communicationMode</td><td>MAY</td><td>DefinedTerm</td><td>The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.</td></tr>
-<tr><td>linguisticGenre</td><td>MAY</td><td>DefinedTerm</td><td>A linguistic classification of the genre of this resource.</td></tr>
-<tr><td>annotationType</td><td>MAY</td><td>DefinedTerm</td><td>Specifies the type of an Annotation resource.</td></tr>
-<tr><td>size</td><td>MAY</td><td>Text</td><td>The size in bytes.</td></tr>
+<tr><td>ldac:linguisticGenre</td><td>MAY</td><td><a href="#object-ldac_Dialogue">Dialogue</a>, <a href="#object-ldac_Drama">Drama</a>, <a href="#object-ldac_Formulaic">Formulaic</a>, <a href="#object-ldac_Informational">Informational</a>, <a href="#object-ldac_Interview">Interview</a>, <a href="#object-ldac_Lexicon">Lexicon</a>, <a href="#object-ldac_Ludic">Ludic</a>, <a href="#object-ldac_Narrative">Narrative</a>, <a href="#object-ldac_Oratory">Oratory</a>, <a href="#object-ldac_Procedural">Procedural</a>, <a href="#object-ldac_Report">Report</a>, <a href="#object-ldac_Thesaurus">Thesaurus</a></td><td>A linguistic classification of the genre of this resource.</td></tr>
+<tr><td>contentSize</td><td>MAY</td><td>Text</td><td>File size in (mega/kilo)bytes.</td></tr>
+<tr><td>hasPart</td><td>MAY</td><td><a href="#type-CreativeWork">CreativeWork</a>, <a href="#type-File">File</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
+<tr><td>publisher</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The publisher of the creative work.</td></tr>
+<tr><td>creator</td><td>MAY</td><td><a href="#type-Person">Person</a></td><td>The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.</td></tr>
+<tr><td>datePublished</td><td>MAY</td><td>DateTime, Date</td><td>The (earliest) date this work was created.</td></tr>
+<tr><td>temporalCoverage</td><td>MAY</td><td>Text</td><td>The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In
+      the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written "2011/2012"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL.
+      Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via "1939/1945".
+
+Open-ended date ranges can be written with ".." in place of the end date. For example, "2015-11/.." indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated.</td></tr>
+<tr><td>inLanguage</td><td>MAY</td><td>Language</td><td>The language in which the resource is written.</td></tr>
+<tr><td>ldac:subjectLanguage</td><td>MAY</td><td>Language</td><td>The languages that the materials in the collection are about (not the language that it is in).</td></tr>
+<tr><td>dateCreated</td><td>MAY</td><td>Text</td><td>The date on which the CreativeWork was created or the item was added to a DataFeed.</td></tr>
+<tr><td>ldac:materialType</td><td>MAY</td><td><a href="#object-ldac_PrimaryMaterial">PrimaryMaterial</a>, <a href="#object-ldac_Annotation">Annotation</a>, <a href="#object-ldac_DerivedMaterial">DerivedMaterial</a></td><td>Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation.</td></tr>
+<tr><td>ldac:derivationOf</td><td>MAY</td><td>Annotation, PrimaryMaterial</td><td>This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF.</td></tr>
+<tr><td>ldac:hasDerivation</td><td>MAY</td><td>DerivedMaterial</td><td>This property references another resource that is derived from it, such as a downsampled audio or video file, or text extracted from a PDF.</td></tr>
 </table>
 
 
 
-#### Describing the columns in CSV or other tabular data Annotation
+### ldac:PrimaryMaterial
+
+`ldac:PrimaryMaterial` may be a video or audio file if it is available, or may be a ContextualEntity referencing a primary text such as a book.
+
+### ldac:DerivedMaterial
+
+`ldac:DerivedMaterial` is a non-analytical derivation from `ldac:PrimaryMaterial`, for example, downsampled video or excerpted text.
+
+### ldac:Annotation
+
+`ldac:Annotation` is a description or analysis of other material. More than one type of annotation may be present in a file.
+
+#### Describing the columns in CSV or other tabular data
 
 CSV or similar tabular files are often used to represent transcribed
 speech or sign language data, sometimes also with time codes. To enable
@@ -408,22 +466,6 @@ For example:
 }
 ```
 [source](../example/art/README.md)
-
-
-
-### Language
-
-#### A [Language] entity:
-
-
-
-<table>
-<tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
-<tr><td>name</td><td>MAY</td><td>Text</td><td>The name of the item.</td></tr>
-<tr><td>geo</td><td>MAY</td><td>GeoCoordinates</td><td>The geographic coordinates of the place.</td></tr>
-<tr><td>sameAs</td><td>MAY</td><td>Text</td><td>URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.</td></tr>
-<tr><td>alternateName</td><td>MAY</td><td>Text</td><td>An alias for the item.</td></tr>
-</table>
 
 
 
@@ -593,14 +635,14 @@ A person:
 Some corpora express ages and other demographics of participants - this
 presents a data modelling challenge, as age and some other variables change
 over time, so if the same person appears over time then we need to have a
-base `Person` with DoB etc. and then time-based instances of the person
+base `Person` with date of birth etc. as well as time-based instances of the person
 with an age, social status, gender etc. _at that time_.
 
 There are three levels at which contributions to an object can be
 modelled:
 
 1.  Include one or more `Person` items as context in a crate and reference
-    them with properties such as schema:creator or the
+    them with properties such as [creator](http://schema.org/creator) or the
     language-data-commons contribution properties such as [ldac:compiler]
     or [ldac:depositor]. The `@id` of the person MUST be a URI and SHOULD
     be re-used where the same person appears in multiple objects in a
@@ -612,7 +654,7 @@ modelled:
     [ldac:PersonSnapshot].
 
 3.  If it is important to record lots of contributions to a work (e.g. in
-    analysis of a joint work) use schema:Action. If more precision is
+    analysis of a joint work) use [Action](http://schema.org/Action). If more precision is
     required in describing the provenance of items, e.g. this work on
     [The Declaration of Rights of Man and of the
     Citizen](https://www.uts.edu.au/about/faculty-design-architecture-and-building/staff-showcase/writing-rights)
@@ -631,7 +673,7 @@ modelled:
 Where data is collected from participants in a speech study with
 elicitation tasks such as "sessions" (see this [IMDI
 document](https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf))
-or field interviews this can be recorded in metadata via the
+or field interviews, this can be recorded in metadata via the
 `CollectionEvent` class.
 
 The indirection in this conforms-to relationship is to allow multiple
@@ -656,7 +698,7 @@ Dakota: The University of North Dakota M.A.
 
 <br>
 
-# EXAMPLES
+# Examples
 
 [https://www.mpi.nl/ISLE/documents/docs_frame.html](https://www.mpi.nl/ISLE/documents/docs_frame.html)
 
