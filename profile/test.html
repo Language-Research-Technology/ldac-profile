@@ -120,7 +120,7 @@ license
 MUST
 </td>
 <td>
-<a href="#type-DataReuseLicense">DataReuseLicense</a>
+<a href="#type-ldac_DataReuseLicense">ldac:DataReuseLicense</a>
 </td>
 <td>
 Link to a document that describes the rights and obligations for users
@@ -242,7 +242,7 @@ ldac:annotationOf
 MAY
 </td>
 <td>
-PrimaryMaterial
+ldac:PrimaryMaterial
 </td>
 <td>
 This resource contains some kind of description that adds information to
@@ -1630,7 +1630,7 @@ license
 MAY
 </td>
 <td>
-OrganizationReuseLicense
+<a href="#type-ldac_DataReuseLicense">ldac:DataReuseLicense</a>
 </td>
 <td>
 A license document that applies to this content, typically indicated by
@@ -1645,7 +1645,7 @@ ldac:hasAnnotation
 MAY
 </td>
 <td>
-Annotation
+ldac:Annotation
 </td>
 <td>
 This resource is referenced by another resource that adds information to
@@ -2123,12 +2123,12 @@ ldac:communicationMode
 MAY
 </td>
 <td>
-<a href="#object-ldac_Gesture">Gesture</a>,
-<a href="#object-ldac_SignedLanguage">SignedLanguage</a>,
-<a href="#object-ldac_Song">Song</a>,
-<a href="#object-ldac_SpokenLanguage">SpokenLanguage</a>,
-<a href="#object-ldac_WhistledLanguage">WhistledLanguage</a>,
-<a href="#object-ldac_WrittenLanguage">WrittenLanguage</a>
+<a href="#object-ldac_Gesture">ldac:Gesture</a>,
+<a href="#object-ldac_SignedLanguage">ldac:SignedLanguage</a>,
+<a href="#object-ldac_Song">ldac:Song</a>,
+<a href="#object-ldac_SpokenLanguage">ldac:SpokenLanguage</a>,
+<a href="#object-ldac_WhistledLanguage">ldac:WhistledLanguage</a>,
+<a href="#object-ldac_WrittenLanguage">ldac:WrittenLanguage</a>
 </td>
 <td>
 The mode(s) (spoken, written, signed, etc.) used in the interaction
@@ -2157,7 +2157,7 @@ license
 MAY
 </td>
 <td>
-OrganizationReuseLicense
+<a href="#type-ldac_DataReuseLicense">ldac:DataReuseLicense</a>
 </td>
 <td>
 A license document that applies to this content, typically indicated by
@@ -2172,18 +2172,18 @@ ldac:linguisticGenre
 MAY
 </td>
 <td>
-<a href="#object-ldac_Dialogue">Dialogue</a>,
-<a href="#object-ldac_Drama">Drama</a>,
-<a href="#object-ldac_Formulaic">Formulaic</a>,
-<a href="#object-ldac_Informational">Informational</a>,
-<a href="#object-ldac_Interview">Interview</a>,
-<a href="#object-ldac_Lexicon">Lexicon</a>,
-<a href="#object-ldac_Ludic">Ludic</a>,
-<a href="#object-ldac_Narrative">Narrative</a>,
-<a href="#object-ldac_Oratory">Oratory</a>,
-<a href="#object-ldac_Procedural">Procedural</a>,
-<a href="#object-ldac_Report">Report</a>,
-<a href="#object-ldac_Thesaurus">Thesaurus</a>
+<a href="#object-ldac_Dialogue">ldac:Dialogue</a>,
+<a href="#object-ldac_Drama">ldac:Drama</a>,
+<a href="#object-ldac_Formulaic">ldac:Formulaic</a>,
+<a href="#object-ldac_Informational">ldac:Informational</a>,
+<a href="#object-ldac_Interview">ldac:Interview</a>,
+<a href="#object-ldac_Lexicon">ldac:Lexicon</a>,
+<a href="#object-ldac_Ludic">ldac:Ludic</a>,
+<a href="#object-ldac_Narrative">ldac:Narrative</a>,
+<a href="#object-ldac_Oratory">ldac:Oratory</a>,
+<a href="#object-ldac_Procedural">ldac:Procedural</a>,
+<a href="#object-ldac_Report">ldac:Report</a>,
+<a href="#object-ldac_Thesaurus">ldac:Thesaurus</a>
 </td>
 <td>
 A linguistic classification of the genre of this resource.
@@ -2343,9 +2343,9 @@ ldac:materialType
 MAY
 </td>
 <td>
-<a href="#object-ldac_PrimaryMaterial">PrimaryMaterial</a>,
-<a href="#object-ldac_Annotation">Annotation</a>,
-<a href="#object-ldac_DerivedMaterial">DerivedMaterial</a>
+<a href="#object-ldac_PrimaryMaterial">ldac:PrimaryMaterial</a>,
+<a href="#object-ldac_Annotation">ldac:Annotation</a>,
+<a href="#object-ldac_DerivedMaterial">ldac:DerivedMaterial</a>
 </td>
 <td>
 Indicates whether the material in a file is the original (primary)
@@ -2360,7 +2360,7 @@ ldac:derivationOf
 MAY
 </td>
 <td>
-Annotation, PrimaryMaterial
+ldac:Annotation, ldac:PrimaryMaterial
 </td>
 <td>
 This property references another resource from which the current
@@ -2376,7 +2376,7 @@ ldac:hasDerivation
 MAY
 </td>
 <td>
-DerivedMaterial
+ldac:DerivedMaterial
 </td>
 <td>
 This property references another resource that is derived from it, such
