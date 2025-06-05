@@ -268,11 +268,11 @@ The root dataset must have at least these `@type` values: `["Dataset",
 
 <table>
 <tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
-<tr><td>inLanguage</td><td>MUST</td><td>Language</td><td>The language in which the resource is written.</td></tr>
 <tr><td>name</td><td>MUST</td><td>Text</td><td>The name of this collection.</td></tr>
 <tr><td>accountablePerson</td><td>MUST</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation who is the data steward for this resource.</td></tr>
 <tr><td>contentLocation</td><td>MAY</td><td><a href="#type-Place">Place</a></td><td>The location depicted or described in the content. For example, the location in a photograph or painting.</td></tr>
 <tr><td>conformsTo</td><td>MAY</td><td>Select</td><td>A link to the language data commons RO-Crate profile for collections.</td></tr>
+<tr><td>inLanguage</td><td>MAY</td><td>Language</td><td>The language in which the resource is written.</td></tr>
 <tr><td>ldac:subjectLanguage</td><td>MAY</td><td>Language</td><td>The languages that the materials in the collection are about (not the language that it is in).</td></tr>
 <tr><td>author</td><td>MAY</td><td><a href="#type-Person">Person</a>, <a href="#type-Organization">Organization</a></td><td>The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR.</td></tr>
 <tr><td>funder</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The organisation(s) responsible for funding the creation or collection of this data.</td></tr>
@@ -342,6 +342,7 @@ these use the Schema.org mechanism of `DefinedTerm` and `DefinedTermSet`.
 
 <table>
 <tr><td><strong>Property</strong></td><td><strong>Required?</strong></td><td>Expected value range</strong></td><td><strong>Descriptions</strong></td></tr>
+<tr><td>inLanguage</td><td>MUST</td><td>Language</td><td>The language in which the resource is written.</td></tr>
 <tr><td>hasPart</td><td>MAY</td><td><a href="#type-CreativeWork">CreativeWork</a>, <a href="#type-File">File</a>, <a href="#type-Dataset">Dataset</a></td><td>An item or CreativeWork that is part of this item, or CreativeWork (in some sense).</td></tr>
 <tr><td>conformsTo</td><td>MAY</td><td>Text</td><td>A link to the language data commons RO-Crate profile for collections.</td></tr>
 <tr><td>publisher</td><td>MAY</td><td><a href="#type-Organization">Organization</a></td><td>The publisher of the creative work.</td></tr>
@@ -355,7 +356,6 @@ these use the Schema.org mechanism of `DefinedTerm` and `DefinedTermSet`.
 
 Open-ended date ranges can be written with ".." in place of the end date. For example, "2015-11/.." indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated.</td></tr>
 <tr><td>pcdm:memberOf</td><td>MAY</td><td><a href="#type-RepositoryCollection">RepositoryCollection</a></td><td>Links from a Repository Object or Collection to a containing Repository Object or Collection.</td></tr>
-<tr><td>inLanguage</td><td>MAY</td><td>Language</td><td>The language in which the resource is written.</td></tr>
 <tr><td>ldac:subjectLanguage</td><td>MAY</td><td>Language</td><td>The languages that the materials in the collection are about (not the language that it is in).</td></tr>
 <tr><td>dateCreated</td><td>MAY</td><td>Text</td><td>The date on which the CreativeWork was created or the item was added to a DataFeed.</td></tr>
 <tr><td>name</td><td>MAY</td><td>Text</td><td>The name of the item.</td></tr>
