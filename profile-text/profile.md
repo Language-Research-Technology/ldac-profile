@@ -237,8 +237,8 @@ what data owners have chosen to do with their collections in the past.
 
 If an RO-Crate contains a single Object, the Root Dataset would have a
 \`@type\` property of \`["Dataset", "RepositoryObject"]\` with a
-\`conformsTo\` property pointing to the language-data-commons Object profile
-(this document).
+\`conformsTo\` property pointing to the Language Data Commons Object profile 
+<https://w3id.org/ldac/profile#Object> (this document).
 
 If an RO-Crate contains an entire collection, each Object has a
 \`@type\` property of \`["Dataset", "RepositoryObject"]\` and a \`conformsTo\`
@@ -347,7 +347,7 @@ modelled:
 
 1.  Include one or more \`Person\` items as context in a crate and reference
     them with properties such as [creator](http://schema.org/creator) or the
-    language-data-commons contribution properties such as [ldac:compiler]
+    Language Data Commons Vocabulary properties such as [ldac:compiler]
     or [ldac:depositor]. The \`@id\` of the person MUST be a URI and SHOULD
     be re-used where the same person appears in multiple objects in a
     collection or repository.

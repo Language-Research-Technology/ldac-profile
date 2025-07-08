@@ -13,6 +13,7 @@ This profile can also be updated using the Makefile which generates `profile/pro
 If updates are required, edit the following files in this repository:
 
 - `profile-text/profile.md`
+- `.puml` files in `profile/media`
 - `examples`
 
 Or this file in [ro-crate-modes](https://github.com/Language-Research-Technology/ro-crate-modes):
