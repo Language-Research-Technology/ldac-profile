@@ -14,7 +14,7 @@ rectangle " #Object" as proobj
 rectangle "Conversation" as c1 {
 
  
- rectangle "<b>@type:</b> RepositoryObject" 
+ rectangle "<b>@type:</b> [Dataset, RepositoryObject]" 
 
 }
 rectangle "Audio File" as audio1 {
