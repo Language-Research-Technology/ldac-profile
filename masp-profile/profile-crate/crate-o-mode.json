@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "name": "Language Data Commons Comprehensive Collection",
+    "description": "Implements the language data commons RO-Crate Metadata Profile for the top-level, objects and files.",
+    "version": 0.3,
+    "author": "University of Queensland",
+    "license": "GPL-3.0"
+  },
+  "contextPrefixes": {
+    "ldac": "https://w3id.org/ldac/terms#"
+  },
+  "context": [],
+  "conformsToUri": [
+    "https://w3id.org/ldac/profile#Collection"
+  ],
+  "rootDataset": {
+    "type": [
+      "Dataset",
+      "RepositoryCollection"
+    ]
+  },
+  "inputGroups": [
+    {
+      "name": "About",
+      "help": "The core metadata for this RO-Crate and its subject matter.",
+      "inputs": [
+        "@id",
+        "@type",
+        "http://purl.org/dc/terms/conformsTo",
+        "http://schema.org/name",
+        "http://schema.org/familyName",
+        "http://schema.org/givenName",
+        "http://schema.org/description",
+        "http://schema.org/datePublished",
+        "http://schema.org/license",
+        "http://schema.org/creditText",
+        "http://schema.org/usageInfo",
+        "http://schema.org/about",
+        "http://schema.org/mentions",
+        "http://schema.org/mainEntity",
+        "https://w3id.org/ldac/terms#age",
+        "https://w3id.org/ldac/terms#doi",
+        "https://w3id.org/ldac/terms#indexableText",
+        "https://w3id.org/ldac/terms#itemLocation",
+        "https://w3id.org/ldac/terms#mainText",
+        "https://w3id.org/ldac/terms#materialType"
+      ]
+    },
+    {
+      "name": "Access",
+      "help": "",
+      "inputs": [
+        "https://w3id.org/ldac/terms#access",
+        "https://w3id.org/ldac/terms#accessControlList",
+        "https://w3id.org/ldac/terms#authorizationWorkflow",
+        "https://w3id.org/ldac/terms#openAccessIndex",
+        "https://w3id.org/ldac/terms#reviewDate"
+      ]
+    },
+    {
+      "name": "Related People, Orgs & Works",
+      "help": "The context for the creation of this RO-Crate; who made it, funded it etc.",
+      "inputs": [
+        "http://schema.org/creator",
+        "http://schema.org/publisher",
+        "http://schema.org/accountablePerson",
+        "http://schema.org/funder",
+        "http://schema.org/affiliation",
+        "http://schema.org/citation",
+        "http://purl.org/dc/terms/rightsHolder",
+        "https://w3id.org/ldac/terms#annotator",
+        "http://schema.org/author",
+        "https://w3id.org/ldac/terms#compiler",
+        "https://w3id.org/ldac/terms#consultant",
+        "https://w3id.org/ldac/terms#dataInputter",
+        "https://w3id.org/ldac/terms#depositor",
+        "https://w3id.org/ldac/terms#developer",
+        "https://w3id.org/ldac/terms#editor",
+        "https://w3id.org/ldac/terms#illustrator",
+        "https://w3id.org/ldac/terms#interpreter",
+        "https://w3id.org/ldac/terms#interviewee",
+        "https://w3id.org/ldac/terms#interviewer",
+        "https://w3id.org/ldac/terms#participant",
+        "https://w3id.org/ldac/terms#performer",
+        "https://w3id.org/ldac/terms#photographer",
+        "https://w3id.org/ldac/terms#recorder",
+        "https://w3id.org/ldac/terms#researcher",
+        "https://w3id.org/ldac/terms#researchParticipant",
+        "https://w3id.org/ldac/terms#responder",
+        "https://w3id.org/ldac/terms#signer",
+        "https://w3id.org/ldac/terms#singer",
+        "https://w3id.org/ldac/terms#speaker",
+        "https://w3id.org/ldac/terms#sponsor",
+        "https://w3id.org/ldac/terms#transcriber",
+        "https://w3id.org/ldac/terms#translator"
+      ]
+    },
+    {
+      "name": "Structure",
+      "help": "For groups of elements, such as DefinedTerms.",
+      "inputs": [
+        "http://pcdm.org/models#memberOf",
+        "http://pcdm.org/models#hasMember",
+        "http://schema.org/isPartOf",
+        "http://schema.org/hasPart",
+        "https://w3id.org/ldac/terms#annotationOf",
+        "https://w3id.org/ldac/terms#hasAnnotation",
+        "https://w3id.org/ldac/terms#derivationOf",
+        "https://w3id.org/ldac/terms#hasDerivation",
+        "http://schema.org/inDefinedTermSet",
+        "http://schema.org/hasDefinedTerm"
+      ]
+    },
+    {
+      "name": "Provenance",
+      "help": "Detailed description of how entities were created, by whom and with which tools.",
+      "inputs": [
+        "http://schema.org/agent",
+        "http://schema.org/object",
+        "http://schema.org/instrument",
+        "http://schema.org/result",
+        "http://schema.org/participant",
+        "http://schema.org/target",
+        "https://w3id.org/ldac/terms#collectionEventType",
+        "https://w3id.org/ldac/terms#collectionProtocolType",
+        "https://w3id.org/ldac/terms#hasCollectionProtocol",
+        "https://w3id.org/ldac/terms#isDeIdentified",
+        "https://w3id.org/ldac/terms#material",
+        "https://w3id.org/ldac/terms#writtenLanguageFormat"
+      ]
+    },
+    {
+      "name": "Language",
+      "help": "Metadata related to the languages used, modes of communication and other linguistic classifications.",
+      "inputs": [
+        "http://schema.org/inLanguage",
+        "https://w3id.org/ldac/terms#subjectLanguage",
+        "https://w3id.org/ldac/terms#communicationMode",
+        "https://w3id.org/ldac/terms#linguisticGenre",
+        "https://w3id.org/ldac/terms#orthographicNotes",
+        "https://w3id.org/ldac/terms#annotationType",
+        "https://w3id.org/ldac/terms#register"
+      ]
+    },
+    {
+      "name": "Space & Time",
+      "help": "Where and when the data was collected; the times and places it mentions or describes.",
+      "inputs": [
+        "http://schema.org/dateCreated",
+        "https://w3id.org/ldac/terms#dateFreeText",
+        "http://schema.org/temporalCoverage",
+        "http://schema.org/spatialCoverage",
+        "http://schema.org/contentLocation",
+        "http://schema.org/locationCreated",
+        "http://schema.org/geo",
+        "http://www.opengis.net/ont/geosparql#asWKT",
+        "http://schema.org/address"
+      ]
+    },
+    {
+      "name": "Software & Hardware",
+      "help": "For computer programs and execution environments that could be used to create data, have created data, or are being packaged and described.",
+      "inputs": [
+        "http://schema.org/availableOnDevice",
+        "http://schema.org/downloadUrl",
+        "http://schema.org/installUrl",
+        "http://schema.org/memoryRequirements",
+        "http://schema.org/operatingSystem",
+        "http://schema.org/processorRequirements",
+        "http://schema.org/programmingLanguage",
+        "http://schema.org/releaseNotes",
+        "http://schema.org/runtimePlatform",
+        "http://schema.org/runtime",
+        "http://schema.org/screenshot",
+        "http://schema.org/softwareAddOn",
+        "http://schema.org/softwareHelp",
+        "http://schema.org/softwareRequirements",
+        "http://schema.org/softwareVersion",
+        "http://schema.org/storageRequirements",
+        "http://schema.org/supportingData",
+        "https://w3id.org/ldac/terms#channels"
+      ]
+    }
+  ],
+  "lookup": {
+    "Language": {
+      "module": "datapack",
+      "fields": [
+        "@id",
+        "name",
+        "alternateName",
+        "iso639-3",
+        "austlangCode",
+        "glottologCode",
+        "languageCode"
+      ]
+    },
+    "Organization": {
+      "module": "ror"
+    }
+  },
+  "enabledClasses": [
+    "Dataset",
+    "Person",
+    "Place",
+    "Geometry",
+    "GeoCoordinates",
+    "GeoShape",
+    "Language",
+    "Organization",
+    "Book",
+    "ScholarlyArticle",
+    "RepositoryCollection",
+    "RepositoryObject",
+    "CreativeWork",
+    "ldac:CollectionEvent",
+    "ldac:CollectionProtocol",
+    "ldac:DataDepositLicense",
+    "ldac:DataLicense",
+    "ldac:DataReuseLicense",
+    "File"
+  ]
+}

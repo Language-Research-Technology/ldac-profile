@@ -5,7 +5,10 @@
   "main": "make-profile.js",
   "scripts": {
     "test": "mocha",
-    "build-spec": "node make-profile.js"
+    "build-spec": "node make-profile.js",
+    "build:profile": "generate-masp-docs masp-profile/profile-crate/ro-crate-metadata.json masp-profile/profile-text.md masp-profile/profile-crate/profile-documentation.md",
+    "build:schema": "generate-masp-docs masp-schema/schema-crate/ro-crate-metadata.json masp-schema/schema-text.md masp-schema/schema-crate/schema-documentation.md",
+    "build:mode": "generate-mode-file --output masp-profile/profile-crate/crate-o-mode.json --update-profile masp-profile/profile-crate/ro-crate-metadata.json"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "ro-crate": "^3.1.0",
-    "ro-crate-modes": "github:Language-Research-Technology/ro-crate-modes"
+    "ro-crate-modes": "github:Language-Research-Technology/ro-crate-modes",
+    "ro-crate-masp": "github:Language-Research-Technology/ro-crate-masp"
   }
 }

@@ -1,0 +1,4988 @@
+
+
+<html>
+<head>
+
+
+<script type="application/ld+json"> 
+  {
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@vocab": "http://schema.org/",
+      "ldac": "https://w3id.org/ldac/terms#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Language Data Commons Comprehensive Collection Profile",
+      "description": "Profile derived from Language Data Commons Comprehensive Collection: Implements the language data commons RO-Crate Metadata Profile for the top-level, objects and files.",
+      "author": {
+        "@id": "#author"
+      },
+      "license": "GPL-3.0",
+      "conformsTo": {
+        "@id": "https://w3id.org/ldac/profile"
+      },
+      "hasResource": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "hasPart": [
+        {
+          "@id": "profile-documentation.md"
+        }
+      ]
+    },
+    {
+      "@id": "profile-documentation.md",
+      "@type": "File",
+      "name": "profile-documentation.md",
+      "dateModified": "2025-12-04T16:01:29+11:00",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/1149"
+        },
+        "text/markdown"
+      ],
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/1149",
+      "@type": "DigitalFormat",
+      "name": "Markdown"
+    },
+    {
+      "@id": "#author",
+      "@type": "Organization",
+      "name": "University of Queensland"
+    },
+    {
+      "@id": "#hasSpecializedSchema",
+      "@type": "ResourceDescriptor",
+      "name": "Specialized Schema Terms",
+      "hasRole": {
+        "@id": "http://www.w3.org/ns/dx/prof/role/schema"
+      },
+      "hasPart": [
+        {
+          "@id": "#class_CollectionEvent"
+        },
+        {
+          "@id": "#class_CreativeWork"
+        },
+        {
+          "@id": "#class_DataDepositLicense"
+        },
+        {
+          "@id": "#class_DataLicense"
+        },
+        {
+          "@id": "#class_DataReuseLicense"
+        },
+        {
+          "@id": "#class_Dataset"
+        },
+        {
+          "@id": "#class_dct:Collection"
+        },
+        {
+          "@id": "#class_dct:Dataset"
+        },
+        {
+          "@id": "#class_dct:Event"
+        },
+        {
+          "@id": "#class_dct:Image"
+        },
+        {
+          "@id": "#class_dct:InteractiveResource"
+        },
+        {
+          "@id": "#class_dct:MovingImage"
+        },
+        {
+          "@id": "#class_dct:PhysicalObject"
+        },
+        {
+          "@id": "#class_dct:Service"
+        },
+        {
+          "@id": "#class_dct:Software"
+        },
+        {
+          "@id": "#class_dct:Sound"
+        },
+        {
+          "@id": "#class_dct:StillImage"
+        },
+        {
+          "@id": "#class_dct:Text"
+        },
+        {
+          "@id": "#class_File"
+        },
+        {
+          "@id": "#class_Geometry"
+        },
+        {
+          "@id": "#class_Language"
+        },
+        {
+          "@id": "#class_ldac:CollectionProtocol"
+        },
+        {
+          "@id": "#class_Organization"
+        },
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Place"
+        },
+        {
+          "@id": "#class_RepositoryCollection"
+        },
+        {
+          "@id": "#class_RepositoryObject"
+        },
+        {
+          "@id": "#RO-Crate_Metadata_Descriptor"
+        },
+        {
+          "@id": "#Root_Data_Entity"
+        },
+        {
+          "@id": "#itemlist_conformsTo_RepositoryCollection"
+        },
+        {
+          "@id": "#prop_accountablePerson_Dataset"
+        },
+        {
+          "@id": "#prop_address_Place"
+        },
+        {
+          "@id": "#prop_affiliation_Person"
+        },
+        {
+          "@id": "#prop_author_CreativeWork"
+        },
+        {
+          "@id": "#prop_author_Dataset"
+        },
+        {
+          "@id": "#prop_citation_Dataset"
+        },
+        {
+          "@id": "#prop_conformsTo_RepositoryCollection"
+        },
+        {
+          "@id": "#prop_conformsTo_RepositoryObject"
+        },
+        {
+          "@id": "#prop_contentLocation_RepositoryCollection"
+        },
+        {
+          "@id": "#prop_contentSize_File"
+        },
+        {
+          "@id": "#prop_creator_RepositoryObject"
+        },
+        {
+          "@id": "#prop_creditText_Dataset"
+        },
+        {
+          "@id": "#prop_dateCreated_RepositoryCollection"
+        },
+        {
+          "@id": "#prop_dateCreated_RepositoryObject"
+        },
+        {
+          "@id": "#prop_datePublished_Dataset"
+        },
+        {
+          "@id": "#prop_dct:rightsHolder_Dataset"
+        },
+        {
+          "@id": "#prop_description_Dataset"
+        },
+        {
+          "@id": "#prop_description_RepositoryObject"
+        },
+        {
+          "@id": "#prop_encodingFormat_File"
+        },
+        {
+          "@id": "#prop_funder_Dataset"
+        },
+        {
+          "@id": "#prop_geo_Place"
+        },
+        {
+          "@id": "#prop_geosparql:asWKT_Geometry"
+        },
+        {
+          "@id": "#prop_hasPart_Dataset"
+        },
+        {
+          "@id": "#prop_hasPart_File"
+        },
+        {
+          "@id": "#prop_holdingArchive_RepositoryCollection"
+        },
+        {
+          "@id": "#prop_identifier_RepositoryObject"
+        },
+        {
+          "@id": "#prop_inLanguage_RepositoryCollection"
+        },
+        {
+          "@id": "#prop_isAccessibleForFree_Dataset"
+        },
+        {
+          "@id": "#prop_isBasedOn_Dataset"
+        },
+        {
+          "@id": "#prop_isbn_CreativeWork"
+        },
+        {
+          "@id": "#prop_isPartOf_Dataset"
+        },
+        {
+          "@id": "#prop_issn_CreativeWork"
+        },
+        {
+          "@id": "#prop_ldac:access_DataReuseLicense"
+        },
+        {
+          "@id": "#prop_ldac:accessControlList_DataReuseLicense"
+        },
+        {
+          "@id": "#prop_ldac:age_Person"
+        },
+        {
+          "@id": "#prop_ldac:annotationOf_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:annotationType_CreativeWork"
+        },
+        {
+          "@id": "#prop_ldac:annotator_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:authorizationWorkflow_DataReuseLicense"
+        },
+        {
+          "@id": "#prop_ldac:channels_CreativeWork"
+        },
+        {
+          "@id": "#prop_ldac:collectionEventType_CollectionEvent"
+        },
+        {
+          "@id": "#prop_ldac:collectionProtocolType_ldac:CollectionProtocol"
+        },
+        {
+          "@id": "#prop_ldac:communicationMode_CreativeWork"
+        },
+        {
+          "@id": "#prop_ldac:compiler_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:consultant_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:dataInputter_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:dateFreeText_RepositoryCollection"
+        },
+        {
+          "@id": "#prop_ldac:depositor_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:derivationOf_File"
+        },
+        {
+          "@id": "#prop_ldac:developer_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:doi_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:editor_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:hasAnnotation_RepositoryObject"
+        },
+        {
+          "@id": "#prop_ldac:hasCollectionProtocol_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:hasDerivation_File"
+        },
+        {
+          "@id": "#prop_ldac:illustrator_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:indexableText_CreativeWork"
+        },
+        {
+          "@id": "#prop_ldac:interpreter_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:interviewee_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:interviewer_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:isDeIdentified_CreativeWork"
+        },
+        {
+          "@id": "#prop_ldac:itemLocation_RepositoryCollection"
+        },
+        {
+          "@id": "#prop_ldac:linguisticGenre_CreativeWork"
+        },
+        {
+          "@id": "#prop_ldac:material_CreativeWork"
+        },
+        {
+          "@id": "#prop_ldac:materialType_File"
+        },
+        {
+          "@id": "#prop_ldac:openAccessIndex_CreativeWork"
+        },
+        {
+          "@id": "#prop_ldac:participant_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:performer_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:photographer_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:recorder_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:register_CreativeWork"
+        },
+        {
+          "@id": "#prop_ldac:researcher_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:researchParticipant_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:responder_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:reviewDate_DataLicense"
+        },
+        {
+          "@id": "#prop_ldac:signer_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:singer_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:speaker_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:sponsor_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:subjectLanguage_RepositoryCollection"
+        },
+        {
+          "@id": "#prop_ldac:transcriber_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:translator_Dataset"
+        },
+        {
+          "@id": "#prop_ldac:writtenLanguageFormat_CreativeWork"
+        },
+        {
+          "@id": "#prop_license_Dataset"
+        },
+        {
+          "@id": "#prop_license_RepositoryObject"
+        },
+        {
+          "@id": "#prop_location_Organization"
+        },
+        {
+          "@id": "#prop_name_Dataset"
+        },
+        {
+          "@id": "#prop_pcdm:hasMember_Dataset"
+        },
+        {
+          "@id": "#prop_pcdm:memberOf_Dataset"
+        },
+        {
+          "@id": "#prop_publisher_CreativeWork"
+        },
+        {
+          "@id": "#prop_publisher_Dataset"
+        },
+        {
+          "@id": "#prop_recipient_CreativeWork"
+        },
+        {
+          "@id": "#prop_spatialCoverage_Dataset"
+        },
+        {
+          "@id": "#prop_temporalCoverage_Dataset"
+        },
+        {
+          "@id": "#prop_temporalCoverage_RepositoryObject"
+        },
+        {
+          "@id": "#prop_usageInfo_Dataset"
+        },
+        {
+          "@id": "#RO-Crate_Metadata_Descriptor.about"
+        },
+        {
+          "@id": "#RO-Crate_Metadata_Descriptor.id"
+        },
+        {
+          "@id": "ldac:AccessControlList"
+        },
+        {
+          "@id": "ldac:AgreeToTerms"
+        },
+        {
+          "@id": "ldac:Annotation"
+        },
+        {
+          "@id": "ldac:AuthorizationByApplication"
+        },
+        {
+          "@id": "ldac:AuthorizationByInvitation"
+        },
+        {
+          "@id": "ldac:AuthorizedAccess"
+        },
+        {
+          "@id": "ldac:Coded"
+        },
+        {
+          "@id": "ldac:DerivedMaterial"
+        },
+        {
+          "@id": "ldac:Dialogue"
+        },
+        {
+          "@id": "ldac:Drama"
+        },
+        {
+          "@id": "ldac:ElicitationTask"
+        },
+        {
+          "@id": "ldac:Formulaic"
+        },
+        {
+          "@id": "ldac:FullText"
+        },
+        {
+          "@id": "ldac:Gestural"
+        },
+        {
+          "@id": "ldac:Gesture"
+        },
+        {
+          "@id": "ldac:Handwritten"
+        },
+        {
+          "@id": "ldac:Informational"
+        },
+        {
+          "@id": "ldac:Interview"
+        },
+        {
+          "@id": "ldac:Lexicon"
+        },
+        {
+          "@id": "ldac:Ludic"
+        },
+        {
+          "@id": "ldac:MaterialSelectionCriteria"
+        },
+        {
+          "@id": "ldac:Narrative"
+        },
+        {
+          "@id": "ldac:OpenAccess"
+        },
+        {
+          "@id": "ldac:Oratory"
+        },
+        {
+          "@id": "ldac:Orthographic"
+        },
+        {
+          "@id": "ldac:PartOfSpeech"
+        },
+        {
+          "@id": "ldac:Phonemic"
+        },
+        {
+          "@id": "ldac:Phonetic"
+        },
+        {
+          "@id": "ldac:Phonological"
+        },
+        {
+          "@id": "ldac:PrimaryMaterial"
+        },
+        {
+          "@id": "ldac:Procedural"
+        },
+        {
+          "@id": "ldac:Prosodic"
+        },
+        {
+          "@id": "ldac:Report"
+        },
+        {
+          "@id": "ldac:SelfAuthorization"
+        },
+        {
+          "@id": "ldac:Semantic"
+        },
+        {
+          "@id": "ldac:Session"
+        },
+        {
+          "@id": "ldac:SignedLanguage"
+        },
+        {
+          "@id": "ldac:Song"
+        },
+        {
+          "@id": "ldac:SpokenLanguage"
+        },
+        {
+          "@id": "ldac:Syntactic"
+        },
+        {
+          "@id": "ldac:Thesaurus"
+        },
+        {
+          "@id": "ldac:Transcription"
+        },
+        {
+          "@id": "ldac:Translation"
+        },
+        {
+          "@id": "ldac:Typeset"
+        },
+        {
+          "@id": "ldac:Typewritten"
+        },
+        {
+          "@id": "ldac:WhistledLanguage"
+        },
+        {
+          "@id": "ldac:WrittenLanguage"
+        },
+        {
+          "@id": "ldac:AccessTypes"
+        },
+        {
+          "@id": "ldac:AnnotationTypeTerms"
+        },
+        {
+          "@id": "ldac:AuthorizationWorkflows"
+        },
+        {
+          "@id": "ldac:CollectionEventTypeTerms"
+        },
+        {
+          "@id": "ldac:CollectionProtocolTypeTerms"
+        },
+        {
+          "@id": "ldac:CommunicationModeTerms"
+        },
+        {
+          "@id": "ldac:IndexTypes"
+        },
+        {
+          "@id": "ldac:LinguisticGenreTerms"
+        },
+        {
+          "@id": "ldac:MaterialTypes"
+        },
+        {
+          "@id": "ldac:WrittenLanguageTypeTerms"
+        }
+      ]
+    },
+    {
+      "@id": "#class_CollectionEvent",
+      "@type": "rdfs:Class",
+      "rdfs:label": "CollectionEvent",
+      "name": "CollectionEvent",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#CollectionEvent"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "http://schema.org/Event"
+        },
+        {
+          "@id": "http://schema.org/CreateAction"
+        }
+      ],
+      "rdfs:comment": "A description of an event at which one or more PrimaryMaterials were captured, e.g. as video or audio.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_CreativeWork",
+      "@type": "rdfs:Class",
+      "rdfs:label": "CreativeWork",
+      "name": "CreativeWork",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rdfs:comment": "The most generic kind of creative work, including books, movies, photographs, software programs, etc.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_DataDepositLicense",
+      "@type": "rdfs:Class",
+      "rdfs:label": "DataDepositLicense",
+      "name": "DataDepositLicense",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#DataDepositLicense"
+      },
+      "rdfs:subClassOf": {
+        "@id": "#class_DataLicense"
+      },
+      "rdfs:comment": "A license document setting out terms for deposit into a repository.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_DataLicense",
+      "@type": "rdfs:Class",
+      "rdfs:label": "DataLicense",
+      "name": "DataLicense",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#DataLicense"
+      },
+      "rdfs:subClassOf": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rdfs:comment": "A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_DataReuseLicense",
+      "@type": "rdfs:Class",
+      "rdfs:label": "DataReuseLicense",
+      "name": "DataReuseLicense",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#DataReuseLicense"
+      },
+      "rdfs:subClassOf": "\"#DataLicense\"",
+      "rdfs:comment": "A license document, setting out terms for reuse of data.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_Dataset",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Dataset",
+      "name": "Dataset",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/Dataset"
+      },
+      "rdfs:comment": "A body of structured information describing some topic(s) of interest.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:Collection",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:Collection",
+      "name": "dct:Collection",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/Collection"
+      },
+      "rdfs:comment": "An aggregation of resources.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:Dataset",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:Dataset",
+      "name": "dct:Dataset",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/Dataset"
+      },
+      "rdfs:comment": "Data encoded in a defined structure.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:Event",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:Event",
+      "name": "dct:Event",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/Event"
+      },
+      "rdfs:comment": "A non-persistent, time-based occurrence.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:Image",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:Image",
+      "name": "dct:Image",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/Image"
+      },
+      "rdfs:comment": "A visual representation other than text.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:InteractiveResource",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:InteractiveResource",
+      "name": "dct:InteractiveResource",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/InteractiveResource"
+      },
+      "rdfs:comment": "A resource requiring interaction from the user to be understood, executed, or experienced.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:MovingImage",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:MovingImage",
+      "name": "dct:MovingImage",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/MovingImage"
+      },
+      "rdfs:comment": "A series of visual representations imparting an impression of motion when shown in succession.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:PhysicalObject",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:PhysicalObject",
+      "name": "dct:PhysicalObject",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/PhysicalObject"
+      },
+      "rdfs:comment": "An inanimate, three-dimensional object or substance.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:Service",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:Service",
+      "name": "dct:Service",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/Service"
+      },
+      "rdfs:comment": "A system that provides one or more functions.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:Software",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:Software",
+      "name": "dct:Software",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/Software"
+      },
+      "rdfs:comment": "A computer program in source or compiled form.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:Sound",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:Sound",
+      "name": "dct:Sound",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/Sound"
+      },
+      "rdfs:comment": "A resource primarily intended to be heard.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:StillImage",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:StillImage",
+      "name": "dct:StillImage",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/StillImage"
+      },
+      "rdfs:comment": "A static visual representation.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_dct:Text",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dct:Text",
+      "name": "dct:Text",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/Text"
+      },
+      "rdfs:comment": "A resource consisting primarily of words for reading.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_File",
+      "@type": "rdfs:Class",
+      "rdfs:label": "File",
+      "name": "File",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/MediaObject"
+      },
+      "rdfs:comment": "A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_Geometry",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Geometry",
+      "name": "Geometry",
+      "prov:specializationOf": {
+        "@id": "http://www.opengis.net/ont/geosparql#Geometry"
+      },
+      "rdfs:comment": "A coherent set of direct positions in space. The positions are held within a Spatial Reference System (SRS).",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_Language",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Language",
+      "name": "Language",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/Language"
+      },
+      "rdfs:comment": "Natural languages such as Spanish, Tamil, Hindi, English, etc.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_ldac:CollectionProtocol",
+      "@type": "rdfs:Class",
+      "rdfs:label": "ldac:CollectionProtocol",
+      "name": "ldac:CollectionProtocol",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#CollectionProtocol"
+      },
+      "rdfs:subClassOf": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rdfs:comment": "A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_Organization",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Organization",
+      "name": "Organization",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/Organization"
+      },
+      "rdfs:comment": "An organization such as a school, NGO, corporation, club, etc.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_Person",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Person",
+      "name": "Person",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/Person"
+      },
+      "rdfs:comment": "A person (alive, dead, undead, or fictional).",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_Place",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Place",
+      "name": "Place",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/Place"
+      },
+      "rdfs:comment": "Entities that have a somewhat fixed, physical extension.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_RepositoryCollection",
+      "@type": "rdfs:Class",
+      "rdfs:label": "RepositoryCollection",
+      "name": "RepositoryCollection",
+      "prov:specializationOf": {
+        "@id": "http://pcdm.org/models#Collection"
+      },
+      "rdfs:subClassOf": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rdfs:comment": "A Collection is a group of resources. Collections have descriptive metadata, access metadata, and may links to works and/or collections. By default, member works and collections are an unordered set, but can be ordered using the ORE Proxy class.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#class_RepositoryObject",
+      "@type": "rdfs:Class",
+      "rdfs:label": "RepositoryObject",
+      "name": "RepositoryObject",
+      "prov:specializationOf": {
+        "@id": "http://pcdm.org/models#Object"
+      },
+      "rdfs:comment": "An Object is an intellectual entity, sometimes called a \"work\", \"digital object\", etc. Objects have descriptive metadata, access metadata, may contain files and other Objects as member \"components\". Each level of a work is therefore represented by an Object instance, and is capable of standing on its own, being linked to from Collections and other Objects. Member Objects can be ordered using the ORE Proxy class.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#RO-Crate_Metadata_Descriptor",
+      "@type": "rdfs:Class",
+      "rdfs:label": "RO-Crate Metadata Descriptor",
+      "name": "RO-Crate Metadata Descriptor",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rdfs:comment": "An RO-Crate @graph must contain an entity of Type @CreativeWork which is known as the RO-Crate Metadata descriptor.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:minCount": "1",
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#Root_Data_Entity",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Root Data Entity",
+      "name": "Root Data Entity",
+      "prov:specializationOf": [
+        {
+          "@id": "http://schema.org/Dataset"
+        },
+        {
+          "@id": "http://pcdm.org/models#Collection"
+        }
+      ],
+      "rdfs:comment": "The Root Data Entity for an RO-Crate. This is the main entity of the RO-Crate and is the one that is referenced by the RO-Crate Metadata Descriptor. In this profile, it is a Dataset and RepositoryCollection.",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:minCount": "1",
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#itemlist_conformsTo_RepositoryCollection",
+      "@type": "ItemList",
+      "name": "Values for conformsTo",
+      "description": "Predefined values for the conformsTo property",
+      "itemListElement": {
+        "@id": "https://w3id.org/ldac/profile#Collection"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_accountablePerson_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "accountablePerson",
+      "name": "accountablePerson",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/accountablePerson"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The person or organisation who is the data steward for this resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "sh:minCount": "1",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_address_Place",
+      "@type": "rdf:Property",
+      "rdfs:label": "address",
+      "name": "address",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/address"
+      },
+      "domainIncludes": {
+        "@id": "#class_Place"
+      },
+      "rdfs:comment": "The physical address of the place.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_affiliation_Person",
+      "@type": "rdf:Property",
+      "rdfs:label": "affiliation",
+      "name": "affiliation",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/affiliation"
+      },
+      "domainIncludes": {
+        "@id": "#class_Person"
+      },
+      "rdfs:comment": "The organisation that this person is affiliated with. For example, a university or school.",
+      "rangeIncludes": {
+        "@id": "#class_Organization"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_author_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "author",
+      "name": "author",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/author"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "The person or organisation responsible for creating this work. Authors should be identified using URIs such as ORCiD or ROR.",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Text"
+        },
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_author_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "author",
+      "name": "author",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/author"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "sh:minCount": "1",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_citation_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "citation",
+      "name": "citation",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/citation"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "Associated publications.",
+      "rangeIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_conformsTo_RepositoryCollection",
+      "@type": "rdf:Property",
+      "rdfs:label": "conformsTo",
+      "name": "conformsTo",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/conformsTo"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryCollection"
+      },
+      "rdfs:comment": "A link to the language data commons RO-Crate profile for collections.",
+      "rangeIncludes": {
+        "@id": "#itemlist_conformsTo_RepositoryCollection"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "itemListElement": {
+        "@id": "#itemlist_conformsTo_RepositoryCollection"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_conformsTo_RepositoryObject",
+      "@type": "rdf:Property",
+      "rdfs:label": "conformsTo",
+      "name": "conformsTo",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/conformsTo"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryObject"
+      },
+      "rdfs:comment": "A link to the language data commons RO-Crate profile for collections.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_contentLocation_RepositoryCollection",
+      "@type": "rdf:Property",
+      "rdfs:label": "contentLocation",
+      "name": "contentLocation",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/contentLocation"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryCollection"
+      },
+      "rdfs:comment": "The location depicted or described in the content. For example, the location in a photograph or painting.",
+      "rangeIncludes": {
+        "@id": "#class_Place"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_contentSize_File",
+      "@type": "rdf:Property",
+      "rdfs:label": "contentSize",
+      "name": "contentSize",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/contentSize"
+      },
+      "domainIncludes": {
+        "@id": "#class_File"
+      },
+      "rdfs:comment": "File size in (mega/kilo)bytes.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_creator_RepositoryObject",
+      "@type": "rdf:Property",
+      "rdfs:label": "creator",
+      "name": "creator",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/creator"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryObject"
+      },
+      "rdfs:comment": "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.",
+      "rangeIncludes": {
+        "@id": "#class_Person"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_creditText_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "creditText",
+      "name": "creditText",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/creditText"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "A free text bibliographic citation for this material, e.g. 'Cite as: Musgrave (2023). Title of work. DOI'.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_dateCreated_RepositoryCollection",
+      "@type": "rdf:Property",
+      "rdfs:label": "dateCreated",
+      "name": "dateCreated",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/dateCreated"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryCollection"
+      },
+      "rdfs:comment": "The (earliest) date the data in this dataset were created.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Date"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_dateCreated_RepositoryObject",
+      "@type": "rdf:Property",
+      "rdfs:label": "dateCreated",
+      "name": "dateCreated",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/dateCreated"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryObject"
+      },
+      "rdfs:comment": "The date on which the CreativeWork was created or the item was added to a DataFeed.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_datePublished_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "datePublished",
+      "name": "datePublished",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/datePublished"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "A date that this collection was published. This should be the date that the collection was first made available.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Date"
+      },
+      "sh:minCount": "1",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_dct:rightsHolder_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "dct:rightsHolder",
+      "name": "dct:rightsHolder",
+      "prov:specializationOf": {
+        "@id": "http://purl.org/dc/terms/rightsHolder"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The person or organisation owning or managing rights over the resource.",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Text"
+        },
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "sh:minCount": "1",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_description_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "description",
+      "name": "description",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/description"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "An abstract of the collection. Include as much detail as possible about the motivation and use of the collection.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "sh:minCount": "1",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_description_RepositoryObject",
+      "@type": "rdf:Property",
+      "rdfs:label": "description",
+      "name": "description",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/description"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryObject"
+      },
+      "rdfs:comment": "A description of the item.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_encodingFormat_File",
+      "@type": "rdf:Property",
+      "rdfs:label": "encodingFormat",
+      "name": "encodingFormat",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/encodingFormat"
+      },
+      "domainIncludes": {
+        "@id": "#class_File"
+      },
+      "rdfs:comment": "The media type typically expressed using a MIME format.",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Text"
+        },
+        "\"#class_WebPage\"",
+        "\"#class_Standard\""
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_funder_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "funder",
+      "name": "funder",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/funder"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The organisation(s) responsible for funding the creation or collection of this dataset.",
+      "rangeIncludes": {
+        "@id": "#class_Organization"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_geo_Place",
+      "@type": "rdf:Property",
+      "rdfs:label": "geo",
+      "name": "geo",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/geo"
+      },
+      "domainIncludes": {
+        "@id": "#class_Place"
+      },
+      "rdfs:comment": "The geographic coordinates of the place.",
+      "rangeIncludes": {
+        "@id": "#class_Geometry"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_geosparql:asWKT_Geometry",
+      "@type": "rdf:Property",
+      "rdfs:label": "geosparql:asWKT",
+      "name": "geosparql:asWKT",
+      "prov:specializationOf": {
+        "@id": "http://www.opengis.net/ont/geosparql#asWKT"
+      },
+      "domainIncludes": {
+        "@id": "#class_Geometry"
+      },
+      "rdfs:comment": "The WKT serialisation of the geometry.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_hasPart_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "hasPart",
+      "name": "hasPart",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/hasPart"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "An item or CreativeWork that is part of this item, or CreativeWork (in some sense).",
+      "rangeIncludes": [
+        {
+          "@id": "#class_CreativeWork"
+        },
+        {
+          "@id": "#class_File"
+        },
+        {
+          "@id": "#class_Dataset"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_hasPart_File",
+      "@type": "rdf:Property",
+      "rdfs:label": "hasPart",
+      "name": "hasPart",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/hasPart"
+      },
+      "domainIncludes": {
+        "@id": "#class_File"
+      },
+      "rdfs:comment": "An item or CreativeWork that is part of this item, or CreativeWork (in some sense).",
+      "rangeIncludes": [
+        {
+          "@id": "#class_CreativeWork"
+        },
+        {
+          "@id": "#class_File"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_holdingArchive_RepositoryCollection",
+      "@type": "rdf:Property",
+      "rdfs:label": "holdingArchive",
+      "name": "holdingArchive",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/holdingArchive"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryCollection"
+      },
+      "rdfs:comment": "Organisation where the original of this work or collection is housed.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Organization"
+        },
+        {
+          "@id": "http://schema.org/Text"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_identifier_RepositoryObject",
+      "@type": "rdf:Property",
+      "rdfs:label": "identifier",
+      "name": "identifier",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/identifier"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryObject"
+      },
+      "rdfs:comment": "The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.\n        ",
+      "rangeIncludes": [
+        "\"#class_PropertyValue\"",
+        {
+          "@id": "http://schema.org/Text"
+        },
+        {
+          "@id": "http://schema.org/URL"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_inLanguage_RepositoryCollection",
+      "@type": "rdf:Property",
+      "rdfs:label": "inLanguage",
+      "name": "inLanguage",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/inLanguage"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryCollection"
+      },
+      "rdfs:comment": "The language in which the resource is written.",
+      "rangeIncludes": {
+        "@id": "#class_Language"
+      },
+      "sh:minCount": "1",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_isAccessibleForFree_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "isAccessibleForFree",
+      "name": "isAccessibleForFree",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/isAccessibleForFree"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "This is available under an Open Access license.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Boolean"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_isBasedOn_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "isBasedOn",
+      "name": "isBasedOn",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/isBasedOn"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "Link to or description of an original resource.",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Text"
+        },
+        {
+          "@id": "http://schema.org/URL"
+        },
+        {
+          "@id": "#class_CreativeWork"
+        },
+        {
+          "@id": "#class_Dataset"
+        },
+        {
+          "@id": "#class_File"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_isbn_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "isbn",
+      "name": "isbn",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/isbn"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "The ISBN for this work, if applicable.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_isPartOf_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "isPartOf",
+      "name": "isPartOf",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/isPartOf"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "An item or CreativeWork that this item, or CreativeWork (in some sense), is part of.",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/URL"
+        },
+        {
+          "@id": "#class_CreativeWork"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_issn_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "issn",
+      "name": "issn",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/issn"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "The ISSN for this publication.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:access_DataReuseLicense",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:access",
+      "name": "ldac:access",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#access"
+      },
+      "domainIncludes": {
+        "@id": "#class_DataReuseLicense"
+      },
+      "rdfs:comment": "Whether this is an open or restricted access license.",
+      "rangeIncludes": {
+        "@id": "ldac:AccessTypes"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:accessControlList_DataReuseLicense",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:accessControlList",
+      "name": "ldac:accessControlList",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#accessControlList"
+      },
+      "domainIncludes": {
+        "@id": "#class_DataReuseLicense"
+      },
+      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefinedTerm AccessControlList this property has a URI value that points to a list of userIDs.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/URL"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:age_Person",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:age",
+      "name": "ldac:age",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#age"
+      },
+      "domainIncludes": {
+        "@id": "#class_Person"
+      },
+      "rdfs:comment": "The age of a person. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:annotationOf_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:annotationOf",
+      "name": "ldac:annotationOf",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#annotationOf"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "This resource contains some kind of description that adds information to the resource it references.",
+      "rangeIncludes": "\"#class_PrimaryMaterial\"",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:annotationType_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:annotationType",
+      "name": "ldac:annotationType",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#annotationType"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "The type of an Annotation resource.",
+      "rangeIncludes": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:annotator_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:annotator",
+      "name": "ldac:annotator",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#annotator"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant produced an annotation of this or a related resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:authorizationWorkflow_DataReuseLicense",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:authorizationWorkflow",
+      "name": "ldac:authorizationWorkflow",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#authorizationWorkflow"
+      },
+      "domainIncludes": {
+        "@id": "#class_DataReuseLicense"
+      },
+      "rdfs:comment": "By what process a user is granted authorization to a license.",
+      "rangeIncludes": {
+        "@id": "ldac:AuthorizationWorkflows"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:channels_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:channels",
+      "name": "ldac:channels",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#channels"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "The number of audio channels this resource contains (e.g. 1, 2, 5.1).",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:collectionEventType_CollectionEvent",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:collectionEventType",
+      "name": "ldac:collectionEventType",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#collectionEventType"
+      },
+      "domainIncludes": {
+        "@id": "#class_CollectionEvent"
+      },
+      "rdfs:comment": "A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment.",
+      "rangeIncludes": {
+        "@id": "ldac:CollectionEventTypeTerms"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:collectionProtocolType_ldac:CollectionProtocol",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:collectionProtocolType",
+      "name": "ldac:collectionProtocolType",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#collectionProtocolType"
+      },
+      "domainIncludes": {
+        "@id": "#class_ldac:CollectionProtocol"
+      },
+      "rdfs:comment": "A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.",
+      "rangeIncludes": {
+        "@id": "ldac:CollectionProtocolTypeTerms"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:communicationMode_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:communicationMode",
+      "name": "ldac:communicationMode",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#communicationMode"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.",
+      "rangeIncludes": {
+        "@id": "ldac:CommunicationModeTerms"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:compiler_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:compiler",
+      "name": "ldac:compiler",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#compiler"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant is responsible for collecting the sub-parts of the resource together.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:consultant_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:consultant",
+      "name": "ldac:consultant",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#consultant"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:dataInputter_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:dataInputter",
+      "name": "ldac:dataInputter",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#dataInputter"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant responsible for entering, re-typing, and/or structuring the data contained in the resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:dateFreeText_RepositoryCollection",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:dateFreeText",
+      "name": "ldac:dateFreeText",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#dateFreeText"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryCollection"
+      },
+      "rdfs:comment": "Date information which cannot be put in one of the standard date formats, e.g. 'mid-1970s', or it is not clear, for example, if it is a creation or publication date.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:depositor_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:depositor",
+      "name": "ldac:depositor",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#depositor"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant responsible for depositing the resource in an archive.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:derivationOf_File",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:derivationOf",
+      "name": "ldac:derivationOf",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#derivationOf"
+      },
+      "domainIncludes": {
+        "@id": "#class_File"
+      },
+      "rdfs:comment": "This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF.",
+      "rangeIncludes": [
+        "\"#class_Annotation\"",
+        "\"#class_PrimaryMaterial\""
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:developer_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:developer",
+      "name": "ldac:developer",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#developer"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:doi_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:doi",
+      "name": "ldac:doi",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#doi"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "A Digital Object Identifier, e.g. https://doi.org/10.1000/182.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:editor_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:editor",
+      "name": "ldac:editor",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#editor"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant reviewed, corrected, and/or tested the resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:hasAnnotation_RepositoryObject",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:hasAnnotation",
+      "name": "ldac:hasAnnotation",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#hasAnnotation"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryObject"
+      },
+      "rdfs:comment": "This resource is referenced by another resource that adds information to it such as a translation, transcription or other analysis.",
+      "rangeIncludes": "\"#class_Annotation\"",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:hasCollectionProtocol_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:hasCollectionProtocol",
+      "name": "ldac:hasCollectionProtocol",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#hasCollectionProtocol"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection.",
+      "rangeIncludes": {
+        "@id": "#class_ldac:CollectionProtocol"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:hasDerivation_File",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:hasDerivation",
+      "name": "ldac:hasDerivation",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#hasDerivation"
+      },
+      "domainIncludes": {
+        "@id": "#class_File"
+      },
+      "rdfs:comment": "This property references another resource that is derived from it, such as a downsampled audio or video file, or text extracted from a PDF.",
+      "rangeIncludes": "\"#class_DerivedMaterial\"",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:illustrator_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:illustrator",
+      "name": "ldac:illustrator",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#illustrator"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant contributed drawings or other illustrations to the resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:indexableText_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:indexableText",
+      "name": "ldac:indexableText",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#indexableText"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "One or more target File(s) that together contain the full text of an item – each file should indicate its language.",
+      "rangeIncludes": "\"#class_MediaObject\"",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:interpreter_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:interpreter",
+      "name": "ldac:interpreter",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#interpreter"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:interviewee_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:interviewee",
+      "name": "ldac:interviewee",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#interviewee"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant was a respondent in an interview.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:interviewer_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:interviewer",
+      "name": "ldac:interviewer",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#interviewer"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant conducted an interview that forms part of the resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:isDeIdentified_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:isDeIdentified",
+      "name": "ldac:isDeIdentified",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#isDeIdentified"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Boolean"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:itemLocation_RepositoryCollection",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:itemLocation",
+      "name": "ldac:itemLocation",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#itemLocation"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryCollection"
+      },
+      "rdfs:comment": "Current location of the item, e.g. where a set of audio tapes are stored.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Place"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:linguisticGenre_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:linguisticGenre",
+      "name": "ldac:linguisticGenre",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#linguisticGenre"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "A linguistic classification of the genre of this resource.",
+      "rangeIncludes": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:material_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:material",
+      "name": "ldac:material",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#material"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:materialType_File",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:materialType",
+      "name": "ldac:materialType",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#materialType"
+      },
+      "domainIncludes": {
+        "@id": "#class_File"
+      },
+      "rdfs:comment": "Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation.",
+      "rangeIncludes": {
+        "@id": "ldac:MaterialTypes"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:openAccessIndex_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:openAccessIndex",
+      "name": "ldac:openAccessIndex",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#openAccessIndex"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not.",
+      "rangeIncludes": {
+        "@id": "ldac:IndexTypes"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:participant_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:participant",
+      "name": "ldac:participant",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#participant"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant was present during the creation of the resource, but did not contribute substantially to its content.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:performer_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:performer",
+      "name": "ldac:performer",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#performer"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:photographer_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:photographer",
+      "name": "ldac:photographer",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#photographer"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant took the photograph, or shot the film, that appears in or constitutes the resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:recorder_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:recorder",
+      "name": "ldac:recorder",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#recorder"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant operated the recording machinery used to create the resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:register_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:register",
+      "name": "ldac:register",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#register"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:researcher_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:researcher",
+      "name": "ldac:researcher",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#researcher"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:researchParticipant_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:researchParticipant",
+      "name": "ldac:researchParticipant",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#researchParticipant"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:responder_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:responder",
+      "name": "ldac:responder",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#responder"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:reviewDate_DataLicense",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:reviewDate",
+      "name": "ldac:reviewDate",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#reviewDate"
+      },
+      "domainIncludes": {
+        "@id": "#class_DataLicense"
+      },
+      "rdfs:comment": "The date that this license should be reviewed.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_ldac:signer_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:signer",
+      "name": "ldac:signer",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#signer"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:singer_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:singer",
+      "name": "ldac:singer",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#singer"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:speaker_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:speaker",
+      "name": "ldac:speaker",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#speaker"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:sponsor_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:sponsor",
+      "name": "ldac:sponsor",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#sponsor"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant contributed financial support to the creation of the resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:subjectLanguage_RepositoryCollection",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:subjectLanguage",
+      "name": "ldac:subjectLanguage",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#subjectLanguage"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryCollection"
+      },
+      "rdfs:comment": "The languages that the materials in the collection are about (not the language that it is in).",
+      "rangeIncludes": {
+        "@id": "#class_Language"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:transcriber_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:transcriber",
+      "name": "ldac:transcriber",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#transcriber"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant produced a transcription of this or a related resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:translator_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:translator",
+      "name": "ldac:translator",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#translator"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The participant produced a translation of this or a related resource.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_ldac:writtenLanguageFormat_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "ldac:writtenLanguageFormat",
+      "name": "ldac:writtenLanguageFormat",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#writtenLanguageFormat"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten).",
+      "rangeIncludes": {
+        "@id": "ldac:WrittenLanguageTypeTerms"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_license_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "license",
+      "name": "license",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/license"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "A license document that applies to this content, typically indicated by URL.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_DataReuseLicense"
+        },
+        {
+          "@id": "http://schema.org/URL"
+        },
+        {
+          "@id": "http://schema.org/Text"
+        }
+      ],
+      "sh:minCount": "1",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_license_RepositoryObject",
+      "@type": "rdf:Property",
+      "rdfs:label": "license",
+      "name": "license",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/license"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryObject"
+      },
+      "rdfs:comment": "A license document that applies to this content, typically indicated by URL.",
+      "rangeIncludes": {
+        "@id": "#class_DataReuseLicense"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_location_Organization",
+      "@type": "rdf:Property",
+      "rdfs:label": "location",
+      "name": "location",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/location"
+      },
+      "domainIncludes": {
+        "@id": "#class_Organization"
+      },
+      "rdfs:comment": "A location for the organisation, e.g. a city for a publisher.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_name_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "name",
+      "name": "name",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/name"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "The name of this data collection.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "sh:minCount": "1",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_pcdm:hasMember_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "pcdm:hasMember",
+      "name": "pcdm:hasMember",
+      "prov:specializationOf": {
+        "@id": "http://pcdm.org/models#hasMember"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The sub-collections, if any, associated with this collection.",
+      "rangeIncludes": [
+        {
+          "@id": "#class_RepositoryCollection"
+        },
+        {
+          "@id": "#class_RepositoryObject"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_pcdm:memberOf_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "pcdm:memberOf",
+      "name": "pcdm:memberOf",
+      "prov:specializationOf": {
+        "@id": "http://pcdm.org/models#memberOf"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "Links from a Repository Object or Collection to a containing Repository Object or Collection.",
+      "rangeIncludes": {
+        "@id": "#class_RepositoryCollection"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_publisher_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "publisher",
+      "name": "publisher",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/publisher"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "The organisation that published this work.",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Text"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1"
+    },
+    {
+      "@id": "#prop_publisher_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "publisher",
+      "name": "publisher",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/publisher"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The organisation responsible for releasing this dataset.",
+      "rangeIncludes": {
+        "@id": "#class_Organization"
+      },
+      "sh:minCount": "1",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_recipient_CreativeWork",
+      "@type": "rdf:Property",
+      "rdfs:label": "recipient",
+      "name": "recipient",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/recipient"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork"
+      },
+      "rdfs:comment": "The person or organisation responsible for creating this work. Authors should be identified using URIs such as ORCiD or ROR.",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Text"
+        },
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_spatialCoverage_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "spatialCoverage",
+      "name": "spatialCoverage",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/spatialCoverage"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The place(s) that are the focus of the content. It is a sub-property of contentLocation intended primarily for more technical and detailed materials. For example, with a dataset, it indicates areas that the dataset describes: a dataset Cape York languages would have spatialCoverage which was the place: the outline of the Cape.",
+      "rangeIncludes": {
+        "@id": "#class_Place"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_temporalCoverage_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "temporalCoverage",
+      "name": "temporalCoverage",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/temporalCoverage"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The range of years of creation for items in this dataset using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level.",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/DateTime"
+        },
+        {
+          "@id": "http://schema.org/Text"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_temporalCoverage_RepositoryObject",
+      "@type": "rdf:Property",
+      "rdfs:label": "temporalCoverage",
+      "name": "temporalCoverage",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/temporalCoverage"
+      },
+      "domainIncludes": {
+        "@id": "#class_RepositoryObject"
+      },
+      "rdfs:comment": "The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In\n      the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written \"2011/2012\"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL.\n      Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via \"1939/1945\".\n\nOpen-ended date ranges can be written with \"..\" in place of the end date. For example, \"2015-11/..\" indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#prop_usageInfo_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "usageInfo",
+      "name": "usageInfo",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/usageInfo"
+      },
+      "domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "Additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'.",
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "#RO-Crate_Metadata_Descriptor.about",
+      "@type": "rdf:Property",
+      "rdfs:label": "about",
+      "name": "about",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/about"
+      },
+      "domainIncludes": {
+        "@id": "#RO-Crate_Metadata_Descriptor"
+      },
+      "rdfs:comment": "This property on the RO-Crate Metadata Descriptor references the Root Data Entity. In a SoSS+ profile there may be Schemas present for more than one 'flavour' of Root Data Entity with different @type arrays or `@conformsTo` references (or other specializations).",
+      "rangeIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "sh:minCount": "1",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1",
+      "description": "This property on the RO-Crate Metadata Descriptor references the Root Data Entity. In a SoSS+ profile there may be Schemas present for more than one 'flavour' of Root Data Entity with different @type arrays or `@conformsTo` references (or other specializations)."
+    },
+    {
+      "@id": "#RO-Crate_Metadata_Descriptor.id",
+      "@type": "rdf:Property",
+      "rdfs:label": "@id",
+      "domainIncludes": {
+        "@id": "#RO-Crate_Metadata_Descriptor"
+      },
+      "rdfs:comment": "The RO-Crate Metadata file identifier",
+      "rangeIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "sh:minCount": "1",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "sh:maxCount": "1",
+      "description": "The RO-Crate Metadata file identifier",
+      "value": "ro-crate-metadata.json"
+    },
+    {
+      "@id": "ldac:AccessControlList",
+      "@type": "DefinedTerm",
+      "description": "License grants access to data based on a list of approved users, specified using the property accessControlList.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AuthorizationWorkflows"
+      },
+      "name": "AccessControlList",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:AgreeToTerms",
+      "@type": "DefinedTerm",
+      "description": "A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AuthorizationWorkflows"
+      },
+      "name": "AgreeToTerms",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Annotation",
+      "@type": "DefinedTerm",
+      "description": "The resource includes material that adds information to some other linguistic record.",
+      "inDefinedTermSet": {
+        "@id": "ldac:MaterialTypes"
+      },
+      "name": "Annotation",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:AuthorizationByApplication",
+      "@type": "DefinedTerm",
+      "description": "Users may apply for a license via some workflow, such as a form, with the decision being made by a DataSteward or their delegate about whether to grant the license.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AuthorizationWorkflows"
+      },
+      "name": "AuthorizationByApplication",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:AuthorizationByInvitation",
+      "@type": "DefinedTerm",
+      "description": "A data steward or administrator is expected to use an access control system to invite users, for example, participants, collaborators or students.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AuthorizationWorkflows"
+      },
+      "name": "AuthorizationByInvitation",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:AuthorizedAccess",
+      "@type": "DefinedTerm",
+      "description": "Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AccessTypes"
+      },
+      "name": "AuthorizedAccess",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Coded",
+      "@type": "DefinedTerm",
+      "description": "The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet).",
+      "inDefinedTermSet": {
+        "@id": "ldac:CommunicationModeTerms"
+      },
+      "name": "Coded",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:DerivedMaterial",
+      "@type": "DefinedTerm",
+      "description": "This is derived from another source, such as a Primary Material, via some process, e.g. a downsampled video or a sample or an abstract of a resource that is not an annotation (an analysis or description).",
+      "inDefinedTermSet": {
+        "@id": "ldac:MaterialTypes"
+      },
+      "name": "DerivedMaterial",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Dialogue",
+      "@type": "DefinedTerm",
+      "description": "An interactive discourse with two or more participants. Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Dialogue",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Drama",
+      "@type": "DefinedTerm",
+      "description": "A planned, creative rendition of discourse with two or more participants intended for presentation to an audience.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Drama",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:ElicitationTask",
+      "@type": "DefinedTerm",
+      "description": "The collection protocol includes a task-based prompt to participants.",
+      "inDefinedTermSet": {
+        "@id": "ldac:CollectionProtocolTypeTerms"
+      },
+      "name": "ElicitationTask",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Formulaic",
+      "@type": "DefinedTerm",
+      "description": "The resource is a ritually or conventionally structured discourse.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Formulaic",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:FullText",
+      "@type": "DefinedTerm",
+      "description": "A text index that makes the full text of a data resource findable via a search interface.",
+      "inDefinedTermSet": {
+        "@id": "ldac:IndexTypes"
+      },
+      "name": "FullText",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Gestural",
+      "@type": "DefinedTerm",
+      "description": "The resource describes the gestural content of the resource it annotates.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "name": "Gestural",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Gesture",
+      "@type": "DefinedTerm",
+      "description": "The resource contains non-linguistic gestural communication (i.e. not sign language).",
+      "inDefinedTermSet": {
+        "@id": "ldac:CommunicationModeTerms"
+      },
+      "name": "Gesture",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Handwritten",
+      "@type": "DefinedTerm",
+      "description": "The resource was written using a writing implement such as a pen, pencil, brush or computer stylus (except where the digital handwriting is converted to standard text).",
+      "inDefinedTermSet": {
+        "@id": "ldac:WrittenLanguageTypeTerms"
+      },
+      "name": "Handwritten",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Informational",
+      "@type": "DefinedTerm",
+      "description": "Discourse whose primary purpose is to inform the audience about the natural or social world.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Informational",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Interview",
+      "@type": "DefinedTerm",
+      "description": "The resource is a conversation where one or more speakers are directing the conversation.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Interview",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Lexicon",
+      "@type": "DefinedTerm",
+      "description": "The resource includes a systematic listing of lexical items.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Lexicon",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Ludic",
+      "@type": "DefinedTerm",
+      "description": "Language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language. Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Ludic",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:MaterialSelectionCriteria",
+      "@type": "DefinedTerm",
+      "description": "A description of the criteria used to select texts in a collection.",
+      "inDefinedTermSet": {
+        "@id": "ldac:CollectionProtocolTypeTerms"
+      },
+      "name": "MaterialSelectionCriteria",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Narrative",
+      "@type": "DefinedTerm",
+      "description": "A discourse, monologic or co-constructed, which represents temporally organised events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Narrative",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:OpenAccess",
+      "@type": "DefinedTerm",
+      "description": "Data covered by this license may be accessed as long as the license is served alongside it, and does not require any specific authorization step.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AccessTypes"
+      },
+      "name": "OpenAccess",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Oratory",
+      "@type": "DefinedTerm",
+      "description": "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Oratory",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Orthographic",
+      "@type": "DefinedTerm",
+      "description": "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "name": "Orthographic",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:PartOfSpeech",
+      "@type": "DefinedTerm",
+      "description": "An annotation that assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate).",
+      "inDefinedTermSet": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "name": "PartOfSpeech",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Phonemic",
+      "@type": "DefinedTerm",
+      "description": "An annotation that represents speech in terms of the sound contrasts made in a language.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "name": "Phonemic",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Phonetic",
+      "@type": "DefinedTerm",
+      "description": "A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "name": "Phonetic",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Phonological",
+      "@type": "DefinedTerm",
+      "description": "An annotation that includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "name": "Phonological",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:PrimaryMaterial",
+      "@type": "DefinedTerm",
+      "description": "The object of study, such as a literary work, film, or recording of natural discourse.",
+      "inDefinedTermSet": {
+        "@id": "ldac:MaterialTypes"
+      },
+      "name": "PrimaryMaterial",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Procedural",
+      "@type": "DefinedTerm",
+      "description": "An explanation or description of a method, process, or situation having ordered steps.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Procedural",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Prosodic",
+      "@type": "DefinedTerm",
+      "description": "An annotation that provides a symbolic record of intonation, stress, tone or other suprasegmental features, which is expressed independently of regular phonetic transcription.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "name": "Prosodic",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Report",
+      "@type": "DefinedTerm",
+      "description": "A factual account of some event or circumstance.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Report",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:SelfAuthorization",
+      "@type": "DefinedTerm",
+      "description": "A user can be authorised to access data by clicking that they agree to a license, or filling out a form to check their understanding, which can be validated by a machine and does not require human intervention.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AuthorizationWorkflows"
+      },
+      "name": "SelfAuthorization",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Semantic",
+      "@type": "DefinedTerm",
+      "description": "The resource includes annotation or analysis concerning the encoding of meaning.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "name": "Semantic",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Session",
+      "@type": "DefinedTerm",
+      "description": "A collection event that is a recording or elicitation session with participants.",
+      "inDefinedTermSet": {
+        "@id": "ldac:CollectionEventTypeTerms"
+      },
+      "name": "Session",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:SignedLanguage",
+      "@type": "DefinedTerm",
+      "description": "The resource contains data for which the medium of interaction was signing.",
+      "inDefinedTermSet": {
+        "@id": "ldac:CommunicationModeTerms"
+      },
+      "name": "SignedLanguage",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Song",
+      "@type": "DefinedTerm",
+      "description": "The resource contains data for which the medium of interaction was song.",
+      "inDefinedTermSet": {
+        "@id": "ldac:CommunicationModeTerms"
+      },
+      "name": "Song",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:SpokenLanguage",
+      "@type": "DefinedTerm",
+      "description": "The resource contains data for which the medium of interaction was speech.",
+      "inDefinedTermSet": {
+        "@id": "ldac:CommunicationModeTerms"
+      },
+      "name": "SpokenLanguage",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Syntactic",
+      "@type": "DefinedTerm",
+      "description": "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "name": "Syntactic",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Thesaurus",
+      "@type": "DefinedTerm",
+      "description": "The resource contains a list or data structure consisting of words or concepts arranged according to sense.",
+      "inDefinedTermSet": {
+        "@id": "ldac:LinguisticGenreTerms"
+      },
+      "name": "Thesaurus",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Transcription",
+      "@type": "DefinedTerm",
+      "description": "The resource contains a transcription, which is a written representation (orthographic or coded) of an audio or visual signal.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "name": "Transcription",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Translation",
+      "@type": "DefinedTerm",
+      "description": "This is a translation of a resource in another language.",
+      "inDefinedTermSet": {
+        "@id": "ldac:AnnotationTypeTerms"
+      },
+      "name": "Translation",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      },
+      "hasDefinedTerm": {
+        "@id": "ldac:Translation"
+      }
+    },
+    {
+      "@id": "ldac:Typeset",
+      "@type": "DefinedTerm",
+      "description": "The resource has been formatted for printing or display.",
+      "inDefinedTermSet": {
+        "@id": "ldac:WrittenLanguageTypeTerms"
+      },
+      "name": "Typeset",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:Typewritten",
+      "@type": "DefinedTerm",
+      "description": "The resource contains text produced on a typewriter.",
+      "inDefinedTermSet": {
+        "@id": "ldac:WrittenLanguageTypeTerms"
+      },
+      "name": "Typewritten",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:WhistledLanguage",
+      "@type": "DefinedTerm",
+      "description": "The resource contains data for which the medium of interaction was whistling.",
+      "inDefinedTermSet": {
+        "@id": "ldac:CommunicationModeTerms"
+      },
+      "name": "WhistledLanguage",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:WrittenLanguage",
+      "@type": "DefinedTerm",
+      "description": "The resource contains data for which the medium of interaction was writing.",
+      "inDefinedTermSet": {
+        "@id": "ldac:CommunicationModeTerms"
+      },
+      "name": "WrittenLanguage",
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:AccessTypes",
+      "@type": "DefinedTermSet",
+      "name": "AccessTypes",
+      "description": "Set of defined terms for ldac:access",
+      "hasDefinedTerm": [
+        {
+          "@id": "ldac:AuthorizedAccess"
+        },
+        {
+          "@id": "ldac:OpenAccess"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:AnnotationTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "AnnotationTypeTerms",
+      "description": "Set of defined terms for ldac:annotationType",
+      "hasDefinedTerm": [
+        {
+          "@id": "ldac:Gestural"
+        },
+        {
+          "@id": "ldac:Orthographic"
+        },
+        {
+          "@id": "ldac:PartOfSpeech"
+        },
+        {
+          "@id": "ldac:Phonemic"
+        },
+        {
+          "@id": "ldac:Phonetic"
+        },
+        {
+          "@id": "ldac:Phonological"
+        },
+        {
+          "@id": "ldac:Prosodic"
+        },
+        {
+          "@id": "ldac:Semantic"
+        },
+        {
+          "@id": "ldac:Syntactic"
+        },
+        {
+          "@id": "ldac:Transcription"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:AuthorizationWorkflows",
+      "@type": "DefinedTermSet",
+      "name": "AuthorizationWorkflows",
+      "description": "Set of defined terms for ldac:authorizationWorkflow",
+      "hasDefinedTerm": [
+        {
+          "@id": "ldac:AccessControlList"
+        },
+        {
+          "@id": "ldac:AgreeToTerms"
+        },
+        {
+          "@id": "ldac:AuthorizationByApplication"
+        },
+        {
+          "@id": "ldac:AuthorizationByInvitation"
+        },
+        {
+          "@id": "ldac:SelfAuthorization"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:CollectionEventTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CollectionEventTypeTerms",
+      "description": "Set of defined terms for ldac:collectionEventType",
+      "hasDefinedTerm": {
+        "@id": "ldac:Session"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:CollectionProtocolTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CollectionProtocolTypeTerms",
+      "description": "Set of defined terms for ldac:collectionProtocolType",
+      "hasDefinedTerm": [
+        {
+          "@id": "ldac:ElicitationTask"
+        },
+        {
+          "@id": "ldac:MaterialSelectionCriteria"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:CommunicationModeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CommunicationModeTerms",
+      "description": "Set of defined terms for ldac:communicationMode",
+      "hasDefinedTerm": [
+        {
+          "@id": "ldac:Coded"
+        },
+        {
+          "@id": "ldac:Gesture"
+        },
+        {
+          "@id": "ldac:SignedLanguage"
+        },
+        {
+          "@id": "ldac:Song"
+        },
+        {
+          "@id": "ldac:SpokenLanguage"
+        },
+        {
+          "@id": "ldac:WhistledLanguage"
+        },
+        {
+          "@id": "ldac:WrittenLanguage"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:IndexTypes",
+      "@type": "DefinedTermSet",
+      "name": "IndexTypes",
+      "description": "Set of defined terms for ldac:openAccessIndex",
+      "hasDefinedTerm": {
+        "@id": "ldac:FullText"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:LinguisticGenreTerms",
+      "@type": "DefinedTermSet",
+      "name": "LinguisticGenreTerms",
+      "description": "Set of defined terms for ldac:linguisticGenre",
+      "hasDefinedTerm": [
+        {
+          "@id": "ldac:Dialogue"
+        },
+        {
+          "@id": "ldac:Drama"
+        },
+        {
+          "@id": "ldac:Formulaic"
+        },
+        {
+          "@id": "ldac:Informational"
+        },
+        {
+          "@id": "ldac:Interview"
+        },
+        {
+          "@id": "ldac:Lexicon"
+        },
+        {
+          "@id": "ldac:Ludic"
+        },
+        {
+          "@id": "ldac:Narrative"
+        },
+        {
+          "@id": "ldac:Oratory"
+        },
+        {
+          "@id": "ldac:Procedural"
+        },
+        {
+          "@id": "ldac:Report"
+        },
+        {
+          "@id": "ldac:Thesaurus"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:MaterialTypes",
+      "@type": "DefinedTermSet",
+      "name": "MaterialTypes",
+      "description": "Set of defined terms for ldac:materialType",
+      "hasDefinedTerm": [
+        {
+          "@id": "ldac:Annotation"
+        },
+        {
+          "@id": "ldac:DerivedMaterial"
+        },
+        {
+          "@id": "ldac:PrimaryMaterial"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "ldac:WrittenLanguageTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "WrittenLanguageTypeTerms",
+      "description": "Set of defined terms for ldac:writtenLanguageFormat",
+      "hasDefinedTerm": [
+        {
+          "@id": "ldac:Handwritten"
+        },
+        {
+          "@id": "ldac:Typeset"
+        },
+        {
+          "@id": "ldac:Typewritten"
+        }
+      ],
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/profile#Collection",
+      "@type": "Thing"
+    }
+  ]
+}
+</script>
+
+    
+<!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script -->
+<script src="https://unpkg.com/ro-crate-html@0.1/dist/ro-crate-dynamic.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset='utf-8'/>
+<style>
+
+table.table {
+  padding-bottom: 300px;
+}
+</style>
+</head>
+
+
+<body>
+
+  <nav class="navbar">
+
+    <ul class="nav navbar-nav" >
+        <li ><a href="#"><span class="glyphicon glyphicon-home dataset_name">&nbsp;Language Data Commons Comprehensive Collection Profile</span></a></li>
+    </ul>
+
+  </nav>
+<div class="container">
+<div class="jumbotron">
+<h4 class="citation"></h4>
+<h3 class="item_name">Language Data Commons Comprehensive Collection Profile</h3>
+
+
+<a href="./ro-crate-metadata.json">⬇️🏷️ Download all the metadata for <span class='name'>Language Data Commons Comprehensive Collection Profile</span> in JSON-LD format</a>
+
+
+<div id="check"></div>
+
+
+</div>
+
+
+
+<div id="summary">
+<div class='all-meta'>
+            <div>
+                <h3> Language Data Commons Comprehensive Collection Profile</h3>
+                
+                
+                
+                
+        <div id="./">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>./</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Language Data Commons Comprehensive Collection Profile</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>Profile derived from Language Data Commons Comprehensive Collection: Implements the language data commons RO-Crate Metadata Profile for the top-level, objects and files.</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'><a href="#%23author">University of Queensland</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
+            <td style='text-align:left'><span>GPL-3.0</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">conformsTo<span>&nbsp;</span><a href="http://purl.org/dc/terms/conformsTo">[?]</a></th>
+            <td style='text-align:left'><a href="https://w3id.org/ldac/profile">https://w3id.org/ldac/profile</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasResource</th>
+            <td style='text-align:left'><a href="#%23hasSpecializedSchema">Specialized Schema Terms</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#profile-documentation.md">profile-documentation.md</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">about<span>&nbsp;</span><a href="http://schema.org/about">[?]</a></th>
+            <td style='text-align:left'><a href="#ro-crate-metadata.json">ro-crate-metadata.json</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">isPartOf<span>&nbsp;</span><a href="http://schema.org/isPartOf">[?]</a></th>
+            <td style='text-align:left'><a href="#profile-documentation.md">profile-documentation.md</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> University of Queensland</h3>
+                
+                
+                
+                
+        <div id="#author">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>#author</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>University of Queensland</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Organization</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Language Data Commons Comprehensive Collection Profile</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/><hr/><br/><br/>
+            <div>
+                <h3> Specialized Schema Terms</h3>
+                
+                
+                
+                
+        <div id="#hasSpecializedSchema">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>#hasSpecializedSchema</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Specialized Schema Terms</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>ResourceDescriptor</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasRole</th>
+            <td style='text-align:left'><a href="http://www.w3.org/ns/dx/prof/role/schema">http://www.w3.org/ns/dx/prof/role/schema</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'>
+                        <details style='margin-left: 3%'>
+                            <summary>
+                                <a href="#%23class_CollectionEvent">CollectionEvent</a> -to- <a href="#%23prop_funder_Dataset">funder</a>
+                            </summary>
+                            <ul>
+                        <li><a href="#%23class_CollectionEvent">CollectionEvent</a></li>
+                        
+                        <li><a href="#%23class_CreativeWork">CreativeWork</a></li>
+                        
+                        <li><a href="#%23class_DataDepositLicense">DataDepositLicense</a></li>
+                        
+                        <li><a href="#%23class_DataLicense">DataLicense</a></li>
+                        
+                        <li><a href="#%23class_DataReuseLicense">DataReuseLicense</a></li>
+                        
+                        <li><a href="#%23class_Dataset">Dataset</a></li>
+                        
+                        <li><a href="#%23class_dct%3ACollection">dct:Collection</a></li>
+                        
+                        <li><a href="#%23class_dct%3ADataset">dct:Dataset</a></li>
+                        
+                        <li><a href="#%23class_dct%3AEvent">dct:Event</a></li>
+                        
+                        <li><a href="#%23class_dct%3AImage">dct:Image</a></li>
+                        
+                        <li><a href="#%23class_dct%3AInteractiveResource">dct:InteractiveResource</a></li>
+                        
+                        <li><a href="#%23class_dct%3AMovingImage">dct:MovingImage</a></li>
+                        
+                        <li><a href="#%23class_dct%3APhysicalObject">dct:PhysicalObject</a></li>
+                        
+                        <li><a href="#%23class_dct%3AService">dct:Service</a></li>
+                        
+                        <li><a href="#%23class_dct%3ASoftware">dct:Software</a></li>
+                        
+                        <li><a href="#%23class_dct%3ASound">dct:Sound</a></li>
+                        
+                        <li><a href="#%23class_dct%3AStillImage">dct:StillImage</a></li>
+                        
+                        <li><a href="#%23class_dct%3AText">dct:Text</a></li>
+                        
+                        <li><a href="#%23class_File">File</a></li>
+                        
+                        <li><a href="#%23class_Geometry">Geometry</a></li>
+                        
+                        <li><a href="#%23class_Language">Language</a></li>
+                        
+                        <li><a href="#%23class_ldac%3ACollectionProtocol">ldac:CollectionProtocol</a></li>
+                        
+                        <li><a href="#%23class_Organization">Organization</a></li>
+                        
+                        <li><a href="#%23class_Person">Person</a></li>
+                        
+                        <li><a href="#%23class_Place">Place</a></li>
+                        
+                        <li><a href="#%23class_RepositoryCollection">RepositoryCollection</a></li>
+                        
+                        <li><a href="#%23class_RepositoryObject">RepositoryObject</a></li>
+                        
+                        <li><a href="#%23RO-Crate_Metadata_Descriptor">RO-Crate Metadata Descriptor</a></li>
+                        
+                        <li><a href="#%23Root_Data_Entity">Root Data Entity</a></li>
+                        
+                        <li><a href="#%23itemlist_conformsTo_RepositoryCollection">Values for conformsTo</a></li>
+                        
+                        <li><a href="#%23prop_accountablePerson_Dataset">accountablePerson</a></li>
+                        
+                        <li><a href="#%23prop_address_Place">address</a></li>
+                        
+                        <li><a href="#%23prop_affiliation_Person">affiliation</a></li>
+                        
+                        <li><a href="#%23prop_author_CreativeWork">author</a></li>
+                        
+                        <li><a href="#%23prop_author_Dataset">author</a></li>
+                        
+                        <li><a href="#%23prop_citation_Dataset">citation</a></li>
+                        
+                        <li><a href="#%23prop_conformsTo_RepositoryCollection">conformsTo</a></li>
+                        
+                        <li><a href="#%23prop_conformsTo_RepositoryObject">conformsTo</a></li>
+                        
+                        <li><a href="#%23prop_contentLocation_RepositoryCollection">contentLocation</a></li>
+                        
+                        <li><a href="#%23prop_contentSize_File">contentSize</a></li>
+                        
+                        <li><a href="#%23prop_creator_RepositoryObject">creator</a></li>
+                        
+                        <li><a href="#%23prop_creditText_Dataset">creditText</a></li>
+                        
+                        <li><a href="#%23prop_dateCreated_RepositoryCollection">dateCreated</a></li>
+                        
+                        <li><a href="#%23prop_dateCreated_RepositoryObject">dateCreated</a></li>
+                        
+                        <li><a href="#%23prop_datePublished_Dataset">datePublished</a></li>
+                        
+                        <li><a href="#%23prop_dct%3ArightsHolder_Dataset">dct:rightsHolder</a></li>
+                        
+                        <li><a href="#%23prop_description_Dataset">description</a></li>
+                        
+                        <li><a href="#%23prop_description_RepositoryObject">description</a></li>
+                        
+                        <li><a href="#%23prop_encodingFormat_File">encodingFormat</a></li>
+                        
+                        <li><a href="#%23prop_funder_Dataset">funder</a></li>
+                        </ul>
+                        </details>
+                
+                        <details style='margin-left: 3%'>
+                            <summary>
+                                <a href="#%23prop_geo_Place">geo</a> -to- <a href="#%23prop_ldac%3Arecorder_Dataset">ldac:recorder</a>
+                            </summary>
+                            <ul>
+                        <li><a href="#%23prop_geo_Place">geo</a></li>
+                        
+                        <li><a href="#%23prop_geosparql%3AasWKT_Geometry">geosparql:asWKT</a></li>
+                        
+                        <li><a href="#%23prop_hasPart_Dataset">hasPart</a></li>
+                        
+                        <li><a href="#%23prop_hasPart_File">hasPart</a></li>
+                        
+                        <li><a href="#%23prop_holdingArchive_RepositoryCollection">holdingArchive</a></li>
+                        
+                        <li><a href="#%23prop_identifier_RepositoryObject">identifier</a></li>
+                        
+                        <li><a href="#%23prop_inLanguage_RepositoryCollection">inLanguage</a></li>
+                        
+                        <li><a href="#%23prop_isAccessibleForFree_Dataset">isAccessibleForFree</a></li>
+                        
+                        <li><a href="#%23prop_isBasedOn_Dataset">isBasedOn</a></li>
+                        
+                        <li><a href="#%23prop_isbn_CreativeWork">isbn</a></li>
+                        
+                        <li><a href="#%23prop_isPartOf_Dataset">isPartOf</a></li>
+                        
+                        <li><a href="#%23prop_issn_CreativeWork">issn</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aaccess_DataReuseLicense">ldac:access</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AaccessControlList_DataReuseLicense">ldac:accessControlList</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aage_Person">ldac:age</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AannotationOf_Dataset">ldac:annotationOf</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AannotationType_CreativeWork">ldac:annotationType</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aannotator_Dataset">ldac:annotator</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AauthorizationWorkflow_DataReuseLicense">ldac:authorizationWorkflow</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Achannels_CreativeWork">ldac:channels</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AcollectionEventType_CollectionEvent">ldac:collectionEventType</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AcollectionProtocolType_ldac%3ACollectionProtocol">ldac:collectionProtocolType</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AcommunicationMode_CreativeWork">ldac:communicationMode</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Acompiler_Dataset">ldac:compiler</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aconsultant_Dataset">ldac:consultant</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AdataInputter_Dataset">ldac:dataInputter</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AdateFreeText_RepositoryCollection">ldac:dateFreeText</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Adepositor_Dataset">ldac:depositor</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AderivationOf_File">ldac:derivationOf</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Adeveloper_Dataset">ldac:developer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Adoi_Dataset">ldac:doi</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aeditor_Dataset">ldac:editor</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AhasAnnotation_RepositoryObject">ldac:hasAnnotation</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AhasCollectionProtocol_Dataset">ldac:hasCollectionProtocol</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AhasDerivation_File">ldac:hasDerivation</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aillustrator_Dataset">ldac:illustrator</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AindexableText_CreativeWork">ldac:indexableText</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Ainterpreter_Dataset">ldac:interpreter</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Ainterviewee_Dataset">ldac:interviewee</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Ainterviewer_Dataset">ldac:interviewer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AisDeIdentified_CreativeWork">ldac:isDeIdentified</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AitemLocation_RepositoryCollection">ldac:itemLocation</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AlinguisticGenre_CreativeWork">ldac:linguisticGenre</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Amaterial_CreativeWork">ldac:material</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AmaterialType_File">ldac:materialType</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AopenAccessIndex_CreativeWork">ldac:openAccessIndex</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aparticipant_Dataset">ldac:participant</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aperformer_Dataset">ldac:performer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aphotographer_Dataset">ldac:photographer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Arecorder_Dataset">ldac:recorder</a></li>
+                        </ul>
+                        </details>
+                
+                        <details style='margin-left: 3%'>
+                            <summary>
+                                <a href="#%23prop_ldac%3Aregister_CreativeWork">ldac:register</a> -to- <a href="#ldac%3ANarrative">Narrative</a>
+                            </summary>
+                            <ul>
+                        <li><a href="#%23prop_ldac%3Aregister_CreativeWork">ldac:register</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aresearcher_Dataset">ldac:researcher</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AresearchParticipant_Dataset">ldac:researchParticipant</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aresponder_Dataset">ldac:responder</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AreviewDate_DataLicense">ldac:reviewDate</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Asigner_Dataset">ldac:signer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Asinger_Dataset">ldac:singer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aspeaker_Dataset">ldac:speaker</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Asponsor_Dataset">ldac:sponsor</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AsubjectLanguage_RepositoryCollection">ldac:subjectLanguage</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Atranscriber_Dataset">ldac:transcriber</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Atranslator_Dataset">ldac:translator</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AwrittenLanguageFormat_CreativeWork">ldac:writtenLanguageFormat</a></li>
+                        
+                        <li><a href="#%23prop_license_Dataset">license</a></li>
+                        
+                        <li><a href="#%23prop_license_RepositoryObject">license</a></li>
+                        
+                        <li><a href="#%23prop_location_Organization">location</a></li>
+                        
+                        <li><a href="#%23prop_name_Dataset">name</a></li>
+                        
+                        <li><a href="#%23prop_pcdm%3AhasMember_Dataset">pcdm:hasMember</a></li>
+                        
+                        <li><a href="#%23prop_pcdm%3AmemberOf_Dataset">pcdm:memberOf</a></li>
+                        
+                        <li><a href="#%23prop_publisher_CreativeWork">publisher</a></li>
+                        
+                        <li><a href="#%23prop_publisher_Dataset">publisher</a></li>
+                        
+                        <li><a href="#%23prop_recipient_CreativeWork">recipient</a></li>
+                        
+                        <li><a href="#%23prop_spatialCoverage_Dataset">spatialCoverage</a></li>
+                        
+                        <li><a href="#%23prop_temporalCoverage_Dataset">temporalCoverage</a></li>
+                        
+                        <li><a href="#%23prop_temporalCoverage_RepositoryObject">temporalCoverage</a></li>
+                        
+                        <li><a href="#%23prop_usageInfo_Dataset">usageInfo</a></li>
+                        
+                        <li><a href="#%23RO-Crate_Metadata_Descriptor.about">about</a></li>
+                        
+                        <li><a href="#%23RO-Crate_Metadata_Descriptor.id">ro-crate-metadata.json</a></li>
+                        
+                        <li><a href="#ldac%3AAccessControlList">AccessControlList</a></li>
+                        
+                        <li><a href="#ldac%3AAgreeToTerms">AgreeToTerms</a></li>
+                        
+                        <li><a href="#ldac%3AAnnotation">Annotation</a></li>
+                        
+                        <li><a href="#ldac%3AAuthorizationByApplication">AuthorizationByApplication</a></li>
+                        
+                        <li><a href="#ldac%3AAuthorizationByInvitation">AuthorizationByInvitation</a></li>
+                        
+                        <li><a href="#ldac%3AAuthorizedAccess">AuthorizedAccess</a></li>
+                        
+                        <li><a href="#ldac%3ACoded">Coded</a></li>
+                        
+                        <li><a href="#ldac%3ADerivedMaterial">DerivedMaterial</a></li>
+                        
+                        <li><a href="#ldac%3ADialogue">Dialogue</a></li>
+                        
+                        <li><a href="#ldac%3ADrama">Drama</a></li>
+                        
+                        <li><a href="#ldac%3AElicitationTask">ElicitationTask</a></li>
+                        
+                        <li><a href="#ldac%3AFormulaic">Formulaic</a></li>
+                        
+                        <li><a href="#ldac%3AFullText">FullText</a></li>
+                        
+                        <li><a href="#ldac%3AGestural">Gestural</a></li>
+                        
+                        <li><a href="#ldac%3AGesture">Gesture</a></li>
+                        
+                        <li><a href="#ldac%3AHandwritten">Handwritten</a></li>
+                        
+                        <li><a href="#ldac%3AInformational">Informational</a></li>
+                        
+                        <li><a href="#ldac%3AInterview">Interview</a></li>
+                        
+                        <li><a href="#ldac%3ALexicon">Lexicon</a></li>
+                        
+                        <li><a href="#ldac%3ALudic">Ludic</a></li>
+                        
+                        <li><a href="#ldac%3AMaterialSelectionCriteria">MaterialSelectionCriteria</a></li>
+                        
+                        <li><a href="#ldac%3ANarrative">Narrative</a></li>
+                        </ul>
+                        </details>
+                
+                        <details style='margin-left: 3%'>
+                            <summary>
+                                <a href="#ldac%3AOpenAccess">OpenAccess</a> -to- <a href="#ldac%3AWrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a>
+                            </summary>
+                            <ul>
+                        <li><a href="#ldac%3AOpenAccess">OpenAccess</a></li>
+                        
+                        <li><a href="#ldac%3AOratory">Oratory</a></li>
+                        
+                        <li><a href="#ldac%3AOrthographic">Orthographic</a></li>
+                        
+                        <li><a href="#ldac%3APartOfSpeech">PartOfSpeech</a></li>
+                        
+                        <li><a href="#ldac%3APhonemic">Phonemic</a></li>
+                        
+                        <li><a href="#ldac%3APhonetic">Phonetic</a></li>
+                        
+                        <li><a href="#ldac%3APhonological">Phonological</a></li>
+                        
+                        <li><a href="#ldac%3APrimaryMaterial">PrimaryMaterial</a></li>
+                        
+                        <li><a href="#ldac%3AProcedural">Procedural</a></li>
+                        
+                        <li><a href="#ldac%3AProsodic">Prosodic</a></li>
+                        
+                        <li><a href="#ldac%3AReport">Report</a></li>
+                        
+                        <li><a href="#ldac%3ASelfAuthorization">SelfAuthorization</a></li>
+                        
+                        <li><a href="#ldac%3ASemantic">Semantic</a></li>
+                        
+                        <li><a href="#ldac%3ASession">Session</a></li>
+                        
+                        <li><a href="#ldac%3ASignedLanguage">SignedLanguage</a></li>
+                        
+                        <li><a href="#ldac%3ASong">Song</a></li>
+                        
+                        <li><a href="#ldac%3ASpokenLanguage">SpokenLanguage</a></li>
+                        
+                        <li><a href="#ldac%3ASyntactic">Syntactic</a></li>
+                        
+                        <li><a href="#ldac%3AThesaurus">Thesaurus</a></li>
+                        
+                        <li><a href="#ldac%3ATranscription">Transcription</a></li>
+                        
+                        <li><a href="#ldac%3ATranslation">Translation</a></li>
+                        
+                        <li><a href="#ldac%3ATypeset">Typeset</a></li>
+                        
+                        <li><a href="#ldac%3ATypewritten">Typewritten</a></li>
+                        
+                        <li><a href="#ldac%3AWhistledLanguage">WhistledLanguage</a></li>
+                        
+                        <li><a href="#ldac%3AWrittenLanguage">WrittenLanguage</a></li>
+                        
+                        <li><a href="#ldac%3AAccessTypes">AccessTypes</a></li>
+                        
+                        <li><a href="#ldac%3AAnnotationTypeTerms">AnnotationTypeTerms</a></li>
+                        
+                        <li><a href="#ldac%3AAuthorizationWorkflows">AuthorizationWorkflows</a></li>
+                        
+                        <li><a href="#ldac%3ACollectionEventTypeTerms">CollectionEventTypeTerms</a></li>
+                        
+                        <li><a href="#ldac%3ACollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a></li>
+                        
+                        <li><a href="#ldac%3ACommunicationModeTerms">CommunicationModeTerms</a></li>
+                        
+                        <li><a href="#ldac%3AIndexTypes">IndexTypes</a></li>
+                        
+                        <li><a href="#ldac%3ALinguisticGenreTerms">LinguisticGenreTerms</a></li>
+                        
+                        <li><a href="#ldac%3AMaterialTypes">MaterialTypes</a></li>
+                        
+                        <li><a href="#ldac%3AWrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a></li>
+                        </ul>
+                        </details>
+                </td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">isPartOf<span>&nbsp;</span><a href="http://schema.org/isPartOf">[?]</a></th>
+            <td style='text-align:left'>
+                        <details style='margin-left: 3%'>
+                            <summary>
+                                <a href="#%23class_CollectionEvent">CollectionEvent</a> -to- <a href="#%23prop_funder_Dataset">funder</a>
+                            </summary>
+                            <ul>
+                        <li><a href="#%23class_CollectionEvent">CollectionEvent</a></li>
+                        
+                        <li><a href="#%23class_CreativeWork">CreativeWork</a></li>
+                        
+                        <li><a href="#%23class_DataDepositLicense">DataDepositLicense</a></li>
+                        
+                        <li><a href="#%23class_DataLicense">DataLicense</a></li>
+                        
+                        <li><a href="#%23class_DataReuseLicense">DataReuseLicense</a></li>
+                        
+                        <li><a href="#%23class_Dataset">Dataset</a></li>
+                        
+                        <li><a href="#%23class_dct%3ACollection">dct:Collection</a></li>
+                        
+                        <li><a href="#%23class_dct%3ADataset">dct:Dataset</a></li>
+                        
+                        <li><a href="#%23class_dct%3AEvent">dct:Event</a></li>
+                        
+                        <li><a href="#%23class_dct%3AImage">dct:Image</a></li>
+                        
+                        <li><a href="#%23class_dct%3AInteractiveResource">dct:InteractiveResource</a></li>
+                        
+                        <li><a href="#%23class_dct%3AMovingImage">dct:MovingImage</a></li>
+                        
+                        <li><a href="#%23class_dct%3APhysicalObject">dct:PhysicalObject</a></li>
+                        
+                        <li><a href="#%23class_dct%3AService">dct:Service</a></li>
+                        
+                        <li><a href="#%23class_dct%3ASoftware">dct:Software</a></li>
+                        
+                        <li><a href="#%23class_dct%3ASound">dct:Sound</a></li>
+                        
+                        <li><a href="#%23class_dct%3AStillImage">dct:StillImage</a></li>
+                        
+                        <li><a href="#%23class_dct%3AText">dct:Text</a></li>
+                        
+                        <li><a href="#%23class_File">File</a></li>
+                        
+                        <li><a href="#%23class_Geometry">Geometry</a></li>
+                        
+                        <li><a href="#%23class_Language">Language</a></li>
+                        
+                        <li><a href="#%23class_ldac%3ACollectionProtocol">ldac:CollectionProtocol</a></li>
+                        
+                        <li><a href="#%23class_Organization">Organization</a></li>
+                        
+                        <li><a href="#%23class_Person">Person</a></li>
+                        
+                        <li><a href="#%23class_Place">Place</a></li>
+                        
+                        <li><a href="#%23class_RepositoryCollection">RepositoryCollection</a></li>
+                        
+                        <li><a href="#%23class_RepositoryObject">RepositoryObject</a></li>
+                        
+                        <li><a href="#%23RO-Crate_Metadata_Descriptor">RO-Crate Metadata Descriptor</a></li>
+                        
+                        <li><a href="#%23Root_Data_Entity">Root Data Entity</a></li>
+                        
+                        <li><a href="#%23itemlist_conformsTo_RepositoryCollection">Values for conformsTo</a></li>
+                        
+                        <li><a href="#%23prop_accountablePerson_Dataset">accountablePerson</a></li>
+                        
+                        <li><a href="#%23prop_address_Place">address</a></li>
+                        
+                        <li><a href="#%23prop_affiliation_Person">affiliation</a></li>
+                        
+                        <li><a href="#%23prop_author_CreativeWork">author</a></li>
+                        
+                        <li><a href="#%23prop_author_Dataset">author</a></li>
+                        
+                        <li><a href="#%23prop_citation_Dataset">citation</a></li>
+                        
+                        <li><a href="#%23prop_conformsTo_RepositoryCollection">conformsTo</a></li>
+                        
+                        <li><a href="#%23prop_conformsTo_RepositoryObject">conformsTo</a></li>
+                        
+                        <li><a href="#%23prop_contentLocation_RepositoryCollection">contentLocation</a></li>
+                        
+                        <li><a href="#%23prop_contentSize_File">contentSize</a></li>
+                        
+                        <li><a href="#%23prop_creator_RepositoryObject">creator</a></li>
+                        
+                        <li><a href="#%23prop_creditText_Dataset">creditText</a></li>
+                        
+                        <li><a href="#%23prop_dateCreated_RepositoryCollection">dateCreated</a></li>
+                        
+                        <li><a href="#%23prop_dateCreated_RepositoryObject">dateCreated</a></li>
+                        
+                        <li><a href="#%23prop_datePublished_Dataset">datePublished</a></li>
+                        
+                        <li><a href="#%23prop_dct%3ArightsHolder_Dataset">dct:rightsHolder</a></li>
+                        
+                        <li><a href="#%23prop_description_Dataset">description</a></li>
+                        
+                        <li><a href="#%23prop_description_RepositoryObject">description</a></li>
+                        
+                        <li><a href="#%23prop_encodingFormat_File">encodingFormat</a></li>
+                        
+                        <li><a href="#%23prop_funder_Dataset">funder</a></li>
+                        </ul>
+                        </details>
+                
+                        <details style='margin-left: 3%'>
+                            <summary>
+                                <a href="#%23prop_geo_Place">geo</a> -to- <a href="#%23prop_ldac%3Arecorder_Dataset">ldac:recorder</a>
+                            </summary>
+                            <ul>
+                        <li><a href="#%23prop_geo_Place">geo</a></li>
+                        
+                        <li><a href="#%23prop_geosparql%3AasWKT_Geometry">geosparql:asWKT</a></li>
+                        
+                        <li><a href="#%23prop_hasPart_Dataset">hasPart</a></li>
+                        
+                        <li><a href="#%23prop_hasPart_File">hasPart</a></li>
+                        
+                        <li><a href="#%23prop_holdingArchive_RepositoryCollection">holdingArchive</a></li>
+                        
+                        <li><a href="#%23prop_identifier_RepositoryObject">identifier</a></li>
+                        
+                        <li><a href="#%23prop_inLanguage_RepositoryCollection">inLanguage</a></li>
+                        
+                        <li><a href="#%23prop_isAccessibleForFree_Dataset">isAccessibleForFree</a></li>
+                        
+                        <li><a href="#%23prop_isBasedOn_Dataset">isBasedOn</a></li>
+                        
+                        <li><a href="#%23prop_isbn_CreativeWork">isbn</a></li>
+                        
+                        <li><a href="#%23prop_isPartOf_Dataset">isPartOf</a></li>
+                        
+                        <li><a href="#%23prop_issn_CreativeWork">issn</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aaccess_DataReuseLicense">ldac:access</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AaccessControlList_DataReuseLicense">ldac:accessControlList</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aage_Person">ldac:age</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AannotationOf_Dataset">ldac:annotationOf</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AannotationType_CreativeWork">ldac:annotationType</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aannotator_Dataset">ldac:annotator</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AauthorizationWorkflow_DataReuseLicense">ldac:authorizationWorkflow</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Achannels_CreativeWork">ldac:channels</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AcollectionEventType_CollectionEvent">ldac:collectionEventType</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AcollectionProtocolType_ldac%3ACollectionProtocol">ldac:collectionProtocolType</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AcommunicationMode_CreativeWork">ldac:communicationMode</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Acompiler_Dataset">ldac:compiler</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aconsultant_Dataset">ldac:consultant</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AdataInputter_Dataset">ldac:dataInputter</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AdateFreeText_RepositoryCollection">ldac:dateFreeText</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Adepositor_Dataset">ldac:depositor</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AderivationOf_File">ldac:derivationOf</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Adeveloper_Dataset">ldac:developer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Adoi_Dataset">ldac:doi</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aeditor_Dataset">ldac:editor</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AhasAnnotation_RepositoryObject">ldac:hasAnnotation</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AhasCollectionProtocol_Dataset">ldac:hasCollectionProtocol</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AhasDerivation_File">ldac:hasDerivation</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aillustrator_Dataset">ldac:illustrator</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AindexableText_CreativeWork">ldac:indexableText</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Ainterpreter_Dataset">ldac:interpreter</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Ainterviewee_Dataset">ldac:interviewee</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Ainterviewer_Dataset">ldac:interviewer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AisDeIdentified_CreativeWork">ldac:isDeIdentified</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AitemLocation_RepositoryCollection">ldac:itemLocation</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AlinguisticGenre_CreativeWork">ldac:linguisticGenre</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Amaterial_CreativeWork">ldac:material</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AmaterialType_File">ldac:materialType</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AopenAccessIndex_CreativeWork">ldac:openAccessIndex</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aparticipant_Dataset">ldac:participant</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aperformer_Dataset">ldac:performer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aphotographer_Dataset">ldac:photographer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Arecorder_Dataset">ldac:recorder</a></li>
+                        </ul>
+                        </details>
+                
+                        <details style='margin-left: 3%'>
+                            <summary>
+                                <a href="#%23prop_ldac%3Aregister_CreativeWork">ldac:register</a> -to- <a href="#ldac%3ANarrative">Narrative</a>
+                            </summary>
+                            <ul>
+                        <li><a href="#%23prop_ldac%3Aregister_CreativeWork">ldac:register</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aresearcher_Dataset">ldac:researcher</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AresearchParticipant_Dataset">ldac:researchParticipant</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aresponder_Dataset">ldac:responder</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AreviewDate_DataLicense">ldac:reviewDate</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Asigner_Dataset">ldac:signer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Asinger_Dataset">ldac:singer</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Aspeaker_Dataset">ldac:speaker</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Asponsor_Dataset">ldac:sponsor</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AsubjectLanguage_RepositoryCollection">ldac:subjectLanguage</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Atranscriber_Dataset">ldac:transcriber</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3Atranslator_Dataset">ldac:translator</a></li>
+                        
+                        <li><a href="#%23prop_ldac%3AwrittenLanguageFormat_CreativeWork">ldac:writtenLanguageFormat</a></li>
+                        
+                        <li><a href="#%23prop_license_Dataset">license</a></li>
+                        
+                        <li><a href="#%23prop_license_RepositoryObject">license</a></li>
+                        
+                        <li><a href="#%23prop_location_Organization">location</a></li>
+                        
+                        <li><a href="#%23prop_name_Dataset">name</a></li>
+                        
+                        <li><a href="#%23prop_pcdm%3AhasMember_Dataset">pcdm:hasMember</a></li>
+                        
+                        <li><a href="#%23prop_pcdm%3AmemberOf_Dataset">pcdm:memberOf</a></li>
+                        
+                        <li><a href="#%23prop_publisher_CreativeWork">publisher</a></li>
+                        
+                        <li><a href="#%23prop_publisher_Dataset">publisher</a></li>
+                        
+                        <li><a href="#%23prop_recipient_CreativeWork">recipient</a></li>
+                        
+                        <li><a href="#%23prop_spatialCoverage_Dataset">spatialCoverage</a></li>
+                        
+                        <li><a href="#%23prop_temporalCoverage_Dataset">temporalCoverage</a></li>
+                        
+                        <li><a href="#%23prop_temporalCoverage_RepositoryObject">temporalCoverage</a></li>
+                        
+                        <li><a href="#%23prop_usageInfo_Dataset">usageInfo</a></li>
+                        
+                        <li><a href="#%23RO-Crate_Metadata_Descriptor.about">about</a></li>
+                        
+                        <li><a href="#%23RO-Crate_Metadata_Descriptor.id">ro-crate-metadata.json</a></li>
+                        
+                        <li><a href="#ldac%3AAccessControlList">AccessControlList</a></li>
+                        
+                        <li><a href="#ldac%3AAgreeToTerms">AgreeToTerms</a></li>
+                        
+                        <li><a href="#ldac%3AAnnotation">Annotation</a></li>
+                        
+                        <li><a href="#ldac%3AAuthorizationByApplication">AuthorizationByApplication</a></li>
+                        
+                        <li><a href="#ldac%3AAuthorizationByInvitation">AuthorizationByInvitation</a></li>
+                        
+                        <li><a href="#ldac%3AAuthorizedAccess">AuthorizedAccess</a></li>
+                        
+                        <li><a href="#ldac%3ACoded">Coded</a></li>
+                        
+                        <li><a href="#ldac%3ADerivedMaterial">DerivedMaterial</a></li>
+                        
+                        <li><a href="#ldac%3ADialogue">Dialogue</a></li>
+                        
+                        <li><a href="#ldac%3ADrama">Drama</a></li>
+                        
+                        <li><a href="#ldac%3AElicitationTask">ElicitationTask</a></li>
+                        
+                        <li><a href="#ldac%3AFormulaic">Formulaic</a></li>
+                        
+                        <li><a href="#ldac%3AFullText">FullText</a></li>
+                        
+                        <li><a href="#ldac%3AGestural">Gestural</a></li>
+                        
+                        <li><a href="#ldac%3AGesture">Gesture</a></li>
+                        
+                        <li><a href="#ldac%3AHandwritten">Handwritten</a></li>
+                        
+                        <li><a href="#ldac%3AInformational">Informational</a></li>
+                        
+                        <li><a href="#ldac%3AInterview">Interview</a></li>
+                        
+                        <li><a href="#ldac%3ALexicon">Lexicon</a></li>
+                        
+                        <li><a href="#ldac%3ALudic">Ludic</a></li>
+                        
+                        <li><a href="#ldac%3AMaterialSelectionCriteria">MaterialSelectionCriteria</a></li>
+                        
+                        <li><a href="#ldac%3ANarrative">Narrative</a></li>
+                        </ul>
+                        </details>
+                
+                        <details style='margin-left: 3%'>
+                            <summary>
+                                <a href="#ldac%3AOpenAccess">OpenAccess</a> -to- <a href="#ldac%3AWrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a>
+                            </summary>
+                            <ul>
+                        <li><a href="#ldac%3AOpenAccess">OpenAccess</a></li>
+                        
+                        <li><a href="#ldac%3AOratory">Oratory</a></li>
+                        
+                        <li><a href="#ldac%3AOrthographic">Orthographic</a></li>
+                        
+                        <li><a href="#ldac%3APartOfSpeech">PartOfSpeech</a></li>
+                        
+                        <li><a href="#ldac%3APhonemic">Phonemic</a></li>
+                        
+                        <li><a href="#ldac%3APhonetic">Phonetic</a></li>
+                        
+                        <li><a href="#ldac%3APhonological">Phonological</a></li>
+                        
+                        <li><a href="#ldac%3APrimaryMaterial">PrimaryMaterial</a></li>
+                        
+                        <li><a href="#ldac%3AProcedural">Procedural</a></li>
+                        
+                        <li><a href="#ldac%3AProsodic">Prosodic</a></li>
+                        
+                        <li><a href="#ldac%3AReport">Report</a></li>
+                        
+                        <li><a href="#ldac%3ASelfAuthorization">SelfAuthorization</a></li>
+                        
+                        <li><a href="#ldac%3ASemantic">Semantic</a></li>
+                        
+                        <li><a href="#ldac%3ASession">Session</a></li>
+                        
+                        <li><a href="#ldac%3ASignedLanguage">SignedLanguage</a></li>
+                        
+                        <li><a href="#ldac%3ASong">Song</a></li>
+                        
+                        <li><a href="#ldac%3ASpokenLanguage">SpokenLanguage</a></li>
+                        
+                        <li><a href="#ldac%3ASyntactic">Syntactic</a></li>
+                        
+                        <li><a href="#ldac%3AThesaurus">Thesaurus</a></li>
+                        
+                        <li><a href="#ldac%3ATranscription">Transcription</a></li>
+                        
+                        <li><a href="#ldac%3ATranslation">Translation</a></li>
+                        
+                        <li><a href="#ldac%3ATypeset">Typeset</a></li>
+                        
+                        <li><a href="#ldac%3ATypewritten">Typewritten</a></li>
+                        
+                        <li><a href="#ldac%3AWhistledLanguage">WhistledLanguage</a></li>
+                        
+                        <li><a href="#ldac%3AWrittenLanguage">WrittenLanguage</a></li>
+                        
+                        <li><a href="#ldac%3AAccessTypes">AccessTypes</a></li>
+                        
+                        <li><a href="#ldac%3AAnnotationTypeTerms">AnnotationTypeTerms</a></li>
+                        
+                        <li><a href="#ldac%3AAuthorizationWorkflows">AuthorizationWorkflows</a></li>
+                        
+                        <li><a href="#ldac%3ACollectionEventTypeTerms">CollectionEventTypeTerms</a></li>
+                        
+                        <li><a href="#ldac%3ACollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a></li>
+                        
+                        <li><a href="#ldac%3ACommunicationModeTerms">CommunicationModeTerms</a></li>
+                        
+                        <li><a href="#ldac%3AIndexTypes">IndexTypes</a></li>
+                        
+                        <li><a href="#ldac%3ALinguisticGenreTerms">LinguisticGenreTerms</a></li>
+                        
+                        <li><a href="#ldac%3AMaterialTypes">MaterialTypes</a></li>
+                        
+                        <li><a href="#ldac%3AWrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a></li>
+                        </ul>
+                        </details>
+                </td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasResource</th>
+            <td style='text-align:left'><a href="#./">Language Data Commons Comprehensive Collection Profile</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3><a href="profile-documentation.md">⬇️ Download: </a> profile-documentation.md</h3>
+                
+                
+                
+                
+        <div id="profile-documentation.md">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>profile-documentation.md</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>profile-documentation.md</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>File</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">isPartOf<span>&nbsp;</span><a href="http://schema.org/isPartOf">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Language Data Commons Comprehensive Collection Profile</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">encodingFormat<span>&nbsp;</span><a href="http://schema.org/encodingFormat">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/1149">Markdown</a></li>
+                        
+                        <li><span>text/markdown</span></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">dateModified<span>&nbsp;</span><a href="http://schema.org/dateModified">[?]</a></th>
+            <td style='text-align:left'><span>2025-12-04T16:01:29+11:00</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Language Data Commons Comprehensive Collection Profile</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/></div>
+</div>
+
+
+
+
+
+</body>
+</html>

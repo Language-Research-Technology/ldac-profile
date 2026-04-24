@@ -1,0 +1,28 @@
+
+@startuml
+title: Structure of Collections that conform to the Language Data Commons Profile
+
+rectangle "Language Data Commons RO-Crate Profile Document" {
+rectangle " #Collection" as procoll
+rectangle " #Object" as proobj
+}
+
+
+rectangle "Collection" as coll {
+}
+rectangle "Object" as obj {
+}
+rectangle "File" as file {
+}
+coll -----> coll : pcdm:hasMember
+coll .> coll : pcdm:memberOf (Optional)
+
+
+coll -down-> obj : pcdm:hasMember
+obj .up.> coll : pcdm:memberOf (Optional)
+coll -up-> procoll : conformsTo
+obj -right-> proobj : conformsTo
+obj -down-> file : hasPart
+
+
+@enduml
