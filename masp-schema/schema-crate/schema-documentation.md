@@ -18,7 +18,7 @@ Instances of this type MAY be present in the crate.
 | Property | Required | Description | Range | Value |
 | -------- | -------- | ----------- | ----- | ----- |
 | @type | Yes |  |  |  |
-| <a href="#collectionEventType">collectionEventType</a> | No | A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment. | <a href="#Session">Session</a> |  |
+| <a href="#collectionEventType">collectionEventType</a> | No | A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment. | [Session](#Session) |  |
 
 
 ### <a id="CollectionProtocol"></a> Class: CollectionProtocol
@@ -84,7 +84,7 @@ Instances of this type MAY be present in the crate.
 | -------- | -------- | ----------- | ----- | ----- |
 | @type | Yes |  |  |  |
 | <a href="#access">access</a> | No | Whether this is an open or restricted access license. |  |  |
-| <a href="#accessControlList">accessControlList</a> | No | When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs. | http://schema.org/URL |  |
+| <a href="#accessControlList">accessControlList</a> | No | When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs. | [URL](http://schema.org/URL) |  |
 | <a href="#authorizationWorkflow">authorizationWorkflow</a> | No | By what process a user is granted authorization to a license. |  |  |
 
 ## All Properties
@@ -93,272 +93,272 @@ Instances of this type MAY be present in the crate.
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| Whether this is an open or restricted access license. |  | <a href="#DataReuseLicense">DataReuseLicense</a> |
+| Whether this is an open or restricted access license. |  | [DataReuseLicense](#DataReuseLicense) |
 ### <a id="accessControlList"></a> Property: accessControlList
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs. | http://schema.org/URL | <a href="#DataReuseLicense">DataReuseLicense</a> |
+| When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs. | [URL](http://schema.org/URL) | [DataReuseLicense](#DataReuseLicense) |
 ### <a id="age"></a> Property: age
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The age or age range of a person, e.g. 25, 30-50, >50. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included. | http://schema.org/Text | http://schema.org/Person |
+| The age or age range of a person, e.g. 25, 30-50, >50. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included. | [Text](http://schema.org/Text) | [Person](http://schema.org/Person) |
 ### <a id="annotationOf"></a> Property: annotationOf
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| This resource contains some kind of description that adds information to the resource it references. | <a href="#PrimaryMaterial">PrimaryMaterial</a> | http://schema.org/CreativeWork |
+| This resource contains some kind of description that adds information to the resource it references. | [PrimaryMaterial](#PrimaryMaterial) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="annotationType"></a> Property: annotationType
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The type of annotation for Annotation resources. |  | http://schema.org/CreativeWork |
+| The type of annotation for Annotation resources. |  | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="annotator"></a> Property: annotator
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant produced an annotation of this or a related resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant produced an annotation of this or a related resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="authorizationWorkflow"></a> Property: authorizationWorkflow
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| By what process a user is granted authorization to a license. |  | <a href="#DataReuseLicense">DataReuseLicense</a> |
+| By what process a user is granted authorization to a license. |  | [DataReuseLicense](#DataReuseLicense) |
 ### <a id="channels"></a> Property: channels
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The number of audio channels this resource contains (e.g. 1, 2, 5.1). |  | http://schema.org/CreativeWork |
+| The number of audio channels this resource contains (e.g. 1, 2, 5.1). |  | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="collectionEventType"></a> Property: collectionEventType
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment. | <a href="#Session">Session</a> | <a href="#CollectionEvent">CollectionEvent</a> |
+| A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment. | [Session](#Session) | [CollectionEvent](#CollectionEvent) |
 ### <a id="collectionProtocolType"></a> Property: collectionProtocolType
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection. |  | <a href="#CollectionProtocol">CollectionProtocol</a> |
+| A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection. |  | [CollectionProtocol](#CollectionProtocol) |
 ### <a id="communicationMode"></a> Property: communicationMode
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property. |  | http://schema.org/CreativeWork |
+| The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property. |  | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="compiler"></a> Property: compiler
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant is responsible for collecting the sub-parts of the resource together. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant is responsible for collecting the sub-parts of the resource together. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="consultant"></a> Property: consultant
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="dataInputter"></a> Property: dataInputter
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="dateFreeText"></a> Property: dateFreeText
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| Date information that cannot be put in one of the standard date formats, e.g. "mid-1970s", or it is not clear, for example, if it is a creation or publication date. |  | http://schema.org/CreativeWork |
+| Date information that cannot be put in one of the standard date formats, e.g. "mid-1970s", or it is not clear, for example, if it is a creation or publication date. |  | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="depositor"></a> Property: depositor
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant was responsible for depositing the resource in an archive. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant was responsible for depositing the resource in an archive. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="derivationOf"></a> Property: derivationOf
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF. | <a href="#Annotation">Annotation</a>, <a href="#PrimaryMaterial">PrimaryMaterial</a> | <a href="#DerivedMaterial">DerivedMaterial</a> |
+| This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF. | [Annotation](#Annotation), [PrimaryMaterial](#PrimaryMaterial) | [DerivedMaterial](#DerivedMaterial) |
 ### <a id="developer"></a> Property: developer
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="doi"></a> Property: doi
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| A Digital Object Identifier. |  | http://schema.org/CreativeWork |
+| A Digital Object Identifier. |  | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="editor"></a> Property: editor
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant reviewed, corrected, and/or tested the resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant reviewed, corrected, and/or tested the resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="geoJSON"></a> Property: geoJSON
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| A valid GEOJson feature or feature collection as a string that can be parsed as JSON. | Text | http://schema.org/GeoCoordinates, http://schema.org/GeoShape, http://schema.org/Language |
+| A valid GEOJson feature or feature collection as a string that can be parsed as JSON. | Text | [GeoCoordinates](http://schema.org/GeoCoordinates), [GeoShape](http://schema.org/GeoShape), [Language](http://schema.org/Language) |
 ### <a id="hasAnnotation"></a> Property: hasAnnotation
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| This resource is referenced by another resource that describes it such as a translation, transcription or other analysis. | <a href="#Annotation">Annotation</a> | http://schema.org/CreativeWork |
+| This resource is referenced by another resource that describes it such as a translation, transcription or other analysis. | [Annotation](#Annotation) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="hasCollectionProtocol"></a> Property: hasCollectionProtocol
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| This resource was assembled or collected according to the linked protocol. | <a href="#CollectionProtocol">CollectionProtocol</a> | http://schema.org/CreativeWork |
+| This resource was assembled or collected according to the linked protocol. | [CollectionProtocol](#CollectionProtocol) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="hasDerivation"></a> Property: hasDerivation
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF. | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a> |
+| This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF. | [DerivedMaterial](#DerivedMaterial) | [PrimaryMaterial](#PrimaryMaterial) |
 ### <a id="illustrator"></a> Property: illustrator
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant contributed drawings or other illustrations to the resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant contributed drawings or other illustrations to the resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="indexableText"></a> Property: indexableText
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| One or more target File(s) that together contain the full text of an item – each file should indicate its language. | http://schema.org/MediaObject | http://schema.org/CreativeWork |
+| One or more target File(s) that together contain the full text of an item – each file should indicate its language. | [MediaObject](http://schema.org/MediaObject) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="interpreter"></a> Property: interpreter
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="interviewee"></a> Property: interviewee
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant was a respondent in an interview. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant was a respondent in an interview. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="interviewer"></a> Property: interviewer
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant conducted an interview that forms part of the resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant conducted an interview that forms part of the resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="isDeIdentified"></a> Property: isDeIdentified
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms. | http://schema.org/Boolean | http://schema.org/CreativeWork, http://schema.org/Person |
+| The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms. | [Boolean](http://schema.org/Boolean) | [CreativeWork](http://schema.org/CreativeWork), [Person](http://schema.org/Person) |
 ### <a id="itemLocation"></a> Property: itemLocation
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| Current location of the item, e.g. where a set of audio tapes are stored. | http://schema.org/Organization, http://schema.org/Place | http://pcdm.org/models#Object, http://schema.org/Collection |
+| Current location of the item, e.g. where a set of audio tapes are stored. | [Organization](http://schema.org/Organization), [Place](http://schema.org/Place) | [Object](http://pcdm.org/models#Object), [Collection](http://schema.org/Collection) |
 ### <a id="linguisticGenre"></a> Property: linguisticGenre
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| A linguistic classification of the genre of this resource. |  | http://schema.org/CreativeWork |
+| A linguistic classification of the genre of this resource. |  | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="mainText"></a> Property: mainText
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| Identifies the most relevant sub-component for computational text analytics. | http://schema.org/MediaObject | http://schema.org/CreativeWork |
+| Identifies the most relevant sub-component for computational text analytics. | [MediaObject](http://schema.org/MediaObject) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="material"></a> Property: material
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes. |  | http://schema.org/CreativeWork |
+| Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes. |  | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="materialType"></a> Property: materialType
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation. |  | http://schema.org/MediaObject |
+| Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation. |  | [MediaObject](http://schema.org/MediaObject) |
 ### <a id="openAccessIndex"></a> Property: openAccessIndex
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not. |  | http://schema.org/CreativeWork |
+| One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not. |  | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="orthographicNotes"></a> Property: orthographicNotes
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø). | http://schema.org/Text | http://schema.org/CreativeWork |
+| A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø). | [Text](http://schema.org/Text) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="participant"></a> Property: participant
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant was present during the creation of the resource, but did not contribute substantially to its content. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant was present during the creation of the resource, but did not contribute substantially to its content. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="performer"></a> Property: performer
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="photographer"></a> Property: photographer
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant took the photograph, or shot the film, that appears in or constitutes the resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant took the photograph, or shot the film, that appears in or constitutes the resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="recorder"></a> Property: recorder
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant operated the recording machinery used to create the resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant operated the recording machinery used to create the resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="register"></a> Property: register
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource. |  | http://schema.org/CreativeWork |
+| The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource. |  | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="researcher"></a> Property: researcher
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="researchParticipant"></a> Property: researchParticipant
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="responder"></a> Property: responder
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="reviewDate"></a> Property: reviewDate
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The date that this license should be reviewed. |  | <a href="#DataLicense">DataLicense</a> |
+| The date that this license should be reviewed. |  | [DataLicense](#DataLicense) |
 ### <a id="signer"></a> Property: signer
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="singer"></a> Property: singer
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="speaker"></a> Property: speaker
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="sponsor"></a> Property: sponsor
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant contributed financial support to the creation of the resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant contributed financial support to the creation of the resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="subjectLanguage"></a> Property: subjectLanguage
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The language(s) that this annotation resource is about. | http://schema.org/Language | http://schema.org/CreativeWork |
+| The language(s) that this annotation resource is about. | [Language](http://schema.org/Language) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="transcriber"></a> Property: transcriber
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant produced a transcription of this or a related resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant produced a transcription of this or a related resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="translator"></a> Property: translator
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The participant produced a translation of this or a related resource. | http://schema.org/Organization, http://schema.org/Person | http://schema.org/CreativeWork |
+| The participant produced a translation of this or a related resource. | [Organization](http://schema.org/Organization), [Person](http://schema.org/Person) | [CreativeWork](http://schema.org/CreativeWork) |
 ### <a id="writtenLanguageFormat"></a> Property: writtenLanguageFormat
 
 | Description | Range | Occurs in Domain(s) |
 | ----------- | ----------- | ----------- |
-| The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten). |  | http://schema.org/CreativeWork |
+| The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten). |  | [CreativeWork](http://schema.org/CreativeWork) |
 
 
 ## Defined Term Sets

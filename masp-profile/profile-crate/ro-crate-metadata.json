@@ -19,67 +19,58 @@
       }
     },
     {
-      "@id": "profile-documentation.md",
-      "@type": "File",
-      "name": "profile-documentation.md",
-      "dateModified": "2025-12-04T16:01:29+11:00",
-      "encodingFormat": [
-        {
-          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/1149"
-        },
-        "text/markdown"
+      "@id": "https://w3id.org/ldac/profile",
+      "@type": [
+        "Dataset",
+        "Profile"
       ],
-      "about": {
-        "@id": "https://w3id.org/ldac/profile"
+      "name": "Language Data Commons Comprehensive Collection Profile",
+      "description": "Profile derived from Language Data Commons Comprehensive Collection: Implements the language data commons RO-Crate Metadata Profile for the top-level, objects and files.",
+      "version": "0.1.0",
+      "isProfileOf": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.2"
+        }
+      ],
+      "author": {
+        "@id": "#author"
       },
-      "isPartOf": {
-        "@id": "https://w3id.org/ldac/profile"
-      }
+      "license": "GPL-3.0",
+      "hasResource": [
+        {
+          "@id": "#hasSpecializedSchema"
+        },
+        {
+          "@id": "#hasSpecification"
+        },
+        {
+          "@id": "#hasGuidance"
+        },
+        {
+          "@id": "#hasEditorMode"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "index.html"
+        },
+        {
+          "@id": "profile-documentation.md"
+        },
+        {
+          "@id": "media/"
+        }
+      ],
+      "conformsTo": [
+        {
+          "@id": "https://language-research-technology.github.io/ro-crate-masp/profiles/ro-crate-masp/profile-crate/"
+        }
+      ]
     },
     {
       "@id": "#author",
       "@type": "Organization",
       "name": "University of Queensland"
-    },
-    {
-      "@id": "#hasSpecification",
-      "@type": "ResourceDescriptor",
-      "name": "Profile Description",
-      "hasRole": {
-        "@id": "http://www.w3.org/ns/dx/prof/role/specification"
-      },
-      "hasArtifact": {
-        "@id": "index.html"
-      }
-    },
-    {
-      "@id": "#hasGuidance",
-      "@type": "ResourceDescriptor",
-      "name": "Profile Documentation (Markdown source)",
-      "hasRole": {
-        "@id": "http://www.w3.org/ns/dx/prof/role/guidance"
-      },
-      "hasArtifact": {
-        "@id": "profile-documentation.md"
-      }
-    },
-    {
-      "@id": "index.html",
-      "@type": "File",
-      "name": "Language Data Commons Comprehensive Collection Profile description",
-      "encodingFormat": "text/html",
-      "about": {
-        "@id": "https://w3id.org/ldac/profile"
-      }
-    },
-    {
-      "@id": "media/",
-      "@type": "Dataset",
-      "name": "Profile diagrams",
-      "description": "SVG diagrams used in the profile documentation",
-      "isPartOf": {
-        "@id": "https://w3id.org/ldac/profile"
-      }
     },
     {
       "@id": "#hasSpecializedSchema",
@@ -651,6 +642,75 @@
           "@id": "ldac:WrittenLanguageTypeTerms"
         }
       ]
+    },
+    {
+      "@id": "#hasSpecification",
+      "@type": "ResourceDescriptor",
+      "name": "Profile Description",
+      "hasRole": {
+        "@id": "http://www.w3.org/ns/dx/prof/role/specification"
+      },
+      "hasArtifact": {
+        "@id": "index.html"
+      }
+    },
+    {
+      "@id": "#hasGuidance",
+      "@type": "ResourceDescriptor",
+      "name": "Profile Documentation (Markdown source)",
+      "hasRole": {
+        "@id": "http://www.w3.org/ns/dx/prof/role/guidance"
+      },
+      "hasArtifact": {
+        "@id": "profile-documentation.md"
+      }
+    },
+    {
+      "@id": "#hasEditorMode",
+      "@type": "ResourceDescriptor",
+      "name": "Crate-O Editor Mode",
+      "hasRole": {
+        "@id": "https://purl.org/ro/mode"
+      },
+      "hasArtifact": {
+        "@id": "crate-o-mode.json"
+      }
+    },
+    {
+      "@id": "index.html",
+      "@type": "File",
+      "name": "Language Data Commons Comprehensive Collection Profile description",
+      "encodingFormat": "text/html",
+      "about": {
+        "@id": "https://w3id.org/ldac/profile"
+      }
+    },
+    {
+      "@id": "profile-documentation.md",
+      "@type": "File",
+      "name": "profile-documentation.md",
+      "dateModified": "2025-12-04T16:01:29+11:00",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/1149"
+        },
+        "text/markdown"
+      ],
+      "about": {
+        "@id": "https://w3id.org/ldac/profile"
+      },
+      "isPartOf": {
+        "@id": "https://w3id.org/ldac/profile"
+      }
+    },
+    {
+      "@id": "media/",
+      "@type": "Dataset",
+      "name": "Profile diagrams",
+      "description": "SVG diagrams used in the profile documentation",
+      "isPartOf": {
+        "@id": "https://w3id.org/ldac/profile"
+      }
     },
     {
       "@id": "#class_CollectionEvent",
@@ -3224,7 +3284,7 @@
       "domainIncludes": {
         "@id": "#RO-Crate_Metadata_Descriptor"
       },
-      "rdfs:comment": "The RO-Crate Metadata file identifier",
+      "rdfs:comment": "The RO-Crate Metadata Descriptor",
       "rangeIncludes": {
         "@id": "#Root_Data_Entity"
       },
@@ -3233,7 +3293,7 @@
         "@id": "#hasSpecializedSchema"
       },
       "sh:maxCount": "1",
-      "description": "The RO-Crate Metadata file identifier",
+      "description": "This is the 'magic' entity that identifies the RO-Crate Metadata Descriptor, which is the root of the graph and the entry point for validation. It must have a @type of RO-Crate_Metadata_Descriptor and its @id must be 'ro-crate-metadata.json'.",
       "value": "ro-crate-metadata.json"
     },
     {
@@ -4048,57 +4108,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/ldac/profile#Collection",
-      "@type": "Thing"
-    },
-    {
-      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/1149",
-      "@type": "DigitalFormat",
-      "name": "Markdown"
-    },
-    {
-      "@id": "https://w3id.org/ldac/profile",
-      "@type": [
-        "Dataset",
-        "Profile"
-      ],
-      "name": "Language Data Commons Comprehensive Collection Profile",
-      "description": "Profile derived from Language Data Commons Comprehensive Collection: Implements the language data commons RO-Crate Metadata Profile for the top-level, objects and files.",
-      "version": "0.1.0",
-      "isProfileOf": [
-        {
-          "@id": "https://w3id.org/ro/crate/1.2"
-        }
-      ],
-      "author": {
-        "@id": "#author"
-      },
-      "license": "GPL-3.0",
-      "hasResource": [
-        {
-          "@id": "#hasSpecializedSchema"
-        },
-        {
-          "@id": "#hasSpecification"
-        },
-        {
-          "@id": "#hasGuidance"
-        },
-        {
-          "@id": "#hasEditorMode"
-        }
-      ],
-      "hasPart": [
-        {
-          "@id": "index.html"
-        },
-        {
-          "@id": "profile-documentation.md"
-        },
-        {
-          "@id": "media/"
-        }
-      ]
+      "@id": "https://purl.org/ro/mode",
+      "@type": "DefinedTerm",
+      "name": "Editor Mode",
+      "description": "Role indicating a resource is an editor configuration mode file."
     },
     {
       "@id": "crate-o-mode.json",
@@ -4108,21 +4121,17 @@
       "description": "Mini Crate-O mode file for this profile (metadata, input groups, lookup and enabled classes — the schema/grammar is provided by the MASP profile crate itself)."
     },
     {
-      "@id": "#hasEditorMode",
-      "@type": "ResourceDescriptor",
-      "name": "Crate-O Editor Mode",
-      "hasRole": {
-        "@id": "https://purl.org/ro/mode"
-      },
-      "hasArtifact": {
-        "@id": "crate-o-mode.json"
-      }
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/1149",
+      "@type": "DigitalFormat",
+      "name": "Markdown"
     },
     {
-      "@id": "https://purl.org/ro/mode",
-      "@type": "DefinedTerm",
-      "name": "Editor Mode",
-      "description": "Role indicating a resource is an editor configuration mode file."
+      "@id": "https://w3id.org/ldac/profile#Collection",
+      "@type": [
+        "CreativeWork",
+        "Profile"
+      ],
+      "name": "Language Data Commons RO-Crate Profile: Collection"
     }
   ]
 }

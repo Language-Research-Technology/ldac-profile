@@ -87,7 +87,7 @@ of the Portland Common Data Model types,
 and
 [pcdm:Object](https://pcdm.org/2016/04/18/models#Object).
 
-A conformant RO-Crate:
+## A conformant RO-Crate:
 
 ${rules.Dataset}
 
@@ -111,7 +111,7 @@ are stored elsewhere in the repository.
 
 <br>
 
-## Classes
+# Classes
 
 In linked data, a class is a resource that represents a concept or entity. Classes specific to the Language Data Commons Schema include:
 
@@ -125,7 +125,7 @@ In linked data, a class is a resource that represents a concept or entity. Class
 
 <br>
 
-## Bidirectional Relationships
+# Bidirectional Relationships
 
 The relational hierachy between Collections, Objects and Files are represented bidirectionally in an RO-Crate by the terms `hasPart`/`isPartOf` and `pcdm:hasMember`/`pcdm:memberOf`.
 
@@ -160,7 +160,7 @@ repository developers.
 
 <br>
 
-## When to choose collection-as-crate ("bundled") vs collection-in-multiple-crates ("distributed")
+# When to choose collection-as-crate ("bundled") vs collection-in-multiple-crates ("distributed")
 
 - Use a single **bundled crate** for a collection when all of these conditions are true:
 
@@ -190,7 +190,7 @@ repository developers.
 
 <br>
 
-## Collection
+# Collection
 
 A collection is a group of related Objects. Examples of collections
 include corpora, and sub-corpora, as well as aggregations of cultural
@@ -211,13 +211,13 @@ property, but this is not required.
 The root dataset must have at least these `@type` values: `["Dataset",
 "RepositoryCollection"]`
 
-### A RepositoryCollection:
+## A RepositoryCollection:
 
 ${rules.RepositoryCollection}
 
 <br>
 
-## Object
+# Object
 
 An Object is a single unit linked to tightly related files, for example,
 a dialogue or session in a speech study, or a work (document) in a written
@@ -260,13 +260,15 @@ below).
 There are a number of terms that can be used to characterise resources -
 these use the Schema.org mechanism of `DefinedTerm` and `DefinedTermSet`.
 
-### A RepositoryObject:
+${rules.allDefinedTermSets}
+
+## A RepositoryObject:
 
 ${rules.RepositoryObject}
 
 <br>
 
-## Files
+# Files
 
 There are three important types of files (or references to other
 works) that may be included: `ldac:PrimaryMaterial` which is a recording or
@@ -275,23 +277,23 @@ has been generated or sampled from primary material by a process such as format
 conversion or digitization, and `ldac:Annotation`, which contains one or more types of
 analysis of the `ldac:PrimaryMaterial` or `ldac:DerivedMaterial`.
 
-### A File:
+## A File:
 
 ${rules.File}
 
-### ldac:PrimaryMaterial
+## ldac:PrimaryMaterial
 
 `ldac:PrimaryMaterial` may be a video or audio file if it is available, or may be a ContextualEntity referencing a primary text such as a book.
 
-### ldac:DerivedMaterial
+## ldac:DerivedMaterial
 
 `ldac:DerivedMaterial` is a non-analytical derivation from `ldac:PrimaryMaterial`, for example, downsampled video or excerpted text.
 
-### ldac:Annotation
+## ldac:Annotation
 
 `ldac:Annotation` is a description or analysis of other material. More than one type of annotation may be present in a file.
 
-#### Describing the columns in CSV or other tabular data
+### Describing the columns in CSV or other tabular data
 
 CSV or similar tabular files are often used to represent transcribed
 speech or sign language data, sometimes also with time codes. To enable
@@ -303,7 +305,7 @@ ${exampleEntities('art', ['art_schema.json'])}
 
 <br>
 
-## Places
+# Places
 
 The place in which data was collected may be indicated using the `contentLocation` property.
 
@@ -336,7 +338,7 @@ A person:
 
 <br>
 
-## How to record people's contributions
+# How to record people's contributions
 
 Some corpora express ages and other demographics of participants - this
 presents a data modelling challenge, as age and some other variables change
@@ -374,7 +376,7 @@ modelled:
 
 <br>
 
-## Collection events such as "Sessions"
+# Collection events such as "Sessions"
 
 Where data is collected from participants in a speech study with
 elicitation tasks such as "sessions" (see this [IMDI
@@ -411,8 +413,6 @@ Dakota: The University of North Dakota M.A.
 [ldac:PersonSnapshot]: https://w3id.org/ldac/terms#PersonSnapshot
 [ldac:depositor]: https://w3id.org/ldac/terms#depositor
 [ldac:compiler]: https://w3id.org/ldac/terms#compiler
-${rules.allDefinedTermSets}
-
 
 
 ${rules.all}
