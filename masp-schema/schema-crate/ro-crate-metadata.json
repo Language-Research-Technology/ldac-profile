@@ -1,0 +1,2114 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "@vocab": "http://schema.org/"
+    },
+    {
+      "ldac": "https://w3id.org/ldac/terms#"
+    },
+    {
+      "@base": null
+    },
+    {
+      "rdfs:label": "http://www.w3.org/2000/01/rdf-schema#label",
+      "rdfs:comment": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "rdfs:subClassOf": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "example": "https://purl.archive.org/terms#example",
+      "source": "https://purl.archive.org/terms#source",
+      "owl:equivalentClass": "https://purl.archive.org/terms#owl:equivalentClass",
+      "http://schema.org/source": "http://schema.org/source",
+      "owl:equivalentProperty": "https://purl.archive.org/terms#owl:equivalentProperty",
+      "rdfs:subPropertyOf": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+    },
+    {
+      "@id": "@id"
+    },
+    {
+      "label": "label"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "./"
+      },
+      "identifier": {
+        "@id": "#:localid:describo:a5b85c10-de9a-4f99-8b91-e0260af669bd"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Language Data Commons Schema Terms",
+      "description": "This is a language data schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the LDaCA project and is published at <https://w3id.org/ldac/terms>. This schema builds on Schema.org and is intended to be used with the Language Data Commons RO-Crate Profile: <https://w3id.org/ldac/profile>.",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/profiles/schema/1.0"
+      },
+      "hasResource": [
+        {
+          "@id": "#hasEditorMode"
+        }
+      ]
+    },
+    {
+      "@id": "#hasSpecializedSchema",
+      "@type": "ResourceDescriptor",
+      "name": "Specialized Schema Terms",
+      "hasRole": {
+        "@id": "http://www.w3.org/ns/dx/prof/role/schema"
+      },
+      "hasPart": [
+        {
+          "@id": "https://w3id.org/ldac/terms#TimeAligned"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#AccessTypes"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Annotation"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#CollectionEvent"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#CollectionProtocol"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#CollectionProtocolTypeTerms"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#DataDepositLicense"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#DataLicense"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#DerivedMaterial"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Dialogue"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Drama"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#ElicitationTask"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Formulaic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Gesture"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Handwritten"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#IndexTypes"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Informational"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Interview"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Lexicon"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Ludic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#MaterialTypes"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Narrative"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Orthographic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#PartOfSpeech"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Phonemic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Phonetic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Phonological"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#PrimaryMaterial"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Procedural"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Prosodic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Report"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Semantic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Session"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#SignedLanguage"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Song"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#SpokenLanguage"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Syntactic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#MaterialSelectionCriteria"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Thesaurus"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Transcription"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Translation"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Typeset"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Typewritten"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#WrittenLanguage"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#access"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#accessControlList"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#age"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#annotationOf"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#annotationType"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#annotator"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#authorizationWorkflow"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#channels"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#collectionEventType"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#collectionProtocolType"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#comment"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#communicationMode"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#compiler"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#consultant"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#dataInputter"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#dateFreeText"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#depositor"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#derivationOf"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#developer"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#doi"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#editor"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#geoJSON"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#hasAnnotation"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#hasCollectionProtocol"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#hasDerivation"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#illustrator"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#indexableText"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#interpreter"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#interviewee"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#interviewer"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#isDeIdentified"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#itemLocation"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#linguisticGenre"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#mainText"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#material"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#materialType"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#openAccessIndex"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#orthographicNotes"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#participant"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#performer"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#photographer"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#recorder"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#register"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#researchParticipant"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#researcher"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#responder"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#reviewDate"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#signer"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#singer"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#speaker"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#sponsor"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#subjectLanguage"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#transcriber"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#translator"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#writtenLanguageFormat"
+        },
+        {
+          "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        {
+          "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+        },
+        {
+          "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        {
+          "@id": "https://purl.archive.org/terms#example"
+        },
+        {
+          "@id": "https://purl.archive.org/terms#source"
+        },
+        {
+          "@id": "https://purl.archive.org/terms#owl:equivalentClass"
+        },
+        {
+          "@id": "http://schema.org/source"
+        },
+        {
+          "@id": "https://purl.archive.org/terms#owl:equivalentProperty"
+        },
+        {
+          "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#TimeAligned",
+      "@type": "DefinedTerm",
+      "name": "TimeAligned",
+      "coded": "The resource contains a written or coded annotation(s) which has data aligning the annotation(s) with a PrimaryMaterial item"
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Annotation",
+      "@type": "DefinedTerm",
+      "name": "Annotation",
+      "description": "The resource includes material that adds information to some other linguistic record.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:label": "Annotation",
+      "rdfs:subClassOf": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#CollectionEvent",
+      "@type": "rdfs:Class",
+      "name": "CollectionEvent",
+      "rdfs:comment": "A description of an event at which one or more PrimaryMaterials were captured, e.g. as video or audio.",
+      "rdfs:label": "CollectionEvent",
+      "rdfs:subClassOf": [
+        "http://schema.org/Event",
+        "http://schema.org/CreateAction"
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#CollectionProtocol",
+      "@type": "rdfs:Class",
+      "name": "CollectionProtocol",
+      "rdfs:label": "CollectionProtocol",
+      "rdfs:comment": "A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants.",
+      "rdfs:subClassOf": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#DataDepositLicense",
+      "@type": "rdfs:Class",
+      "name": "DataDepositLicense",
+      "rdfs:comment": "A license document setting out terms for deposit into a repository.",
+      "rdfs:label": "DataDepositLicense",
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/ldac/terms#DataLicense"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#DataLicense",
+      "@type": "rdfs:Class",
+      "name": "DataLicense",
+      "rdfs:label": "DataLicense",
+      "rdfs:comment": "A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.",
+      "rdfs:subClassOf": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "sameAs": {
+        "@id": "https://creativecommons.org/ns#License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#DerivedMaterial",
+      "@type": "DefinedTerm",
+      "name": "DerivedMaterial",
+      "description": "This is derived from another source, such as a Primary Material, via some process, e.g. a downsampled video or a sample or an abstract of a resource that is not an annotation (an analysis or description).",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:label": "DerivedMaterial",
+      "rdfs:subClassOf": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Dialogue",
+      "@type": "DefinedTerm",
+      "name": "Dialogue",
+      "description": "An interactive discourse with two or more participants. Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Drama",
+      "@type": "DefinedTerm",
+      "name": "Drama",
+      "description": "A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/drama"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#ElicitationTask",
+      "@type": "DefinedTerm",
+      "name": "ElicitationTask",
+      "description": "The collection protocol includes a task-based prompt to participants.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CollectionProtocolTypeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Formulaic",
+      "@type": "DefinedTerm",
+      "name": "Formulaic",
+      "description": "The resource is a ritually or conventionally structured discourse.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/formulaic"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Gesture",
+      "@type": "DefinedTerm",
+      "name": "Gesture",
+      "description": "The resource contains non-linguistic gestural communication (i.e. not sign language).",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Handwritten",
+      "@type": "DefinedTerm",
+      "name": "Handwritten",
+      "description": "The resource was written using a writing implement such as a pen, pencil, brush or computer stylus (except where the digital handwriting is converted to standard text).",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#IndexTypes",
+      "@type": "DefinedTermSet",
+      "name": "IndexTypes",
+      "description": "A set of defined terms for types of indexing, such as FullText.",
+      "hasDefinedTerm": {
+        "@id": "https://w3id.org/ldac/terms#FullText"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Informational",
+      "@type": "DefinedTerm",
+      "name": "Informational",
+      "description": "Discourse whose primary purpose is to inform the audience about the natural or social world.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Interview",
+      "@type": "DefinedTerm",
+      "name": "Interview",
+      "description": "The resource is a conversation where one or more speakers are directing the conversation.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#itemLocation",
+      "@type": "rdf:Property",
+      "name": "itemLocation",
+      "rdfs:comment": "Current location of the item, e.g. where a set of audio tapes are stored.",
+      "rdfs:label": "itemLocation",
+      "domainIncludes": [
+        {
+          "@id": "http://pcdm.org/models#Object"
+        },
+        {
+          "@id": "http://schema.org/Collection"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Place"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Lexicon",
+      "@type": "DefinedTerm",
+      "name": "Lexicon",
+      "description": "The resource includes a systematic listing of lexical items.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#Lexicon"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Ludic",
+      "@type": "DefinedTerm",
+      "name": "Ludic",
+      "description": "Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language. Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/ludic"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Narrative",
+      "@type": "DefinedTerm",
+      "name": "Narrative",
+      "description": "A discourse, monologic or co-constructed, which represents temporally organised events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/narrative"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Orthographic",
+      "@type": "DefinedTerm",
+      "name": "Orthographic",
+      "description": "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      },
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#PartOfSpeech",
+      "@type": "DefinedTerm",
+      "name": "PartOfSpeech",
+      "description": "An annotation that assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate).",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      },
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-speech"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Phonemic",
+      "@type": "DefinedTerm",
+      "name": "Phonemic",
+      "description": "An annotation that represents speech in terms of the sound contrasts made in a language.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      },
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonemic"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Phonetic",
+      "@type": "DefinedTerm",
+      "name": "Phonetic",
+      "description": "A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      },
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonetic"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Phonological",
+      "@type": "DefinedTerm",
+      "name": "Phonological",
+      "description": "An annotation that includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      },
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonological"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#PrimaryMaterial",
+      "@type": "DefinedTerm",
+      "name": "PrimaryMaterial",
+      "description": "The object of study, such as a literary work, film, or recording of natural discourse.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:label": "PrimaryMaterial",
+      "rdfs:subClassOf": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Procedural",
+      "@type": "DefinedTerm",
+      "name": "Procedural",
+      "description": "An explanation or description of a method, process, or situation having ordered steps.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/procedural"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Prosodic",
+      "@type": "DefinedTerm",
+      "name": "Prosodic",
+      "description": "An annotation that provides a symbolic record of intonation, stress, tone or other suprasegmental features, which is expressed independently of regular phonetic transcription.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      },
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#description/prosodic"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Report",
+      "@type": "DefinedTerm",
+      "name": "Report",
+      "description": "A factual account of some event or circumstance.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/report"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Semantic",
+      "@type": "DefinedTerm",
+      "name": "Semantic",
+      "description": "The resource includes annotation or analysis concerning the encoding of meaning.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      },
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#description/semantic"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Session",
+      "@type": "DefinedTerm",
+      "name": "Session",
+      "description": "A collection event that is a recording or elicitation session with participants.",
+      "sameAs": {
+        "@id": "https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#SignedLanguage",
+      "@type": "DefinedTerm",
+      "name": "SignedLanguage",
+      "description": "The resource contains data for which the medium of interaction was signing.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Song",
+      "@type": "DefinedTerm",
+      "name": "Song",
+      "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/singing"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#SpokenLanguage",
+      "@type": "DefinedTerm",
+      "name": "SpokenLanguage",
+      "description": "The resource contains data for which the medium of interaction was speech.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Syntactic",
+      "@type": "DefinedTerm",
+      "name": "Syntactic",
+      "description": "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#description/syntactic"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#MaterialSelectionCriteria",
+      "@type": "DefinedTerm",
+      "name": "MaterialSelectionCriteria",
+      "description": "A description of the criteria used to select texts in a collection.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CollectionProtocolTypeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Thesaurus",
+      "@type": "DefinedTerm",
+      "name": "Thesaurus",
+      "description": "The resource contains a list or data structure consisting of words or concepts arranged according to sense.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Transcription",
+      "@type": "DefinedTerm",
+      "name": "Transcription",
+      "description": "The resource contains a transcription, which is a written representation (orthographic or coded) of an audio or visual signal.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      },
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Translation",
+      "@type": "DefinedTerm",
+      "name": "Translation",
+      "description": "This is a translation of a resource in another language.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      },
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/translation"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Typeset",
+      "@type": "DefinedTerm",
+      "name": "Typeset",
+      "description": "The resource has been formatted for printing or display.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Typewritten",
+      "@type": "DefinedTerm",
+      "name": "Typewritten",
+      "description": "The resource contains text produced on a typewriter.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#WrittenLanguage",
+      "@type": "DefinedTerm",
+      "name": "WrittenLanguage",
+      "description": "The resource contains data for which the medium of interaction was writing.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#accessControlList",
+      "@type": "rdf:Property",
+      "name": "accessControlList",
+      "rdfs:label": "accessControlList",
+      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs.",
+      "domainIncludes": {
+        "@id": "https://w3id.org/ldac/terms#DataReuseLicense"
+      },
+      "rangeIncludes": {
+        "@id": "http://schema.org/URL"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#age",
+      "@type": "rdf:Property",
+      "name": "age",
+      "rdfs:label": "age",
+      "rdfs:comment": "The age or age range of a person, e.g. 25, 30-50, >50. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.",
+      "domainIncludes": {
+        "@id": "http://schema.org/Person"
+      },
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#annotationOf",
+      "@type": "rdf:Property",
+      "name": "annotationOf",
+      "rdfs:comment": "This resource contains some kind of description that adds information to the resource it references.",
+      "rdfs:label": "annotationOf",
+      "rangeIncludes": {
+        "@id": "https://w3id.org/ldac/terms#PrimaryMaterial"
+      },
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#annotationType",
+      "@type": "rdf:Property",
+      "name": "annotationType",
+      "rdfs:label": "annotationType",
+      "rdfs:comment": "The type of annotation for Annotation resources.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      },
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#annotator",
+      "@type": "rdf:Property",
+      "name": "annotator",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#annotator"
+      },
+      "rdfs:comment": "The participant produced an annotation of this or a related resource.",
+      "rdfs:label": "annotator",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#authorizationWorkflow",
+      "@type": "rdf:Property",
+      "name": "authorizationWorkflow",
+      "rdfs:comment": "By what process a user is granted authorization to a license.",
+      "rdfs:label": "authorizationWorkflow",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
+      },
+      "domainIncludes": {
+        "@id": "https://w3id.org/ldac/terms#DataReuseLicense"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#channels",
+      "@type": "rdf:Property",
+      "name": "channels",
+      "rdfs:comment": "The number of audio channels this resource contains (e.g. 1, 2, 5.1).",
+      "rdfs:label": "channels",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#collectionEventType",
+      "@type": "rdf:Property",
+      "name": "collectionEventType",
+      "rdfs:comment": "A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment.",
+      "rdfs:label": "collectionEventType",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms"
+      },
+      "domainIncludes": {
+        "@id": "https://w3id.org/ldac/terms#CollectionEvent"
+      },
+      "rangeIncludes": {
+        "@id": "https://w3id.org/ldac/terms#Session"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#collectionProtocolType",
+      "@type": "rdf:Property",
+      "name": "collectionProtocolType",
+      "rdfs:comment": "A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.",
+      "rdfs:label": "collectionProtocolType",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CollectionProtocolTypeTerms"
+      },
+      "domainIncludes": {
+        "@id": "https://w3id.org/ldac/terms#CollectionProtocol"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#compiler",
+      "@type": "rdf:Property",
+      "name": "compiler",
+      "example": "A compiler of a book of short stories or a CD with several songs on it; a collector of a corpus of recordings in some language or on a given topic; a person who assembles a suite of software tools.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#compiler"
+      },
+      "rdfs:comment": "The participant is responsible for collecting the sub-parts of the resource together.",
+      "rdfs:label": "compiler",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#consultant",
+      "@type": "rdf:Property",
+      "name": "consultant",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#consultant"
+      },
+      "rdfs:comment": "The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language.",
+      "rdfs:label": "consultant",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#dataInputter",
+      "@type": "rdf:Property",
+      "name": "dataInputter",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#data_inputter"
+      },
+      "rdfs:comment": "The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.",
+      "rdfs:label": "dataInputter",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#depositor",
+      "@type": "rdf:Property",
+      "name": "depositor",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#depositor"
+      },
+      "rdfs:comment": "The participant was responsible for depositing the resource in an archive.",
+      "rdfs:label": "depositor",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#derivationOf",
+      "@type": "rdf:Property",
+      "name": "derivationOf",
+      "rdfs:comment": "This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF.",
+      "rdfs:label": "derivationOf",
+      "rangeIncludes": [
+        {
+          "@id": "https://w3id.org/ldac/terms#Annotation"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#PrimaryMaterial"
+        }
+      ],
+      "domainIncludes": {
+        "@id": "https://w3id.org/ldac/terms#DerivedMaterial"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#developer",
+      "@type": "rdf:Property",
+      "name": "developer",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#developer"
+      },
+      "rdfs:comment": "The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource.",
+      "rdfs:label": "developer",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#doi",
+      "@type": "rdf:Property",
+      "name": "doi",
+      "rdfs:comment": "A Digital Object Identifier.",
+      "rdfs:label": "doi",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#editor",
+      "@type": "rdf:Property",
+      "name": "editor",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#editor"
+      },
+      "rdfs:comment": "The participant reviewed, corrected, and/or tested the resource.",
+      "rdfs:label": "editor",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ],
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#geoJSON",
+      "@type": "rdf:Property",
+      "name": "geoJSON",
+      "domainIncludes": [
+        "http://schema.org/GeoCoordinates",
+        "http://schema.org/GeoShape",
+        "http://schema.org/Language"
+      ],
+      "rangeIncludes": "Text",
+      "rdfs:comment": "A valid GEOJson feature or feature collection as a string that can be parsed as JSON.",
+      "rdfs:label": "geoJSON"
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#hasAnnotation",
+      "@type": "rdf:Property",
+      "name": "hasAnnotation",
+      "rdfs:label": "hasAnnotation",
+      "rdfs:comment": "This resource is referenced by another resource that describes it such as a translation, transcription or other analysis.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": {
+        "@id": "https://w3id.org/ldac/terms#Annotation"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#hasCollectionProtocol",
+      "@type": "rdf:Property",
+      "name": "hasCollectionProtocol",
+      "rdfs:label": "hasCollectionProtocol",
+      "rdfs:comment": "This resource was assembled or collected according to the linked protocol.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": {
+        "@id": "https://w3id.org/ldac/terms#CollectionProtocol"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#hasDerivation",
+      "@type": "rdf:Property",
+      "name": "hasDerivation",
+      "rdfs:comment": "This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.",
+      "rdfs:label": "hasDerivation",
+      "domainIncludes": {
+        "@id": "https://w3id.org/ldac/terms#PrimaryMaterial"
+      },
+      "rangeIncludes": {
+        "@id": "https://w3id.org/ldac/terms#DerivedMaterial"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#illustrator",
+      "@type": "rdf:Property",
+      "name": "illustrator",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#illustrator"
+      },
+      "rdfs:comment": "The participant contributed drawings or other illustrations to the resource.",
+      "rdfs:label": "illustrator",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#indexableText",
+      "@type": "rdf:Property",
+      "name": "indexableText",
+      "rdfs:label": "indexableText",
+      "rangeIncludes": {
+        "@id": "http://schema.org/MediaObject"
+      },
+      "rdfs:comment": "One or more target File(s) that together contain the full text of an item – each file should indicate its language.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#interpreter",
+      "@type": "rdf:Property",
+      "name": "interpreter",
+      "example": "A person translating from English to ASL during a speech; a Kuna chief who interprets a chant that another chief has just performed, thus completing the ceremony.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#interpreter"
+      },
+      "rdfs:comment": "The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource.",
+      "rdfs:label": "interpreter",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ],
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#interviewee",
+      "@type": "rdf:Property",
+      "name": "interviewee",
+      "rdfs:comment": "The participant was a respondent in an interview.",
+      "rdfs:label": "interviewee",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#interviewer",
+      "@type": "rdf:Property",
+      "name": "interviewer",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#interviewer"
+      },
+      "rdfs:comment": "The participant conducted an interview that forms part of the resource.",
+      "rdfs:label": "interviewer",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#isDeIdentified",
+      "@type": "rdf:Property",
+      "name": "isDeIdentified",
+      "rdfs:label": "isDeIdentified",
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ],
+      "rangeIncludes": {
+        "@id": "http://schema.org/Boolean"
+      },
+      "rdfs:comment": "The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms."
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#subjectLanguage",
+      "@type": "rdf:Property",
+      "name": "subjectLanguage",
+      "rdfs:label": "subjectLanguage",
+      "rdfs:comment": "The language(s) that this annotation resource is about.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": {
+        "@id": "http://schema.org/Language"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#communicationMode",
+      "@type": "rdf:Property",
+      "name": "communicationMode",
+      "rdfs:label": "communicationMode",
+      "rdfs:comment": "The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#material",
+      "@type": "rdf:Property",
+      "name": "material",
+      "rdfs:label": "material",
+      "rdfs:comment": "Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#openAccessIndex",
+      "@type": "rdf:Property",
+      "name": "openAccessIndex",
+      "rdfs:label": "openAccessIndex",
+      "rdfs:comment": "One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#IndexTypes"
+      },
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#orthographicNotes",
+      "@type": "rdf:Property",
+      "name": "orthographicNotes",
+      "rdfs:label": "orthographicNotes",
+      "rdfs:comment": "A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø).",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#participant",
+      "@type": "rdf:Property",
+      "name": "participant",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#participant"
+      },
+      "rdfs:comment": "The participant was present during the creation of the resource, but did not contribute substantially to its content.",
+      "rdfs:label": "participant",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#performer",
+      "@type": "rdf:Property",
+      "name": "performer",
+      "example": "A person performing a ceremony or delivering an oration or a sermon; native speakers re-enacting a traditional genre of speech, such as ritual greetings or insults; an actor or musician.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#performer"
+      },
+      "rdfs:comment": "The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.",
+      "rdfs:label": "performer",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#photographer",
+      "@type": "rdf:Property",
+      "name": "photographer",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#photographer"
+      },
+      "rdfs:comment": "The participant took the photograph, or shot the film, that appears in or constitutes the resource.",
+      "rdfs:label": "photographer",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#recorder",
+      "@type": "rdf:Property",
+      "name": "recorder",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#recorder"
+      },
+      "rdfs:comment": "The participant operated the recording machinery used to create the resource.",
+      "rdfs:label": "recorder",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#register",
+      "@type": "rdf:Property",
+      "name": "register",
+      "sameAs": {
+        "@id": "http://w3id.org/meta-share/meta-share/register"
+      },
+      "rdfs:comment": "The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.",
+      "rdfs:label": "register",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#researchParticipant",
+      "@type": "rdf:Property",
+      "name": "researchParticipant",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#research_participant"
+      },
+      "rdfs:comment": "The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.",
+      "rdfs:label": "researchParticipant",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#researcher",
+      "@type": "rdf:Property",
+      "name": "researcher",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#researcher"
+      },
+      "rdfs:comment": "The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.",
+      "rdfs:label": "researcher",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ],
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#responder",
+      "@type": "rdf:Property",
+      "name": "responder",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#responder"
+      },
+      "rdfs:comment": "The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others.",
+      "rdfs:label": "responder",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#signer",
+      "@type": "rdf:Property",
+      "name": "signer",
+      "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#signer"
+      },
+      "rdfs:comment": "The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).",
+      "rdfs:label": "signer",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ],
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#singer",
+      "@type": "rdf:Property",
+      "name": "singer",
+      "rdfs:label": "singer",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#singer"
+      },
+      "rdfs:comment": "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#speaker",
+      "@type": "rdf:Property",
+      "name": "speaker",
+      "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#speaker"
+      },
+      "rdfs:comment": "The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).",
+      "rdfs:label": "speaker",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#sponsor",
+      "@type": "rdf:Property",
+      "name": "sponsor",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#sponsor"
+      },
+      "rdfs:comment": "The participant contributed financial support to the creation of the resource.",
+      "rdfs:label": "sponsor",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#transcriber",
+      "@type": "rdf:Property",
+      "name": "transcriber",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#transcriber"
+      },
+      "rdfs:comment": "The participant produced a transcription of this or a related resource.",
+      "rdfs:label": "transcriber",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#translator",
+      "@type": "rdf:Property",
+      "name": "translator",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/role.html#translator"
+      },
+      "rdfs:comment": "The participant produced a translation of this or a related resource.",
+      "rdfs:label": "translator",
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ],
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#dateFreeText",
+      "@type": "rdf:Property",
+      "name": "dateFreeText",
+      "rdfs:label": "dateFreeText",
+      "rdfs:comment": "Date information that cannot be put in one of the standard date formats, e.g. \"mid-1970s\", or it is not clear, for example, if it is a creation or publication date.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#mainText",
+      "@type": "rdf:Property",
+      "name": "mainText",
+      "rdfs:label": "mainText",
+      "rangeIncludes": {
+        "@id": "http://schema.org/MediaObject"
+      },
+      "rdfs:comment": "Identifies the most relevant sub-component for computational text analytics.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#MaterialTypes",
+      "@type": "DefinedTermSet",
+      "name": "MaterialTypes",
+      "description": "A set of terms describing the relationship of a resource to the original data source.",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#PrimaryMaterial"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Annotation"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#DerivedMaterial"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#materialType",
+      "@type": "rdf:Property",
+      "name": "materialType",
+      "rdfs:label": "materialType",
+      "rdfs:comment": "Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation.",
+      "domainIncludes": {
+        "@id": "http://schema.org/MediaObject"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#MaterialTypes"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#linguisticGenre",
+      "@type": "rdf:Property",
+      "name": "linguisticGenre",
+      "rdfs:comment": "A linguistic classification of the genre of this resource.",
+      "rdfs:label": "linguisticGenre",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      },
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CommunicationModeTerms",
+      "description": "A set of expected values for the property communicationMode.",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#Gesture"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#SignedLanguage"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Song"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#SpokenLanguage"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#WhistledLanguage"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#WrittenLanguage"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms",
+      "@type": "DefinedTermSet",
+      "name": "LinguisticGenreTerms",
+      "description": "A set of expected values for the linguistic genre of a resource.",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#Dialogue"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Drama"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Formulaic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Informational"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Interview"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Ludic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Narrative"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Procedural"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Report"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Thesaurus"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Oratory"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Lexicon"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#CollectionProtocolTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CollectionProtocolTypeTerms",
+      "description": "A set of terms which are expected values for CollectionProtocol types.",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#ElicitationTask"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#MaterialSelectionCriteria"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#writtenLanguageFormat",
+      "@type": "rdf:Property",
+      "name": "writtenLanguageFormat",
+      "rdfs:label": "writtenLanguageFormat",
+      "rdfs:comment": "The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten).",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "WrittenLanguageTypeTerms",
+      "description": "A set of expected types for WrittenLanguage communication mode (this set is incomplete - more work needed).",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#Handwritten"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Typeset"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Typewritten"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#FullText",
+      "@type": "DefinedTerm",
+      "name": "FullText",
+      "description": "A text index that makes the full text of a data resource findable via a search interface.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#IndexTypes"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "AnnotationTypeTerms",
+      "description": "The set of expected values for annotation types.",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#Gestural"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Orthographic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#PartOfSpeech"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Phonemic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Phonetic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Phonological"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Prosodic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Semantic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Syntactic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Transcription"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Translation"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CollectionEventTypeTerms",
+      "description": "A set of terms which are expected values for CollectionEvent types.",
+      "hasDefinedTerm": {
+        "@id": "https://w3id.org/ldac/terms#Session"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#DataReuseLicense",
+      "@type": "rdfs:Class",
+      "name": "DataReuseLicense",
+      "rdfs:label": "DataReuseLicense",
+      "rdfs:comment": "A license document, setting out terms for reuse of data.",
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/ldac/terms#DataLicense"
+      },
+      "sameAs": {
+        "@id": "https://creativecommons.org/ns#License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows",
+      "@type": "DefinedTermSet",
+      "name": "AuthorizationWorkflows",
+      "description": "A set of DefinedTerms for access authorization mechanisms - some of these may be combined, e.g. AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant.",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#AgreeToTerms"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#AuthorizationByApplication"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#AuthorizationByInvitation"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#SelfAuthorization"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#AccessControlList"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#WhistledLanguage",
+      "@type": "DefinedTerm",
+      "name": "WhistledLanguage",
+      "description": "The resource contains data for which the medium of interaction was whistling.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Oratory",
+      "@type": "DefinedTerm",
+      "name": "Oratory",
+      "description": "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/oratory"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Gestural",
+      "@type": "DefinedTerm",
+      "name": "Gestural",
+      "description": "The resource describes the gestural content of the resource it annotates.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+      },
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#description/gestural"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#AgreeToTerms",
+      "@type": "DefinedTerm",
+      "name": "AgreeToTerms",
+      "description": "A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#AuthorizationByApplication",
+      "@type": "DefinedTerm",
+      "name": "AuthorizationByApplication",
+      "description": "Users may apply for a license via some workflow, such as a form, with the decision being made by a DataSteward or their delegate about whether to grant the license.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#AuthorizationByInvitation",
+      "@type": "DefinedTerm",
+      "name": "AuthorizationByInvitation",
+      "description": "A data steward or administrator is expected to use an access control system to invite users, for example, participants, collaborators or students.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#SelfAuthorization",
+      "@type": "DefinedTerm",
+      "name": "SelfAuthorization",
+      "description": "A user can be authorised to access data by clicking that they agree to a license, or filling out a form to check their understanding, which can be validated by a machine and does not require human intervention.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#AccessControlList",
+      "@type": "DefinedTerm",
+      "name": "AccessControlList",
+      "description": "License grants access to data based on a list of approved users, specified using the property accessControlList.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
+      }
+    },
+    {
+      "@id": "#http___schema_org_CreativeWork-1",
+      "@type": "Class",
+      "name": []
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#access",
+      "@type": "rdf:Property",
+      "name": "access",
+      "rdfs:label": "access",
+      "rdfs:comment": "Whether this is an open or restricted access license.",
+      "domainIncludes": {
+        "@id": "https://w3id.org/ldac/terms#DataReuseLicense"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AccessTypes"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#AccessTypes",
+      "@type": "DefinedTermSet",
+      "name": "AccessTypes",
+      "description": "A set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorised) access.",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#AuthorizedAccess"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#OpenAccess"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#AuthorizedAccess",
+      "@type": "DefinedTerm",
+      "name": "AuthorizedAccess",
+      "description": "Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AccessTypes"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#OpenAccess",
+      "@type": "DefinedTerm",
+      "name": "OpenAccess",
+      "description": "Data covered by this license may be accessed as long as the license is served alongside it, and does not require any specific authorization step.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AccessTypes"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#reviewDate",
+      "@type": "rdf:Property",
+      "name": "reviewDate",
+      "rdfs:label": "reviewDate",
+      "rdfs:comment": "The date that this license should be reviewed.",
+      "domainIncludes": {
+        "@id": "https://w3id.org/ldac/terms#DataLicense"
+      }
+    },
+    {
+      "@id": "crate-o-mode.json",
+      "@type": "File",
+      "name": "Crate-O Editor Mode File",
+      "encodingFormat": "application/json",
+      "description": "Mini Crate-O mode file for this profile (metadata, input groups, lookup and enabled classes — the schema/grammar is provided by the MASP profile crate itself)."
+    },
+    {
+      "@id": "#hasEditorMode",
+      "@type": "ResourceDescriptor",
+      "name": "Crate-O Editor Mode",
+      "hasRole": {
+        "@id": "https://purl.org/ro/mode"
+      },
+      "hasArtifact": {
+        "@id": "crate-o-mode.json"
+      }
+    },
+    {
+      "@id": "https://purl.org/ro/mode",
+      "@type": "DefinedTerm",
+      "name": "Editor Mode",
+      "description": "Role indicating a resource is an editor configuration mode file."
+    }
+  ]
+}

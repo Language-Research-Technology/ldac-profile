@@ -1,5 +1,7 @@
 # Language Data Commons RO-Crate Profile
 
+This profile is deprecated, see the new profile at TODO. This document is retained here for archival purposes.
+
 This document is a DRAFT RO-Crate profile for Language Data resources. The
 profile specifies the contents of RO-Crate Metadata Documents for language
 resources and gives guidance on how to structure language data collections both
