@@ -1,6 +1,8 @@
 # Language Data Commons RO-Crate Profile
 
-This profile is deprecated, see the new profile at TODO. This document is retained here for archival purposes.
+**This profile is deprecated, see the new profile at https://language-research-technology.github.io/ldac-profile/masp-profile/profile-crate/. This document is retained here for archival purposes.**
+
+<br>
 
 This document is a DRAFT RO-Crate profile for Language Data resources. The
 profile specifies the contents of RO-Crate Metadata Documents for language
