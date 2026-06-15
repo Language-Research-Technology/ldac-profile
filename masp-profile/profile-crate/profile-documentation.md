@@ -1595,11 +1595,11 @@ At least 1 instances of this type MUST be present in the crate.
 | Property | Specialization Of | Description | Range | Occurs in Domain(s) |
 | -------- | ----------------- | ----------- | ----------- | ----------- |
 | <a href="#prop_ldac:linguisticGenre_CreativeWork" title="#prop_ldac:linguisticGenre_CreativeWork">ldac:linguisticGenre</a> | <a href="https://w3id.org/ldac/terms#linguisticGenre" target="_blank" rel="noopener">https://w3id.org/ldac/terms#linguisticGenre</a> | A linguistic classification of the genre of this resource. | <a href="#ldac%3ALinguisticGenreTerms" title="ldac:LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
-### <a id="prop_ldac%3AmainText_CreativeWork" title="prop_ldac:mainText_CreativeWork"></a> Property: ldac:mainText
+### <a id="prop_ldac:mainText_CreativeWork" title="#prop_ldac:mainText_CreativeWork"></a> Property: ldac:mainText
 
 | Property | Specialization Of | Description | Range | Occurs in Domain(s) |
 | -------- | ----------------- | ----------- | ----------- | ----------- |
-| <a href="#prop_ldac%3AmainText_CreativeWork" title="prop_ldac:mainText_CreativeWork">ldac:mainText</a> | <a href="https://w3id.org/ldac/terms#mainText" target="_blank" rel="noopener">https://w3id.org/ldac/terms#mainText</a> | Identifies the most relevant sub-component for computational text analytics. | <a href="http://schema.org/MediaObject" title="http://schema.org/MediaObject" target="_blank" rel="noopener">MediaObject</a> | <a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a> |
+| <a href="#prop_ldac:mainText_CreativeWork" title="#prop_ldac:mainText_CreativeWork">ldac:mainText</a> | <a href="https://w3id.org/ldac/terms#mainText" target="_blank" rel="noopener">https://w3id.org/ldac/terms#mainText</a> | Identifies the most relevant sub-component for computational text analytics. | <a href="http://schema.org/MediaObject" title="http://schema.org/MediaObject" target="_blank" rel="noopener">MediaObject</a> | <a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a> |
 ### <a id="prop_ldac:material_CreativeWork" title="#prop_ldac:material_CreativeWork"></a> Property: ldac:material
 
 | Property | Specialization Of | Description | Range | Occurs in Domain(s) |
@@ -1615,11 +1615,11 @@ At least 1 instances of this type MUST be present in the crate.
 | Property | Specialization Of | Description | Range | Occurs in Domain(s) |
 | -------- | ----------------- | ----------- | ----------- | ----------- |
 | <a href="#prop_ldac:openAccessIndex_CreativeWork" title="#prop_ldac:openAccessIndex_CreativeWork">ldac:openAccessIndex</a> | <a href="https://w3id.org/ldac/terms#openAccessIndex" target="_blank" rel="noopener">https://w3id.org/ldac/terms#openAccessIndex</a> | One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not. | <a href="#ldac%3AIndexTypes" title="ldac:IndexTypes">IndexTypes</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
-### <a id="prop_ldac%3AorthographicNotes_CreativeWork" title="prop_ldac:orthographicNotes_CreativeWork"></a> Property: ldac:orthographicNotes
+### <a id="prop_ldac:orthographicNotes_CreativeWork" title="#prop_ldac:orthographicNotes_CreativeWork"></a> Property: ldac:orthographicNotes
 
 | Property | Specialization Of | Description | Range | Occurs in Domain(s) |
 | -------- | ----------------- | ----------- | ----------- | ----------- |
-| <a href="#prop_ldac%3AorthographicNotes_CreativeWork" title="prop_ldac:orthographicNotes_CreativeWork">ldac:orthographicNotes</a> | <a href="https://w3id.org/ldac/terms#orthographicNotes" target="_blank" rel="noopener">https://w3id.org/ldac/terms#orthographicNotes</a> | A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø). | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a> |
+| <a href="#prop_ldac:orthographicNotes_CreativeWork" title="#prop_ldac:orthographicNotes_CreativeWork">ldac:orthographicNotes</a> | <a href="https://w3id.org/ldac/terms#orthographicNotes" target="_blank" rel="noopener">https://w3id.org/ldac/terms#orthographicNotes</a> | A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø). | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a> |
 ### <a id="prop_ldac:participant_Dataset" title="#prop_ldac:participant_Dataset"></a> Property: ldac:participant
 
 | Property | Specialization Of | Description | Range | Occurs in Domain(s) |

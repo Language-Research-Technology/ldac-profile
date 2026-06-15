@@ -2639,7 +2639,7 @@
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#orthographicNotes"
       },
-      "rdfs:label": "orthographicNotes",
+      "rdfs:label": "ldac:orthographicNotes",
       "rdfs:comment": "A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø).",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
