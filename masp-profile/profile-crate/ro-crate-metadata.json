@@ -366,7 +366,7 @@
           "@id": "#prop_ldac:linguisticGenre_CreativeWork"
         },
         {
-          "@id": "prop_ldac:mainText_CreativeWork"
+          "@id": "#prop_ldac:mainText_CreativeWork"
         },
         {
           "@id": "#prop_ldac:material_CreativeWork"
@@ -378,7 +378,7 @@
           "@id": "#prop_ldac:openAccessIndex_CreativeWork"
         },
         {
-          "@id": "prop_ldac:orthographicNotes_CreativeWork"
+          "@id": "#prop_ldac:orthographicNotes_CreativeWork"
         },
         {
           "@id": "#prop_ldac:participant_Dataset"
@@ -2555,7 +2555,7 @@
       }
     },
     {
-      "@id": "prop_ldac:mainText_CreativeWork",
+      "@id": "#prop_ldac:mainText_CreativeWork",
       "@type": "rdf:Property",
       "name": "ldac:mainText",
       "prov:specializationOf": {
@@ -2633,7 +2633,7 @@
       "sh:maxCount": "1"
     },
     {
-      "@id": "prop_ldac:orthographicNotes_CreativeWork",
+      "@id": "#prop_ldac:orthographicNotes_CreativeWork",
       "@type": "rdf:Property",
       "name": "ldac:orthographicNotes",
       "prov:specializationOf": {
