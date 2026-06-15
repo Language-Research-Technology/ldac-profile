@@ -366,6 +366,9 @@
           "@id": "#prop_ldac:linguisticGenre_CreativeWork"
         },
         {
+          "@id": "prop_ldac:mainText_CreativeWork"
+        },
+        {
           "@id": "#prop_ldac:material_CreativeWork"
         },
         {
@@ -373,6 +376,9 @@
         },
         {
           "@id": "#prop_ldac:openAccessIndex_CreativeWork"
+        },
+        {
+          "@id": "prop_ldac:orthographicNotes_CreativeWork"
         },
         {
           "@id": "#prop_ldac:participant_Dataset"
@@ -487,9 +493,6 @@
         },
         {
           "@id": "ldac:AuthorizedAccess"
-        },
-        {
-          "@id": "ldac:Coded"
         },
         {
           "@id": "ldac:DerivedMaterial"
@@ -741,6 +744,20 @@
       "prov:specializationOf": {
         "@id": "http://schema.org/CreativeWork"
       },
+      "rdfs:hasSubClass": [
+        {
+          "@id": "#class_RepositoryCollection"
+        },
+        {
+          "@id": "#class_RepositoryObject"
+        },
+        {
+          "@id": "#class_CollectionProtocol"
+        },
+        {
+          "@id": "#class_DataLicense"
+        }
+      ],
       "rdfs:comment": "The most generic kind of creative work, including books, movies, photographs, software programs, etc.",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
@@ -773,6 +790,14 @@
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       },
+      "rdfs:hasSubClass": [
+        {
+          "@id": "#class_DataReuseLicense"
+        },
+        {
+          "@id": "#class_DataDepositLicense"
+        }
+      ],
       "rdfs:comment": "A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
@@ -786,7 +811,9 @@
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#DataReuseLicense"
       },
-      "rdfs:subClassOf": "\"#DataLicense\"",
+      "rdfs:subClassOf": {
+        "@id": "#class_DataLicense"
+      },
       "rdfs:comment": "A license document, setting out terms for reuse of data.",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
@@ -1078,6 +1105,9 @@
       "name": "RepositoryObject",
       "prov:specializationOf": {
         "@id": "http://pcdm.org/models#Object"
+      },
+      "rdfs:subClassOf": {
+        "@id": "http://schema.org/CreativeWork"
       },
       "rdfs:comment": "An Object is an intellectual entity, sometimes called a \"work\", \"digital object\", etc. Objects have descriptive metadata, access metadata, may contain files and other Objects as member \"components\". Each level of a work is therefore represented by an Object instance, and is capable of standing on its own, being linked to from Collections and other Objects. Member Objects can be ordered using the ORE Proxy class.",
       "isPartOf": {
@@ -1911,7 +1941,7 @@
       "domainIncludes": {
         "@id": "#class_Person"
       },
-      "rdfs:comment": "The age of a person. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.",
+      "rdfs:comment": "The age or age range of a person, e.g. 25, 30-50, >50. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.",
       "rangeIncludes": {
         "@id": "http://schema.org/Text"
       },
@@ -2525,6 +2555,25 @@
       }
     },
     {
+      "@id": "prop_ldac:mainText_CreativeWork",
+      "@type": "rdf:Property",
+      "name": "ldac:mainText",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#mainText"
+      },
+      "rdfs:label": "ldac:mainText",
+      "rangeIncludes": {
+        "@id": "http://schema.org/MediaObject"
+      },
+      "rdfs:comment": "Identifies the most relevant sub-component for computational text analytics.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
+    },
+    {
       "@id": "#prop_ldac:material_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:material",
@@ -2582,6 +2631,25 @@
         "@id": "#hasSpecializedSchema"
       },
       "sh:maxCount": "1"
+    },
+    {
+      "@id": "prop_ldac:orthographicNotes_CreativeWork",
+      "@type": "rdf:Property",
+      "name": "ldac:orthographicNotes",
+      "prov:specializationOf": {
+        "@id": "https://w3id.org/ldac/terms#orthographicNotes"
+      },
+      "rdfs:label": "orthographicNotes",
+      "rdfs:comment": "A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø).",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "isPartOf": {
+        "@id": "#hasSpecializedSchema"
+      }
     },
     {
       "@id": "#prop_ldac:participant_Dataset",
@@ -3369,18 +3437,6 @@
       }
     },
     {
-      "@id": "ldac:Coded",
-      "@type": "DefinedTerm",
-      "description": "The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet).",
-      "inDefinedTermSet": {
-        "@id": "ldac:CommunicationModeTerms"
-      },
-      "name": "Coded",
-      "isPartOf": {
-        "@id": "#hasSpecializedSchema"
-      }
-    },
-    {
       "@id": "ldac:DerivedMaterial",
       "@type": "DefinedTerm",
       "description": "This is derived from another source, such as a Primary Material, via some process, e.g. a downsampled video or a sample or an abstract of a resource that is not an annotation (an analysis or description).",
@@ -3982,9 +4038,6 @@
       "name": "CommunicationModeTerms",
       "description": "Set of defined terms for ldac:communicationMode",
       "hasDefinedTerm": [
-        {
-          "@id": "ldac:Coded"
-        },
         {
           "@id": "ldac:Gesture"
         },

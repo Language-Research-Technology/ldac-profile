@@ -29,8 +29,8 @@
 <body>
   <div class="container-fluid">
     <p>
-      <a href="ro-crate-metadata.json">⬇️ Download profile metadata (JSON-LD)</a>
-      &nbsp;|&nbsp; <a href="https://github.com/Language-Research-Technology/ldac-profile/tree/main/../../masp-schema/schema-crate">📁 View whole crate on GitHub</a>
+      <a href="ro-crate-metadata.json">⬇️ Download profile metadata (JSON-LD)</a> &nbsp;|&nbsp;
+      <a href="ro-crate-metadata.xlsx">⬇️ Download profile metadata (Excel)</a>
     </p>
     <h1>Language Data Commons Schema</h1>
 <p>This is a language data schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the LDaCA project and is published at https://w3id.org/ldac/terms. This schema builds on Schema.org and is intended to be used with the Language Data Commons RO-Crate Profile: https://w3id.org/ldac/profile.</p>
@@ -40,76 +40,76 @@
     <h3>Classes</h3>
     <input class="entity-filter" type="search" placeholder="Filter classes…" data-target="class-list">
     <ul id="class-list" class="entity-list">
-<li><a href="#CollectionEvent" title="https://w3id.org/ldac/terms#CollectionEvent">CollectionEvent</a> — A description of an event at which one or more PrimaryMaterials were captured, e</li>
-<li><a href="#CollectionProtocol" title="https://w3id.org/ldac/terms#CollectionProtocol">CollectionProtocol</a> — A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants</li>
-<li><a href="#DataDepositLicense" title="https://w3id.org/ldac/terms#DataDepositLicense">DataDepositLicense</a> — A license document setting out terms for deposit into a repository</li>
-<li><a href="#DataLicense" title="https://w3id.org/ldac/terms#DataLicense">DataLicense</a> — A license document for data licensing</li>
-<li><a href="#DataReuseLicense" title="https://w3id.org/ldac/terms#DataReuseLicense">DataReuseLicense</a> — A license document, setting out terms for reuse of data</li>
+<li><a href="#CollectionEvent" title="https://w3id.org/ldac/terms#CollectionEvent">CollectionEvent</a> — A description of an event at which one or more PrimaryMaterials were captured, e.g. as video or audio.</li>
+<li><a href="#CollectionProtocol" title="https://w3id.org/ldac/terms#CollectionProtocol">CollectionProtocol</a> — A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants.</li>
+<li><a href="#DataDepositLicense" title="https://w3id.org/ldac/terms#DataDepositLicense">DataDepositLicense</a> — A license document setting out terms for deposit into a repository.</li>
+<li><a href="#DataLicense" title="https://w3id.org/ldac/terms#DataLicense">DataLicense</a> — A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.</li>
+<li><a href="#DataReuseLicense" title="https://w3id.org/ldac/terms#DataReuseLicense">DataReuseLicense</a> — A license document, setting out terms for reuse of data.</li>
     </ul>
   </div>
   <div class="col-md-6 col-panel">
     <h3>Properties</h3>
     <input class="entity-filter" type="search" placeholder="Filter properties…" data-target="prop-list">
     <ul id="prop-list" class="entity-list">
-<li><a href="#access" title="https://w3id.org/ldac/terms#access">access</a> — Whether this is an open or restricted access license</li>
-<li><a href="#accessControlList" title="https://w3id.org/ldac/terms#accessControlList">accessControlList</a> — When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs</li>
-<li><a href="#age" title="https://w3id.org/ldac/terms#age">age</a> — The age or age range of a person, e</li>
-<li><a href="#annotationOf" title="https://w3id.org/ldac/terms#annotationOf">annotationOf</a> — This resource contains some kind of description that adds information to the resource it references</li>
-<li><a href="#annotationType" title="https://w3id.org/ldac/terms#annotationType">annotationType</a> — The type of annotation for Annotation resources</li>
-<li><a href="#annotator" title="https://w3id.org/ldac/terms#annotator">annotator</a> — The participant produced an annotation of this or a related resource</li>
-<li><a href="#authorizationWorkflow" title="https://w3id.org/ldac/terms#authorizationWorkflow">authorizationWorkflow</a> — By what process a user is granted authorization to a license</li>
-<li><a href="#channels" title="https://w3id.org/ldac/terms#channels">channels</a> — The number of audio channels this resource contains (e</li>
-<li><a href="#collectionEventType" title="https://w3id.org/ldac/terms#collectionEventType">collectionEventType</a> — A kind of CollectionEvent characterised by some specific procedures, e</li>
-<li><a href="#collectionProtocolType" title="https://w3id.org/ldac/terms#collectionProtocolType">collectionProtocolType</a> — A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection</li>
-<li><a href="#communicationMode" title="https://w3id.org/ldac/terms#communicationMode">communicationMode</a> — The mode (spoken, written, signed etc</li>
-<li><a href="#compiler" title="https://w3id.org/ldac/terms#compiler">compiler</a> — The participant is responsible for collecting the sub-parts of the resource together</li>
-<li><a href="#consultant" title="https://w3id.org/ldac/terms#consultant">consultant</a> — The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language</li>
-<li><a href="#dataInputter" title="https://w3id.org/ldac/terms#dataInputter">dataInputter</a> — The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource</li>
-<li><a href="#dateFreeText" title="https://w3id.org/ldac/terms#dateFreeText">dateFreeText</a> — Date information that cannot be put in one of the standard date formats, e</li>
-<li><a href="#depositor" title="https://w3id.org/ldac/terms#depositor">depositor</a> — The participant was responsible for depositing the resource in an archive</li>
-<li><a href="#derivationOf" title="https://w3id.org/ldac/terms#derivationOf">derivationOf</a> — This property references another resource from which the current resource is derived, e</li>
-<li><a href="#developer" title="https://w3id.org/ldac/terms#developer">developer</a> — The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource</li>
-<li><a href="#doi" title="https://w3id.org/ldac/terms#doi">doi</a> — A Digital Object Identifier</li>
-<li><a href="#editor" title="https://w3id.org/ldac/terms#editor">editor</a> — The participant reviewed, corrected, and/or tested the resource</li>
-<li><a href="#geoJSON" title="https://w3id.org/ldac/terms#geoJSON">geoJSON</a> — A valid GEOJson feature or feature collection as a string that can be parsed as JSON</li>
-<li><a href="#hasAnnotation" title="https://w3id.org/ldac/terms#hasAnnotation">hasAnnotation</a> — This resource is referenced by another resource that describes it such as a translation, transcription or other analysis</li>
-<li><a href="#hasCollectionProtocol" title="https://w3id.org/ldac/terms#hasCollectionProtocol">hasCollectionProtocol</a> — This resource was assembled or collected according to the linked protocol</li>
-<li><a href="#hasDerivation" title="https://w3id.org/ldac/terms#hasDerivation">hasDerivation</a> — This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF</li>
-<li><a href="#illustrator" title="https://w3id.org/ldac/terms#illustrator">illustrator</a> — The participant contributed drawings or other illustrations to the resource</li>
-<li><a href="#indexableText" title="https://w3id.org/ldac/terms#indexableText">indexableText</a> — One or more target File(s) that together contain the full text of an item – each file should indicate its language</li>
-<li><a href="#interpreter" title="https://w3id.org/ldac/terms#interpreter">interpreter</a> — The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource</li>
-<li><a href="#interviewee" title="https://w3id.org/ldac/terms#interviewee">interviewee</a> — The participant was a respondent in an interview</li>
-<li><a href="#interviewer" title="https://w3id.org/ldac/terms#interviewer">interviewer</a> — The participant conducted an interview that forms part of the resource</li>
-<li><a href="#isDeIdentified" title="https://w3id.org/ldac/terms#isDeIdentified">isDeIdentified</a> — The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms</li>
-<li><a href="#itemLocation" title="https://w3id.org/ldac/terms#itemLocation">itemLocation</a> — Current location of the item, e</li>
-<li><a href="#linguisticGenre" title="https://w3id.org/ldac/terms#linguisticGenre">linguisticGenre</a> — A linguistic classification of the genre of this resource</li>
-<li><a href="#mainText" title="https://w3id.org/ldac/terms#mainText">mainText</a> — Identifies the most relevant sub-component for computational text analytics</li>
-<li><a href="#material" title="https://w3id.org/ldac/terms#material">material</a> — Description of the original media, e</li>
-<li><a href="#materialType" title="https://w3id.org/ldac/terms#materialType">materialType</a> — Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation</li>
-<li><a href="#openAccessIndex" title="https://w3id.org/ldac/terms#openAccessIndex">openAccessIndex</a> — One or more public index types allowed by a license, e</li>
-<li><a href="#orthographicNotes" title="https://w3id.org/ldac/terms#orthographicNotes">orthographicNotes</a> — A description of the specific orthographic writing system(s) used in the material (e</li>
-<li><a href="#participant" title="https://w3id.org/ldac/terms#participant">participant</a> — The participant was present during the creation of the resource, but did not contribute substantially to its content</li>
-<li><a href="#performer" title="https://w3id.org/ldac/terms#performer">performer</a> — The participant performed some portion of a recorded, filmed, or transcribed resource</li>
-<li><a href="#photographer" title="https://w3id.org/ldac/terms#photographer">photographer</a> — The participant took the photograph, or shot the film, that appears in or constitutes the resource</li>
-<li><a href="#recorder" title="https://w3id.org/ldac/terms#recorder">recorder</a> — The participant operated the recording machinery used to create the resource</li>
-<li><a href="#register" title="https://w3id.org/ldac/terms#register">register</a> — The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource</li>
-<li><a href="#researcher" title="https://w3id.org/ldac/terms#researcher">researcher</a> — The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research</li>
-<li><a href="#researchParticipant" title="https://w3id.org/ldac/terms#researchParticipant">researchParticipant</a> — The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource</li>
-<li><a href="#responder" title="https://w3id.org/ldac/terms#responder">responder</a> — The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others</li>
-<li><a href="#reviewDate" title="https://w3id.org/ldac/terms#reviewDate">reviewDate</a> — The date that this license should be reviewed</li>
-<li><a href="#signer" title="https://w3id.org/ldac/terms#signer">signer</a> — The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource</li>
-<li><a href="#singer" title="https://w3id.org/ldac/terms#singer">singer</a> — The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource</li>
-<li><a href="#speaker" title="https://w3id.org/ldac/terms#speaker">speaker</a> — The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource</li>
-<li><a href="#sponsor" title="https://w3id.org/ldac/terms#sponsor">sponsor</a> — The participant contributed financial support to the creation of the resource</li>
-<li><a href="#subjectLanguage" title="https://w3id.org/ldac/terms#subjectLanguage">subjectLanguage</a> — The language(s) that this annotation resource is about</li>
-<li><a href="#transcriber" title="https://w3id.org/ldac/terms#transcriber">transcriber</a> — The participant produced a transcription of this or a related resource</li>
-<li><a href="#translator" title="https://w3id.org/ldac/terms#translator">translator</a> — The participant produced a translation of this or a related resource</li>
-<li><a href="#writtenLanguageFormat" title="https://w3id.org/ldac/terms#writtenLanguageFormat">writtenLanguageFormat</a> — The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten)</li>
+<li><a href="#access" title="https://w3id.org/ldac/terms#access">access</a> — Whether this is an open or restricted access license.</li>
+<li><a href="#accessControlList" title="https://w3id.org/ldac/terms#accessControlList">accessControlList</a> — When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs.</li>
+<li><a href="#age" title="https://w3id.org/ldac/terms#age">age</a> — The age or age range of a person, e.g. 25, 30-50, >50. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.</li>
+<li><a href="#annotationOf" title="https://w3id.org/ldac/terms#annotationOf">annotationOf</a> — This resource contains some kind of description that adds information to the resource it references.</li>
+<li><a href="#annotationType" title="https://w3id.org/ldac/terms#annotationType">annotationType</a> — The type of annotation for Annotation resources.</li>
+<li><a href="#annotator" title="https://w3id.org/ldac/terms#annotator">annotator</a> — The participant produced an annotation of this or a related resource.</li>
+<li><a href="#authorizationWorkflow" title="https://w3id.org/ldac/terms#authorizationWorkflow">authorizationWorkflow</a> — By what process a user is granted authorization to a license.</li>
+<li><a href="#channels" title="https://w3id.org/ldac/terms#channels">channels</a> — The number of audio channels this resource contains (e.g. 1, 2, 5.1).</li>
+<li><a href="#collectionEventType" title="https://w3id.org/ldac/terms#collectionEventType">collectionEventType</a> — A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment.</li>
+<li><a href="#collectionProtocolType" title="https://w3id.org/ldac/terms#collectionProtocolType">collectionProtocolType</a> — A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.</li>
+<li><a href="#communicationMode" title="https://w3id.org/ldac/terms#communicationMode">communicationMode</a> — The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.</li>
+<li><a href="#compiler" title="https://w3id.org/ldac/terms#compiler">compiler</a> — The participant is responsible for collecting the sub-parts of the resource together.</li>
+<li><a href="#consultant" title="https://w3id.org/ldac/terms#consultant">consultant</a> — The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language.</li>
+<li><a href="#dataInputter" title="https://w3id.org/ldac/terms#dataInputter">dataInputter</a> — The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.</li>
+<li><a href="#dateFreeText" title="https://w3id.org/ldac/terms#dateFreeText">dateFreeText</a> — Date information that cannot be put in one of the standard date formats, e.g. "mid-1970s", or it is not clear, for example, if it is a creation or publication date.</li>
+<li><a href="#depositor" title="https://w3id.org/ldac/terms#depositor">depositor</a> — The participant was responsible for depositing the resource in an archive.</li>
+<li><a href="#derivationOf" title="https://w3id.org/ldac/terms#derivationOf">derivationOf</a> — This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF.</li>
+<li><a href="#developer" title="https://w3id.org/ldac/terms#developer">developer</a> — The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource.</li>
+<li><a href="#doi" title="https://w3id.org/ldac/terms#doi">doi</a> — A Digital Object Identifier.</li>
+<li><a href="#editor" title="https://w3id.org/ldac/terms#editor">editor</a> — The participant reviewed, corrected, and/or tested the resource.</li>
+<li><a href="#geoJSON" title="https://w3id.org/ldac/terms#geoJSON">geoJSON</a> — A valid GEOJson feature or feature collection as a string that can be parsed as JSON.</li>
+<li><a href="#hasAnnotation" title="https://w3id.org/ldac/terms#hasAnnotation">hasAnnotation</a> — This resource is referenced by another resource that describes it such as a translation, transcription or other analysis.</li>
+<li><a href="#hasCollectionProtocol" title="https://w3id.org/ldac/terms#hasCollectionProtocol">hasCollectionProtocol</a> — This resource was assembled or collected according to the linked protocol.</li>
+<li><a href="#hasDerivation" title="https://w3id.org/ldac/terms#hasDerivation">hasDerivation</a> — This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.</li>
+<li><a href="#illustrator" title="https://w3id.org/ldac/terms#illustrator">illustrator</a> — The participant contributed drawings or other illustrations to the resource.</li>
+<li><a href="#indexableText" title="https://w3id.org/ldac/terms#indexableText">indexableText</a> — One or more target File(s) that together contain the full text of an item – each file should indicate its language.</li>
+<li><a href="#interpreter" title="https://w3id.org/ldac/terms#interpreter">interpreter</a> — The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource.</li>
+<li><a href="#interviewee" title="https://w3id.org/ldac/terms#interviewee">interviewee</a> — The participant was a respondent in an interview.</li>
+<li><a href="#interviewer" title="https://w3id.org/ldac/terms#interviewer">interviewer</a> — The participant conducted an interview that forms part of the resource.</li>
+<li><a href="#isDeIdentified" title="https://w3id.org/ldac/terms#isDeIdentified">isDeIdentified</a> — The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms.</li>
+<li><a href="#itemLocation" title="https://w3id.org/ldac/terms#itemLocation">itemLocation</a> — Current location of the item, e.g. where a set of audio tapes are stored.</li>
+<li><a href="#linguisticGenre" title="https://w3id.org/ldac/terms#linguisticGenre">linguisticGenre</a> — A linguistic classification of the genre of this resource.</li>
+<li><a href="#mainText" title="https://w3id.org/ldac/terms#mainText">mainText</a> — Identifies the most relevant sub-component for computational text analytics.</li>
+<li><a href="#material" title="https://w3id.org/ldac/terms#material">material</a> — Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes.</li>
+<li><a href="#materialType" title="https://w3id.org/ldac/terms#materialType">materialType</a> — Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation.</li>
+<li><a href="#openAccessIndex" title="https://w3id.org/ldac/terms#openAccessIndex">openAccessIndex</a> — One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not.</li>
+<li><a href="#orthographicNotes" title="https://w3id.org/ldac/terms#orthographicNotes">orthographicNotes</a> — A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø).</li>
+<li><a href="#participant" title="https://w3id.org/ldac/terms#participant">participant</a> — The participant was present during the creation of the resource, but did not contribute substantially to its content.</li>
+<li><a href="#performer" title="https://w3id.org/ldac/terms#performer">performer</a> — The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.</li>
+<li><a href="#photographer" title="https://w3id.org/ldac/terms#photographer">photographer</a> — The participant took the photograph, or shot the film, that appears in or constitutes the resource.</li>
+<li><a href="#recorder" title="https://w3id.org/ldac/terms#recorder">recorder</a> — The participant operated the recording machinery used to create the resource.</li>
+<li><a href="#register" title="https://w3id.org/ldac/terms#register">register</a> — The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.</li>
+<li><a href="#researcher" title="https://w3id.org/ldac/terms#researcher">researcher</a> — The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.</li>
+<li><a href="#researchParticipant" title="https://w3id.org/ldac/terms#researchParticipant">researchParticipant</a> — The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.</li>
+<li><a href="#responder" title="https://w3id.org/ldac/terms#responder">responder</a> — The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others.</li>
+<li><a href="#reviewDate" title="https://w3id.org/ldac/terms#reviewDate">reviewDate</a> — The date that this license should be reviewed.</li>
+<li><a href="#signer" title="https://w3id.org/ldac/terms#signer">signer</a> — The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).</li>
+<li><a href="#singer" title="https://w3id.org/ldac/terms#singer">singer</a> — The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.</li>
+<li><a href="#speaker" title="https://w3id.org/ldac/terms#speaker">speaker</a> — The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).</li>
+<li><a href="#sponsor" title="https://w3id.org/ldac/terms#sponsor">sponsor</a> — The participant contributed financial support to the creation of the resource.</li>
+<li><a href="#subjectLanguage" title="https://w3id.org/ldac/terms#subjectLanguage">subjectLanguage</a> — The language(s) that this annotation resource is about.</li>
+<li><a href="#transcriber" title="https://w3id.org/ldac/terms#transcriber">transcriber</a> — The participant produced a transcription of this or a related resource.</li>
+<li><a href="#translator" title="https://w3id.org/ldac/terms#translator">translator</a> — The participant produced a translation of this or a related resource.</li>
+<li><a href="#writtenLanguageFormat" title="https://w3id.org/ldac/terms#writtenLanguageFormat">writtenLanguageFormat</a> — The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten).</li>
     </ul>
   </div>
 </div>
 <h2>Types of entities (specializations of Classes) and expected Properties</h2>
-<h3><a id="CollectionEvent"></a> Class: CollectionEvent</h3>
+<h3><a id="CollectionEvent" title="https://w3id.org/ldac/terms#CollectionEvent"></a> Class: CollectionEvent</h3>
 <p>A description of an event at which one or more PrimaryMaterials were captured, e.g. as video or audio.</p>
 <p>Instances of this type MAY be present in the crate.</p>
 <table>
@@ -130,6 +130,7 @@
 <thead>
 <tr>
 <th>Property</th>
+<th>Specialization Of</th>
 <th>Required</th>
 <th>Description</th>
 <th>Range</th>
@@ -139,21 +140,23 @@
 <tbody>
 <tr>
 <td>@type</td>
+<td></td>
 <td>Yes</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#collectionEventType">collectionEventType</a></td>
+<td><a href="#collectionEventType" title="https://w3id.org/ldac/terms#collectionEventType">collectionEventType</a></td>
+<td></td>
 <td>No</td>
 <td>A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment.</td>
-<td><a href="#Session">Session</a></td>
+<td><a href="#CollectionEventTypeTerms" title="https://w3id.org/ldac/terms#CollectionEventTypeTerms">CollectionEventTypeTerms</a></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="CollectionProtocol"></a> Class: CollectionProtocol</h3>
+<h3><a id="CollectionProtocol" title="https://w3id.org/ldac/terms#CollectionProtocol"></a> Class: CollectionProtocol</h3>
 <p>A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants.</p>
 <p>Instances of this type MAY be present in the crate.</p>
 <table>
@@ -174,6 +177,7 @@
 <thead>
 <tr>
 <th>Property</th>
+<th>Specialization Of</th>
 <th>Required</th>
 <th>Description</th>
 <th>Range</th>
@@ -183,21 +187,23 @@
 <tbody>
 <tr>
 <td>@type</td>
+<td></td>
 <td>Yes</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#collectionProtocolType">collectionProtocolType</a></td>
+<td><a href="#collectionProtocolType" title="https://w3id.org/ldac/terms#collectionProtocolType">collectionProtocolType</a></td>
+<td></td>
 <td>No</td>
 <td>A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.</td>
-<td></td>
+<td><a href="#CollectionProtocolTypeTerms" title="https://w3id.org/ldac/terms#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="DataDepositLicense"></a> Class: DataDepositLicense</h3>
+<h3><a id="DataDepositLicense" title="https://w3id.org/ldac/terms#DataDepositLicense"></a> Class: DataDepositLicense</h3>
 <p>A license document setting out terms for deposit into a repository.</p>
 <p>Instances of this type MAY be present in the crate.</p>
 <table>
@@ -218,6 +224,7 @@
 <thead>
 <tr>
 <th>Property</th>
+<th>Specialization Of</th>
 <th>Required</th>
 <th>Description</th>
 <th>Range</th>
@@ -227,6 +234,7 @@
 <tbody>
 <tr>
 <td>@type</td>
+<td></td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -238,10 +246,11 @@
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="DataLicense"></a> Class: DataLicense</h3>
+<h3><a id="DataLicense" title="https://w3id.org/ldac/terms#DataLicense"></a> Class: DataLicense</h3>
 <p>A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.</p>
 <p>Instances of this type MAY be present in the crate.</p>
 <table>
@@ -262,6 +271,7 @@
 <thead>
 <tr>
 <th>Property</th>
+<th>Specialization Of</th>
 <th>Required</th>
 <th>Description</th>
 <th>Range</th>
@@ -271,13 +281,15 @@
 <tbody>
 <tr>
 <td>@type</td>
+<td></td>
 <td>Yes</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#reviewDate">reviewDate</a></td>
+<td><a href="#reviewDate" title="https://w3id.org/ldac/terms#reviewDate">reviewDate</a></td>
+<td></td>
 <td>No</td>
 <td>The date that this license should be reviewed.</td>
 <td></td>
@@ -285,7 +297,7 @@
 </tr>
 </tbody>
 </table>
-<h3><a id="DataReuseLicense"></a> Class: DataReuseLicense</h3>
+<h3><a id="DataReuseLicense" title="https://w3id.org/ldac/terms#DataReuseLicense"></a> Class: DataReuseLicense</h3>
 <p>A license document, setting out terms for reuse of data.</p>
 <p>Instances of this type MAY be present in the crate.</p>
 <table>
@@ -306,6 +318,7 @@
 <thead>
 <tr>
 <th>Property</th>
+<th>Specialization Of</th>
 <th>Required</th>
 <th>Description</th>
 <th>Range</th>
@@ -315,39 +328,45 @@
 <tbody>
 <tr>
 <td>@type</td>
+<td></td>
 <td>Yes</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#access">access</a></td>
+<td><a href="#access" title="https://w3id.org/ldac/terms#access">access</a></td>
+<td></td>
 <td>No</td>
 <td>Whether this is an open or restricted access license.</td>
-<td></td>
+<td><a href="#AccessTypes" title="https://w3id.org/ldac/terms#AccessTypes">AccessTypes</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#accessControlList">accessControlList</a></td>
+<td><a href="#accessControlList" title="https://w3id.org/ldac/terms#accessControlList">accessControlList</a></td>
+<td></td>
 <td>No</td>
 <td>When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs.</td>
-<td><a href="http://schema.org/URL">URL</a></td>
+<td><a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#authorizationWorkflow">authorizationWorkflow</a></td>
+<td><a href="#authorizationWorkflow" title="https://w3id.org/ldac/terms#authorizationWorkflow">authorizationWorkflow</a></td>
+<td></td>
 <td>No</td>
 <td>By what process a user is granted authorization to a license.</td>
-<td></td>
+<td><a href="#AuthorizationWorkflows" title="https://w3id.org/ldac/terms#AuthorizationWorkflows">AuthorizationWorkflows</a></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <h2>All Properties</h2>
-<h3><a id="access"></a> Property: access</h3>
+<h3><a id="access" title="https://w3id.org/ldac/terms#access"></a> Property: access</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -355,16 +374,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#access" title="https://w3id.org/ldac/terms#access">access</a></td>
+<td></td>
 <td>Whether this is an open or restricted access license.</td>
-<td></td>
-<td><a href="#DataReuseLicense">DataReuseLicense</a></td>
+<td><a href="#AccessTypes" title="https://w3id.org/ldac/terms#AccessTypes">AccessTypes</a></td>
+<td><a href="#DataReuseLicense" title="https://w3id.org/ldac/terms#DataReuseLicense">DataReuseLicense</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="accessControlList"></a> Property: accessControlList</h3>
+<h3><a id="accessControlList" title="https://w3id.org/ldac/terms#accessControlList"></a> Property: accessControlList</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -372,16 +395,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#accessControlList" title="https://w3id.org/ldac/terms#accessControlList">accessControlList</a></td>
+<td></td>
 <td>When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs.</td>
-<td><a href="http://schema.org/URL">URL</a></td>
-<td><a href="#DataReuseLicense">DataReuseLicense</a></td>
+<td><a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a></td>
+<td><a href="#DataReuseLicense" title="https://w3id.org/ldac/terms#DataReuseLicense">DataReuseLicense</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="age"></a> Property: age</h3>
+<h3><a id="age" title="https://w3id.org/ldac/terms#age"></a> Property: age</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -389,16 +416,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#age" title="https://w3id.org/ldac/terms#age">age</a></td>
+<td></td>
 <td>The age or age range of a person, e.g. 25, 30-50, &gt;50. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.</td>
-<td><a href="http://schema.org/Text">Text</a></td>
-<td><a href="http://schema.org/Person">Person</a></td>
+<td><a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a></td>
+<td><a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="annotationOf"></a> Property: annotationOf</h3>
+<h3><a id="annotationOf" title="https://w3id.org/ldac/terms#annotationOf"></a> Property: annotationOf</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -406,16 +437,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#annotationOf" title="https://w3id.org/ldac/terms#annotationOf">annotationOf</a></td>
+<td></td>
 <td>This resource contains some kind of description that adds information to the resource it references.</td>
-<td><a href="#PrimaryMaterial">PrimaryMaterial</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="#PrimaryMaterial" title="https://w3id.org/ldac/terms#PrimaryMaterial">PrimaryMaterial</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="annotationType"></a> Property: annotationType</h3>
+<h3><a id="annotationType" title="https://w3id.org/ldac/terms#annotationType"></a> Property: annotationType</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -423,16 +458,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#annotationType" title="https://w3id.org/ldac/terms#annotationType">annotationType</a></td>
+<td></td>
 <td>The type of annotation for Annotation resources.</td>
-<td></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="#AnnotationTypeTerms" title="https://w3id.org/ldac/terms#AnnotationTypeTerms">AnnotationTypeTerms</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="annotator"></a> Property: annotator</h3>
+<h3><a id="annotator" title="https://w3id.org/ldac/terms#annotator"></a> Property: annotator</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -440,16 +479,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#annotator" title="https://w3id.org/ldac/terms#annotator">annotator</a></td>
+<td></td>
 <td>The participant produced an annotation of this or a related resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="authorizationWorkflow"></a> Property: authorizationWorkflow</h3>
+<h3><a id="authorizationWorkflow" title="https://w3id.org/ldac/terms#authorizationWorkflow"></a> Property: authorizationWorkflow</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -457,16 +500,20 @@
 </thead>
 <tbody>
 <tr>
-<td>By what process a user is granted authorization to a license.</td>
+<td><a href="#authorizationWorkflow" title="https://w3id.org/ldac/terms#authorizationWorkflow">authorizationWorkflow</a></td>
 <td></td>
-<td><a href="#DataReuseLicense">DataReuseLicense</a></td>
+<td>By what process a user is granted authorization to a license.</td>
+<td><a href="#AuthorizationWorkflows" title="https://w3id.org/ldac/terms#AuthorizationWorkflows">AuthorizationWorkflows</a></td>
+<td><a href="#DataReuseLicense" title="https://w3id.org/ldac/terms#DataReuseLicense">DataReuseLicense</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="channels"></a> Property: channels</h3>
+<h3><a id="channels" title="https://w3id.org/ldac/terms#channels"></a> Property: channels</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -474,16 +521,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#channels" title="https://w3id.org/ldac/terms#channels">channels</a></td>
+<td></td>
 <td>The number of audio channels this resource contains (e.g. 1, 2, 5.1).</td>
 <td></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="collectionEventType"></a> Property: collectionEventType</h3>
+<h3><a id="collectionEventType" title="https://w3id.org/ldac/terms#collectionEventType"></a> Property: collectionEventType</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -491,16 +542,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#collectionEventType" title="https://w3id.org/ldac/terms#collectionEventType">collectionEventType</a></td>
+<td></td>
 <td>A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment.</td>
-<td><a href="#Session">Session</a></td>
-<td><a href="#CollectionEvent">CollectionEvent</a></td>
+<td><a href="#CollectionEventTypeTerms" title="https://w3id.org/ldac/terms#CollectionEventTypeTerms">CollectionEventTypeTerms</a></td>
+<td><a href="#CollectionEvent" title="https://w3id.org/ldac/terms#CollectionEvent">CollectionEvent</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="collectionProtocolType"></a> Property: collectionProtocolType</h3>
+<h3><a id="collectionProtocolType" title="https://w3id.org/ldac/terms#collectionProtocolType"></a> Property: collectionProtocolType</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -508,16 +563,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#collectionProtocolType" title="https://w3id.org/ldac/terms#collectionProtocolType">collectionProtocolType</a></td>
+<td></td>
 <td>A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.</td>
-<td></td>
-<td><a href="#CollectionProtocol">CollectionProtocol</a></td>
+<td><a href="#CollectionProtocolTypeTerms" title="https://w3id.org/ldac/terms#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a></td>
+<td><a href="#CollectionProtocol" title="https://w3id.org/ldac/terms#CollectionProtocol">CollectionProtocol</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="communicationMode"></a> Property: communicationMode</h3>
+<h3><a id="communicationMode" title="https://w3id.org/ldac/terms#communicationMode"></a> Property: communicationMode</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -525,33 +584,41 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#communicationMode" title="https://w3id.org/ldac/terms#communicationMode">communicationMode</a></td>
+<td></td>
 <td>The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.</td>
+<td><a href="#CommunicationModeTerms" title="https://w3id.org/ldac/terms#CommunicationModeTerms">CommunicationModeTerms</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="compiler" title="https://w3id.org/ldac/terms#compiler"></a> Property: compiler</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#compiler" title="https://w3id.org/ldac/terms#compiler">compiler</a></td>
 <td></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="compiler"></a> Property: compiler</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
 <td>The participant is responsible for collecting the sub-parts of the resource together.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="consultant"></a> Property: consultant</h3>
+<h3><a id="consultant" title="https://w3id.org/ldac/terms#consultant"></a> Property: consultant</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -559,16 +626,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#consultant" title="https://w3id.org/ldac/terms#consultant">consultant</a></td>
+<td></td>
 <td>The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="dataInputter"></a> Property: dataInputter</h3>
+<h3><a id="dataInputter" title="https://w3id.org/ldac/terms#dataInputter"></a> Property: dataInputter</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -576,16 +647,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#dataInputter" title="https://w3id.org/ldac/terms#dataInputter">dataInputter</a></td>
+<td></td>
 <td>The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="dateFreeText"></a> Property: dateFreeText</h3>
+<h3><a id="dateFreeText" title="https://w3id.org/ldac/terms#dateFreeText"></a> Property: dateFreeText</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -593,16 +668,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#dateFreeText" title="https://w3id.org/ldac/terms#dateFreeText">dateFreeText</a></td>
+<td></td>
 <td>Date information that cannot be put in one of the standard date formats, e.g. &quot;mid-1970s&quot;, or it is not clear, for example, if it is a creation or publication date.</td>
 <td></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="depositor"></a> Property: depositor</h3>
+<h3><a id="depositor" title="https://w3id.org/ldac/terms#depositor"></a> Property: depositor</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -610,16 +689,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#depositor" title="https://w3id.org/ldac/terms#depositor">depositor</a></td>
+<td></td>
 <td>The participant was responsible for depositing the resource in an archive.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="derivationOf"></a> Property: derivationOf</h3>
+<h3><a id="derivationOf" title="https://w3id.org/ldac/terms#derivationOf"></a> Property: derivationOf</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -627,16 +710,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#derivationOf" title="https://w3id.org/ldac/terms#derivationOf">derivationOf</a></td>
+<td></td>
 <td>This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF.</td>
-<td><a href="#Annotation">Annotation</a>, <a href="#PrimaryMaterial">PrimaryMaterial</a></td>
-<td><a href="#DerivedMaterial">DerivedMaterial</a></td>
+<td><a href="#Annotation" title="https://w3id.org/ldac/terms#Annotation">Annotation</a>, <a href="#PrimaryMaterial" title="https://w3id.org/ldac/terms#PrimaryMaterial">PrimaryMaterial</a></td>
+<td><a href="#DerivedMaterial" title="https://w3id.org/ldac/terms#DerivedMaterial">DerivedMaterial</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="developer"></a> Property: developer</h3>
+<h3><a id="developer" title="https://w3id.org/ldac/terms#developer"></a> Property: developer</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -644,16 +731,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#developer" title="https://w3id.org/ldac/terms#developer">developer</a></td>
+<td></td>
 <td>The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="doi"></a> Property: doi</h3>
+<h3><a id="doi" title="https://w3id.org/ldac/terms#doi"></a> Property: doi</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -661,16 +752,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#doi" title="https://w3id.org/ldac/terms#doi">doi</a></td>
+<td></td>
 <td>A Digital Object Identifier.</td>
 <td></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="editor"></a> Property: editor</h3>
+<h3><a id="editor" title="https://w3id.org/ldac/terms#editor"></a> Property: editor</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -678,16 +773,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#editor" title="https://w3id.org/ldac/terms#editor">editor</a></td>
+<td></td>
 <td>The participant reviewed, corrected, and/or tested the resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="geoJSON"></a> Property: geoJSON</h3>
+<h3><a id="geoJSON" title="https://w3id.org/ldac/terms#geoJSON"></a> Property: geoJSON</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -695,16 +794,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#geoJSON" title="https://w3id.org/ldac/terms#geoJSON">geoJSON</a></td>
+<td></td>
 <td>A valid GEOJson feature or feature collection as a string that can be parsed as JSON.</td>
 <td>Text</td>
-<td><a href="http://schema.org/GeoCoordinates">GeoCoordinates</a>, <a href="http://schema.org/GeoShape">GeoShape</a>, <a href="http://schema.org/Language">Language</a></td>
+<td><a href="http://schema.org/GeoCoordinates" title="http://schema.org/GeoCoordinates" target="_blank" rel="noopener">GeoCoordinates</a>, <a href="http://schema.org/GeoShape" title="http://schema.org/GeoShape" target="_blank" rel="noopener">GeoShape</a>, <a href="http://schema.org/Language" title="http://schema.org/Language" target="_blank" rel="noopener">Language</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="hasAnnotation"></a> Property: hasAnnotation</h3>
+<h3><a id="hasAnnotation" title="https://w3id.org/ldac/terms#hasAnnotation"></a> Property: hasAnnotation</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -712,186 +815,20 @@
 </thead>
 <tbody>
 <tr>
-<td>This resource is referenced by another resource that describes it such as a translation, transcription or other analysis.</td>
-<td><a href="#Annotation">Annotation</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="hasCollectionProtocol"></a> Property: hasCollectionProtocol</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>This resource was assembled or collected according to the linked protocol.</td>
-<td><a href="#CollectionProtocol">CollectionProtocol</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="hasDerivation"></a> Property: hasDerivation</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.</td>
-<td><a href="#DerivedMaterial">DerivedMaterial</a></td>
-<td><a href="#PrimaryMaterial">PrimaryMaterial</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="illustrator"></a> Property: illustrator</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The participant contributed drawings or other illustrations to the resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="indexableText"></a> Property: indexableText</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>One or more target File(s) that together contain the full text of an item – each file should indicate its language.</td>
-<td><a href="http://schema.org/MediaObject">MediaObject</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="interpreter"></a> Property: interpreter</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="interviewee"></a> Property: interviewee</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The participant was a respondent in an interview.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="interviewer"></a> Property: interviewer</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The participant conducted an interview that forms part of the resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="isDeIdentified"></a> Property: isDeIdentified</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms.</td>
-<td><a href="http://schema.org/Boolean">Boolean</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a>, <a href="http://schema.org/Person">Person</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="itemLocation"></a> Property: itemLocation</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Current location of the item, e.g. where a set of audio tapes are stored.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Place">Place</a></td>
-<td><a href="http://pcdm.org/models#Object">Object</a>, <a href="http://schema.org/Collection">Collection</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="linguisticGenre"></a> Property: linguisticGenre</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A linguistic classification of the genre of this resource.</td>
+<td><a href="#hasAnnotation" title="https://w3id.org/ldac/terms#hasAnnotation">hasAnnotation</a></td>
 <td></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td>This resource is referenced by another resource that describes it such as a translation, transcription or other analysis.</td>
+<td><a href="#Annotation" title="https://w3id.org/ldac/terms#Annotation">Annotation</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="mainText"></a> Property: mainText</h3>
+<h3><a id="hasCollectionProtocol" title="https://w3id.org/ldac/terms#hasCollectionProtocol"></a> Property: hasCollectionProtocol</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -899,16 +836,230 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#hasCollectionProtocol" title="https://w3id.org/ldac/terms#hasCollectionProtocol">hasCollectionProtocol</a></td>
+<td></td>
+<td>This resource was assembled or collected according to the linked protocol.</td>
+<td><a href="#CollectionProtocol" title="https://w3id.org/ldac/terms#CollectionProtocol">CollectionProtocol</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="hasDerivation" title="https://w3id.org/ldac/terms#hasDerivation"></a> Property: hasDerivation</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#hasDerivation" title="https://w3id.org/ldac/terms#hasDerivation">hasDerivation</a></td>
+<td></td>
+<td>This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.</td>
+<td><a href="#DerivedMaterial" title="https://w3id.org/ldac/terms#DerivedMaterial">DerivedMaterial</a></td>
+<td><a href="#PrimaryMaterial" title="https://w3id.org/ldac/terms#PrimaryMaterial">PrimaryMaterial</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="illustrator" title="https://w3id.org/ldac/terms#illustrator"></a> Property: illustrator</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#illustrator" title="https://w3id.org/ldac/terms#illustrator">illustrator</a></td>
+<td></td>
+<td>The participant contributed drawings or other illustrations to the resource.</td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="indexableText" title="https://w3id.org/ldac/terms#indexableText"></a> Property: indexableText</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#indexableText" title="https://w3id.org/ldac/terms#indexableText">indexableText</a></td>
+<td></td>
+<td>One or more target File(s) that together contain the full text of an item – each file should indicate its language.</td>
+<td><a href="http://schema.org/MediaObject" title="http://schema.org/MediaObject" target="_blank" rel="noopener">MediaObject</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="interpreter" title="https://w3id.org/ldac/terms#interpreter"></a> Property: interpreter</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#interpreter" title="https://w3id.org/ldac/terms#interpreter">interpreter</a></td>
+<td></td>
+<td>The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource.</td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="interviewee" title="https://w3id.org/ldac/terms#interviewee"></a> Property: interviewee</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#interviewee" title="https://w3id.org/ldac/terms#interviewee">interviewee</a></td>
+<td></td>
+<td>The participant was a respondent in an interview.</td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="interviewer" title="https://w3id.org/ldac/terms#interviewer"></a> Property: interviewer</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#interviewer" title="https://w3id.org/ldac/terms#interviewer">interviewer</a></td>
+<td></td>
+<td>The participant conducted an interview that forms part of the resource.</td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="isDeIdentified" title="https://w3id.org/ldac/terms#isDeIdentified"></a> Property: isDeIdentified</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#isDeIdentified" title="https://w3id.org/ldac/terms#isDeIdentified">isDeIdentified</a></td>
+<td></td>
+<td>The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms.</td>
+<td><a href="http://schema.org/Boolean" title="http://schema.org/Boolean" target="_blank" rel="noopener">Boolean</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="itemLocation" title="https://w3id.org/ldac/terms#itemLocation"></a> Property: itemLocation</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#itemLocation" title="https://w3id.org/ldac/terms#itemLocation">itemLocation</a></td>
+<td></td>
+<td>Current location of the item, e.g. where a set of audio tapes are stored.</td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Place" title="http://schema.org/Place" target="_blank" rel="noopener">Place</a></td>
+<td><a href="http://pcdm.org/models#Object" title="http://pcdm.org/models#Object" target="_blank" rel="noopener">Object</a>, <a href="http://schema.org/Collection" title="http://schema.org/Collection" target="_blank" rel="noopener">Collection</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="linguisticGenre" title="https://w3id.org/ldac/terms#linguisticGenre"></a> Property: linguisticGenre</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#linguisticGenre" title="https://w3id.org/ldac/terms#linguisticGenre">linguisticGenre</a></td>
+<td></td>
+<td>A linguistic classification of the genre of this resource.</td>
+<td><a href="#LinguisticGenreTerms" title="https://w3id.org/ldac/terms#LinguisticGenreTerms">LinguisticGenreTerms</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="mainText" title="https://w3id.org/ldac/terms#mainText"></a> Property: mainText</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#mainText" title="https://w3id.org/ldac/terms#mainText">mainText</a></td>
+<td></td>
 <td>Identifies the most relevant sub-component for computational text analytics.</td>
-<td><a href="http://schema.org/MediaObject">MediaObject</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/MediaObject" title="http://schema.org/MediaObject" target="_blank" rel="noopener">MediaObject</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="material"></a> Property: material</h3>
+<h3><a id="material" title="https://w3id.org/ldac/terms#material"></a> Property: material</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -916,16 +1067,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#material" title="https://w3id.org/ldac/terms#material">material</a></td>
+<td></td>
 <td>Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes.</td>
 <td></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="materialType"></a> Property: materialType</h3>
+<h3><a id="materialType" title="https://w3id.org/ldac/terms#materialType"></a> Property: materialType</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -933,16 +1088,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#materialType" title="https://w3id.org/ldac/terms#materialType">materialType</a></td>
+<td></td>
 <td>Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation.</td>
-<td></td>
-<td><a href="http://schema.org/MediaObject">MediaObject</a></td>
+<td><a href="#MaterialTypes" title="https://w3id.org/ldac/terms#MaterialTypes">MaterialTypes</a></td>
+<td><a href="http://schema.org/MediaObject" title="http://schema.org/MediaObject" target="_blank" rel="noopener">MediaObject</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="openAccessIndex"></a> Property: openAccessIndex</h3>
+<h3><a id="openAccessIndex" title="https://w3id.org/ldac/terms#openAccessIndex"></a> Property: openAccessIndex</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -950,33 +1109,41 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#openAccessIndex" title="https://w3id.org/ldac/terms#openAccessIndex">openAccessIndex</a></td>
+<td></td>
 <td>One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not.</td>
+<td><a href="#IndexTypes" title="https://w3id.org/ldac/terms#IndexTypes">IndexTypes</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="orthographicNotes" title="https://w3id.org/ldac/terms#orthographicNotes"></a> Property: orthographicNotes</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#orthographicNotes" title="https://w3id.org/ldac/terms#orthographicNotes">orthographicNotes</a></td>
 <td></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="orthographicNotes"></a> Property: orthographicNotes</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
 <td>A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø).</td>
-<td><a href="http://schema.org/Text">Text</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="participant"></a> Property: participant</h3>
+<h3><a id="participant" title="https://w3id.org/ldac/terms#participant"></a> Property: participant</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -984,16 +1151,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#participant" title="https://w3id.org/ldac/terms#participant">participant</a></td>
+<td></td>
 <td>The participant was present during the creation of the resource, but did not contribute substantially to its content.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="performer"></a> Property: performer</h3>
+<h3><a id="performer" title="https://w3id.org/ldac/terms#performer"></a> Property: performer</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -1001,16 +1172,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#performer" title="https://w3id.org/ldac/terms#performer">performer</a></td>
+<td></td>
 <td>The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="photographer"></a> Property: photographer</h3>
+<h3><a id="photographer" title="https://w3id.org/ldac/terms#photographer"></a> Property: photographer</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -1018,16 +1193,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#photographer" title="https://w3id.org/ldac/terms#photographer">photographer</a></td>
+<td></td>
 <td>The participant took the photograph, or shot the film, that appears in or constitutes the resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="recorder"></a> Property: recorder</h3>
+<h3><a id="recorder" title="https://w3id.org/ldac/terms#recorder"></a> Property: recorder</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -1035,16 +1214,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#recorder" title="https://w3id.org/ldac/terms#recorder">recorder</a></td>
+<td></td>
 <td>The participant operated the recording machinery used to create the resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="register"></a> Property: register</h3>
+<h3><a id="register" title="https://w3id.org/ldac/terms#register"></a> Property: register</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -1052,16 +1235,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#register" title="https://w3id.org/ldac/terms#register">register</a></td>
+<td></td>
 <td>The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.</td>
 <td></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="researcher"></a> Property: researcher</h3>
+<h3><a id="researcher" title="https://w3id.org/ldac/terms#researcher"></a> Property: researcher</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -1069,16 +1256,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#researcher" title="https://w3id.org/ldac/terms#researcher">researcher</a></td>
+<td></td>
 <td>The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="researchParticipant"></a> Property: researchParticipant</h3>
+<h3><a id="researchParticipant" title="https://w3id.org/ldac/terms#researchParticipant"></a> Property: researchParticipant</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -1086,16 +1277,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#researchParticipant" title="https://w3id.org/ldac/terms#researchParticipant">researchParticipant</a></td>
+<td></td>
 <td>The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="responder"></a> Property: responder</h3>
+<h3><a id="responder" title="https://w3id.org/ldac/terms#responder"></a> Property: responder</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -1103,16 +1298,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#responder" title="https://w3id.org/ldac/terms#responder">responder</a></td>
+<td></td>
 <td>The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="reviewDate"></a> Property: reviewDate</h3>
+<h3><a id="reviewDate" title="https://w3id.org/ldac/terms#reviewDate"></a> Property: reviewDate</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -1120,16 +1319,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#reviewDate" title="https://w3id.org/ldac/terms#reviewDate">reviewDate</a></td>
+<td></td>
 <td>The date that this license should be reviewed.</td>
 <td></td>
-<td><a href="#DataLicense">DataLicense</a></td>
+<td><a href="#DataLicense" title="https://w3id.org/ldac/terms#DataLicense">DataLicense</a></td>
 </tr>
 </tbody>
 </table>
-<h3><a id="signer"></a> Property: signer</h3>
+<h3><a id="signer" title="https://w3id.org/ldac/terms#signer"></a> Property: signer</h3>
 <table>
 <thead>
 <tr>
+<th>Property</th>
+<th>Specialization Of</th>
 <th>Description</th>
 <th>Range</th>
 <th>Occurs in Domain(s)</th>
@@ -1137,128 +1340,158 @@
 </thead>
 <tbody>
 <tr>
-<td>The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="singer"></a> Property: singer</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="speaker"></a> Property: speaker</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="sponsor"></a> Property: sponsor</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The participant contributed financial support to the creation of the resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="subjectLanguage"></a> Property: subjectLanguage</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The language(s) that this annotation resource is about.</td>
-<td><a href="http://schema.org/Language">Language</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="transcriber"></a> Property: transcriber</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The participant produced a transcription of this or a related resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="translator"></a> Property: translator</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The participant produced a translation of this or a related resource.</td>
-<td><a href="http://schema.org/Organization">Organization</a>, <a href="http://schema.org/Person">Person</a></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
-</tr>
-</tbody>
-</table>
-<h3><a id="writtenLanguageFormat"></a> Property: writtenLanguageFormat</h3>
-<table>
-<thead>
-<tr>
-<th>Description</th>
-<th>Range</th>
-<th>Occurs in Domain(s)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten).</td>
+<td><a href="#signer" title="https://w3id.org/ldac/terms#signer">signer</a></td>
 <td></td>
-<td><a href="http://schema.org/CreativeWork">CreativeWork</a></td>
+<td>The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).</td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="singer" title="https://w3id.org/ldac/terms#singer"></a> Property: singer</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#singer" title="https://w3id.org/ldac/terms#singer">singer</a></td>
+<td></td>
+<td>The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.</td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="speaker" title="https://w3id.org/ldac/terms#speaker"></a> Property: speaker</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#speaker" title="https://w3id.org/ldac/terms#speaker">speaker</a></td>
+<td></td>
+<td>The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).</td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="sponsor" title="https://w3id.org/ldac/terms#sponsor"></a> Property: sponsor</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#sponsor" title="https://w3id.org/ldac/terms#sponsor">sponsor</a></td>
+<td></td>
+<td>The participant contributed financial support to the creation of the resource.</td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="subjectLanguage" title="https://w3id.org/ldac/terms#subjectLanguage"></a> Property: subjectLanguage</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#subjectLanguage" title="https://w3id.org/ldac/terms#subjectLanguage">subjectLanguage</a></td>
+<td></td>
+<td>The language(s) that this annotation resource is about.</td>
+<td><a href="http://schema.org/Language" title="http://schema.org/Language" target="_blank" rel="noopener">Language</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="transcriber" title="https://w3id.org/ldac/terms#transcriber"></a> Property: transcriber</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#transcriber" title="https://w3id.org/ldac/terms#transcriber">transcriber</a></td>
+<td></td>
+<td>The participant produced a transcription of this or a related resource.</td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="translator" title="https://w3id.org/ldac/terms#translator"></a> Property: translator</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#translator" title="https://w3id.org/ldac/terms#translator">translator</a></td>
+<td></td>
+<td>The participant produced a translation of this or a related resource.</td>
+<td><a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a>, <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="writtenLanguageFormat" title="https://w3id.org/ldac/terms#writtenLanguageFormat"></a> Property: writtenLanguageFormat</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#writtenLanguageFormat" title="https://w3id.org/ldac/terms#writtenLanguageFormat">writtenLanguageFormat</a></td>
+<td></td>
+<td>The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten).</td>
+<td><a href="#WrittenLanguageTypeTerms" title="https://w3id.org/ldac/terms#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a></td>
+<td><a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a></td>
 </tr>
 </tbody>
 </table>
@@ -1274,10 +1507,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a id="access" href="https://w3id.org/ldac/terms#access" target="_blank" rel="noopener">access</a></td>
-<td>Whether this is an open or restricted access license.</td>
-</tr>
 <tr>
 <td><a id="AuthorizedAccess" href="https://w3id.org/ldac/terms#AuthorizedAccess" target="_blank" rel="noopener">AuthorizedAccess</a></td>
 <td>Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission.</td>
@@ -1299,10 +1528,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a id="annotationType" href="https://w3id.org/ldac/terms#annotationType" target="_blank" rel="noopener">annotationType</a></td>
-<td>The type of annotation for Annotation resources.</td>
-</tr>
 <tr>
 <td><a id="Gestural" href="https://w3id.org/ldac/terms#Gestural" target="_blank" rel="noopener">Gestural</a></td>
 <td>The resource describes the gestural content of the resource it annotates.</td>
@@ -1377,10 +1602,6 @@
 <td>A data steward or administrator is expected to use an access control system to invite users, for example, participants, collaborators or students.</td>
 </tr>
 <tr>
-<td><a id="authorizationWorkflow" href="https://w3id.org/ldac/terms#authorizationWorkflow" target="_blank" rel="noopener">authorizationWorkflow</a></td>
-<td>By what process a user is granted authorization to a license.</td>
-</tr>
-<tr>
 <td><a id="SelfAuthorization" href="https://w3id.org/ldac/terms#SelfAuthorization" target="_blank" rel="noopener">SelfAuthorization</a></td>
 <td>A user can be authorised to access data by clicking that they agree to a license, or filling out a form to check their understanding, which can be validated by a machine and does not require human intervention.</td>
 </tr>
@@ -1398,10 +1619,6 @@
 </thead>
 <tbody>
 <tr>
-<td><a id="collectionEventType" href="https://w3id.org/ldac/terms#collectionEventType" target="_blank" rel="noopener">collectionEventType</a></td>
-<td>A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment.</td>
-</tr>
-<tr>
 <td><a id="Session" href="https://w3id.org/ldac/terms#Session" target="_blank" rel="noopener">Session</a></td>
 <td>A collection event that is a recording or elicitation session with participants.</td>
 </tr>
@@ -1418,10 +1635,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a id="collectionProtocolType" href="https://w3id.org/ldac/terms#collectionProtocolType" target="_blank" rel="noopener">collectionProtocolType</a></td>
-<td>A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.</td>
-</tr>
 <tr>
 <td><a id="ElicitationTask" href="https://w3id.org/ldac/terms#ElicitationTask" target="_blank" rel="noopener">ElicitationTask</a></td>
 <td>The collection protocol includes a task-based prompt to participants.</td>
@@ -1443,10 +1656,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a id="communicationMode" href="https://w3id.org/ldac/terms#communicationMode" target="_blank" rel="noopener">communicationMode</a></td>
-<td>The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.</td>
-</tr>
 <tr>
 <td><a id="Gesture" href="https://w3id.org/ldac/terms#Gesture" target="_blank" rel="noopener">Gesture</a></td>
 <td>The resource contains non-linguistic gestural communication (i.e. not sign language).</td>
@@ -1488,10 +1697,6 @@
 <td><a id="FullText" href="https://w3id.org/ldac/terms#FullText" target="_blank" rel="noopener">FullText</a></td>
 <td>A text index that makes the full text of a data resource findable via a search interface.</td>
 </tr>
-<tr>
-<td><a id="openAccessIndex" href="https://w3id.org/ldac/terms#openAccessIndex" target="_blank" rel="noopener">openAccessIndex</a></td>
-<td>One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not.</td>
-</tr>
 </tbody>
 </table>
 <h3><a id="LinguisticGenreTerms"></a>Defined Term Set: LinguisticGenreTerms</h3>
@@ -1530,10 +1735,6 @@
 <td>The resource includes a systematic listing of lexical items.</td>
 </tr>
 <tr>
-<td><a id="linguisticGenre" href="https://w3id.org/ldac/terms#linguisticGenre" target="_blank" rel="noopener">linguisticGenre</a></td>
-<td>A linguistic classification of the genre of this resource.</td>
-</tr>
-<tr>
 <td><a id="Ludic" href="https://w3id.org/ldac/terms#Ludic" target="_blank" rel="noopener">Ludic</a></td>
 <td>Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language. Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.</td>
 </tr>
@@ -1562,20 +1763,7 @@
 <h3><a id="MaterialTypes"></a>Defined Term Set: MaterialTypes</h3>
 <p>ID: https://w3id.org/ldac/terms#MaterialTypes</p>
 <p>A set of terms describing the relationship of a resource to the original data source.</p>
-<table>
-<thead>
-<tr>
-<th>Term</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a id="materialType" href="https://w3id.org/ldac/terms#materialType" target="_blank" rel="noopener">materialType</a></td>
-<td>Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation.</td>
-</tr>
-</tbody>
-</table>
+<p><em>No terms defined for this term set</em></p>
 <h3><a id="WrittenLanguageTypeTerms"></a>Defined Term Set: WrittenLanguageTypeTerms</h3>
 <p>ID: https://w3id.org/ldac/terms#WrittenLanguageTypeTerms</p>
 <p>A set of expected types for WrittenLanguage communication mode (this set is incomplete - more work needed).</p>
@@ -1598,10 +1786,6 @@
 <tr>
 <td><a id="Typewritten" href="https://w3id.org/ldac/terms#Typewritten" target="_blank" rel="noopener">Typewritten</a></td>
 <td>The resource contains text produced on a typewriter.</td>
-</tr>
-<tr>
-<td><a id="writtenLanguageFormat" href="https://w3id.org/ldac/terms#writtenLanguageFormat" target="_blank" rel="noopener">writtenLanguageFormat</a></td>
-<td>The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten).</td>
 </tr>
 </tbody>
 </table>

@@ -90,7 +90,7 @@ and
 ## A conformant RO-Crate:
 
 
-### <a id="class_Dataset"></a> Class: Dataset <small style="color:#aaa;font-weight:normal">#class_Dataset</small>
+### <a id="class_Dataset" title="#class_Dataset"></a> Class: Dataset
 
 A body of structured information describing some topic(s) of interest.
 
@@ -100,52 +100,52 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Dataset](http://schema.org/Dataset) |
-| <a href="#prop_accountablePerson_Dataset">accountablePerson <a href="#prop_accountablePerson_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_accountablePerson_Dataset</small> | Yes | The person or organisation who is the data steward for this resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_author_Dataset">author <a href="#prop_author_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_author_Dataset</small> | Yes | The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_dct:rightsHolder_Dataset">dct:rightsHolder <a href="#prop_dct:rightsHolder_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_dct:rightsHolder_Dataset</small> | Yes | The person or organisation owning or managing rights over the resource. | [Text](http://schema.org/Text), [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_publisher_Dataset">publisher <a href="#prop_publisher_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_publisher_Dataset</small> | Yes | The organisation responsible for releasing this dataset. | [class_Organization](#class_Organization) |  |
-| <a href="#prop_citation_Dataset">citation <a href="#prop_citation_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_citation_Dataset</small> | No | Associated publications. | [class_CreativeWork](#class_CreativeWork) |  |
-| <a href="#prop_creditText_Dataset">creditText <a href="#prop_creditText_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_creditText_Dataset</small> | No | A free text bibliographic citation for this material, e.g. 'Cite as: Musgrave (2023). Title of work. DOI'. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_funder_Dataset">funder <a href="#prop_funder_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_funder_Dataset</small> | No | The organisation(s) responsible for funding the creation or collection of this dataset. | [class_Organization](#class_Organization) |  |
-| <a href="#prop_hasPart_Dataset">hasPart <a href="#prop_hasPart_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_hasPart_Dataset</small> | No | An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | [class_CreativeWork](#class_CreativeWork), [class_File](#class_File), [class_Dataset](#class_Dataset) |  |
-| <a href="#prop_isAccessibleForFree_Dataset">isAccessibleForFree <a href="#prop_isAccessibleForFree_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_isAccessibleForFree_Dataset</small> | No | This is available under an Open Access license. | [Boolean](http://schema.org/Boolean) |  |
-| <a href="#prop_isBasedOn_Dataset">isBasedOn <a href="#prop_isBasedOn_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_isBasedOn_Dataset</small> | No | Link to or description of an original resource. | [Text](http://schema.org/Text), [URL](http://schema.org/URL), [class_CreativeWork](#class_CreativeWork), [class_Dataset](#class_Dataset), [class_File](#class_File) |  |
-| <a href="#prop_isPartOf_Dataset">isPartOf <a href="#prop_isPartOf_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_isPartOf_Dataset</small> | No | An item or CreativeWork that this item, or CreativeWork (in some sense), is part of. | [URL](http://schema.org/URL), [class_CreativeWork](#class_CreativeWork) |  |
-| <a href="#prop_ldac:annotationOf_Dataset">ldac:annotationOf <a href="#prop_ldac:annotationOf_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:annotationOf_Dataset</small> | No | This resource contains some kind of description that adds information to the resource it references. | ldac:PrimaryMaterial |  |
-| <a href="#prop_ldac:annotator_Dataset">ldac:annotator <a href="#prop_ldac:annotator_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:annotator_Dataset</small> | No | The participant produced an annotation of this or a related resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:compiler_Dataset">ldac:compiler <a href="#prop_ldac:compiler_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:compiler_Dataset</small> | No | The participant is responsible for collecting the sub-parts of the resource together. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:consultant_Dataset">ldac:consultant <a href="#prop_ldac:consultant_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:consultant_Dataset</small> | No | The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:dataInputter_Dataset">ldac:dataInputter <a href="#prop_ldac:dataInputter_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:dataInputter_Dataset</small> | No | The participant responsible for entering, re-typing, and/or structuring the data contained in the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:depositor_Dataset">ldac:depositor <a href="#prop_ldac:depositor_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:depositor_Dataset</small> | No | The participant responsible for depositing the resource in an archive. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:developer_Dataset">ldac:developer <a href="#prop_ldac:developer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:developer_Dataset</small> | No | The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:doi_Dataset">ldac:doi <a href="#prop_ldac:doi_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:doi_Dataset</small> | No | A Digital Object Identifier, e.g. https://doi.org/10.1000/182. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_ldac:editor_Dataset">ldac:editor <a href="#prop_ldac:editor_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:editor_Dataset</small> | No | The participant reviewed, corrected, and/or tested the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:hasCollectionProtocol_Dataset">ldac:hasCollectionProtocol <a href="#prop_ldac:hasCollectionProtocol_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:hasCollectionProtocol_Dataset</small> | No | A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection. | [class_ldac:CollectionProtocol](#class_ldac:CollectionProtocol) |  |
-| <a href="#prop_ldac:illustrator_Dataset">ldac:illustrator <a href="#prop_ldac:illustrator_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:illustrator_Dataset</small> | No | The participant contributed drawings or other illustrations to the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:interpreter_Dataset">ldac:interpreter <a href="#prop_ldac:interpreter_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:interpreter_Dataset</small> | No | The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:interviewee_Dataset">ldac:interviewee <a href="#prop_ldac:interviewee_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:interviewee_Dataset</small> | No | The participant was a respondent in an interview. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:interviewer_Dataset">ldac:interviewer <a href="#prop_ldac:interviewer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:interviewer_Dataset</small> | No | The participant conducted an interview that forms part of the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:participant_Dataset">ldac:participant <a href="#prop_ldac:participant_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:participant_Dataset</small> | No | The participant was present during the creation of the resource, but did not contribute substantially to its content. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:performer_Dataset">ldac:performer <a href="#prop_ldac:performer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:performer_Dataset</small> | No | The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:photographer_Dataset">ldac:photographer <a href="#prop_ldac:photographer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:photographer_Dataset</small> | No | The participant took the photograph, or shot the film, that appears in or constitutes the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:recorder_Dataset">ldac:recorder <a href="#prop_ldac:recorder_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:recorder_Dataset</small> | No | The participant operated the recording machinery used to create the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:researcher_Dataset">ldac:researcher <a href="#prop_ldac:researcher_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:researcher_Dataset</small> | No | The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:researchParticipant_Dataset">ldac:researchParticipant <a href="#prop_ldac:researchParticipant_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:researchParticipant_Dataset</small> | No | The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:responder_Dataset">ldac:responder <a href="#prop_ldac:responder_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:responder_Dataset</small> | No | The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:signer_Dataset">ldac:signer <a href="#prop_ldac:signer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:signer_Dataset</small> | No | The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:singer_Dataset">ldac:singer <a href="#prop_ldac:singer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:singer_Dataset</small> | No | The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:speaker_Dataset">ldac:speaker <a href="#prop_ldac:speaker_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:speaker_Dataset</small> | No | The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:sponsor_Dataset">ldac:sponsor <a href="#prop_ldac:sponsor_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:sponsor_Dataset</small> | No | The participant contributed financial support to the creation of the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:transcriber_Dataset">ldac:transcriber <a href="#prop_ldac:transcriber_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:transcriber_Dataset</small> | No | The participant produced a transcription of this or a related resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:translator_Dataset">ldac:translator <a href="#prop_ldac:translator_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:translator_Dataset</small> | No | The participant produced a translation of this or a related resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_pcdm:hasMember_Dataset">pcdm:hasMember <a href="#prop_pcdm:hasMember_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_pcdm:hasMember_Dataset</small> | No | The sub-collections, if any, associated with this collection. | [class_RepositoryCollection](#class_RepositoryCollection), [class_RepositoryObject](#class_RepositoryObject) |  |
-| <a href="#prop_pcdm:memberOf_Dataset">pcdm:memberOf <a href="#prop_pcdm:memberOf_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_pcdm:memberOf_Dataset</small> | No | Links from a Repository Object or Collection to a containing Repository Object or Collection. | [class_RepositoryCollection](#class_RepositoryCollection) |  |
-| <a href="#prop_spatialCoverage_Dataset">spatialCoverage <a href="#prop_spatialCoverage_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_spatialCoverage_Dataset</small> | No | The place(s) that are the focus of the content. It is a sub-property of contentLocation intended primarily for more technical and detailed materials. For example, with a dataset, it indicates areas that the dataset describes: a dataset Cape York languages would have spatialCoverage which was the place: the outline of the Cape. | [class_Place](#class_Place) |  |
-| <a href="#prop_temporalCoverage_Dataset">temporalCoverage <a href="#prop_temporalCoverage_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_temporalCoverage_Dataset</small> | No | The range of years of creation for items in this dataset using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level. | [DateTime](http://schema.org/DateTime), [Text](http://schema.org/Text) |  |
-| <a href="#prop_usageInfo_Dataset">usageInfo <a href="#prop_usageInfo_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_usageInfo_Dataset</small> | No | Additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'. | [Text](http://schema.org/Text) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/Dataset" title="http://schema.org/Dataset" target="_blank" rel="noopener">Dataset</a> |
+| <a href="#prop_accountablePerson_Dataset" title="#prop_accountablePerson_Dataset">accountablePerson</a> | <a href="http://schema.org/accountablePerson" target="_blank" rel="noopener">http://schema.org/accountablePerson</a> | Yes | The person or organisation who is the data steward for this resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_author_Dataset" title="#prop_author_Dataset">author</a> | <a href="http://schema.org/author" target="_blank" rel="noopener">http://schema.org/author</a> | Yes | The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_dct:rightsHolder_Dataset" title="#prop_dct:rightsHolder_Dataset">dct:rightsHolder</a> | <a href="http://purl.org/dc/terms/rightsHolder" target="_blank" rel="noopener">http://purl.org/dc/terms/rightsHolder</a> | Yes | The person or organisation owning or managing rights over the resource. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_publisher_Dataset" title="#prop_publisher_Dataset">publisher</a> | <a href="http://schema.org/publisher" target="_blank" rel="noopener">http://schema.org/publisher</a> | Yes | The organisation responsible for releasing this dataset. | <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_citation_Dataset" title="#prop_citation_Dataset">citation</a> | <a href="http://schema.org/citation" target="_blank" rel="noopener">http://schema.org/citation</a> | No | Associated publications. | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |  |
+| <a href="#prop_creditText_Dataset" title="#prop_creditText_Dataset">creditText</a> | <a href="http://schema.org/creditText" target="_blank" rel="noopener">http://schema.org/creditText</a> | No | A free text bibliographic citation for this material, e.g. 'Cite as: Musgrave (2023). Title of work. DOI'. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_funder_Dataset" title="#prop_funder_Dataset">funder</a> | <a href="http://schema.org/funder" target="_blank" rel="noopener">http://schema.org/funder</a> | No | The organisation(s) responsible for funding the creation or collection of this dataset. | <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_hasPart_Dataset" title="#prop_hasPart_Dataset">hasPart</a> | <a href="http://schema.org/hasPart" target="_blank" rel="noopener">http://schema.org/hasPart</a> | No | An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a>, <a href="#class_File" title="#class_File">File</a>, <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |  |
+| <a href="#prop_isAccessibleForFree_Dataset" title="#prop_isAccessibleForFree_Dataset">isAccessibleForFree</a> | <a href="http://schema.org/isAccessibleForFree" target="_blank" rel="noopener">http://schema.org/isAccessibleForFree</a> | No | This is available under an Open Access license. | <a href="http://schema.org/Boolean" title="http://schema.org/Boolean" target="_blank" rel="noopener">Boolean</a> |  |
+| <a href="#prop_isBasedOn_Dataset" title="#prop_isBasedOn_Dataset">isBasedOn</a> | <a href="http://schema.org/isBasedOn" target="_blank" rel="noopener">http://schema.org/isBasedOn</a> | No | Link to or description of an original resource. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a>, <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a>, <a href="#class_Dataset" title="#class_Dataset">Dataset</a>, <a href="#class_File" title="#class_File">File</a> |  |
+| <a href="#prop_isPartOf_Dataset" title="#prop_isPartOf_Dataset">isPartOf</a> | <a href="http://schema.org/isPartOf" target="_blank" rel="noopener">http://schema.org/isPartOf</a> | No | An item or CreativeWork that this item, or CreativeWork (in some sense), is part of. | <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a>, <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |  |
+| <a href="#prop_ldac:annotationOf_Dataset" title="#prop_ldac:annotationOf_Dataset">ldac:annotationOf</a> | <a href="https://w3id.org/ldac/terms#annotationOf" target="_blank" rel="noopener">https://w3id.org/ldac/terms#annotationOf</a> | No | This resource contains some kind of description that adds information to the resource it references. | <a href="#ldac%3APrimaryMaterial" title="ldac:PrimaryMaterial">PrimaryMaterial</a> |  |
+| <a href="#prop_ldac:annotator_Dataset" title="#prop_ldac:annotator_Dataset">ldac:annotator</a> | <a href="https://w3id.org/ldac/terms#annotator" target="_blank" rel="noopener">https://w3id.org/ldac/terms#annotator</a> | No | The participant produced an annotation of this or a related resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:compiler_Dataset" title="#prop_ldac:compiler_Dataset">ldac:compiler</a> | <a href="https://w3id.org/ldac/terms#compiler" target="_blank" rel="noopener">https://w3id.org/ldac/terms#compiler</a> | No | The participant is responsible for collecting the sub-parts of the resource together. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:consultant_Dataset" title="#prop_ldac:consultant_Dataset">ldac:consultant</a> | <a href="https://w3id.org/ldac/terms#consultant" target="_blank" rel="noopener">https://w3id.org/ldac/terms#consultant</a> | No | The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:dataInputter_Dataset" title="#prop_ldac:dataInputter_Dataset">ldac:dataInputter</a> | <a href="https://w3id.org/ldac/terms#dataInputter" target="_blank" rel="noopener">https://w3id.org/ldac/terms#dataInputter</a> | No | The participant responsible for entering, re-typing, and/or structuring the data contained in the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:depositor_Dataset" title="#prop_ldac:depositor_Dataset">ldac:depositor</a> | <a href="https://w3id.org/ldac/terms#depositor" target="_blank" rel="noopener">https://w3id.org/ldac/terms#depositor</a> | No | The participant responsible for depositing the resource in an archive. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:developer_Dataset" title="#prop_ldac:developer_Dataset">ldac:developer</a> | <a href="https://w3id.org/ldac/terms#developer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#developer</a> | No | The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:doi_Dataset" title="#prop_ldac:doi_Dataset">ldac:doi</a> | <a href="https://w3id.org/ldac/terms#doi" target="_blank" rel="noopener">https://w3id.org/ldac/terms#doi</a> | No | A Digital Object Identifier, e.g. https://doi.org/10.1000/182. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_ldac:editor_Dataset" title="#prop_ldac:editor_Dataset">ldac:editor</a> | <a href="https://w3id.org/ldac/terms#editor" target="_blank" rel="noopener">https://w3id.org/ldac/terms#editor</a> | No | The participant reviewed, corrected, and/or tested the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:hasCollectionProtocol_Dataset" title="#prop_ldac:hasCollectionProtocol_Dataset">ldac:hasCollectionProtocol</a> | <a href="https://w3id.org/ldac/terms#hasCollectionProtocol" target="_blank" rel="noopener">https://w3id.org/ldac/terms#hasCollectionProtocol</a> | No | A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection. | <a href="#class_ldac:CollectionProtocol" title="#class_ldac:CollectionProtocol">CollectionProtocol</a> |  |
+| <a href="#prop_ldac:illustrator_Dataset" title="#prop_ldac:illustrator_Dataset">ldac:illustrator</a> | <a href="https://w3id.org/ldac/terms#illustrator" target="_blank" rel="noopener">https://w3id.org/ldac/terms#illustrator</a> | No | The participant contributed drawings or other illustrations to the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:interpreter_Dataset" title="#prop_ldac:interpreter_Dataset">ldac:interpreter</a> | <a href="https://w3id.org/ldac/terms#interpreter" target="_blank" rel="noopener">https://w3id.org/ldac/terms#interpreter</a> | No | The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:interviewee_Dataset" title="#prop_ldac:interviewee_Dataset">ldac:interviewee</a> | <a href="https://w3id.org/ldac/terms#interviewee" target="_blank" rel="noopener">https://w3id.org/ldac/terms#interviewee</a> | No | The participant was a respondent in an interview. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:interviewer_Dataset" title="#prop_ldac:interviewer_Dataset">ldac:interviewer</a> | <a href="https://w3id.org/ldac/terms#interviewer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#interviewer</a> | No | The participant conducted an interview that forms part of the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:participant_Dataset" title="#prop_ldac:participant_Dataset">ldac:participant</a> | <a href="https://w3id.org/ldac/terms#participant" target="_blank" rel="noopener">https://w3id.org/ldac/terms#participant</a> | No | The participant was present during the creation of the resource, but did not contribute substantially to its content. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:performer_Dataset" title="#prop_ldac:performer_Dataset">ldac:performer</a> | <a href="https://w3id.org/ldac/terms#performer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#performer</a> | No | The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:photographer_Dataset" title="#prop_ldac:photographer_Dataset">ldac:photographer</a> | <a href="https://w3id.org/ldac/terms#photographer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#photographer</a> | No | The participant took the photograph, or shot the film, that appears in or constitutes the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:recorder_Dataset" title="#prop_ldac:recorder_Dataset">ldac:recorder</a> | <a href="https://w3id.org/ldac/terms#recorder" target="_blank" rel="noopener">https://w3id.org/ldac/terms#recorder</a> | No | The participant operated the recording machinery used to create the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:researcher_Dataset" title="#prop_ldac:researcher_Dataset">ldac:researcher</a> | <a href="https://w3id.org/ldac/terms#researcher" target="_blank" rel="noopener">https://w3id.org/ldac/terms#researcher</a> | No | The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:researchParticipant_Dataset" title="#prop_ldac:researchParticipant_Dataset">ldac:researchParticipant</a> | <a href="https://w3id.org/ldac/terms#researchParticipant" target="_blank" rel="noopener">https://w3id.org/ldac/terms#researchParticipant</a> | No | The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:responder_Dataset" title="#prop_ldac:responder_Dataset">ldac:responder</a> | <a href="https://w3id.org/ldac/terms#responder" target="_blank" rel="noopener">https://w3id.org/ldac/terms#responder</a> | No | The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:signer_Dataset" title="#prop_ldac:signer_Dataset">ldac:signer</a> | <a href="https://w3id.org/ldac/terms#signer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#signer</a> | No | The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:singer_Dataset" title="#prop_ldac:singer_Dataset">ldac:singer</a> | <a href="https://w3id.org/ldac/terms#singer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#singer</a> | No | The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:speaker_Dataset" title="#prop_ldac:speaker_Dataset">ldac:speaker</a> | <a href="https://w3id.org/ldac/terms#speaker" target="_blank" rel="noopener">https://w3id.org/ldac/terms#speaker</a> | No | The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:sponsor_Dataset" title="#prop_ldac:sponsor_Dataset">ldac:sponsor</a> | <a href="https://w3id.org/ldac/terms#sponsor" target="_blank" rel="noopener">https://w3id.org/ldac/terms#sponsor</a> | No | The participant contributed financial support to the creation of the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:transcriber_Dataset" title="#prop_ldac:transcriber_Dataset">ldac:transcriber</a> | <a href="https://w3id.org/ldac/terms#transcriber" target="_blank" rel="noopener">https://w3id.org/ldac/terms#transcriber</a> | No | The participant produced a transcription of this or a related resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:translator_Dataset" title="#prop_ldac:translator_Dataset">ldac:translator</a> | <a href="https://w3id.org/ldac/terms#translator" target="_blank" rel="noopener">https://w3id.org/ldac/terms#translator</a> | No | The participant produced a translation of this or a related resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_pcdm:hasMember_Dataset" title="#prop_pcdm:hasMember_Dataset">pcdm:hasMember</a> | <a href="http://pcdm.org/models#hasMember" target="_blank" rel="noopener">http://pcdm.org/models#hasMember</a> | No | The sub-collections, if any, associated with this collection. | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a>, <a href="#class_RepositoryObject" title="#class_RepositoryObject">RepositoryObject</a> |  |
+| <a href="#prop_pcdm:memberOf_Dataset" title="#prop_pcdm:memberOf_Dataset">pcdm:memberOf</a> | <a href="http://pcdm.org/models#memberOf" target="_blank" rel="noopener">http://pcdm.org/models#memberOf</a> | No | Links from a Repository Object or Collection to a containing Repository Object or Collection. | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a> |  |
+| <a href="#prop_spatialCoverage_Dataset" title="#prop_spatialCoverage_Dataset">spatialCoverage</a> | <a href="http://schema.org/spatialCoverage" target="_blank" rel="noopener">http://schema.org/spatialCoverage</a> | No | The place(s) that are the focus of the content. It is a sub-property of contentLocation intended primarily for more technical and detailed materials. For example, with a dataset, it indicates areas that the dataset describes: a dataset Cape York languages would have spatialCoverage which was the place: the outline of the Cape. | <a href="#class_Place" title="#class_Place">Place</a> |  |
+| <a href="#prop_temporalCoverage_Dataset" title="#prop_temporalCoverage_Dataset">temporalCoverage</a> | <a href="http://schema.org/temporalCoverage" target="_blank" rel="noopener">http://schema.org/temporalCoverage</a> | No | The range of years of creation for items in this dataset using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level. | <a href="http://schema.org/DateTime" title="http://schema.org/DateTime" target="_blank" rel="noopener">DateTime</a>, <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_usageInfo_Dataset" title="#prop_usageInfo_Dataset">usageInfo</a> | <a href="http://schema.org/usageInfo" target="_blank" rel="noopener">http://schema.org/usageInfo</a> | No | Additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
 
 
 
@@ -272,7 +272,7 @@ The root dataset must have at least these `@type` values: `["Dataset",
 ## A RepositoryCollection:
 
 
-### <a id="class_RepositoryCollection"></a> Class: RepositoryCollection <small style="color:#aaa;font-weight:normal">#class_RepositoryCollection</small>
+### <a id="class_RepositoryCollection" title="#class_RepositoryCollection"></a> Class: RepositoryCollection
 
 A Collection is a group of resources. Collections have descriptive metadata, access metadata, and may links to works and/or collections. By default, member works and collections are an unordered set, but can be ordered using the ORE Proxy class.
 
@@ -282,17 +282,17 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Collection](http://pcdm.org/models#Collection) |
-| <a href="#prop_inLanguage_RepositoryCollection">inLanguage <a href="#prop_inLanguage_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_inLanguage_RepositoryCollection</small> | Yes | The language in which the resource is written. | [class_Language](#class_Language) |  |
-| <a href="#prop_conformsTo_RepositoryCollection">conformsTo <a href="#prop_conformsTo_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_conformsTo_RepositoryCollection</small> | No | A link to the language data commons RO-Crate profile for collections. | [itemlist_conformsTo_RepositoryCollection](#itemlist_conformsTo_RepositoryCollection) |  |
-| <a href="#prop_contentLocation_RepositoryCollection">contentLocation <a href="#prop_contentLocation_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_contentLocation_RepositoryCollection</small> | No | The location depicted or described in the content. For example, the location in a photograph or painting. | [class_Place](#class_Place) |  |
-| <a href="#prop_dateCreated_RepositoryCollection">dateCreated <a href="#prop_dateCreated_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_dateCreated_RepositoryCollection</small> | No | The (earliest) date the data in this dataset were created. | [Date](http://schema.org/Date) |  |
-| <a href="#prop_holdingArchive_RepositoryCollection">holdingArchive <a href="#prop_holdingArchive_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_holdingArchive_RepositoryCollection</small> | No | Organisation where the original of this work or collection is housed. | [class_Organization](#class_Organization), [Text](http://schema.org/Text) |  |
-| <a href="#prop_ldac:dateFreeText_RepositoryCollection">ldac:dateFreeText <a href="#prop_ldac:dateFreeText_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:dateFreeText_RepositoryCollection</small> | No | Date information which cannot be put in one of the standard date formats, e.g. 'mid-1970s', or it is not clear, for example, if it is a creation or publication date. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_ldac:itemLocation_RepositoryCollection">ldac:itemLocation <a href="#prop_ldac:itemLocation_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:itemLocation_RepositoryCollection</small> | No | Current location of the item, e.g. where a set of audio tapes are stored. | [class_Place](#class_Place), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:subjectLanguage_RepositoryCollection">ldac:subjectLanguage <a href="#prop_ldac:subjectLanguage_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:subjectLanguage_RepositoryCollection</small> | No | The languages that the materials in the collection are about (not the language that it is in). | [class_Language](#class_Language) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://pcdm.org/models#Collection" title="http://pcdm.org/models#Collection" target="_blank" rel="noopener">Collection</a> |
+| <a href="#prop_inLanguage_RepositoryCollection" title="#prop_inLanguage_RepositoryCollection">inLanguage</a> | <a href="http://schema.org/inLanguage" target="_blank" rel="noopener">http://schema.org/inLanguage</a> | Yes | The language in which the resource is written. | <a href="#class_Language" title="#class_Language">Language</a> |  |
+| <a href="#prop_conformsTo_RepositoryCollection" title="#prop_conformsTo_RepositoryCollection">conformsTo</a> | <a href="http://purl.org/dc/terms/conformsTo" target="_blank" rel="noopener">http://purl.org/dc/terms/conformsTo</a> | No | A link to the language data commons RO-Crate profile for collections. | <a href="#itemlist_conformsTo_RepositoryCollection" title="#itemlist_conformsTo_RepositoryCollection">Values for conformsTo</a> |  |
+| <a href="#prop_contentLocation_RepositoryCollection" title="#prop_contentLocation_RepositoryCollection">contentLocation</a> | <a href="http://schema.org/contentLocation" target="_blank" rel="noopener">http://schema.org/contentLocation</a> | No | The location depicted or described in the content. For example, the location in a photograph or painting. | <a href="#class_Place" title="#class_Place">Place</a> |  |
+| <a href="#prop_dateCreated_RepositoryCollection" title="#prop_dateCreated_RepositoryCollection">dateCreated</a> | <a href="http://schema.org/dateCreated" target="_blank" rel="noopener">http://schema.org/dateCreated</a> | No | The (earliest) date the data in this dataset were created. | <a href="http://schema.org/Date" title="http://schema.org/Date" target="_blank" rel="noopener">Date</a> |  |
+| <a href="#prop_holdingArchive_RepositoryCollection" title="#prop_holdingArchive_RepositoryCollection">holdingArchive</a> | <a href="http://schema.org/holdingArchive" target="_blank" rel="noopener">http://schema.org/holdingArchive</a> | No | Organisation where the original of this work or collection is housed. | <a href="#class_Organization" title="#class_Organization">Organization</a>, <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_ldac:dateFreeText_RepositoryCollection" title="#prop_ldac:dateFreeText_RepositoryCollection">ldac:dateFreeText</a> | <a href="https://w3id.org/ldac/terms#dateFreeText" target="_blank" rel="noopener">https://w3id.org/ldac/terms#dateFreeText</a> | No | Date information which cannot be put in one of the standard date formats, e.g. 'mid-1970s', or it is not clear, for example, if it is a creation or publication date. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_ldac:itemLocation_RepositoryCollection" title="#prop_ldac:itemLocation_RepositoryCollection">ldac:itemLocation</a> | <a href="https://w3id.org/ldac/terms#itemLocation" target="_blank" rel="noopener">https://w3id.org/ldac/terms#itemLocation</a> | No | Current location of the item, e.g. where a set of audio tapes are stored. | <a href="#class_Place" title="#class_Place">Place</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:subjectLanguage_RepositoryCollection" title="#prop_ldac:subjectLanguage_RepositoryCollection">ldac:subjectLanguage</a> | <a href="https://w3id.org/ldac/terms#subjectLanguage" target="_blank" rel="noopener">https://w3id.org/ldac/terms#subjectLanguage</a> | No | The languages that the materials in the collection are about (not the language that it is in). | <a href="#class_Language" title="#class_Language">Language</a> |  |
 
 
 
@@ -417,7 +417,6 @@ Set of defined terms for ldac:communicationMode
 
 | Term | Description |
 | ---- | ----------- |
-| <a id="ldac%3ACoded">Coded</a> | The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet). |
 | <a id="ldac%3AGesture">Gesture</a> | The resource contains non-linguistic gestural communication (i.e. not sign language). |
 | <a id="ldac%3ASignedLanguage">SignedLanguage</a> | The resource contains data for which the medium of interaction was signing. |
 | <a id="ldac%3ASong">Song</a> | The resource contains data for which the medium of interaction was song. |
@@ -485,7 +484,7 @@ Set of defined terms for ldac:writtenLanguageFormat
 ## A RepositoryObject:
 
 
-### <a id="class_RepositoryObject"></a> Class: RepositoryObject <small style="color:#aaa;font-weight:normal">#class_RepositoryObject</small>
+### <a id="class_RepositoryObject" title="#class_RepositoryObject"></a> Class: RepositoryObject
 
 An Object is an intellectual entity, sometimes called a "work", "digital object", etc. Objects have descriptive metadata, access metadata, may contain files and other Objects as member "components". Each level of a work is therefore represented by an Object instance, and is capable of standing on its own, being linked to from Collections and other Objects. Member Objects can be ordered using the ORE Proxy class.
 
@@ -495,17 +494,17 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Object](http://pcdm.org/models#Object) |
-| <a href="#prop_conformsTo_RepositoryObject">conformsTo <a href="#prop_conformsTo_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_conformsTo_RepositoryObject</small> | No | A link to the language data commons RO-Crate profile for collections. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_creator_RepositoryObject">creator <a href="#prop_creator_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_creator_RepositoryObject</small> | No | The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork. | [class_Person](#class_Person) |  |
-| <a href="#prop_dateCreated_RepositoryObject">dateCreated <a href="#prop_dateCreated_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_dateCreated_RepositoryObject</small> | No | The date on which the CreativeWork was created or the item was added to a DataFeed. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_description_RepositoryObject">description <a href="#prop_description_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_description_RepositoryObject</small> | No | A description of the item. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_identifier_RepositoryObject">identifier <a href="#prop_identifier_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_identifier_RepositoryObject</small> | No | The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.  | [PropertyValue](http://schema.org/PropertyValue), [Text](http://schema.org/Text), [URL](http://schema.org/URL) |  |
-| <a href="#prop_ldac:hasAnnotation_RepositoryObject">ldac:hasAnnotation <a href="#prop_ldac:hasAnnotation_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:hasAnnotation_RepositoryObject</small> | No | This resource is referenced by another resource that adds information to it such as a translation, transcription or other analysis. | ldac:Annotation |  |
-| <a href="#prop_license_RepositoryObject">license <a href="#prop_license_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_license_RepositoryObject</small> | No | A license document that applies to this content, typically indicated by URL. | [class_DataReuseLicense](#class_DataReuseLicense) |  |
-| <a href="#prop_temporalCoverage_RepositoryObject">temporalCoverage <a href="#prop_temporalCoverage_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_temporalCoverage_RepositoryObject</small> | No | The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written "2011/2012"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL. Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via "1939/1945". Open-ended date ranges can be written with ".." in place of the end date. For example, "2015-11/.." indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated. | [Text](http://schema.org/Text) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://pcdm.org/models#Object" title="http://pcdm.org/models#Object" target="_blank" rel="noopener">Object</a> |
+| <a href="#prop_conformsTo_RepositoryObject" title="#prop_conformsTo_RepositoryObject">conformsTo</a> | <a href="http://purl.org/dc/terms/conformsTo" target="_blank" rel="noopener">http://purl.org/dc/terms/conformsTo</a> | No | A link to the language data commons RO-Crate profile for collections. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_creator_RepositoryObject" title="#prop_creator_RepositoryObject">creator</a> | <a href="http://schema.org/creator" target="_blank" rel="noopener">http://schema.org/creator</a> | No | The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork. | <a href="#class_Person" title="#class_Person">Person</a> |  |
+| <a href="#prop_dateCreated_RepositoryObject" title="#prop_dateCreated_RepositoryObject">dateCreated</a> | <a href="http://schema.org/dateCreated" target="_blank" rel="noopener">http://schema.org/dateCreated</a> | No | The date on which the CreativeWork was created or the item was added to a DataFeed. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_description_RepositoryObject" title="#prop_description_RepositoryObject">description</a> | <a href="http://schema.org/description" target="_blank" rel="noopener">http://schema.org/description</a> | No | A description of the item. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_identifier_RepositoryObject" title="#prop_identifier_RepositoryObject">identifier</a> | <a href="http://schema.org/identifier" target="_blank" rel="noopener">http://schema.org/identifier</a> | No | The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.  | <a href="http://schema.org/PropertyValue" title="http://schema.org/PropertyValue" target="_blank" rel="noopener">PropertyValue</a>, <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a> |  |
+| <a href="#prop_ldac:hasAnnotation_RepositoryObject" title="#prop_ldac:hasAnnotation_RepositoryObject">ldac:hasAnnotation</a> | <a href="https://w3id.org/ldac/terms#hasAnnotation" target="_blank" rel="noopener">https://w3id.org/ldac/terms#hasAnnotation</a> | No | This resource is referenced by another resource that adds information to it such as a translation, transcription or other analysis. | <a href="#ldac%3AAnnotation" title="ldac:Annotation">Annotation</a> |  |
+| <a href="#prop_license_RepositoryObject" title="#prop_license_RepositoryObject">license</a> | <a href="http://schema.org/license" target="_blank" rel="noopener">http://schema.org/license</a> | No | A license document that applies to this content, typically indicated by URL. | <a href="#class_DataReuseLicense" title="#class_DataReuseLicense">DataReuseLicense</a> |  |
+| <a href="#prop_temporalCoverage_RepositoryObject" title="#prop_temporalCoverage_RepositoryObject">temporalCoverage</a> | <a href="http://schema.org/temporalCoverage" target="_blank" rel="noopener">http://schema.org/temporalCoverage</a> | No | The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written "2011/2012"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL. Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via "1939/1945". Open-ended date ranges can be written with ".." in place of the end date. For example, "2015-11/.." indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
 
 
 
@@ -523,7 +522,7 @@ analysis of the `ldac:PrimaryMaterial` or `ldac:DerivedMaterial`.
 ## A File:
 
 
-### <a id="class_File"></a> Class: File <small style="color:#aaa;font-weight:normal">#class_File</small>
+### <a id="class_File" title="#class_File"></a> Class: File
 
 A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload.
 
@@ -533,15 +532,15 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [MediaObject](http://schema.org/MediaObject) |
-| <a href="#prop_contentSize_File">contentSize <a href="#prop_contentSize_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_contentSize_File</small> | No | File size in (mega/kilo)bytes. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_encodingFormat_File">encodingFormat <a href="#prop_encodingFormat_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_encodingFormat_File</small> | No | The media type typically expressed using a MIME format. | [Text](http://schema.org/Text), [WebPage](http://schema.org/WebPage), [CreativeWork](http://schema.org/CreativeWork) |  |
-| <a href="#prop_hasPart_File">hasPart <a href="#prop_hasPart_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_hasPart_File</small> | No | An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | [class_CreativeWork](#class_CreativeWork), [class_File](#class_File) |  |
-| <a href="#prop_ldac:derivationOf_File">ldac:derivationOf <a href="#prop_ldac:derivationOf_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:derivationOf_File</small> | No | This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF. | ldac:Annotation, ldac:PrimaryMaterial |  |
-| <a href="#prop_ldac:hasDerivation_File">ldac:hasDerivation <a href="#prop_ldac:hasDerivation_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:hasDerivation_File</small> | No | This property references another resource that is derived from it, such as a downsampled audio or video file, or text extracted from a PDF. | ldac:DerivedMaterial |  |
-| <a href="#prop_ldac:materialType_File">ldac:materialType <a href="#prop_ldac:materialType_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:materialType_File</small> | No | Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation. | ldac:MaterialTypes |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/MediaObject" title="http://schema.org/MediaObject" target="_blank" rel="noopener">MediaObject</a> |
+| <a href="#prop_contentSize_File" title="#prop_contentSize_File">contentSize</a> | <a href="http://schema.org/contentSize" target="_blank" rel="noopener">http://schema.org/contentSize</a> | No | File size in (mega/kilo)bytes. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_encodingFormat_File" title="#prop_encodingFormat_File">encodingFormat</a> | <a href="http://schema.org/encodingFormat" target="_blank" rel="noopener">http://schema.org/encodingFormat</a> | No | The media type typically expressed using a MIME format. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="http://schema.org/WebPage" title="http://schema.org/WebPage" target="_blank" rel="noopener">WebPage</a>, <a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a> |  |
+| <a href="#prop_hasPart_File" title="#prop_hasPart_File">hasPart</a> | <a href="http://schema.org/hasPart" target="_blank" rel="noopener">http://schema.org/hasPart</a> | No | An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a>, <a href="#class_File" title="#class_File">File</a> |  |
+| <a href="#prop_ldac:derivationOf_File" title="#prop_ldac:derivationOf_File">ldac:derivationOf</a> | <a href="https://w3id.org/ldac/terms#derivationOf" target="_blank" rel="noopener">https://w3id.org/ldac/terms#derivationOf</a> | No | This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF. | <a href="#ldac%3AAnnotation" title="ldac:Annotation">Annotation</a>, <a href="#ldac%3APrimaryMaterial" title="ldac:PrimaryMaterial">PrimaryMaterial</a> |  |
+| <a href="#prop_ldac:hasDerivation_File" title="#prop_ldac:hasDerivation_File">ldac:hasDerivation</a> | <a href="https://w3id.org/ldac/terms#hasDerivation" target="_blank" rel="noopener">https://w3id.org/ldac/terms#hasDerivation</a> | No | This property references another resource that is derived from it, such as a downsampled audio or video file, or text extracted from a PDF. | <a href="#ldac%3ADerivedMaterial" title="ldac:DerivedMaterial">DerivedMaterial</a> |  |
+| <a href="#prop_ldac:materialType_File" title="#prop_ldac:materialType_File">ldac:materialType</a> | <a href="https://w3id.org/ldac/terms#materialType" target="_blank" rel="noopener">https://w3id.org/ldac/terms#materialType</a> | No | Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation. | <a href="#ldac%3AMaterialTypes" title="ldac:MaterialTypes">MaterialTypes</a> |  |
 
 
 
@@ -682,7 +681,7 @@ Dakota: The University of North Dakota M.A.
 ## Types of entities (specializations of Classes) and expected Properties
 
 
-### <a id="class_CollectionEvent"></a> Class: CollectionEvent <small style="color:#aaa;font-weight:normal">#class_CollectionEvent</small>
+### <a id="class_CollectionEvent" title="#class_CollectionEvent"></a> Class: CollectionEvent
 
 A description of an event at which one or more PrimaryMaterials were captured, e.g. as video or audio.
 
@@ -692,13 +691,13 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [CollectionEvent](https://w3id.org/ldac/terms#CollectionEvent) |
-| <a href="#prop_ldac:collectionEventType_CollectionEvent">ldac:collectionEventType <a href="#prop_ldac:collectionEventType_CollectionEvent" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:collectionEventType_CollectionEvent</small> | No | A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment. | ldac:CollectionEventTypeTerms |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="https://w3id.org/ldac/terms#CollectionEvent" title="https://w3id.org/ldac/terms#CollectionEvent" target="_blank" rel="noopener">CollectionEvent</a> |
+| <a href="#prop_ldac:collectionEventType_CollectionEvent" title="#prop_ldac:collectionEventType_CollectionEvent">ldac:collectionEventType</a> | <a href="https://w3id.org/ldac/terms#collectionEventType" target="_blank" rel="noopener">https://w3id.org/ldac/terms#collectionEventType</a> | No | A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment. | <a href="#ldac%3ACollectionEventTypeTerms" title="ldac:CollectionEventTypeTerms">CollectionEventTypeTerms</a> |  |
 
 
-### <a id="class_CreativeWork"></a> Class: CreativeWork <small style="color:#aaa;font-weight:normal">#class_CreativeWork</small>
+### <a id="class_CreativeWork" title="#class_CreativeWork"></a> Class: CreativeWork
 
 The most generic kind of creative work, including books, movies, photographs, software programs, etc.
 
@@ -708,27 +707,27 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [CreativeWork](http://schema.org/CreativeWork) |
-| <a href="#prop_author_CreativeWork">author <a href="#prop_author_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_author_CreativeWork</small> | No | The person or organisation responsible for creating this work. Authors should be identified using URIs such as ORCiD or ROR. | [Text](http://schema.org/Text), [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_isbn_CreativeWork">isbn <a href="#prop_isbn_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_isbn_CreativeWork</small> | No | The ISBN for this work, if applicable. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_issn_CreativeWork">issn <a href="#prop_issn_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_issn_CreativeWork</small> | No | The ISSN for this publication. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_ldac:annotationType_CreativeWork">ldac:annotationType <a href="#prop_ldac:annotationType_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:annotationType_CreativeWork</small> | No | The type of an Annotation resource. | ldac:AnnotationTypeTerms |  |
-| <a href="#prop_ldac:channels_CreativeWork">ldac:channels <a href="#prop_ldac:channels_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:channels_CreativeWork</small> | No | The number of audio channels this resource contains (e.g. 1, 2, 5.1). | [Text](http://schema.org/Text) |  |
-| <a href="#prop_ldac:communicationMode_CreativeWork">ldac:communicationMode <a href="#prop_ldac:communicationMode_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:communicationMode_CreativeWork</small> | No | The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property. | ldac:CommunicationModeTerms |  |
-| <a href="#prop_ldac:indexableText_CreativeWork">ldac:indexableText <a href="#prop_ldac:indexableText_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:indexableText_CreativeWork</small> | No | One or more target File(s) that together contain the full text of an item – each file should indicate its language. | [MediaObject](http://schema.org/MediaObject) |  |
-| <a href="#prop_ldac:isDeIdentified_CreativeWork">ldac:isDeIdentified <a href="#prop_ldac:isDeIdentified_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:isDeIdentified_CreativeWork</small> | No | The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms. | [Boolean](http://schema.org/Boolean) |  |
-| <a href="#prop_ldac:linguisticGenre_CreativeWork">ldac:linguisticGenre <a href="#prop_ldac:linguisticGenre_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:linguisticGenre_CreativeWork</small> | No | A linguistic classification of the genre of this resource. | ldac:LinguisticGenreTerms |  |
-| <a href="#prop_ldac:material_CreativeWork">ldac:material <a href="#prop_ldac:material_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:material_CreativeWork</small> | No | Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_ldac:openAccessIndex_CreativeWork">ldac:openAccessIndex <a href="#prop_ldac:openAccessIndex_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:openAccessIndex_CreativeWork</small> | No | One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not. | ldac:IndexTypes |  |
-| <a href="#prop_ldac:register_CreativeWork">ldac:register <a href="#prop_ldac:register_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:register_CreativeWork</small> | No | The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_ldac:writtenLanguageFormat_CreativeWork">ldac:writtenLanguageFormat <a href="#prop_ldac:writtenLanguageFormat_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:writtenLanguageFormat_CreativeWork</small> | No | The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten). | ldac:WrittenLanguageTypeTerms |  |
-| <a href="#prop_publisher_CreativeWork">publisher <a href="#prop_publisher_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_publisher_CreativeWork</small> | No | The organisation that published this work. | [Text](http://schema.org/Text), [class_Organization](#class_Organization) |  |
-| <a href="#prop_recipient_CreativeWork">recipient <a href="#prop_recipient_CreativeWork" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_recipient_CreativeWork</small> | No | The person or organisation responsible for creating this work. Authors should be identified using URIs such as ORCiD or ROR. | [Text](http://schema.org/Text), [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a> |
+| <a href="#prop_author_CreativeWork" title="#prop_author_CreativeWork">author</a> | <a href="http://schema.org/author" target="_blank" rel="noopener">http://schema.org/author</a> | No | The person or organisation responsible for creating this work. Authors should be identified using URIs such as ORCiD or ROR. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_isbn_CreativeWork" title="#prop_isbn_CreativeWork">isbn</a> | <a href="http://schema.org/isbn" target="_blank" rel="noopener">http://schema.org/isbn</a> | No | The ISBN for this work, if applicable. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_issn_CreativeWork" title="#prop_issn_CreativeWork">issn</a> | <a href="http://schema.org/issn" target="_blank" rel="noopener">http://schema.org/issn</a> | No | The ISSN for this publication. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_ldac:annotationType_CreativeWork" title="#prop_ldac:annotationType_CreativeWork">ldac:annotationType</a> | <a href="https://w3id.org/ldac/terms#annotationType" target="_blank" rel="noopener">https://w3id.org/ldac/terms#annotationType</a> | No | The type of an Annotation resource. | <a href="#ldac%3AAnnotationTypeTerms" title="ldac:AnnotationTypeTerms">AnnotationTypeTerms</a> |  |
+| <a href="#prop_ldac:channels_CreativeWork" title="#prop_ldac:channels_CreativeWork">ldac:channels</a> | <a href="https://w3id.org/ldac/terms#channels" target="_blank" rel="noopener">https://w3id.org/ldac/terms#channels</a> | No | The number of audio channels this resource contains (e.g. 1, 2, 5.1). | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_ldac:communicationMode_CreativeWork" title="#prop_ldac:communicationMode_CreativeWork">ldac:communicationMode</a> | <a href="https://w3id.org/ldac/terms#communicationMode" target="_blank" rel="noopener">https://w3id.org/ldac/terms#communicationMode</a> | No | The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property. | <a href="#ldac%3ACommunicationModeTerms" title="ldac:CommunicationModeTerms">CommunicationModeTerms</a> |  |
+| <a href="#prop_ldac:indexableText_CreativeWork" title="#prop_ldac:indexableText_CreativeWork">ldac:indexableText</a> | <a href="https://w3id.org/ldac/terms#indexableText" target="_blank" rel="noopener">https://w3id.org/ldac/terms#indexableText</a> | No | One or more target File(s) that together contain the full text of an item – each file should indicate its language. | <a href="http://schema.org/MediaObject" title="http://schema.org/MediaObject" target="_blank" rel="noopener">MediaObject</a> |  |
+| <a href="#prop_ldac:isDeIdentified_CreativeWork" title="#prop_ldac:isDeIdentified_CreativeWork">ldac:isDeIdentified</a> | <a href="https://w3id.org/ldac/terms#isDeIdentified" target="_blank" rel="noopener">https://w3id.org/ldac/terms#isDeIdentified</a> | No | The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms. | <a href="http://schema.org/Boolean" title="http://schema.org/Boolean" target="_blank" rel="noopener">Boolean</a> |  |
+| <a href="#prop_ldac:linguisticGenre_CreativeWork" title="#prop_ldac:linguisticGenre_CreativeWork">ldac:linguisticGenre</a> | <a href="https://w3id.org/ldac/terms#linguisticGenre" target="_blank" rel="noopener">https://w3id.org/ldac/terms#linguisticGenre</a> | No | A linguistic classification of the genre of this resource. | <a href="#ldac%3ALinguisticGenreTerms" title="ldac:LinguisticGenreTerms">LinguisticGenreTerms</a> |  |
+| <a href="#prop_ldac:material_CreativeWork" title="#prop_ldac:material_CreativeWork">ldac:material</a> | <a href="https://w3id.org/ldac/terms#material" target="_blank" rel="noopener">https://w3id.org/ldac/terms#material</a> | No | Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_ldac:openAccessIndex_CreativeWork" title="#prop_ldac:openAccessIndex_CreativeWork">ldac:openAccessIndex</a> | <a href="https://w3id.org/ldac/terms#openAccessIndex" target="_blank" rel="noopener">https://w3id.org/ldac/terms#openAccessIndex</a> | No | One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not. | <a href="#ldac%3AIndexTypes" title="ldac:IndexTypes">IndexTypes</a> |  |
+| <a href="#prop_ldac:register_CreativeWork" title="#prop_ldac:register_CreativeWork">ldac:register</a> | <a href="https://w3id.org/ldac/terms#register" target="_blank" rel="noopener">https://w3id.org/ldac/terms#register</a> | No | The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_ldac:writtenLanguageFormat_CreativeWork" title="#prop_ldac:writtenLanguageFormat_CreativeWork">ldac:writtenLanguageFormat</a> | <a href="https://w3id.org/ldac/terms#writtenLanguageFormat" target="_blank" rel="noopener">https://w3id.org/ldac/terms#writtenLanguageFormat</a> | No | The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten). | <a href="#ldac%3AWrittenLanguageTypeTerms" title="ldac:WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> |  |
+| <a href="#prop_publisher_CreativeWork" title="#prop_publisher_CreativeWork">publisher</a> | <a href="http://schema.org/publisher" target="_blank" rel="noopener">http://schema.org/publisher</a> | No | The organisation that published this work. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_recipient_CreativeWork" title="#prop_recipient_CreativeWork">recipient</a> | <a href="http://schema.org/recipient" target="_blank" rel="noopener">http://schema.org/recipient</a> | No | The person or organisation responsible for creating this work. Authors should be identified using URIs such as ORCiD or ROR. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
 
 
-### <a id="class_DataDepositLicense"></a> Class: DataDepositLicense <small style="color:#aaa;font-weight:normal">#class_DataDepositLicense</small>
+### <a id="class_DataDepositLicense" title="#class_DataDepositLicense"></a> Class: DataDepositLicense
 
 A license document setting out terms for deposit into a repository.
 
@@ -738,14 +737,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [DataDepositLicense](https://w3id.org/ldac/terms#DataDepositLicense) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="https://w3id.org/ldac/terms#DataDepositLicense" title="https://w3id.org/ldac/terms#DataDepositLicense" target="_blank" rel="noopener">DataDepositLicense</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_DataLicense"></a> Class: DataLicense <small style="color:#aaa;font-weight:normal">#class_DataLicense</small>
+### <a id="class_DataLicense" title="#class_DataLicense"></a> Class: DataLicense
 
 A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.
 
@@ -755,13 +754,13 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [DataLicense](https://w3id.org/ldac/terms#DataLicense) |
-| <a href="#prop_ldac:reviewDate_DataLicense">ldac:reviewDate <a href="#prop_ldac:reviewDate_DataLicense" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:reviewDate_DataLicense</small> | No | The date that this license should be reviewed. | [Text](http://schema.org/Text) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="https://w3id.org/ldac/terms#DataLicense" title="https://w3id.org/ldac/terms#DataLicense" target="_blank" rel="noopener">DataLicense</a> |
+| <a href="#prop_ldac:reviewDate_DataLicense" title="#prop_ldac:reviewDate_DataLicense">ldac:reviewDate</a> | <a href="https://w3id.org/ldac/terms#reviewDate" target="_blank" rel="noopener">https://w3id.org/ldac/terms#reviewDate</a> | No | The date that this license should be reviewed. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
 
 
-### <a id="class_DataReuseLicense"></a> Class: DataReuseLicense <small style="color:#aaa;font-weight:normal">#class_DataReuseLicense</small>
+### <a id="class_DataReuseLicense" title="#class_DataReuseLicense"></a> Class: DataReuseLicense
 
 A license document, setting out terms for reuse of data.
 
@@ -771,15 +770,15 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [DataReuseLicense](https://w3id.org/ldac/terms#DataReuseLicense) |
-| <a href="#prop_ldac:access_DataReuseLicense">ldac:access <a href="#prop_ldac:access_DataReuseLicense" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:access_DataReuseLicense</small> | No | Whether this is an open or restricted access license. | ldac:AccessTypes |  |
-| <a href="#prop_ldac:accessControlList_DataReuseLicense">ldac:accessControlList <a href="#prop_ldac:accessControlList_DataReuseLicense" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:accessControlList_DataReuseLicense</small> | No | When a license has an authorizationWorkflow property with a value of the DefinedTerm AccessControlList this property has a URI value that points to a list of userIDs. | [URL](http://schema.org/URL) |  |
-| <a href="#prop_ldac:authorizationWorkflow_DataReuseLicense">ldac:authorizationWorkflow <a href="#prop_ldac:authorizationWorkflow_DataReuseLicense" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:authorizationWorkflow_DataReuseLicense</small> | No | By what process a user is granted authorization to a license. | ldac:AuthorizationWorkflows |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="https://w3id.org/ldac/terms#DataReuseLicense" title="https://w3id.org/ldac/terms#DataReuseLicense" target="_blank" rel="noopener">DataReuseLicense</a> |
+| <a href="#prop_ldac:access_DataReuseLicense" title="#prop_ldac:access_DataReuseLicense">ldac:access</a> | <a href="https://w3id.org/ldac/terms#access" target="_blank" rel="noopener">https://w3id.org/ldac/terms#access</a> | No | Whether this is an open or restricted access license. | <a href="#ldac%3AAccessTypes" title="ldac:AccessTypes">AccessTypes</a> |  |
+| <a href="#prop_ldac:accessControlList_DataReuseLicense" title="#prop_ldac:accessControlList_DataReuseLicense">ldac:accessControlList</a> | <a href="https://w3id.org/ldac/terms#accessControlList" target="_blank" rel="noopener">https://w3id.org/ldac/terms#accessControlList</a> | No | When a license has an authorizationWorkflow property with a value of the DefinedTerm AccessControlList this property has a URI value that points to a list of userIDs. | <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a> |  |
+| <a href="#prop_ldac:authorizationWorkflow_DataReuseLicense" title="#prop_ldac:authorizationWorkflow_DataReuseLicense">ldac:authorizationWorkflow</a> | <a href="https://w3id.org/ldac/terms#authorizationWorkflow" target="_blank" rel="noopener">https://w3id.org/ldac/terms#authorizationWorkflow</a> | No | By what process a user is granted authorization to a license. | <a href="#ldac%3AAuthorizationWorkflows" title="ldac:AuthorizationWorkflows">AuthorizationWorkflows</a> |  |
 
 
-### <a id="class_Dataset"></a> Class: Dataset <small style="color:#aaa;font-weight:normal">#class_Dataset</small>
+### <a id="class_Dataset" title="#class_Dataset"></a> Class: Dataset
 
 A body of structured information describing some topic(s) of interest.
 
@@ -789,55 +788,55 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Dataset](http://schema.org/Dataset) |
-| <a href="#prop_accountablePerson_Dataset">accountablePerson <a href="#prop_accountablePerson_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_accountablePerson_Dataset</small> | Yes | The person or organisation who is the data steward for this resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_author_Dataset">author <a href="#prop_author_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_author_Dataset</small> | Yes | The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_dct:rightsHolder_Dataset">dct:rightsHolder <a href="#prop_dct:rightsHolder_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_dct:rightsHolder_Dataset</small> | Yes | The person or organisation owning or managing rights over the resource. | [Text](http://schema.org/Text), [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_publisher_Dataset">publisher <a href="#prop_publisher_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_publisher_Dataset</small> | Yes | The organisation responsible for releasing this dataset. | [class_Organization](#class_Organization) |  |
-| <a href="#prop_citation_Dataset">citation <a href="#prop_citation_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_citation_Dataset</small> | No | Associated publications. | [class_CreativeWork](#class_CreativeWork) |  |
-| <a href="#prop_creditText_Dataset">creditText <a href="#prop_creditText_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_creditText_Dataset</small> | No | A free text bibliographic citation for this material, e.g. 'Cite as: Musgrave (2023). Title of work. DOI'. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_funder_Dataset">funder <a href="#prop_funder_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_funder_Dataset</small> | No | The organisation(s) responsible for funding the creation or collection of this dataset. | [class_Organization](#class_Organization) |  |
-| <a href="#prop_hasPart_Dataset">hasPart <a href="#prop_hasPart_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_hasPart_Dataset</small> | No | An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | [class_CreativeWork](#class_CreativeWork), [class_File](#class_File), [class_Dataset](#class_Dataset) |  |
-| <a href="#prop_isAccessibleForFree_Dataset">isAccessibleForFree <a href="#prop_isAccessibleForFree_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_isAccessibleForFree_Dataset</small> | No | This is available under an Open Access license. | [Boolean](http://schema.org/Boolean) |  |
-| <a href="#prop_isBasedOn_Dataset">isBasedOn <a href="#prop_isBasedOn_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_isBasedOn_Dataset</small> | No | Link to or description of an original resource. | [Text](http://schema.org/Text), [URL](http://schema.org/URL), [class_CreativeWork](#class_CreativeWork), [class_Dataset](#class_Dataset), [class_File](#class_File) |  |
-| <a href="#prop_isPartOf_Dataset">isPartOf <a href="#prop_isPartOf_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_isPartOf_Dataset</small> | No | An item or CreativeWork that this item, or CreativeWork (in some sense), is part of. | [URL](http://schema.org/URL), [class_CreativeWork](#class_CreativeWork) |  |
-| <a href="#prop_ldac:annotationOf_Dataset">ldac:annotationOf <a href="#prop_ldac:annotationOf_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:annotationOf_Dataset</small> | No | This resource contains some kind of description that adds information to the resource it references. | ldac:PrimaryMaterial |  |
-| <a href="#prop_ldac:annotator_Dataset">ldac:annotator <a href="#prop_ldac:annotator_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:annotator_Dataset</small> | No | The participant produced an annotation of this or a related resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:compiler_Dataset">ldac:compiler <a href="#prop_ldac:compiler_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:compiler_Dataset</small> | No | The participant is responsible for collecting the sub-parts of the resource together. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:consultant_Dataset">ldac:consultant <a href="#prop_ldac:consultant_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:consultant_Dataset</small> | No | The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:dataInputter_Dataset">ldac:dataInputter <a href="#prop_ldac:dataInputter_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:dataInputter_Dataset</small> | No | The participant responsible for entering, re-typing, and/or structuring the data contained in the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:depositor_Dataset">ldac:depositor <a href="#prop_ldac:depositor_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:depositor_Dataset</small> | No | The participant responsible for depositing the resource in an archive. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:developer_Dataset">ldac:developer <a href="#prop_ldac:developer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:developer_Dataset</small> | No | The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:doi_Dataset">ldac:doi <a href="#prop_ldac:doi_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:doi_Dataset</small> | No | A Digital Object Identifier, e.g. https://doi.org/10.1000/182. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_ldac:editor_Dataset">ldac:editor <a href="#prop_ldac:editor_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:editor_Dataset</small> | No | The participant reviewed, corrected, and/or tested the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:hasCollectionProtocol_Dataset">ldac:hasCollectionProtocol <a href="#prop_ldac:hasCollectionProtocol_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:hasCollectionProtocol_Dataset</small> | No | A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection. | [class_ldac:CollectionProtocol](#class_ldac:CollectionProtocol) |  |
-| <a href="#prop_ldac:illustrator_Dataset">ldac:illustrator <a href="#prop_ldac:illustrator_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:illustrator_Dataset</small> | No | The participant contributed drawings or other illustrations to the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:interpreter_Dataset">ldac:interpreter <a href="#prop_ldac:interpreter_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:interpreter_Dataset</small> | No | The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:interviewee_Dataset">ldac:interviewee <a href="#prop_ldac:interviewee_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:interviewee_Dataset</small> | No | The participant was a respondent in an interview. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:interviewer_Dataset">ldac:interviewer <a href="#prop_ldac:interviewer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:interviewer_Dataset</small> | No | The participant conducted an interview that forms part of the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:participant_Dataset">ldac:participant <a href="#prop_ldac:participant_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:participant_Dataset</small> | No | The participant was present during the creation of the resource, but did not contribute substantially to its content. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:performer_Dataset">ldac:performer <a href="#prop_ldac:performer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:performer_Dataset</small> | No | The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:photographer_Dataset">ldac:photographer <a href="#prop_ldac:photographer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:photographer_Dataset</small> | No | The participant took the photograph, or shot the film, that appears in or constitutes the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:recorder_Dataset">ldac:recorder <a href="#prop_ldac:recorder_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:recorder_Dataset</small> | No | The participant operated the recording machinery used to create the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:researcher_Dataset">ldac:researcher <a href="#prop_ldac:researcher_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:researcher_Dataset</small> | No | The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:researchParticipant_Dataset">ldac:researchParticipant <a href="#prop_ldac:researchParticipant_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:researchParticipant_Dataset</small> | No | The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:responder_Dataset">ldac:responder <a href="#prop_ldac:responder_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:responder_Dataset</small> | No | The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:signer_Dataset">ldac:signer <a href="#prop_ldac:signer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:signer_Dataset</small> | No | The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:singer_Dataset">ldac:singer <a href="#prop_ldac:singer_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:singer_Dataset</small> | No | The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:speaker_Dataset">ldac:speaker <a href="#prop_ldac:speaker_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:speaker_Dataset</small> | No | The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:sponsor_Dataset">ldac:sponsor <a href="#prop_ldac:sponsor_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:sponsor_Dataset</small> | No | The participant contributed financial support to the creation of the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:transcriber_Dataset">ldac:transcriber <a href="#prop_ldac:transcriber_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:transcriber_Dataset</small> | No | The participant produced a transcription of this or a related resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:translator_Dataset">ldac:translator <a href="#prop_ldac:translator_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:translator_Dataset</small> | No | The participant produced a translation of this or a related resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) |  |
-| <a href="#prop_pcdm:hasMember_Dataset">pcdm:hasMember <a href="#prop_pcdm:hasMember_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_pcdm:hasMember_Dataset</small> | No | The sub-collections, if any, associated with this collection. | [class_RepositoryCollection](#class_RepositoryCollection), [class_RepositoryObject](#class_RepositoryObject) |  |
-| <a href="#prop_pcdm:memberOf_Dataset">pcdm:memberOf <a href="#prop_pcdm:memberOf_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_pcdm:memberOf_Dataset</small> | No | Links from a Repository Object or Collection to a containing Repository Object or Collection. | [class_RepositoryCollection](#class_RepositoryCollection) |  |
-| <a href="#prop_spatialCoverage_Dataset">spatialCoverage <a href="#prop_spatialCoverage_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_spatialCoverage_Dataset</small> | No | The place(s) that are the focus of the content. It is a sub-property of contentLocation intended primarily for more technical and detailed materials. For example, with a dataset, it indicates areas that the dataset describes: a dataset Cape York languages would have spatialCoverage which was the place: the outline of the Cape. | [class_Place](#class_Place) |  |
-| <a href="#prop_temporalCoverage_Dataset">temporalCoverage <a href="#prop_temporalCoverage_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_temporalCoverage_Dataset</small> | No | The range of years of creation for items in this dataset using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level. | [DateTime](http://schema.org/DateTime), [Text](http://schema.org/Text) |  |
-| <a href="#prop_usageInfo_Dataset">usageInfo <a href="#prop_usageInfo_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_usageInfo_Dataset</small> | No | Additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'. | [Text](http://schema.org/Text) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/Dataset" title="http://schema.org/Dataset" target="_blank" rel="noopener">Dataset</a> |
+| <a href="#prop_accountablePerson_Dataset" title="#prop_accountablePerson_Dataset">accountablePerson</a> | <a href="http://schema.org/accountablePerson" target="_blank" rel="noopener">http://schema.org/accountablePerson</a> | Yes | The person or organisation who is the data steward for this resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_author_Dataset" title="#prop_author_Dataset">author</a> | <a href="http://schema.org/author" target="_blank" rel="noopener">http://schema.org/author</a> | Yes | The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_dct:rightsHolder_Dataset" title="#prop_dct:rightsHolder_Dataset">dct:rightsHolder</a> | <a href="http://purl.org/dc/terms/rightsHolder" target="_blank" rel="noopener">http://purl.org/dc/terms/rightsHolder</a> | Yes | The person or organisation owning or managing rights over the resource. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_publisher_Dataset" title="#prop_publisher_Dataset">publisher</a> | <a href="http://schema.org/publisher" target="_blank" rel="noopener">http://schema.org/publisher</a> | Yes | The organisation responsible for releasing this dataset. | <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_citation_Dataset" title="#prop_citation_Dataset">citation</a> | <a href="http://schema.org/citation" target="_blank" rel="noopener">http://schema.org/citation</a> | No | Associated publications. | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |  |
+| <a href="#prop_creditText_Dataset" title="#prop_creditText_Dataset">creditText</a> | <a href="http://schema.org/creditText" target="_blank" rel="noopener">http://schema.org/creditText</a> | No | A free text bibliographic citation for this material, e.g. 'Cite as: Musgrave (2023). Title of work. DOI'. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_funder_Dataset" title="#prop_funder_Dataset">funder</a> | <a href="http://schema.org/funder" target="_blank" rel="noopener">http://schema.org/funder</a> | No | The organisation(s) responsible for funding the creation or collection of this dataset. | <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_hasPart_Dataset" title="#prop_hasPart_Dataset">hasPart</a> | <a href="http://schema.org/hasPart" target="_blank" rel="noopener">http://schema.org/hasPart</a> | No | An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a>, <a href="#class_File" title="#class_File">File</a>, <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |  |
+| <a href="#prop_isAccessibleForFree_Dataset" title="#prop_isAccessibleForFree_Dataset">isAccessibleForFree</a> | <a href="http://schema.org/isAccessibleForFree" target="_blank" rel="noopener">http://schema.org/isAccessibleForFree</a> | No | This is available under an Open Access license. | <a href="http://schema.org/Boolean" title="http://schema.org/Boolean" target="_blank" rel="noopener">Boolean</a> |  |
+| <a href="#prop_isBasedOn_Dataset" title="#prop_isBasedOn_Dataset">isBasedOn</a> | <a href="http://schema.org/isBasedOn" target="_blank" rel="noopener">http://schema.org/isBasedOn</a> | No | Link to or description of an original resource. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a>, <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a>, <a href="#class_Dataset" title="#class_Dataset">Dataset</a>, <a href="#class_File" title="#class_File">File</a> |  |
+| <a href="#prop_isPartOf_Dataset" title="#prop_isPartOf_Dataset">isPartOf</a> | <a href="http://schema.org/isPartOf" target="_blank" rel="noopener">http://schema.org/isPartOf</a> | No | An item or CreativeWork that this item, or CreativeWork (in some sense), is part of. | <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a>, <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |  |
+| <a href="#prop_ldac:annotationOf_Dataset" title="#prop_ldac:annotationOf_Dataset">ldac:annotationOf</a> | <a href="https://w3id.org/ldac/terms#annotationOf" target="_blank" rel="noopener">https://w3id.org/ldac/terms#annotationOf</a> | No | This resource contains some kind of description that adds information to the resource it references. | <a href="#ldac%3APrimaryMaterial" title="ldac:PrimaryMaterial">PrimaryMaterial</a> |  |
+| <a href="#prop_ldac:annotator_Dataset" title="#prop_ldac:annotator_Dataset">ldac:annotator</a> | <a href="https://w3id.org/ldac/terms#annotator" target="_blank" rel="noopener">https://w3id.org/ldac/terms#annotator</a> | No | The participant produced an annotation of this or a related resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:compiler_Dataset" title="#prop_ldac:compiler_Dataset">ldac:compiler</a> | <a href="https://w3id.org/ldac/terms#compiler" target="_blank" rel="noopener">https://w3id.org/ldac/terms#compiler</a> | No | The participant is responsible for collecting the sub-parts of the resource together. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:consultant_Dataset" title="#prop_ldac:consultant_Dataset">ldac:consultant</a> | <a href="https://w3id.org/ldac/terms#consultant" target="_blank" rel="noopener">https://w3id.org/ldac/terms#consultant</a> | No | The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:dataInputter_Dataset" title="#prop_ldac:dataInputter_Dataset">ldac:dataInputter</a> | <a href="https://w3id.org/ldac/terms#dataInputter" target="_blank" rel="noopener">https://w3id.org/ldac/terms#dataInputter</a> | No | The participant responsible for entering, re-typing, and/or structuring the data contained in the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:depositor_Dataset" title="#prop_ldac:depositor_Dataset">ldac:depositor</a> | <a href="https://w3id.org/ldac/terms#depositor" target="_blank" rel="noopener">https://w3id.org/ldac/terms#depositor</a> | No | The participant responsible for depositing the resource in an archive. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:developer_Dataset" title="#prop_ldac:developer_Dataset">ldac:developer</a> | <a href="https://w3id.org/ldac/terms#developer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#developer</a> | No | The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:doi_Dataset" title="#prop_ldac:doi_Dataset">ldac:doi</a> | <a href="https://w3id.org/ldac/terms#doi" target="_blank" rel="noopener">https://w3id.org/ldac/terms#doi</a> | No | A Digital Object Identifier, e.g. https://doi.org/10.1000/182. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_ldac:editor_Dataset" title="#prop_ldac:editor_Dataset">ldac:editor</a> | <a href="https://w3id.org/ldac/terms#editor" target="_blank" rel="noopener">https://w3id.org/ldac/terms#editor</a> | No | The participant reviewed, corrected, and/or tested the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:hasCollectionProtocol_Dataset" title="#prop_ldac:hasCollectionProtocol_Dataset">ldac:hasCollectionProtocol</a> | <a href="https://w3id.org/ldac/terms#hasCollectionProtocol" target="_blank" rel="noopener">https://w3id.org/ldac/terms#hasCollectionProtocol</a> | No | A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection. | <a href="#class_ldac:CollectionProtocol" title="#class_ldac:CollectionProtocol">CollectionProtocol</a> |  |
+| <a href="#prop_ldac:illustrator_Dataset" title="#prop_ldac:illustrator_Dataset">ldac:illustrator</a> | <a href="https://w3id.org/ldac/terms#illustrator" target="_blank" rel="noopener">https://w3id.org/ldac/terms#illustrator</a> | No | The participant contributed drawings or other illustrations to the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:interpreter_Dataset" title="#prop_ldac:interpreter_Dataset">ldac:interpreter</a> | <a href="https://w3id.org/ldac/terms#interpreter" target="_blank" rel="noopener">https://w3id.org/ldac/terms#interpreter</a> | No | The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:interviewee_Dataset" title="#prop_ldac:interviewee_Dataset">ldac:interviewee</a> | <a href="https://w3id.org/ldac/terms#interviewee" target="_blank" rel="noopener">https://w3id.org/ldac/terms#interviewee</a> | No | The participant was a respondent in an interview. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:interviewer_Dataset" title="#prop_ldac:interviewer_Dataset">ldac:interviewer</a> | <a href="https://w3id.org/ldac/terms#interviewer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#interviewer</a> | No | The participant conducted an interview that forms part of the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:participant_Dataset" title="#prop_ldac:participant_Dataset">ldac:participant</a> | <a href="https://w3id.org/ldac/terms#participant" target="_blank" rel="noopener">https://w3id.org/ldac/terms#participant</a> | No | The participant was present during the creation of the resource, but did not contribute substantially to its content. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:performer_Dataset" title="#prop_ldac:performer_Dataset">ldac:performer</a> | <a href="https://w3id.org/ldac/terms#performer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#performer</a> | No | The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:photographer_Dataset" title="#prop_ldac:photographer_Dataset">ldac:photographer</a> | <a href="https://w3id.org/ldac/terms#photographer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#photographer</a> | No | The participant took the photograph, or shot the film, that appears in or constitutes the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:recorder_Dataset" title="#prop_ldac:recorder_Dataset">ldac:recorder</a> | <a href="https://w3id.org/ldac/terms#recorder" target="_blank" rel="noopener">https://w3id.org/ldac/terms#recorder</a> | No | The participant operated the recording machinery used to create the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:researcher_Dataset" title="#prop_ldac:researcher_Dataset">ldac:researcher</a> | <a href="https://w3id.org/ldac/terms#researcher" target="_blank" rel="noopener">https://w3id.org/ldac/terms#researcher</a> | No | The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:researchParticipant_Dataset" title="#prop_ldac:researchParticipant_Dataset">ldac:researchParticipant</a> | <a href="https://w3id.org/ldac/terms#researchParticipant" target="_blank" rel="noopener">https://w3id.org/ldac/terms#researchParticipant</a> | No | The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:responder_Dataset" title="#prop_ldac:responder_Dataset">ldac:responder</a> | <a href="https://w3id.org/ldac/terms#responder" target="_blank" rel="noopener">https://w3id.org/ldac/terms#responder</a> | No | The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:signer_Dataset" title="#prop_ldac:signer_Dataset">ldac:signer</a> | <a href="https://w3id.org/ldac/terms#signer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#signer</a> | No | The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:singer_Dataset" title="#prop_ldac:singer_Dataset">ldac:singer</a> | <a href="https://w3id.org/ldac/terms#singer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#singer</a> | No | The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:speaker_Dataset" title="#prop_ldac:speaker_Dataset">ldac:speaker</a> | <a href="https://w3id.org/ldac/terms#speaker" target="_blank" rel="noopener">https://w3id.org/ldac/terms#speaker</a> | No | The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:sponsor_Dataset" title="#prop_ldac:sponsor_Dataset">ldac:sponsor</a> | <a href="https://w3id.org/ldac/terms#sponsor" target="_blank" rel="noopener">https://w3id.org/ldac/terms#sponsor</a> | No | The participant contributed financial support to the creation of the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:transcriber_Dataset" title="#prop_ldac:transcriber_Dataset">ldac:transcriber</a> | <a href="https://w3id.org/ldac/terms#transcriber" target="_blank" rel="noopener">https://w3id.org/ldac/terms#transcriber</a> | No | The participant produced a transcription of this or a related resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:translator_Dataset" title="#prop_ldac:translator_Dataset">ldac:translator</a> | <a href="https://w3id.org/ldac/terms#translator" target="_blank" rel="noopener">https://w3id.org/ldac/terms#translator</a> | No | The participant produced a translation of this or a related resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_pcdm:hasMember_Dataset" title="#prop_pcdm:hasMember_Dataset">pcdm:hasMember</a> | <a href="http://pcdm.org/models#hasMember" target="_blank" rel="noopener">http://pcdm.org/models#hasMember</a> | No | The sub-collections, if any, associated with this collection. | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a>, <a href="#class_RepositoryObject" title="#class_RepositoryObject">RepositoryObject</a> |  |
+| <a href="#prop_pcdm:memberOf_Dataset" title="#prop_pcdm:memberOf_Dataset">pcdm:memberOf</a> | <a href="http://pcdm.org/models#memberOf" target="_blank" rel="noopener">http://pcdm.org/models#memberOf</a> | No | Links from a Repository Object or Collection to a containing Repository Object or Collection. | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a> |  |
+| <a href="#prop_spatialCoverage_Dataset" title="#prop_spatialCoverage_Dataset">spatialCoverage</a> | <a href="http://schema.org/spatialCoverage" target="_blank" rel="noopener">http://schema.org/spatialCoverage</a> | No | The place(s) that are the focus of the content. It is a sub-property of contentLocation intended primarily for more technical and detailed materials. For example, with a dataset, it indicates areas that the dataset describes: a dataset Cape York languages would have spatialCoverage which was the place: the outline of the Cape. | <a href="#class_Place" title="#class_Place">Place</a> |  |
+| <a href="#prop_temporalCoverage_Dataset" title="#prop_temporalCoverage_Dataset">temporalCoverage</a> | <a href="http://schema.org/temporalCoverage" target="_blank" rel="noopener">http://schema.org/temporalCoverage</a> | No | The range of years of creation for items in this dataset using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level. | <a href="http://schema.org/DateTime" title="http://schema.org/DateTime" target="_blank" rel="noopener">DateTime</a>, <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_usageInfo_Dataset" title="#prop_usageInfo_Dataset">usageInfo</a> | <a href="http://schema.org/usageInfo" target="_blank" rel="noopener">http://schema.org/usageInfo</a> | No | Additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
 
 
-### <a id="class_dct:Collection"></a> Class: dct:Collection <small style="color:#aaa;font-weight:normal">#class_dct:Collection</small>
+### <a id="class_dct:Collection" title="#class_dct:Collection"></a> Class: dct:Collection
 
 An aggregation of resources.
 
@@ -847,14 +846,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Collection](http://purl.org/dc/terms/Collection) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/Collection" title="http://purl.org/dc/terms/Collection" target="_blank" rel="noopener">Collection</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_dct:Dataset"></a> Class: dct:Dataset <small style="color:#aaa;font-weight:normal">#class_dct:Dataset</small>
+### <a id="class_dct:Dataset" title="#class_dct:Dataset"></a> Class: dct:Dataset
 
 Data encoded in a defined structure.
 
@@ -864,14 +863,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Dataset](http://purl.org/dc/terms/Dataset) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/Dataset" title="http://purl.org/dc/terms/Dataset" target="_blank" rel="noopener">Dataset</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_dct:Event"></a> Class: dct:Event <small style="color:#aaa;font-weight:normal">#class_dct:Event</small>
+### <a id="class_dct:Event" title="#class_dct:Event"></a> Class: dct:Event
 
 A non-persistent, time-based occurrence.
 
@@ -881,14 +880,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Event](http://purl.org/dc/terms/Event) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/Event" title="http://purl.org/dc/terms/Event" target="_blank" rel="noopener">Event</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_dct:Image"></a> Class: dct:Image <small style="color:#aaa;font-weight:normal">#class_dct:Image</small>
+### <a id="class_dct:Image" title="#class_dct:Image"></a> Class: dct:Image
 
 A visual representation other than text.
 
@@ -898,14 +897,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Image](http://purl.org/dc/terms/Image) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/Image" title="http://purl.org/dc/terms/Image" target="_blank" rel="noopener">Image</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_dct:InteractiveResource"></a> Class: dct:InteractiveResource <small style="color:#aaa;font-weight:normal">#class_dct:InteractiveResource</small>
+### <a id="class_dct:InteractiveResource" title="#class_dct:InteractiveResource"></a> Class: dct:InteractiveResource
 
 A resource requiring interaction from the user to be understood, executed, or experienced.
 
@@ -915,14 +914,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [InteractiveResource](http://purl.org/dc/terms/InteractiveResource) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/InteractiveResource" title="http://purl.org/dc/terms/InteractiveResource" target="_blank" rel="noopener">InteractiveResource</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_dct:MovingImage"></a> Class: dct:MovingImage <small style="color:#aaa;font-weight:normal">#class_dct:MovingImage</small>
+### <a id="class_dct:MovingImage" title="#class_dct:MovingImage"></a> Class: dct:MovingImage
 
 A series of visual representations imparting an impression of motion when shown in succession.
 
@@ -932,14 +931,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [MovingImage](http://purl.org/dc/terms/MovingImage) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/MovingImage" title="http://purl.org/dc/terms/MovingImage" target="_blank" rel="noopener">MovingImage</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_dct:PhysicalObject"></a> Class: dct:PhysicalObject <small style="color:#aaa;font-weight:normal">#class_dct:PhysicalObject</small>
+### <a id="class_dct:PhysicalObject" title="#class_dct:PhysicalObject"></a> Class: dct:PhysicalObject
 
 An inanimate, three-dimensional object or substance.
 
@@ -949,14 +948,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [PhysicalObject](http://purl.org/dc/terms/PhysicalObject) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/PhysicalObject" title="http://purl.org/dc/terms/PhysicalObject" target="_blank" rel="noopener">PhysicalObject</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_dct:Service"></a> Class: dct:Service <small style="color:#aaa;font-weight:normal">#class_dct:Service</small>
+### <a id="class_dct:Service" title="#class_dct:Service"></a> Class: dct:Service
 
 A system that provides one or more functions.
 
@@ -966,14 +965,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Service](http://purl.org/dc/terms/Service) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/Service" title="http://purl.org/dc/terms/Service" target="_blank" rel="noopener">Service</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_dct:Software"></a> Class: dct:Software <small style="color:#aaa;font-weight:normal">#class_dct:Software</small>
+### <a id="class_dct:Software" title="#class_dct:Software"></a> Class: dct:Software
 
 A computer program in source or compiled form.
 
@@ -983,14 +982,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Software](http://purl.org/dc/terms/Software) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/Software" title="http://purl.org/dc/terms/Software" target="_blank" rel="noopener">Software</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_dct:Sound"></a> Class: dct:Sound <small style="color:#aaa;font-weight:normal">#class_dct:Sound</small>
+### <a id="class_dct:Sound" title="#class_dct:Sound"></a> Class: dct:Sound
 
 A resource primarily intended to be heard.
 
@@ -1000,14 +999,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Sound](http://purl.org/dc/terms/Sound) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/Sound" title="http://purl.org/dc/terms/Sound" target="_blank" rel="noopener">Sound</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_dct:StillImage"></a> Class: dct:StillImage <small style="color:#aaa;font-weight:normal">#class_dct:StillImage</small>
+### <a id="class_dct:StillImage" title="#class_dct:StillImage"></a> Class: dct:StillImage
 
 A static visual representation.
 
@@ -1017,14 +1016,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [StillImage](http://purl.org/dc/terms/StillImage) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/StillImage" title="http://purl.org/dc/terms/StillImage" target="_blank" rel="noopener">StillImage</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_dct:Text"></a> Class: dct:Text <small style="color:#aaa;font-weight:normal">#class_dct:Text</small>
+### <a id="class_dct:Text" title="#class_dct:Text"></a> Class: dct:Text
 
 A resource consisting primarily of words for reading.
 
@@ -1034,14 +1033,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Text](http://purl.org/dc/terms/Text) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://purl.org/dc/terms/Text" title="http://purl.org/dc/terms/Text" target="_blank" rel="noopener">Text</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_File"></a> Class: File <small style="color:#aaa;font-weight:normal">#class_File</small>
+### <a id="class_File" title="#class_File"></a> Class: File
 
 A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload.
 
@@ -1051,18 +1050,18 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [MediaObject](http://schema.org/MediaObject) |
-| <a href="#prop_contentSize_File">contentSize <a href="#prop_contentSize_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_contentSize_File</small> | No | File size in (mega/kilo)bytes. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_encodingFormat_File">encodingFormat <a href="#prop_encodingFormat_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_encodingFormat_File</small> | No | The media type typically expressed using a MIME format. | [Text](http://schema.org/Text), [WebPage](http://schema.org/WebPage), [CreativeWork](http://schema.org/CreativeWork) |  |
-| <a href="#prop_hasPart_File">hasPart <a href="#prop_hasPart_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_hasPart_File</small> | No | An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | [class_CreativeWork](#class_CreativeWork), [class_File](#class_File) |  |
-| <a href="#prop_ldac:derivationOf_File">ldac:derivationOf <a href="#prop_ldac:derivationOf_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:derivationOf_File</small> | No | This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF. | ldac:Annotation, ldac:PrimaryMaterial |  |
-| <a href="#prop_ldac:hasDerivation_File">ldac:hasDerivation <a href="#prop_ldac:hasDerivation_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:hasDerivation_File</small> | No | This property references another resource that is derived from it, such as a downsampled audio or video file, or text extracted from a PDF. | ldac:DerivedMaterial |  |
-| <a href="#prop_ldac:materialType_File">ldac:materialType <a href="#prop_ldac:materialType_File" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:materialType_File</small> | No | Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation. | ldac:MaterialTypes |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/MediaObject" title="http://schema.org/MediaObject" target="_blank" rel="noopener">MediaObject</a> |
+| <a href="#prop_contentSize_File" title="#prop_contentSize_File">contentSize</a> | <a href="http://schema.org/contentSize" target="_blank" rel="noopener">http://schema.org/contentSize</a> | No | File size in (mega/kilo)bytes. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_encodingFormat_File" title="#prop_encodingFormat_File">encodingFormat</a> | <a href="http://schema.org/encodingFormat" target="_blank" rel="noopener">http://schema.org/encodingFormat</a> | No | The media type typically expressed using a MIME format. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="http://schema.org/WebPage" title="http://schema.org/WebPage" target="_blank" rel="noopener">WebPage</a>, <a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a> |  |
+| <a href="#prop_hasPart_File" title="#prop_hasPart_File">hasPart</a> | <a href="http://schema.org/hasPart" target="_blank" rel="noopener">http://schema.org/hasPart</a> | No | An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a>, <a href="#class_File" title="#class_File">File</a> |  |
+| <a href="#prop_ldac:derivationOf_File" title="#prop_ldac:derivationOf_File">ldac:derivationOf</a> | <a href="https://w3id.org/ldac/terms#derivationOf" target="_blank" rel="noopener">https://w3id.org/ldac/terms#derivationOf</a> | No | This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF. | <a href="#ldac%3AAnnotation" title="ldac:Annotation">Annotation</a>, <a href="#ldac%3APrimaryMaterial" title="ldac:PrimaryMaterial">PrimaryMaterial</a> |  |
+| <a href="#prop_ldac:hasDerivation_File" title="#prop_ldac:hasDerivation_File">ldac:hasDerivation</a> | <a href="https://w3id.org/ldac/terms#hasDerivation" target="_blank" rel="noopener">https://w3id.org/ldac/terms#hasDerivation</a> | No | This property references another resource that is derived from it, such as a downsampled audio or video file, or text extracted from a PDF. | <a href="#ldac%3ADerivedMaterial" title="ldac:DerivedMaterial">DerivedMaterial</a> |  |
+| <a href="#prop_ldac:materialType_File" title="#prop_ldac:materialType_File">ldac:materialType</a> | <a href="https://w3id.org/ldac/terms#materialType" target="_blank" rel="noopener">https://w3id.org/ldac/terms#materialType</a> | No | Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation. | <a href="#ldac%3AMaterialTypes" title="ldac:MaterialTypes">MaterialTypes</a> |  |
 
 
-### <a id="class_Geometry"></a> Class: Geometry <small style="color:#aaa;font-weight:normal">#class_Geometry</small>
+### <a id="class_Geometry" title="#class_Geometry"></a> Class: Geometry
 
 A coherent set of direct positions in space. The positions are held within a Spatial Reference System (SRS).
 
@@ -1072,13 +1071,13 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Geometry](http://www.opengis.net/ont/geosparql#Geometry) |
-| <a href="#prop_geosparql:asWKT_Geometry">geosparql:asWKT <a href="#prop_geosparql:asWKT_Geometry" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_geosparql:asWKT_Geometry</small> | No | The WKT serialisation of the geometry. | [Text](http://schema.org/Text) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry" target="_blank" rel="noopener">Geometry</a> |
+| <a href="#prop_geosparql:asWKT_Geometry" title="#prop_geosparql:asWKT_Geometry">geosparql:asWKT</a> | <a href="http://www.opengis.net/ont/geosparql#asWKT" target="_blank" rel="noopener">http://www.opengis.net/ont/geosparql#asWKT</a> | No | The WKT serialisation of the geometry. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
 
 
-### <a id="class_Language"></a> Class: Language <small style="color:#aaa;font-weight:normal">#class_Language</small>
+### <a id="class_Language" title="#class_Language"></a> Class: Language
 
 Natural languages such as Spanish, Tamil, Hindi, English, etc.
 
@@ -1088,14 +1087,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Language](http://schema.org/Language) |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/Language" title="http://schema.org/Language" target="_blank" rel="noopener">Language</a> |
 *No properties defined for this class*
 
 
 
-### <a id="class_ldac:CollectionProtocol"></a> Class: ldac:CollectionProtocol <small style="color:#aaa;font-weight:normal">#class_ldac:CollectionProtocol</small>
+### <a id="class_ldac:CollectionProtocol" title="#class_ldac:CollectionProtocol"></a> Class: ldac:CollectionProtocol
 
 A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants.
 
@@ -1105,13 +1104,13 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [CollectionProtocol](https://w3id.org/ldac/terms#CollectionProtocol) |
-| <a href="#prop_ldac:collectionProtocolType_ldac:CollectionProtocol">ldac:collectionProtocolType <a href="#prop_ldac:collectionProtocolType_ldac:CollectionProtocol" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:collectionProtocolType_ldac:CollectionProtocol</small> | No | A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection. | ldac:CollectionProtocolTypeTerms |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="https://w3id.org/ldac/terms#CollectionProtocol" title="https://w3id.org/ldac/terms#CollectionProtocol" target="_blank" rel="noopener">CollectionProtocol</a> |
+| <a href="#prop_ldac:collectionProtocolType_ldac:CollectionProtocol" title="#prop_ldac:collectionProtocolType_ldac:CollectionProtocol">ldac:collectionProtocolType</a> | <a href="https://w3id.org/ldac/terms#collectionProtocolType" target="_blank" rel="noopener">https://w3id.org/ldac/terms#collectionProtocolType</a> | No | A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection. | <a href="#ldac%3ACollectionProtocolTypeTerms" title="ldac:CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> |  |
 
 
-### <a id="class_Organization"></a> Class: Organization <small style="color:#aaa;font-weight:normal">#class_Organization</small>
+### <a id="class_Organization" title="#class_Organization"></a> Class: Organization
 
 An organization such as a school, NGO, corporation, club, etc.
 
@@ -1121,13 +1120,13 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Organization](http://schema.org/Organization) |
-| <a href="#prop_location_Organization">location <a href="#prop_location_Organization" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_location_Organization</small> | No | A location for the organisation, e.g. a city for a publisher. | [Text](http://schema.org/Text) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/Organization" title="http://schema.org/Organization" target="_blank" rel="noopener">Organization</a> |
+| <a href="#prop_location_Organization" title="#prop_location_Organization">location</a> | <a href="http://schema.org/location" target="_blank" rel="noopener">http://schema.org/location</a> | No | A location for the organisation, e.g. a city for a publisher. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
 
 
-### <a id="class_Person"></a> Class: Person <small style="color:#aaa;font-weight:normal">#class_Person</small>
+### <a id="class_Person" title="#class_Person"></a> Class: Person
 
 A person (alive, dead, undead, or fictional).
 
@@ -1137,14 +1136,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Person](http://schema.org/Person) |
-| <a href="#prop_affiliation_Person">affiliation <a href="#prop_affiliation_Person" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_affiliation_Person</small> | No | The organisation that this person is affiliated with. For example, a university or school. | [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:age_Person">ldac:age <a href="#prop_ldac:age_Person" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:age_Person</small> | No | The age of a person. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included. | [Text](http://schema.org/Text) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/Person" title="http://schema.org/Person" target="_blank" rel="noopener">Person</a> |
+| <a href="#prop_affiliation_Person" title="#prop_affiliation_Person">affiliation</a> | <a href="http://schema.org/affiliation" target="_blank" rel="noopener">http://schema.org/affiliation</a> | No | The organisation that this person is affiliated with. For example, a university or school. | <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:age_Person" title="#prop_ldac:age_Person">ldac:age</a> | <a href="https://w3id.org/ldac/terms#age" target="_blank" rel="noopener">https://w3id.org/ldac/terms#age</a> | No | The age or age range of a person, e.g. 25, 30-50, >50. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
 
 
-### <a id="class_Place"></a> Class: Place <small style="color:#aaa;font-weight:normal">#class_Place</small>
+### <a id="class_Place" title="#class_Place"></a> Class: Place
 
 Entities that have a somewhat fixed, physical extension.
 
@@ -1154,14 +1153,14 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Place](http://schema.org/Place) |
-| <a href="#prop_address_Place">address <a href="#prop_address_Place" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_address_Place</small> | No | The physical address of the place. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_geo_Place">geo <a href="#prop_geo_Place" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_geo_Place</small> | No | The geographic coordinates of the place. | [class_Geometry](#class_Geometry) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/Place" title="http://schema.org/Place" target="_blank" rel="noopener">Place</a> |
+| <a href="#prop_address_Place" title="#prop_address_Place">address</a> | <a href="http://schema.org/address" target="_blank" rel="noopener">http://schema.org/address</a> | No | The physical address of the place. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_geo_Place" title="#prop_geo_Place">geo</a> | <a href="http://schema.org/geo" target="_blank" rel="noopener">http://schema.org/geo</a> | No | The geographic coordinates of the place. | <a href="#class_Geometry" title="#class_Geometry">Geometry</a> |  |
 
 
-### <a id="class_RepositoryCollection"></a> Class: RepositoryCollection <small style="color:#aaa;font-weight:normal">#class_RepositoryCollection</small>
+### <a id="class_RepositoryCollection" title="#class_RepositoryCollection"></a> Class: RepositoryCollection
 
 A Collection is a group of resources. Collections have descriptive metadata, access metadata, and may links to works and/or collections. By default, member works and collections are an unordered set, but can be ordered using the ORE Proxy class.
 
@@ -1171,20 +1170,20 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Collection](http://pcdm.org/models#Collection) |
-| <a href="#prop_inLanguage_RepositoryCollection">inLanguage <a href="#prop_inLanguage_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_inLanguage_RepositoryCollection</small> | Yes | The language in which the resource is written. | [class_Language](#class_Language) |  |
-| <a href="#prop_conformsTo_RepositoryCollection">conformsTo <a href="#prop_conformsTo_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_conformsTo_RepositoryCollection</small> | No | A link to the language data commons RO-Crate profile for collections. | [itemlist_conformsTo_RepositoryCollection](#itemlist_conformsTo_RepositoryCollection) |  |
-| <a href="#prop_contentLocation_RepositoryCollection">contentLocation <a href="#prop_contentLocation_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_contentLocation_RepositoryCollection</small> | No | The location depicted or described in the content. For example, the location in a photograph or painting. | [class_Place](#class_Place) |  |
-| <a href="#prop_dateCreated_RepositoryCollection">dateCreated <a href="#prop_dateCreated_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_dateCreated_RepositoryCollection</small> | No | The (earliest) date the data in this dataset were created. | [Date](http://schema.org/Date) |  |
-| <a href="#prop_holdingArchive_RepositoryCollection">holdingArchive <a href="#prop_holdingArchive_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_holdingArchive_RepositoryCollection</small> | No | Organisation where the original of this work or collection is housed. | [class_Organization](#class_Organization), [Text](http://schema.org/Text) |  |
-| <a href="#prop_ldac:dateFreeText_RepositoryCollection">ldac:dateFreeText <a href="#prop_ldac:dateFreeText_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:dateFreeText_RepositoryCollection</small> | No | Date information which cannot be put in one of the standard date formats, e.g. 'mid-1970s', or it is not clear, for example, if it is a creation or publication date. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_ldac:itemLocation_RepositoryCollection">ldac:itemLocation <a href="#prop_ldac:itemLocation_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:itemLocation_RepositoryCollection</small> | No | Current location of the item, e.g. where a set of audio tapes are stored. | [class_Place](#class_Place), [class_Organization](#class_Organization) |  |
-| <a href="#prop_ldac:subjectLanguage_RepositoryCollection">ldac:subjectLanguage <a href="#prop_ldac:subjectLanguage_RepositoryCollection" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:subjectLanguage_RepositoryCollection</small> | No | The languages that the materials in the collection are about (not the language that it is in). | [class_Language](#class_Language) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://pcdm.org/models#Collection" title="http://pcdm.org/models#Collection" target="_blank" rel="noopener">Collection</a> |
+| <a href="#prop_inLanguage_RepositoryCollection" title="#prop_inLanguage_RepositoryCollection">inLanguage</a> | <a href="http://schema.org/inLanguage" target="_blank" rel="noopener">http://schema.org/inLanguage</a> | Yes | The language in which the resource is written. | <a href="#class_Language" title="#class_Language">Language</a> |  |
+| <a href="#prop_conformsTo_RepositoryCollection" title="#prop_conformsTo_RepositoryCollection">conformsTo</a> | <a href="http://purl.org/dc/terms/conformsTo" target="_blank" rel="noopener">http://purl.org/dc/terms/conformsTo</a> | No | A link to the language data commons RO-Crate profile for collections. | <a href="#itemlist_conformsTo_RepositoryCollection" title="#itemlist_conformsTo_RepositoryCollection">Values for conformsTo</a> |  |
+| <a href="#prop_contentLocation_RepositoryCollection" title="#prop_contentLocation_RepositoryCollection">contentLocation</a> | <a href="http://schema.org/contentLocation" target="_blank" rel="noopener">http://schema.org/contentLocation</a> | No | The location depicted or described in the content. For example, the location in a photograph or painting. | <a href="#class_Place" title="#class_Place">Place</a> |  |
+| <a href="#prop_dateCreated_RepositoryCollection" title="#prop_dateCreated_RepositoryCollection">dateCreated</a> | <a href="http://schema.org/dateCreated" target="_blank" rel="noopener">http://schema.org/dateCreated</a> | No | The (earliest) date the data in this dataset were created. | <a href="http://schema.org/Date" title="http://schema.org/Date" target="_blank" rel="noopener">Date</a> |  |
+| <a href="#prop_holdingArchive_RepositoryCollection" title="#prop_holdingArchive_RepositoryCollection">holdingArchive</a> | <a href="http://schema.org/holdingArchive" target="_blank" rel="noopener">http://schema.org/holdingArchive</a> | No | Organisation where the original of this work or collection is housed. | <a href="#class_Organization" title="#class_Organization">Organization</a>, <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_ldac:dateFreeText_RepositoryCollection" title="#prop_ldac:dateFreeText_RepositoryCollection">ldac:dateFreeText</a> | <a href="https://w3id.org/ldac/terms#dateFreeText" target="_blank" rel="noopener">https://w3id.org/ldac/terms#dateFreeText</a> | No | Date information which cannot be put in one of the standard date formats, e.g. 'mid-1970s', or it is not clear, for example, if it is a creation or publication date. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_ldac:itemLocation_RepositoryCollection" title="#prop_ldac:itemLocation_RepositoryCollection">ldac:itemLocation</a> | <a href="https://w3id.org/ldac/terms#itemLocation" target="_blank" rel="noopener">https://w3id.org/ldac/terms#itemLocation</a> | No | Current location of the item, e.g. where a set of audio tapes are stored. | <a href="#class_Place" title="#class_Place">Place</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> |  |
+| <a href="#prop_ldac:subjectLanguage_RepositoryCollection" title="#prop_ldac:subjectLanguage_RepositoryCollection">ldac:subjectLanguage</a> | <a href="https://w3id.org/ldac/terms#subjectLanguage" target="_blank" rel="noopener">https://w3id.org/ldac/terms#subjectLanguage</a> | No | The languages that the materials in the collection are about (not the language that it is in). | <a href="#class_Language" title="#class_Language">Language</a> |  |
 
 
-### <a id="class_RepositoryObject"></a> Class: RepositoryObject <small style="color:#aaa;font-weight:normal">#class_RepositoryObject</small>
+### <a id="class_RepositoryObject" title="#class_RepositoryObject"></a> Class: RepositoryObject
 
 An Object is an intellectual entity, sometimes called a "work", "digital object", etc. Objects have descriptive metadata, access metadata, may contain files and other Objects as member "components". Each level of a work is therefore represented by an Object instance, and is capable of standing on its own, being linked to from Collections and other Objects. Member Objects can be ordered using the ORE Proxy class.
 
@@ -1194,20 +1193,20 @@ Instances of this type MAY be present in the crate.
 | --------- | --------- |
 | N/A | N/A |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Object](http://pcdm.org/models#Object) |
-| <a href="#prop_conformsTo_RepositoryObject">conformsTo <a href="#prop_conformsTo_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_conformsTo_RepositoryObject</small> | No | A link to the language data commons RO-Crate profile for collections. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_creator_RepositoryObject">creator <a href="#prop_creator_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_creator_RepositoryObject</small> | No | The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork. | [class_Person](#class_Person) |  |
-| <a href="#prop_dateCreated_RepositoryObject">dateCreated <a href="#prop_dateCreated_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_dateCreated_RepositoryObject</small> | No | The date on which the CreativeWork was created or the item was added to a DataFeed. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_description_RepositoryObject">description <a href="#prop_description_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_description_RepositoryObject</small> | No | A description of the item. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_identifier_RepositoryObject">identifier <a href="#prop_identifier_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_identifier_RepositoryObject</small> | No | The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.  | [PropertyValue](http://schema.org/PropertyValue), [Text](http://schema.org/Text), [URL](http://schema.org/URL) |  |
-| <a href="#prop_ldac:hasAnnotation_RepositoryObject">ldac:hasAnnotation <a href="#prop_ldac:hasAnnotation_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_ldac:hasAnnotation_RepositoryObject</small> | No | This resource is referenced by another resource that adds information to it such as a translation, transcription or other analysis. | ldac:Annotation |  |
-| <a href="#prop_license_RepositoryObject">license <a href="#prop_license_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_license_RepositoryObject</small> | No | A license document that applies to this content, typically indicated by URL. | [class_DataReuseLicense](#class_DataReuseLicense) |  |
-| <a href="#prop_temporalCoverage_RepositoryObject">temporalCoverage <a href="#prop_temporalCoverage_RepositoryObject" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_temporalCoverage_RepositoryObject</small> | No | The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written "2011/2012"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL. Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via "1939/1945". Open-ended date ranges can be written with ".." in place of the end date. For example, "2015-11/.." indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated. | [Text](http://schema.org/Text) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://pcdm.org/models#Object" title="http://pcdm.org/models#Object" target="_blank" rel="noopener">Object</a> |
+| <a href="#prop_conformsTo_RepositoryObject" title="#prop_conformsTo_RepositoryObject">conformsTo</a> | <a href="http://purl.org/dc/terms/conformsTo" target="_blank" rel="noopener">http://purl.org/dc/terms/conformsTo</a> | No | A link to the language data commons RO-Crate profile for collections. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_creator_RepositoryObject" title="#prop_creator_RepositoryObject">creator</a> | <a href="http://schema.org/creator" target="_blank" rel="noopener">http://schema.org/creator</a> | No | The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork. | <a href="#class_Person" title="#class_Person">Person</a> |  |
+| <a href="#prop_dateCreated_RepositoryObject" title="#prop_dateCreated_RepositoryObject">dateCreated</a> | <a href="http://schema.org/dateCreated" target="_blank" rel="noopener">http://schema.org/dateCreated</a> | No | The date on which the CreativeWork was created or the item was added to a DataFeed. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_description_RepositoryObject" title="#prop_description_RepositoryObject">description</a> | <a href="http://schema.org/description" target="_blank" rel="noopener">http://schema.org/description</a> | No | A description of the item. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_identifier_RepositoryObject" title="#prop_identifier_RepositoryObject">identifier</a> | <a href="http://schema.org/identifier" target="_blank" rel="noopener">http://schema.org/identifier</a> | No | The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.  | <a href="http://schema.org/PropertyValue" title="http://schema.org/PropertyValue" target="_blank" rel="noopener">PropertyValue</a>, <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a> |  |
+| <a href="#prop_ldac:hasAnnotation_RepositoryObject" title="#prop_ldac:hasAnnotation_RepositoryObject">ldac:hasAnnotation</a> | <a href="https://w3id.org/ldac/terms#hasAnnotation" target="_blank" rel="noopener">https://w3id.org/ldac/terms#hasAnnotation</a> | No | This resource is referenced by another resource that adds information to it such as a translation, transcription or other analysis. | <a href="#ldac%3AAnnotation" title="ldac:Annotation">Annotation</a> |  |
+| <a href="#prop_license_RepositoryObject" title="#prop_license_RepositoryObject">license</a> | <a href="http://schema.org/license" target="_blank" rel="noopener">http://schema.org/license</a> | No | A license document that applies to this content, typically indicated by URL. | <a href="#class_DataReuseLicense" title="#class_DataReuseLicense">DataReuseLicense</a> |  |
+| <a href="#prop_temporalCoverage_RepositoryObject" title="#prop_temporalCoverage_RepositoryObject">temporalCoverage</a> | <a href="http://schema.org/temporalCoverage" target="_blank" rel="noopener">http://schema.org/temporalCoverage</a> | No | The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written "2011/2012"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL. Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via "1939/1945". Open-ended date ranges can be written with ".." in place of the end date. For example, "2015-11/.." indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
 
 
-### <a id="RO-Crate_Metadata_Descriptor"></a> Class: RO-Crate Metadata Descriptor <small style="color:#aaa;font-weight:normal">#RO-Crate_Metadata_Descriptor</small>
+### <a id="RO-Crate_Metadata_Descriptor" title="#RO-Crate_Metadata_Descriptor"></a> Class: RO-Crate Metadata Descriptor
 
 An RO-Crate @graph must contain an entity of Type @CreativeWork which is known as the RO-Crate Metadata descriptor.
 
@@ -1219,14 +1218,14 @@ At least 1 instances of this type MUST be present in the crate.
 | --------- | --------- |
 | 1 | 1 |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [CreativeWork](http://schema.org/CreativeWork) |
-| <a href="#RO-Crate_Metadata_Descriptor.id">@id</a> <small style="color:#aaa;font-weight:normal">#RO-Crate_Metadata_Descriptor.id</small> | Yes | This is the 'magic' entity that identifies the RO-Crate Metadata Descriptor, which is the root of the graph and the entry point for validation. It must have a @type of RO-Crate_Metadata_Descriptor and its @id must be 'ro-crate-metadata.json'. | [Root_Data_Entity](#Root_Data_Entity) | ro-crate-metadata.json |
-| <a href="#RO-Crate_Metadata_Descriptor.about">about <a href="#RO-Crate_Metadata_Descriptor.about" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#RO-Crate_Metadata_Descriptor.about</small> | Yes | This property on the RO-Crate Metadata Descriptor references the Root Data Entity. In a SoSS+ profile there may be Schemas present for more than one 'flavour' of Root Data Entity with different @type arrays or `@conformsTo` references (or other specializations). | [Root_Data_Entity](#Root_Data_Entity) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a> |
+| <a href="#RO-Crate_Metadata_Descriptor.id" title="#RO-Crate_Metadata_Descriptor.id">@id</a> |  | Yes | This is the 'magic' entity that identifies the RO-Crate Metadata Descriptor, which is the root of the graph and the entry point for validation. It must have a @type of RO-Crate_Metadata_Descriptor and its @id must be 'ro-crate-metadata.json'. | <a href="#Root_Data_Entity" title="#Root_Data_Entity">Root Data Entity</a> | ro-crate-metadata.json |
+| <a href="#RO-Crate_Metadata_Descriptor.about" title="#RO-Crate_Metadata_Descriptor.about">about</a> | <a href="http://schema.org/about" target="_blank" rel="noopener">http://schema.org/about</a> | Yes | This property on the RO-Crate Metadata Descriptor references the Root Data Entity. In a SoSS+ profile there may be Schemas present for more than one 'flavour' of Root Data Entity with different @type arrays or `@conformsTo` references (or other specializations). | <a href="#Root_Data_Entity" title="#Root_Data_Entity">Root Data Entity</a> |  |
 
 
-### <a id="README_Entity"></a> Class: README Entity <small style="color:#aaa;font-weight:normal">#README_Entity</small>
+### <a id="README_Entity" title="#README_Entity"></a> Class: README Entity
 
 An Data Package MUST contain a README file that describes the contents of the package. This entity represents the README.html file.
 
@@ -1238,13 +1237,13 @@ At least 1 instances of this type MUST be present in the crate.
 | --------- | --------- |
 | 1 | 1 |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [MediaObject](http://schema.org/MediaObject) |
-| <a href="#README.id">@id</a> <small style="color:#aaa;font-weight:normal">#README.id</small> | Yes | There must with the path `README.html` in the root of the RO-Crate, and it must be described by an entity of type README_Entity with an @id of `README.html`. | [README_Entity](#README_Entity) | README.html |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/MediaObject" title="http://schema.org/MediaObject" target="_blank" rel="noopener">MediaObject</a> |
+| <a href="#README.id" title="#README.id">@id</a> |  | Yes | There must with the path `README.html` in the root of the RO-Crate, and it must be described by an entity of type README_Entity with an @id of `README.html`. | <a href="#README_Entity" title="#README_Entity">README Entity</a> | README.html |
 
 
-### <a id="Root_Data_Entity"></a> Class: Root Data Entity <small style="color:#aaa;font-weight:normal">#Root_Data_Entity</small>
+### <a id="Root_Data_Entity" title="#Root_Data_Entity"></a> Class: Root Data Entity
 
 The Root Data Entity for an RO-Crate. This is the main entity of the RO-Crate and is the one that is referenced by the RO-Crate Metadata Descriptor. In this profile, it is a Dataset and RepositoryCollection.
 
@@ -1256,508 +1255,518 @@ At least 1 instances of this type MUST be present in the crate.
 | --------- | --------- |
 | 1 | 1 |
 
-| Property | Required | Description | Range | Value |
-| -------- | -------- | ----------- | ----- | ----- |
-| @type | Yes |  |  | [Dataset](http://schema.org/Dataset), [Collection](http://pcdm.org/models#Collection) |
-| <a href="#prop_datePublished_Dataset">datePublished <a href="#prop_datePublished_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_datePublished_Dataset</small> | Yes | A date that this collection was published. This should be the date that the collection was first made available. | [Date](http://schema.org/Date) |  |
-| <a href="#prop_description_Dataset">description <a href="#prop_description_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_description_Dataset</small> | Yes | An abstract of the collection. Include as much detail as possible about the motivation and use of the collection. | [Text](http://schema.org/Text) |  |
-| <a href="#prop_license_Dataset">license <a href="#prop_license_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_license_Dataset</small> | Yes | A license document that applies to this content, typically indicated by URL. | [class_DataReuseLicense](#class_DataReuseLicense), [URL](http://schema.org/URL), [Text](http://schema.org/Text) |  |
-| <a href="#prop_name_Dataset">name <a href="#prop_name_Dataset" target="_blank" rel="noopener">ⓘ</a></a> <small style="color:#aaa;font-weight:normal">#prop_name_Dataset</small> | Yes | The name of this data collection. | [Text](http://schema.org/Text) |  |
+| Property | Specialization Of | Required | Description | Range | Value |
+| -------- | ----------------- | -------- | ----------- | ----- | ----- |
+| @type |  | Yes |  |  | <a href="http://schema.org/Dataset" title="http://schema.org/Dataset" target="_blank" rel="noopener">Dataset</a>, <a href="http://pcdm.org/models#Collection" title="http://pcdm.org/models#Collection" target="_blank" rel="noopener">Collection</a> |
+| <a href="#prop_datePublished_Dataset" title="#prop_datePublished_Dataset">datePublished</a> | <a href="http://schema.org/datePublished" target="_blank" rel="noopener">http://schema.org/datePublished</a> | Yes | A date that this collection was published. This should be the date that the collection was first made available. | <a href="http://schema.org/Date" title="http://schema.org/Date" target="_blank" rel="noopener">Date</a> |  |
+| <a href="#prop_description_Dataset" title="#prop_description_Dataset">description</a> | <a href="http://schema.org/description" target="_blank" rel="noopener">http://schema.org/description</a> | Yes | An abstract of the collection. Include as much detail as possible about the motivation and use of the collection. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_license_Dataset" title="#prop_license_Dataset">license</a> | <a href="http://schema.org/license" target="_blank" rel="noopener">http://schema.org/license</a> | Yes | A license document that applies to this content, typically indicated by URL. | <a href="#class_DataReuseLicense" title="#class_DataReuseLicense">DataReuseLicense</a>, <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a>, <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
+| <a href="#prop_name_Dataset" title="#prop_name_Dataset">name</a> | <a href="http://schema.org/name" target="_blank" rel="noopener">http://schema.org/name</a> | Yes | The name of this data collection. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> |  |
 
 ## All Properties
 
-### <a id="README.id"></a> Property: @id <small style="color:#aaa;font-weight:normal">#README.id</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| There must with the path `README.html` in the root of the RO-Crate, and it must be described by an entity of type README_Entity with an @id of `README.html`. | [README_Entity](#README_Entity) | [README_Entity](#README_Entity) |
-### <a id="RO-Crate_Metadata_Descriptor.id"></a> Property: @id <small style="color:#aaa;font-weight:normal">#RO-Crate_Metadata_Descriptor.id</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| This is the 'magic' entity that identifies the RO-Crate Metadata Descriptor, which is the root of the graph and the entry point for validation. It must have a @type of RO-Crate_Metadata_Descriptor and its @id must be 'ro-crate-metadata.json'. | [Root_Data_Entity](#Root_Data_Entity) | [RO-Crate_Metadata_Descriptor](#RO-Crate_Metadata_Descriptor) |
-### <a id="RO-Crate_Metadata_Descriptor.about"></a> Property: about <a href="http://schema.org/about" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#RO-Crate_Metadata_Descriptor.about</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| This property on the RO-Crate Metadata Descriptor references the Root Data Entity. In a SoSS+ profile there may be Schemas present for more than one 'flavour' of Root Data Entity with different @type arrays or `@conformsTo` references (or other specializations). | [Root_Data_Entity](#Root_Data_Entity) | [RO-Crate_Metadata_Descriptor](#RO-Crate_Metadata_Descriptor) |
-### <a id="prop_accountablePerson_Dataset"></a> Property: accountablePerson <a href="http://schema.org/accountablePerson" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_accountablePerson_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The person or organisation who is the data steward for this resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_address_Place"></a> Property: address <a href="http://schema.org/address" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_address_Place</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The physical address of the place. | [Text](http://schema.org/Text) | [class_Place](#class_Place) |
-### <a id="prop_affiliation_Person"></a> Property: affiliation <a href="http://schema.org/affiliation" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_affiliation_Person</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The organisation that this person is affiliated with. For example, a university or school. | [class_Organization](#class_Organization) | [class_Person](#class_Person) |
-### <a id="prop_author_CreativeWork"></a> Property: author <a href="http://schema.org/author" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_author_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The person or organisation responsible for creating this work. Authors should be identified using URIs such as ORCiD or ROR. | [Text](http://schema.org/Text), [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_author_Dataset"></a> Property: author <a href="http://schema.org/author" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_author_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_citation_Dataset"></a> Property: citation <a href="http://schema.org/citation" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_citation_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| Associated publications. | [class_CreativeWork](#class_CreativeWork) | [class_Dataset](#class_Dataset) |
-### <a id="prop_conformsTo_RepositoryCollection"></a> Property: conformsTo <a href="http://purl.org/dc/terms/conformsTo" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_conformsTo_RepositoryCollection</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A link to the language data commons RO-Crate profile for collections. | [itemlist_conformsTo_RepositoryCollection](#itemlist_conformsTo_RepositoryCollection) | [class_RepositoryCollection](#class_RepositoryCollection) |
-### <a id="prop_conformsTo_RepositoryObject"></a> Property: conformsTo <a href="http://purl.org/dc/terms/conformsTo" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_conformsTo_RepositoryObject</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A link to the language data commons RO-Crate profile for collections. | [Text](http://schema.org/Text) | [class_RepositoryObject](#class_RepositoryObject) |
-### <a id="prop_contentLocation_RepositoryCollection"></a> Property: contentLocation <a href="http://schema.org/contentLocation" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_contentLocation_RepositoryCollection</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The location depicted or described in the content. For example, the location in a photograph or painting. | [class_Place](#class_Place) | [class_RepositoryCollection](#class_RepositoryCollection) |
-### <a id="prop_contentSize_File"></a> Property: contentSize <a href="http://schema.org/contentSize" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_contentSize_File</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| File size in (mega/kilo)bytes. | [Text](http://schema.org/Text) | [class_File](#class_File) |
-### <a id="prop_creator_RepositoryObject"></a> Property: creator <a href="http://schema.org/creator" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_creator_RepositoryObject</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork. | [class_Person](#class_Person) | [class_RepositoryObject](#class_RepositoryObject) |
-### <a id="prop_creditText_Dataset"></a> Property: creditText <a href="http://schema.org/creditText" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_creditText_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A free text bibliographic citation for this material, e.g. 'Cite as: Musgrave (2023). Title of work. DOI'. | [Text](http://schema.org/Text) | [class_Dataset](#class_Dataset) |
-### <a id="prop_dateCreated_RepositoryCollection"></a> Property: dateCreated <a href="http://schema.org/dateCreated" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_dateCreated_RepositoryCollection</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The (earliest) date the data in this dataset were created. | [Date](http://schema.org/Date) | [class_RepositoryCollection](#class_RepositoryCollection) |
-### <a id="prop_dateCreated_RepositoryObject"></a> Property: dateCreated <a href="http://schema.org/dateCreated" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_dateCreated_RepositoryObject</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The date on which the CreativeWork was created or the item was added to a DataFeed. | [Text](http://schema.org/Text) | [class_RepositoryObject](#class_RepositoryObject) |
-### <a id="prop_datePublished_Dataset"></a> Property: datePublished <a href="http://schema.org/datePublished" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_datePublished_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A date that this collection was published. This should be the date that the collection was first made available. | [Date](http://schema.org/Date) | [Root_Data_Entity](#Root_Data_Entity) |
-### <a id="prop_dct:rightsHolder_Dataset"></a> Property: dct:rightsHolder <a href="http://purl.org/dc/terms/rightsHolder" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_dct:rightsHolder_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The person or organisation owning or managing rights over the resource. | [Text](http://schema.org/Text), [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_description_Dataset"></a> Property: description <a href="http://schema.org/description" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_description_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| An abstract of the collection. Include as much detail as possible about the motivation and use of the collection. | [Text](http://schema.org/Text) | [Root_Data_Entity](#Root_Data_Entity) |
-### <a id="prop_description_RepositoryObject"></a> Property: description <a href="http://schema.org/description" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_description_RepositoryObject</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A description of the item. | [Text](http://schema.org/Text) | [class_RepositoryObject](#class_RepositoryObject) |
-### <a id="prop_encodingFormat_File"></a> Property: encodingFormat <a href="http://schema.org/encodingFormat" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_encodingFormat_File</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The media type typically expressed using a MIME format. | [Text](http://schema.org/Text), [WebPage](http://schema.org/WebPage), [CreativeWork](http://schema.org/CreativeWork) | [class_File](#class_File) |
-### <a id="prop_funder_Dataset"></a> Property: funder <a href="http://schema.org/funder" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_funder_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The organisation(s) responsible for funding the creation or collection of this dataset. | [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_geo_Place"></a> Property: geo <a href="http://schema.org/geo" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_geo_Place</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The geographic coordinates of the place. | [class_Geometry](#class_Geometry) | [class_Place](#class_Place) |
-### <a id="prop_geosparql:asWKT_Geometry"></a> Property: geosparql:asWKT <a href="http://www.opengis.net/ont/geosparql#asWKT" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_geosparql:asWKT_Geometry</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The WKT serialisation of the geometry. | [Text](http://schema.org/Text) | [class_Geometry](#class_Geometry) |
-### <a id="prop_hasPart_Dataset"></a> Property: hasPart <a href="http://schema.org/hasPart" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_hasPart_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | [class_CreativeWork](#class_CreativeWork), [class_File](#class_File), [class_Dataset](#class_Dataset) | [class_Dataset](#class_Dataset) |
-### <a id="prop_hasPart_File"></a> Property: hasPart <a href="http://schema.org/hasPart" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_hasPart_File</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | [class_CreativeWork](#class_CreativeWork), [class_File](#class_File) | [class_File](#class_File) |
-### <a id="prop_holdingArchive_RepositoryCollection"></a> Property: holdingArchive <a href="http://schema.org/holdingArchive" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_holdingArchive_RepositoryCollection</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| Organisation where the original of this work or collection is housed. | [class_Organization](#class_Organization), [Text](http://schema.org/Text) | [class_RepositoryCollection](#class_RepositoryCollection) |
-### <a id="prop_identifier_RepositoryObject"></a> Property: identifier <a href="http://schema.org/identifier" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_identifier_RepositoryObject</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.  | [PropertyValue](http://schema.org/PropertyValue), [Text](http://schema.org/Text), [URL](http://schema.org/URL) | [class_RepositoryObject](#class_RepositoryObject) |
-### <a id="prop_inLanguage_RepositoryCollection"></a> Property: inLanguage <a href="http://schema.org/inLanguage" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_inLanguage_RepositoryCollection</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The language in which the resource is written. | [class_Language](#class_Language) | [class_RepositoryCollection](#class_RepositoryCollection) |
-### <a id="prop_isAccessibleForFree_Dataset"></a> Property: isAccessibleForFree <a href="http://schema.org/isAccessibleForFree" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_isAccessibleForFree_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| This is available under an Open Access license. | [Boolean](http://schema.org/Boolean) | [class_Dataset](#class_Dataset) |
-### <a id="prop_isBasedOn_Dataset"></a> Property: isBasedOn <a href="http://schema.org/isBasedOn" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_isBasedOn_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| Link to or description of an original resource. | [Text](http://schema.org/Text), [URL](http://schema.org/URL), [class_CreativeWork](#class_CreativeWork), [class_Dataset](#class_Dataset), [class_File](#class_File) | [class_Dataset](#class_Dataset) |
-### <a id="prop_isbn_CreativeWork"></a> Property: isbn <a href="http://schema.org/isbn" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_isbn_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The ISBN for this work, if applicable. | [Text](http://schema.org/Text) | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_isPartOf_Dataset"></a> Property: isPartOf <a href="http://schema.org/isPartOf" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_isPartOf_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| An item or CreativeWork that this item, or CreativeWork (in some sense), is part of. | [URL](http://schema.org/URL), [class_CreativeWork](#class_CreativeWork) | [class_Dataset](#class_Dataset) |
-### <a id="prop_issn_CreativeWork"></a> Property: issn <a href="http://schema.org/issn" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_issn_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The ISSN for this publication. | [Text](http://schema.org/Text) | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_ldac:access_DataReuseLicense"></a> Property: ldac:access <a href="https://w3id.org/ldac/terms#access" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:access_DataReuseLicense</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| Whether this is an open or restricted access license. | ldac:AccessTypes | [class_DataReuseLicense](#class_DataReuseLicense) |
-### <a id="prop_ldac:accessControlList_DataReuseLicense"></a> Property: ldac:accessControlList <a href="https://w3id.org/ldac/terms#accessControlList" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:accessControlList_DataReuseLicense</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| When a license has an authorizationWorkflow property with a value of the DefinedTerm AccessControlList this property has a URI value that points to a list of userIDs. | [URL](http://schema.org/URL) | [class_DataReuseLicense](#class_DataReuseLicense) |
-### <a id="prop_ldac:age_Person"></a> Property: ldac:age <a href="https://w3id.org/ldac/terms#age" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:age_Person</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The age of a person. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included. | [Text](http://schema.org/Text) | [class_Person](#class_Person) |
-### <a id="prop_ldac:annotationOf_Dataset"></a> Property: ldac:annotationOf <a href="https://w3id.org/ldac/terms#annotationOf" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:annotationOf_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| This resource contains some kind of description that adds information to the resource it references. | ldac:PrimaryMaterial | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:annotationType_CreativeWork"></a> Property: ldac:annotationType <a href="https://w3id.org/ldac/terms#annotationType" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:annotationType_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The type of an Annotation resource. | ldac:AnnotationTypeTerms | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_ldac:annotator_Dataset"></a> Property: ldac:annotator <a href="https://w3id.org/ldac/terms#annotator" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:annotator_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant produced an annotation of this or a related resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:authorizationWorkflow_DataReuseLicense"></a> Property: ldac:authorizationWorkflow <a href="https://w3id.org/ldac/terms#authorizationWorkflow" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:authorizationWorkflow_DataReuseLicense</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| By what process a user is granted authorization to a license. | ldac:AuthorizationWorkflows | [class_DataReuseLicense](#class_DataReuseLicense) |
-### <a id="prop_ldac:channels_CreativeWork"></a> Property: ldac:channels <a href="https://w3id.org/ldac/terms#channels" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:channels_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The number of audio channels this resource contains (e.g. 1, 2, 5.1). | [Text](http://schema.org/Text) | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_ldac:collectionEventType_CollectionEvent"></a> Property: ldac:collectionEventType <a href="https://w3id.org/ldac/terms#collectionEventType" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:collectionEventType_CollectionEvent</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment. | ldac:CollectionEventTypeTerms | [class_CollectionEvent](#class_CollectionEvent) |
-### <a id="prop_ldac:collectionProtocolType_ldac:CollectionProtocol"></a> Property: ldac:collectionProtocolType <a href="https://w3id.org/ldac/terms#collectionProtocolType" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:collectionProtocolType_ldac:CollectionProtocol</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection. | ldac:CollectionProtocolTypeTerms | [class_ldac:CollectionProtocol](#class_ldac:CollectionProtocol) |
-### <a id="prop_ldac:communicationMode_CreativeWork"></a> Property: ldac:communicationMode <a href="https://w3id.org/ldac/terms#communicationMode" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:communicationMode_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property. | ldac:CommunicationModeTerms | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_ldac:compiler_Dataset"></a> Property: ldac:compiler <a href="https://w3id.org/ldac/terms#compiler" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:compiler_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant is responsible for collecting the sub-parts of the resource together. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:consultant_Dataset"></a> Property: ldac:consultant <a href="https://w3id.org/ldac/terms#consultant" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:consultant_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:dataInputter_Dataset"></a> Property: ldac:dataInputter <a href="https://w3id.org/ldac/terms#dataInputter" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:dataInputter_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant responsible for entering, re-typing, and/or structuring the data contained in the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:dateFreeText_RepositoryCollection"></a> Property: ldac:dateFreeText <a href="https://w3id.org/ldac/terms#dateFreeText" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:dateFreeText_RepositoryCollection</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| Date information which cannot be put in one of the standard date formats, e.g. 'mid-1970s', or it is not clear, for example, if it is a creation or publication date. | [Text](http://schema.org/Text) | [class_RepositoryCollection](#class_RepositoryCollection) |
-### <a id="prop_ldac:depositor_Dataset"></a> Property: ldac:depositor <a href="https://w3id.org/ldac/terms#depositor" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:depositor_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant responsible for depositing the resource in an archive. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:derivationOf_File"></a> Property: ldac:derivationOf <a href="https://w3id.org/ldac/terms#derivationOf" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:derivationOf_File</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF. | ldac:Annotation, ldac:PrimaryMaterial | [class_File](#class_File) |
-### <a id="prop_ldac:developer_Dataset"></a> Property: ldac:developer <a href="https://w3id.org/ldac/terms#developer" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:developer_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:doi_Dataset"></a> Property: ldac:doi <a href="https://w3id.org/ldac/terms#doi" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:doi_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A Digital Object Identifier, e.g. https://doi.org/10.1000/182. | [Text](http://schema.org/Text) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:editor_Dataset"></a> Property: ldac:editor <a href="https://w3id.org/ldac/terms#editor" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:editor_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant reviewed, corrected, and/or tested the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:hasAnnotation_RepositoryObject"></a> Property: ldac:hasAnnotation <a href="https://w3id.org/ldac/terms#hasAnnotation" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:hasAnnotation_RepositoryObject</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| This resource is referenced by another resource that adds information to it such as a translation, transcription or other analysis. | ldac:Annotation | [class_RepositoryObject](#class_RepositoryObject) |
-### <a id="prop_ldac:hasCollectionProtocol_Dataset"></a> Property: ldac:hasCollectionProtocol <a href="https://w3id.org/ldac/terms#hasCollectionProtocol" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:hasCollectionProtocol_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection. | [class_ldac:CollectionProtocol](#class_ldac:CollectionProtocol) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:hasDerivation_File"></a> Property: ldac:hasDerivation <a href="https://w3id.org/ldac/terms#hasDerivation" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:hasDerivation_File</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| This property references another resource that is derived from it, such as a downsampled audio or video file, or text extracted from a PDF. | ldac:DerivedMaterial | [class_File](#class_File) |
-### <a id="prop_ldac:illustrator_Dataset"></a> Property: ldac:illustrator <a href="https://w3id.org/ldac/terms#illustrator" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:illustrator_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant contributed drawings or other illustrations to the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:indexableText_CreativeWork"></a> Property: ldac:indexableText <a href="https://w3id.org/ldac/terms#indexableText" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:indexableText_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| One or more target File(s) that together contain the full text of an item – each file should indicate its language. | [MediaObject](http://schema.org/MediaObject) | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_ldac:interpreter_Dataset"></a> Property: ldac:interpreter <a href="https://w3id.org/ldac/terms#interpreter" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:interpreter_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:interviewee_Dataset"></a> Property: ldac:interviewee <a href="https://w3id.org/ldac/terms#interviewee" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:interviewee_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant was a respondent in an interview. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:interviewer_Dataset"></a> Property: ldac:interviewer <a href="https://w3id.org/ldac/terms#interviewer" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:interviewer_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant conducted an interview that forms part of the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:isDeIdentified_CreativeWork"></a> Property: ldac:isDeIdentified <a href="https://w3id.org/ldac/terms#isDeIdentified" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:isDeIdentified_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms. | [Boolean](http://schema.org/Boolean) | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_ldac:itemLocation_RepositoryCollection"></a> Property: ldac:itemLocation <a href="https://w3id.org/ldac/terms#itemLocation" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:itemLocation_RepositoryCollection</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| Current location of the item, e.g. where a set of audio tapes are stored. | [class_Place](#class_Place), [class_Organization](#class_Organization) | [class_RepositoryCollection](#class_RepositoryCollection) |
-### <a id="prop_ldac:linguisticGenre_CreativeWork"></a> Property: ldac:linguisticGenre <a href="https://w3id.org/ldac/terms#linguisticGenre" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:linguisticGenre_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A linguistic classification of the genre of this resource. | ldac:LinguisticGenreTerms | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_ldac:material_CreativeWork"></a> Property: ldac:material <a href="https://w3id.org/ldac/terms#material" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:material_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes. | [Text](http://schema.org/Text) | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_ldac:materialType_File"></a> Property: ldac:materialType <a href="https://w3id.org/ldac/terms#materialType" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:materialType_File</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation. | ldac:MaterialTypes | [class_File](#class_File) |
-### <a id="prop_ldac:openAccessIndex_CreativeWork"></a> Property: ldac:openAccessIndex <a href="https://w3id.org/ldac/terms#openAccessIndex" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:openAccessIndex_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not. | ldac:IndexTypes | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_ldac:participant_Dataset"></a> Property: ldac:participant <a href="https://w3id.org/ldac/terms#participant" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:participant_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant was present during the creation of the resource, but did not contribute substantially to its content. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:performer_Dataset"></a> Property: ldac:performer <a href="https://w3id.org/ldac/terms#performer" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:performer_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:photographer_Dataset"></a> Property: ldac:photographer <a href="https://w3id.org/ldac/terms#photographer" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:photographer_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant took the photograph, or shot the film, that appears in or constitutes the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:recorder_Dataset"></a> Property: ldac:recorder <a href="https://w3id.org/ldac/terms#recorder" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:recorder_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant operated the recording machinery used to create the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:register_CreativeWork"></a> Property: ldac:register <a href="https://w3id.org/ldac/terms#register" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:register_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource. | [Text](http://schema.org/Text) | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_ldac:researcher_Dataset"></a> Property: ldac:researcher <a href="https://w3id.org/ldac/terms#researcher" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:researcher_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:researchParticipant_Dataset"></a> Property: ldac:researchParticipant <a href="https://w3id.org/ldac/terms#researchParticipant" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:researchParticipant_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:responder_Dataset"></a> Property: ldac:responder <a href="https://w3id.org/ldac/terms#responder" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:responder_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:reviewDate_DataLicense"></a> Property: ldac:reviewDate <a href="https://w3id.org/ldac/terms#reviewDate" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:reviewDate_DataLicense</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The date that this license should be reviewed. | [Text](http://schema.org/Text) | [class_DataLicense](#class_DataLicense) |
-### <a id="prop_ldac:signer_Dataset"></a> Property: ldac:signer <a href="https://w3id.org/ldac/terms#signer" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:signer_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:singer_Dataset"></a> Property: ldac:singer <a href="https://w3id.org/ldac/terms#singer" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:singer_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:speaker_Dataset"></a> Property: ldac:speaker <a href="https://w3id.org/ldac/terms#speaker" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:speaker_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:sponsor_Dataset"></a> Property: ldac:sponsor <a href="https://w3id.org/ldac/terms#sponsor" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:sponsor_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant contributed financial support to the creation of the resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:subjectLanguage_RepositoryCollection"></a> Property: ldac:subjectLanguage <a href="https://w3id.org/ldac/terms#subjectLanguage" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:subjectLanguage_RepositoryCollection</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The languages that the materials in the collection are about (not the language that it is in). | [class_Language](#class_Language) | [class_RepositoryCollection](#class_RepositoryCollection) |
-### <a id="prop_ldac:transcriber_Dataset"></a> Property: ldac:transcriber <a href="https://w3id.org/ldac/terms#transcriber" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:transcriber_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant produced a transcription of this or a related resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:translator_Dataset"></a> Property: ldac:translator <a href="https://w3id.org/ldac/terms#translator" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:translator_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The participant produced a translation of this or a related resource. | [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_ldac:writtenLanguageFormat_CreativeWork"></a> Property: ldac:writtenLanguageFormat <a href="https://w3id.org/ldac/terms#writtenLanguageFormat" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_ldac:writtenLanguageFormat_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten). | ldac:WrittenLanguageTypeTerms | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_license_Dataset"></a> Property: license <a href="http://schema.org/license" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_license_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A license document that applies to this content, typically indicated by URL. | [class_DataReuseLicense](#class_DataReuseLicense), [URL](http://schema.org/URL), [Text](http://schema.org/Text) | [Root_Data_Entity](#Root_Data_Entity) |
-### <a id="prop_license_RepositoryObject"></a> Property: license <a href="http://schema.org/license" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_license_RepositoryObject</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A license document that applies to this content, typically indicated by URL. | [class_DataReuseLicense](#class_DataReuseLicense) | [class_RepositoryObject](#class_RepositoryObject) |
-### <a id="prop_location_Organization"></a> Property: location <a href="http://schema.org/location" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_location_Organization</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| A location for the organisation, e.g. a city for a publisher. | [Text](http://schema.org/Text) | [class_Organization](#class_Organization) |
-### <a id="prop_name_Dataset"></a> Property: name <a href="http://schema.org/name" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_name_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The name of this data collection. | [Text](http://schema.org/Text) | [Root_Data_Entity](#Root_Data_Entity) |
-### <a id="prop_pcdm:hasMember_Dataset"></a> Property: pcdm:hasMember <a href="http://pcdm.org/models#hasMember" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_pcdm:hasMember_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The sub-collections, if any, associated with this collection. | [class_RepositoryCollection](#class_RepositoryCollection), [class_RepositoryObject](#class_RepositoryObject) | [class_Dataset](#class_Dataset) |
-### <a id="prop_pcdm:memberOf_Dataset"></a> Property: pcdm:memberOf <a href="http://pcdm.org/models#memberOf" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_pcdm:memberOf_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| Links from a Repository Object or Collection to a containing Repository Object or Collection. | [class_RepositoryCollection](#class_RepositoryCollection) | [class_Dataset](#class_Dataset) |
-### <a id="prop_publisher_CreativeWork"></a> Property: publisher <a href="http://schema.org/publisher" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_publisher_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The organisation that published this work. | [Text](http://schema.org/Text), [class_Organization](#class_Organization) | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_publisher_Dataset"></a> Property: publisher <a href="http://schema.org/publisher" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_publisher_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The organisation responsible for releasing this dataset. | [class_Organization](#class_Organization) | [class_Dataset](#class_Dataset) |
-### <a id="prop_recipient_CreativeWork"></a> Property: recipient <a href="http://schema.org/recipient" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_recipient_CreativeWork</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The person or organisation responsible for creating this work. Authors should be identified using URIs such as ORCiD or ROR. | [Text](http://schema.org/Text), [class_Person](#class_Person), [class_Organization](#class_Organization) | [class_CreativeWork](#class_CreativeWork) |
-### <a id="prop_spatialCoverage_Dataset"></a> Property: spatialCoverage <a href="http://schema.org/spatialCoverage" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_spatialCoverage_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The place(s) that are the focus of the content. It is a sub-property of contentLocation intended primarily for more technical and detailed materials. For example, with a dataset, it indicates areas that the dataset describes: a dataset Cape York languages would have spatialCoverage which was the place: the outline of the Cape. | [class_Place](#class_Place) | [class_Dataset](#class_Dataset) |
-### <a id="prop_temporalCoverage_Dataset"></a> Property: temporalCoverage <a href="http://schema.org/temporalCoverage" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_temporalCoverage_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The range of years of creation for items in this dataset using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level. | [DateTime](http://schema.org/DateTime), [Text](http://schema.org/Text) | [class_Dataset](#class_Dataset) |
-### <a id="prop_temporalCoverage_RepositoryObject"></a> Property: temporalCoverage <a href="http://schema.org/temporalCoverage" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_temporalCoverage_RepositoryObject</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written "2011/2012"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL. Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via "1939/1945". Open-ended date ranges can be written with ".." in place of the end date. For example, "2015-11/.." indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated. | [Text](http://schema.org/Text) | [class_RepositoryObject](#class_RepositoryObject) |
-### <a id="prop_usageInfo_Dataset"></a> Property: usageInfo <a href="http://schema.org/usageInfo" target="_blank" rel="noopener">ⓘ</a> <small style="color:#aaa;font-weight:normal">#prop_usageInfo_Dataset</small>
-
-| Description | Range | Occurs in Domain(s) |
-| ----------- | ----------- | ----------- |
-| Additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'. | [Text](http://schema.org/Text) | [class_Dataset](#class_Dataset) |
+### <a id="README.id" title="#README.id"></a> Property: @id
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#README.id" title="#README.id">@id</a> |  | There must with the path `README.html` in the root of the RO-Crate, and it must be described by an entity of type README_Entity with an @id of `README.html`. | <a href="#README_Entity" title="#README_Entity">README Entity</a> | <a href="#README_Entity" title="#README_Entity">README Entity</a> |
+### <a id="RO-Crate_Metadata_Descriptor.id" title="#RO-Crate_Metadata_Descriptor.id"></a> Property: @id
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#RO-Crate_Metadata_Descriptor.id" title="#RO-Crate_Metadata_Descriptor.id">@id</a> |  | This is the 'magic' entity that identifies the RO-Crate Metadata Descriptor, which is the root of the graph and the entry point for validation. It must have a @type of RO-Crate_Metadata_Descriptor and its @id must be 'ro-crate-metadata.json'. | <a href="#Root_Data_Entity" title="#Root_Data_Entity">Root Data Entity</a> | <a href="#RO-Crate_Metadata_Descriptor" title="#RO-Crate_Metadata_Descriptor">RO-Crate Metadata Descriptor</a> |
+### <a id="RO-Crate_Metadata_Descriptor.about" title="#RO-Crate_Metadata_Descriptor.about"></a> Property: about
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#RO-Crate_Metadata_Descriptor.about" title="#RO-Crate_Metadata_Descriptor.about">about</a> | <a href="http://schema.org/about" target="_blank" rel="noopener">http://schema.org/about</a> | This property on the RO-Crate Metadata Descriptor references the Root Data Entity. In a SoSS+ profile there may be Schemas present for more than one 'flavour' of Root Data Entity with different @type arrays or `@conformsTo` references (or other specializations). | <a href="#Root_Data_Entity" title="#Root_Data_Entity">Root Data Entity</a> | <a href="#RO-Crate_Metadata_Descriptor" title="#RO-Crate_Metadata_Descriptor">RO-Crate Metadata Descriptor</a> |
+### <a id="prop_accountablePerson_Dataset" title="#prop_accountablePerson_Dataset"></a> Property: accountablePerson
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_accountablePerson_Dataset" title="#prop_accountablePerson_Dataset">accountablePerson</a> | <a href="http://schema.org/accountablePerson" target="_blank" rel="noopener">http://schema.org/accountablePerson</a> | The person or organisation who is the data steward for this resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_address_Place" title="#prop_address_Place"></a> Property: address
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_address_Place" title="#prop_address_Place">address</a> | <a href="http://schema.org/address" target="_blank" rel="noopener">http://schema.org/address</a> | The physical address of the place. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_Place" title="#class_Place">Place</a> |
+### <a id="prop_affiliation_Person" title="#prop_affiliation_Person"></a> Property: affiliation
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_affiliation_Person" title="#prop_affiliation_Person">affiliation</a> | <a href="http://schema.org/affiliation" target="_blank" rel="noopener">http://schema.org/affiliation</a> | The organisation that this person is affiliated with. For example, a university or school. | <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Person" title="#class_Person">Person</a> |
+### <a id="prop_author_CreativeWork" title="#prop_author_CreativeWork"></a> Property: author
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_author_CreativeWork" title="#prop_author_CreativeWork">author</a> | <a href="http://schema.org/author" target="_blank" rel="noopener">http://schema.org/author</a> | The person or organisation responsible for creating this work. Authors should be identified using URIs such as ORCiD or ROR. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_author_Dataset" title="#prop_author_Dataset"></a> Property: author
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_author_Dataset" title="#prop_author_Dataset">author</a> | <a href="http://schema.org/author" target="_blank" rel="noopener">http://schema.org/author</a> | The person or organisation responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_citation_Dataset" title="#prop_citation_Dataset"></a> Property: citation
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_citation_Dataset" title="#prop_citation_Dataset">citation</a> | <a href="http://schema.org/citation" target="_blank" rel="noopener">http://schema.org/citation</a> | Associated publications. | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_conformsTo_RepositoryCollection" title="#prop_conformsTo_RepositoryCollection"></a> Property: conformsTo
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_conformsTo_RepositoryCollection" title="#prop_conformsTo_RepositoryCollection">conformsTo</a> | <a href="http://purl.org/dc/terms/conformsTo" target="_blank" rel="noopener">http://purl.org/dc/terms/conformsTo</a> | A link to the language data commons RO-Crate profile for collections. | <a href="#itemlist_conformsTo_RepositoryCollection" title="#itemlist_conformsTo_RepositoryCollection">Values for conformsTo</a> | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a> |
+### <a id="prop_conformsTo_RepositoryObject" title="#prop_conformsTo_RepositoryObject"></a> Property: conformsTo
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_conformsTo_RepositoryObject" title="#prop_conformsTo_RepositoryObject">conformsTo</a> | <a href="http://purl.org/dc/terms/conformsTo" target="_blank" rel="noopener">http://purl.org/dc/terms/conformsTo</a> | A link to the language data commons RO-Crate profile for collections. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_RepositoryObject" title="#class_RepositoryObject">RepositoryObject</a> |
+### <a id="prop_contentLocation_RepositoryCollection" title="#prop_contentLocation_RepositoryCollection"></a> Property: contentLocation
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_contentLocation_RepositoryCollection" title="#prop_contentLocation_RepositoryCollection">contentLocation</a> | <a href="http://schema.org/contentLocation" target="_blank" rel="noopener">http://schema.org/contentLocation</a> | The location depicted or described in the content. For example, the location in a photograph or painting. | <a href="#class_Place" title="#class_Place">Place</a> | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a> |
+### <a id="prop_contentSize_File" title="#prop_contentSize_File"></a> Property: contentSize
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_contentSize_File" title="#prop_contentSize_File">contentSize</a> | <a href="http://schema.org/contentSize" target="_blank" rel="noopener">http://schema.org/contentSize</a> | File size in (mega/kilo)bytes. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_File" title="#class_File">File</a> |
+### <a id="prop_creator_RepositoryObject" title="#prop_creator_RepositoryObject"></a> Property: creator
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_creator_RepositoryObject" title="#prop_creator_RepositoryObject">creator</a> | <a href="http://schema.org/creator" target="_blank" rel="noopener">http://schema.org/creator</a> | The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork. | <a href="#class_Person" title="#class_Person">Person</a> | <a href="#class_RepositoryObject" title="#class_RepositoryObject">RepositoryObject</a> |
+### <a id="prop_creditText_Dataset" title="#prop_creditText_Dataset"></a> Property: creditText
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_creditText_Dataset" title="#prop_creditText_Dataset">creditText</a> | <a href="http://schema.org/creditText" target="_blank" rel="noopener">http://schema.org/creditText</a> | A free text bibliographic citation for this material, e.g. 'Cite as: Musgrave (2023). Title of work. DOI'. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_dateCreated_RepositoryCollection" title="#prop_dateCreated_RepositoryCollection"></a> Property: dateCreated
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_dateCreated_RepositoryCollection" title="#prop_dateCreated_RepositoryCollection">dateCreated</a> | <a href="http://schema.org/dateCreated" target="_blank" rel="noopener">http://schema.org/dateCreated</a> | The (earliest) date the data in this dataset were created. | <a href="http://schema.org/Date" title="http://schema.org/Date" target="_blank" rel="noopener">Date</a> | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a> |
+### <a id="prop_dateCreated_RepositoryObject" title="#prop_dateCreated_RepositoryObject"></a> Property: dateCreated
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_dateCreated_RepositoryObject" title="#prop_dateCreated_RepositoryObject">dateCreated</a> | <a href="http://schema.org/dateCreated" target="_blank" rel="noopener">http://schema.org/dateCreated</a> | The date on which the CreativeWork was created or the item was added to a DataFeed. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_RepositoryObject" title="#class_RepositoryObject">RepositoryObject</a> |
+### <a id="prop_datePublished_Dataset" title="#prop_datePublished_Dataset"></a> Property: datePublished
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_datePublished_Dataset" title="#prop_datePublished_Dataset">datePublished</a> | <a href="http://schema.org/datePublished" target="_blank" rel="noopener">http://schema.org/datePublished</a> | A date that this collection was published. This should be the date that the collection was first made available. | <a href="http://schema.org/Date" title="http://schema.org/Date" target="_blank" rel="noopener">Date</a> | <a href="#Root_Data_Entity" title="#Root_Data_Entity">Root Data Entity</a> |
+### <a id="prop_dct:rightsHolder_Dataset" title="#prop_dct:rightsHolder_Dataset"></a> Property: dct:rightsHolder
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_dct:rightsHolder_Dataset" title="#prop_dct:rightsHolder_Dataset">dct:rightsHolder</a> | <a href="http://purl.org/dc/terms/rightsHolder" target="_blank" rel="noopener">http://purl.org/dc/terms/rightsHolder</a> | The person or organisation owning or managing rights over the resource. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_description_Dataset" title="#prop_description_Dataset"></a> Property: description
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_description_Dataset" title="#prop_description_Dataset">description</a> | <a href="http://schema.org/description" target="_blank" rel="noopener">http://schema.org/description</a> | An abstract of the collection. Include as much detail as possible about the motivation and use of the collection. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#Root_Data_Entity" title="#Root_Data_Entity">Root Data Entity</a> |
+### <a id="prop_description_RepositoryObject" title="#prop_description_RepositoryObject"></a> Property: description
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_description_RepositoryObject" title="#prop_description_RepositoryObject">description</a> | <a href="http://schema.org/description" target="_blank" rel="noopener">http://schema.org/description</a> | A description of the item. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_RepositoryObject" title="#class_RepositoryObject">RepositoryObject</a> |
+### <a id="prop_encodingFormat_File" title="#prop_encodingFormat_File"></a> Property: encodingFormat
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_encodingFormat_File" title="#prop_encodingFormat_File">encodingFormat</a> | <a href="http://schema.org/encodingFormat" target="_blank" rel="noopener">http://schema.org/encodingFormat</a> | The media type typically expressed using a MIME format. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="http://schema.org/WebPage" title="http://schema.org/WebPage" target="_blank" rel="noopener">WebPage</a>, <a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a> | <a href="#class_File" title="#class_File">File</a> |
+### <a id="prop_funder_Dataset" title="#prop_funder_Dataset"></a> Property: funder
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_funder_Dataset" title="#prop_funder_Dataset">funder</a> | <a href="http://schema.org/funder" target="_blank" rel="noopener">http://schema.org/funder</a> | The organisation(s) responsible for funding the creation or collection of this dataset. | <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_geo_Place" title="#prop_geo_Place"></a> Property: geo
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_geo_Place" title="#prop_geo_Place">geo</a> | <a href="http://schema.org/geo" target="_blank" rel="noopener">http://schema.org/geo</a> | The geographic coordinates of the place. | <a href="#class_Geometry" title="#class_Geometry">Geometry</a> | <a href="#class_Place" title="#class_Place">Place</a> |
+### <a id="prop_geosparql:asWKT_Geometry" title="#prop_geosparql:asWKT_Geometry"></a> Property: geosparql:asWKT
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_geosparql:asWKT_Geometry" title="#prop_geosparql:asWKT_Geometry">geosparql:asWKT</a> | <a href="http://www.opengis.net/ont/geosparql#asWKT" target="_blank" rel="noopener">http://www.opengis.net/ont/geosparql#asWKT</a> | The WKT serialisation of the geometry. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_Geometry" title="#class_Geometry">Geometry</a> |
+### <a id="prop_hasPart_Dataset" title="#prop_hasPart_Dataset"></a> Property: hasPart
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_hasPart_Dataset" title="#prop_hasPart_Dataset">hasPart</a> | <a href="http://schema.org/hasPart" target="_blank" rel="noopener">http://schema.org/hasPart</a> | An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a>, <a href="#class_File" title="#class_File">File</a>, <a href="#class_Dataset" title="#class_Dataset">Dataset</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_hasPart_File" title="#prop_hasPart_File"></a> Property: hasPart
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_hasPart_File" title="#prop_hasPart_File">hasPart</a> | <a href="http://schema.org/hasPart" target="_blank" rel="noopener">http://schema.org/hasPart</a> | An item or CreativeWork that is part of this item, or CreativeWork (in some sense). | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a>, <a href="#class_File" title="#class_File">File</a> | <a href="#class_File" title="#class_File">File</a> |
+### <a id="prop_holdingArchive_RepositoryCollection" title="#prop_holdingArchive_RepositoryCollection"></a> Property: holdingArchive
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_holdingArchive_RepositoryCollection" title="#prop_holdingArchive_RepositoryCollection">holdingArchive</a> | <a href="http://schema.org/holdingArchive" target="_blank" rel="noopener">http://schema.org/holdingArchive</a> | Organisation where the original of this work or collection is housed. | <a href="#class_Organization" title="#class_Organization">Organization</a>, <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a> |
+### <a id="prop_identifier_RepositoryObject" title="#prop_identifier_RepositoryObject"></a> Property: identifier
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_identifier_RepositoryObject" title="#prop_identifier_RepositoryObject">identifier</a> | <a href="http://schema.org/identifier" target="_blank" rel="noopener">http://schema.org/identifier</a> | The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.  | <a href="http://schema.org/PropertyValue" title="http://schema.org/PropertyValue" target="_blank" rel="noopener">PropertyValue</a>, <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a> | <a href="#class_RepositoryObject" title="#class_RepositoryObject">RepositoryObject</a> |
+### <a id="prop_inLanguage_RepositoryCollection" title="#prop_inLanguage_RepositoryCollection"></a> Property: inLanguage
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_inLanguage_RepositoryCollection" title="#prop_inLanguage_RepositoryCollection">inLanguage</a> | <a href="http://schema.org/inLanguage" target="_blank" rel="noopener">http://schema.org/inLanguage</a> | The language in which the resource is written. | <a href="#class_Language" title="#class_Language">Language</a> | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a> |
+### <a id="prop_isAccessibleForFree_Dataset" title="#prop_isAccessibleForFree_Dataset"></a> Property: isAccessibleForFree
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_isAccessibleForFree_Dataset" title="#prop_isAccessibleForFree_Dataset">isAccessibleForFree</a> | <a href="http://schema.org/isAccessibleForFree" target="_blank" rel="noopener">http://schema.org/isAccessibleForFree</a> | This is available under an Open Access license. | <a href="http://schema.org/Boolean" title="http://schema.org/Boolean" target="_blank" rel="noopener">Boolean</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_isBasedOn_Dataset" title="#prop_isBasedOn_Dataset"></a> Property: isBasedOn
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_isBasedOn_Dataset" title="#prop_isBasedOn_Dataset">isBasedOn</a> | <a href="http://schema.org/isBasedOn" target="_blank" rel="noopener">http://schema.org/isBasedOn</a> | Link to or description of an original resource. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a>, <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a>, <a href="#class_Dataset" title="#class_Dataset">Dataset</a>, <a href="#class_File" title="#class_File">File</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_isbn_CreativeWork" title="#prop_isbn_CreativeWork"></a> Property: isbn
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_isbn_CreativeWork" title="#prop_isbn_CreativeWork">isbn</a> | <a href="http://schema.org/isbn" target="_blank" rel="noopener">http://schema.org/isbn</a> | The ISBN for this work, if applicable. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_isPartOf_Dataset" title="#prop_isPartOf_Dataset"></a> Property: isPartOf
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_isPartOf_Dataset" title="#prop_isPartOf_Dataset">isPartOf</a> | <a href="http://schema.org/isPartOf" target="_blank" rel="noopener">http://schema.org/isPartOf</a> | An item or CreativeWork that this item, or CreativeWork (in some sense), is part of. | <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a>, <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_issn_CreativeWork" title="#prop_issn_CreativeWork"></a> Property: issn
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_issn_CreativeWork" title="#prop_issn_CreativeWork">issn</a> | <a href="http://schema.org/issn" target="_blank" rel="noopener">http://schema.org/issn</a> | The ISSN for this publication. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_ldac:access_DataReuseLicense" title="#prop_ldac:access_DataReuseLicense"></a> Property: ldac:access
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:access_DataReuseLicense" title="#prop_ldac:access_DataReuseLicense">ldac:access</a> | <a href="https://w3id.org/ldac/terms#access" target="_blank" rel="noopener">https://w3id.org/ldac/terms#access</a> | Whether this is an open or restricted access license. | <a href="#ldac%3AAccessTypes" title="ldac:AccessTypes">AccessTypes</a> | <a href="#class_DataReuseLicense" title="#class_DataReuseLicense">DataReuseLicense</a> |
+### <a id="prop_ldac:accessControlList_DataReuseLicense" title="#prop_ldac:accessControlList_DataReuseLicense"></a> Property: ldac:accessControlList
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:accessControlList_DataReuseLicense" title="#prop_ldac:accessControlList_DataReuseLicense">ldac:accessControlList</a> | <a href="https://w3id.org/ldac/terms#accessControlList" target="_blank" rel="noopener">https://w3id.org/ldac/terms#accessControlList</a> | When a license has an authorizationWorkflow property with a value of the DefinedTerm AccessControlList this property has a URI value that points to a list of userIDs. | <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a> | <a href="#class_DataReuseLicense" title="#class_DataReuseLicense">DataReuseLicense</a> |
+### <a id="prop_ldac:age_Person" title="#prop_ldac:age_Person"></a> Property: ldac:age
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:age_Person" title="#prop_ldac:age_Person">ldac:age</a> | <a href="https://w3id.org/ldac/terms#age" target="_blank" rel="noopener">https://w3id.org/ldac/terms#age</a> | The age or age range of a person, e.g. 25, 30-50, >50. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_Person" title="#class_Person">Person</a> |
+### <a id="prop_ldac:annotationOf_Dataset" title="#prop_ldac:annotationOf_Dataset"></a> Property: ldac:annotationOf
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:annotationOf_Dataset" title="#prop_ldac:annotationOf_Dataset">ldac:annotationOf</a> | <a href="https://w3id.org/ldac/terms#annotationOf" target="_blank" rel="noopener">https://w3id.org/ldac/terms#annotationOf</a> | This resource contains some kind of description that adds information to the resource it references. | <a href="#ldac%3APrimaryMaterial" title="ldac:PrimaryMaterial">PrimaryMaterial</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:annotationType_CreativeWork" title="#prop_ldac:annotationType_CreativeWork"></a> Property: ldac:annotationType
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:annotationType_CreativeWork" title="#prop_ldac:annotationType_CreativeWork">ldac:annotationType</a> | <a href="https://w3id.org/ldac/terms#annotationType" target="_blank" rel="noopener">https://w3id.org/ldac/terms#annotationType</a> | The type of an Annotation resource. | <a href="#ldac%3AAnnotationTypeTerms" title="ldac:AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_ldac:annotator_Dataset" title="#prop_ldac:annotator_Dataset"></a> Property: ldac:annotator
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:annotator_Dataset" title="#prop_ldac:annotator_Dataset">ldac:annotator</a> | <a href="https://w3id.org/ldac/terms#annotator" target="_blank" rel="noopener">https://w3id.org/ldac/terms#annotator</a> | The participant produced an annotation of this or a related resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:authorizationWorkflow_DataReuseLicense" title="#prop_ldac:authorizationWorkflow_DataReuseLicense"></a> Property: ldac:authorizationWorkflow
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:authorizationWorkflow_DataReuseLicense" title="#prop_ldac:authorizationWorkflow_DataReuseLicense">ldac:authorizationWorkflow</a> | <a href="https://w3id.org/ldac/terms#authorizationWorkflow" target="_blank" rel="noopener">https://w3id.org/ldac/terms#authorizationWorkflow</a> | By what process a user is granted authorization to a license. | <a href="#ldac%3AAuthorizationWorkflows" title="ldac:AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#class_DataReuseLicense" title="#class_DataReuseLicense">DataReuseLicense</a> |
+### <a id="prop_ldac:channels_CreativeWork" title="#prop_ldac:channels_CreativeWork"></a> Property: ldac:channels
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:channels_CreativeWork" title="#prop_ldac:channels_CreativeWork">ldac:channels</a> | <a href="https://w3id.org/ldac/terms#channels" target="_blank" rel="noopener">https://w3id.org/ldac/terms#channels</a> | The number of audio channels this resource contains (e.g. 1, 2, 5.1). | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_ldac:collectionEventType_CollectionEvent" title="#prop_ldac:collectionEventType_CollectionEvent"></a> Property: ldac:collectionEventType
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:collectionEventType_CollectionEvent" title="#prop_ldac:collectionEventType_CollectionEvent">ldac:collectionEventType</a> | <a href="https://w3id.org/ldac/terms#collectionEventType" target="_blank" rel="noopener">https://w3id.org/ldac/terms#collectionEventType</a> | A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment. | <a href="#ldac%3ACollectionEventTypeTerms" title="ldac:CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#class_CollectionEvent" title="#class_CollectionEvent">CollectionEvent</a> |
+### <a id="prop_ldac:collectionProtocolType_ldac:CollectionProtocol" title="#prop_ldac:collectionProtocolType_ldac:CollectionProtocol"></a> Property: ldac:collectionProtocolType
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:collectionProtocolType_ldac:CollectionProtocol" title="#prop_ldac:collectionProtocolType_ldac:CollectionProtocol">ldac:collectionProtocolType</a> | <a href="https://w3id.org/ldac/terms#collectionProtocolType" target="_blank" rel="noopener">https://w3id.org/ldac/terms#collectionProtocolType</a> | A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection. | <a href="#ldac%3ACollectionProtocolTypeTerms" title="ldac:CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#class_ldac:CollectionProtocol" title="#class_ldac:CollectionProtocol">CollectionProtocol</a> |
+### <a id="prop_ldac:communicationMode_CreativeWork" title="#prop_ldac:communicationMode_CreativeWork"></a> Property: ldac:communicationMode
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:communicationMode_CreativeWork" title="#prop_ldac:communicationMode_CreativeWork">ldac:communicationMode</a> | <a href="https://w3id.org/ldac/terms#communicationMode" target="_blank" rel="noopener">https://w3id.org/ldac/terms#communicationMode</a> | The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property. | <a href="#ldac%3ACommunicationModeTerms" title="ldac:CommunicationModeTerms">CommunicationModeTerms</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_ldac:compiler_Dataset" title="#prop_ldac:compiler_Dataset"></a> Property: ldac:compiler
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:compiler_Dataset" title="#prop_ldac:compiler_Dataset">ldac:compiler</a> | <a href="https://w3id.org/ldac/terms#compiler" target="_blank" rel="noopener">https://w3id.org/ldac/terms#compiler</a> | The participant is responsible for collecting the sub-parts of the resource together. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:consultant_Dataset" title="#prop_ldac:consultant_Dataset"></a> Property: ldac:consultant
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:consultant_Dataset" title="#prop_ldac:consultant_Dataset">ldac:consultant</a> | <a href="https://w3id.org/ldac/terms#consultant" target="_blank" rel="noopener">https://w3id.org/ldac/terms#consultant</a> | The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:dataInputter_Dataset" title="#prop_ldac:dataInputter_Dataset"></a> Property: ldac:dataInputter
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:dataInputter_Dataset" title="#prop_ldac:dataInputter_Dataset">ldac:dataInputter</a> | <a href="https://w3id.org/ldac/terms#dataInputter" target="_blank" rel="noopener">https://w3id.org/ldac/terms#dataInputter</a> | The participant responsible for entering, re-typing, and/or structuring the data contained in the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:dateFreeText_RepositoryCollection" title="#prop_ldac:dateFreeText_RepositoryCollection"></a> Property: ldac:dateFreeText
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:dateFreeText_RepositoryCollection" title="#prop_ldac:dateFreeText_RepositoryCollection">ldac:dateFreeText</a> | <a href="https://w3id.org/ldac/terms#dateFreeText" target="_blank" rel="noopener">https://w3id.org/ldac/terms#dateFreeText</a> | Date information which cannot be put in one of the standard date formats, e.g. 'mid-1970s', or it is not clear, for example, if it is a creation or publication date. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a> |
+### <a id="prop_ldac:depositor_Dataset" title="#prop_ldac:depositor_Dataset"></a> Property: ldac:depositor
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:depositor_Dataset" title="#prop_ldac:depositor_Dataset">ldac:depositor</a> | <a href="https://w3id.org/ldac/terms#depositor" target="_blank" rel="noopener">https://w3id.org/ldac/terms#depositor</a> | The participant responsible for depositing the resource in an archive. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:derivationOf_File" title="#prop_ldac:derivationOf_File"></a> Property: ldac:derivationOf
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:derivationOf_File" title="#prop_ldac:derivationOf_File">ldac:derivationOf</a> | <a href="https://w3id.org/ldac/terms#derivationOf" target="_blank" rel="noopener">https://w3id.org/ldac/terms#derivationOf</a> | This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF. | <a href="#ldac%3AAnnotation" title="ldac:Annotation">Annotation</a>, <a href="#ldac%3APrimaryMaterial" title="ldac:PrimaryMaterial">PrimaryMaterial</a> | <a href="#class_File" title="#class_File">File</a> |
+### <a id="prop_ldac:developer_Dataset" title="#prop_ldac:developer_Dataset"></a> Property: ldac:developer
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:developer_Dataset" title="#prop_ldac:developer_Dataset">ldac:developer</a> | <a href="https://w3id.org/ldac/terms#developer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#developer</a> | The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:doi_Dataset" title="#prop_ldac:doi_Dataset"></a> Property: ldac:doi
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:doi_Dataset" title="#prop_ldac:doi_Dataset">ldac:doi</a> | <a href="https://w3id.org/ldac/terms#doi" target="_blank" rel="noopener">https://w3id.org/ldac/terms#doi</a> | A Digital Object Identifier, e.g. https://doi.org/10.1000/182. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:editor_Dataset" title="#prop_ldac:editor_Dataset"></a> Property: ldac:editor
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:editor_Dataset" title="#prop_ldac:editor_Dataset">ldac:editor</a> | <a href="https://w3id.org/ldac/terms#editor" target="_blank" rel="noopener">https://w3id.org/ldac/terms#editor</a> | The participant reviewed, corrected, and/or tested the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:hasAnnotation_RepositoryObject" title="#prop_ldac:hasAnnotation_RepositoryObject"></a> Property: ldac:hasAnnotation
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:hasAnnotation_RepositoryObject" title="#prop_ldac:hasAnnotation_RepositoryObject">ldac:hasAnnotation</a> | <a href="https://w3id.org/ldac/terms#hasAnnotation" target="_blank" rel="noopener">https://w3id.org/ldac/terms#hasAnnotation</a> | This resource is referenced by another resource that adds information to it such as a translation, transcription or other analysis. | <a href="#ldac%3AAnnotation" title="ldac:Annotation">Annotation</a> | <a href="#class_RepositoryObject" title="#class_RepositoryObject">RepositoryObject</a> |
+### <a id="prop_ldac:hasCollectionProtocol_Dataset" title="#prop_ldac:hasCollectionProtocol_Dataset"></a> Property: ldac:hasCollectionProtocol
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:hasCollectionProtocol_Dataset" title="#prop_ldac:hasCollectionProtocol_Dataset">ldac:hasCollectionProtocol</a> | <a href="https://w3id.org/ldac/terms#hasCollectionProtocol" target="_blank" rel="noopener">https://w3id.org/ldac/terms#hasCollectionProtocol</a> | A link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection/sub-collection. | <a href="#class_ldac:CollectionProtocol" title="#class_ldac:CollectionProtocol">CollectionProtocol</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:hasDerivation_File" title="#prop_ldac:hasDerivation_File"></a> Property: ldac:hasDerivation
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:hasDerivation_File" title="#prop_ldac:hasDerivation_File">ldac:hasDerivation</a> | <a href="https://w3id.org/ldac/terms#hasDerivation" target="_blank" rel="noopener">https://w3id.org/ldac/terms#hasDerivation</a> | This property references another resource that is derived from it, such as a downsampled audio or video file, or text extracted from a PDF. | <a href="#ldac%3ADerivedMaterial" title="ldac:DerivedMaterial">DerivedMaterial</a> | <a href="#class_File" title="#class_File">File</a> |
+### <a id="prop_ldac:illustrator_Dataset" title="#prop_ldac:illustrator_Dataset"></a> Property: ldac:illustrator
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:illustrator_Dataset" title="#prop_ldac:illustrator_Dataset">ldac:illustrator</a> | <a href="https://w3id.org/ldac/terms#illustrator" target="_blank" rel="noopener">https://w3id.org/ldac/terms#illustrator</a> | The participant contributed drawings or other illustrations to the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:indexableText_CreativeWork" title="#prop_ldac:indexableText_CreativeWork"></a> Property: ldac:indexableText
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:indexableText_CreativeWork" title="#prop_ldac:indexableText_CreativeWork">ldac:indexableText</a> | <a href="https://w3id.org/ldac/terms#indexableText" target="_blank" rel="noopener">https://w3id.org/ldac/terms#indexableText</a> | One or more target File(s) that together contain the full text of an item – each file should indicate its language. | <a href="http://schema.org/MediaObject" title="http://schema.org/MediaObject" target="_blank" rel="noopener">MediaObject</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_ldac:interpreter_Dataset" title="#prop_ldac:interpreter_Dataset"></a> Property: ldac:interpreter
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:interpreter_Dataset" title="#prop_ldac:interpreter_Dataset">ldac:interpreter</a> | <a href="https://w3id.org/ldac/terms#interpreter" target="_blank" rel="noopener">https://w3id.org/ldac/terms#interpreter</a> | The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:interviewee_Dataset" title="#prop_ldac:interviewee_Dataset"></a> Property: ldac:interviewee
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:interviewee_Dataset" title="#prop_ldac:interviewee_Dataset">ldac:interviewee</a> | <a href="https://w3id.org/ldac/terms#interviewee" target="_blank" rel="noopener">https://w3id.org/ldac/terms#interviewee</a> | The participant was a respondent in an interview. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:interviewer_Dataset" title="#prop_ldac:interviewer_Dataset"></a> Property: ldac:interviewer
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:interviewer_Dataset" title="#prop_ldac:interviewer_Dataset">ldac:interviewer</a> | <a href="https://w3id.org/ldac/terms#interviewer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#interviewer</a> | The participant conducted an interview that forms part of the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:isDeIdentified_CreativeWork" title="#prop_ldac:isDeIdentified_CreativeWork"></a> Property: ldac:isDeIdentified
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:isDeIdentified_CreativeWork" title="#prop_ldac:isDeIdentified_CreativeWork">ldac:isDeIdentified</a> | <a href="https://w3id.org/ldac/terms#isDeIdentified" target="_blank" rel="noopener">https://w3id.org/ldac/terms#isDeIdentified</a> | The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms. | <a href="http://schema.org/Boolean" title="http://schema.org/Boolean" target="_blank" rel="noopener">Boolean</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_ldac:itemLocation_RepositoryCollection" title="#prop_ldac:itemLocation_RepositoryCollection"></a> Property: ldac:itemLocation
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:itemLocation_RepositoryCollection" title="#prop_ldac:itemLocation_RepositoryCollection">ldac:itemLocation</a> | <a href="https://w3id.org/ldac/terms#itemLocation" target="_blank" rel="noopener">https://w3id.org/ldac/terms#itemLocation</a> | Current location of the item, e.g. where a set of audio tapes are stored. | <a href="#class_Place" title="#class_Place">Place</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a> |
+### <a id="prop_ldac:linguisticGenre_CreativeWork" title="#prop_ldac:linguisticGenre_CreativeWork"></a> Property: ldac:linguisticGenre
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:linguisticGenre_CreativeWork" title="#prop_ldac:linguisticGenre_CreativeWork">ldac:linguisticGenre</a> | <a href="https://w3id.org/ldac/terms#linguisticGenre" target="_blank" rel="noopener">https://w3id.org/ldac/terms#linguisticGenre</a> | A linguistic classification of the genre of this resource. | <a href="#ldac%3ALinguisticGenreTerms" title="ldac:LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_ldac%3AmainText_CreativeWork" title="prop_ldac:mainText_CreativeWork"></a> Property: ldac:mainText
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac%3AmainText_CreativeWork" title="prop_ldac:mainText_CreativeWork">ldac:mainText</a> | <a href="https://w3id.org/ldac/terms#mainText" target="_blank" rel="noopener">https://w3id.org/ldac/terms#mainText</a> | Identifies the most relevant sub-component for computational text analytics. | <a href="http://schema.org/MediaObject" title="http://schema.org/MediaObject" target="_blank" rel="noopener">MediaObject</a> | <a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a> |
+### <a id="prop_ldac:material_CreativeWork" title="#prop_ldac:material_CreativeWork"></a> Property: ldac:material
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:material_CreativeWork" title="#prop_ldac:material_CreativeWork">ldac:material</a> | <a href="https://w3id.org/ldac/terms#material" target="_blank" rel="noopener">https://w3id.org/ldac/terms#material</a> | Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_ldac:materialType_File" title="#prop_ldac:materialType_File"></a> Property: ldac:materialType
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:materialType_File" title="#prop_ldac:materialType_File">ldac:materialType</a> | <a href="https://w3id.org/ldac/terms#materialType" target="_blank" rel="noopener">https://w3id.org/ldac/terms#materialType</a> | Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation. | <a href="#ldac%3AMaterialTypes" title="ldac:MaterialTypes">MaterialTypes</a> | <a href="#class_File" title="#class_File">File</a> |
+### <a id="prop_ldac:openAccessIndex_CreativeWork" title="#prop_ldac:openAccessIndex_CreativeWork"></a> Property: ldac:openAccessIndex
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:openAccessIndex_CreativeWork" title="#prop_ldac:openAccessIndex_CreativeWork">ldac:openAccessIndex</a> | <a href="https://w3id.org/ldac/terms#openAccessIndex" target="_blank" rel="noopener">https://w3id.org/ldac/terms#openAccessIndex</a> | One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not. | <a href="#ldac%3AIndexTypes" title="ldac:IndexTypes">IndexTypes</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_ldac%3AorthographicNotes_CreativeWork" title="prop_ldac:orthographicNotes_CreativeWork"></a> Property: ldac:orthographicNotes
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac%3AorthographicNotes_CreativeWork" title="prop_ldac:orthographicNotes_CreativeWork">ldac:orthographicNotes</a> | <a href="https://w3id.org/ldac/terms#orthographicNotes" target="_blank" rel="noopener">https://w3id.org/ldac/terms#orthographicNotes</a> | A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø). | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="http://schema.org/CreativeWork" title="http://schema.org/CreativeWork" target="_blank" rel="noopener">CreativeWork</a> |
+### <a id="prop_ldac:participant_Dataset" title="#prop_ldac:participant_Dataset"></a> Property: ldac:participant
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:participant_Dataset" title="#prop_ldac:participant_Dataset">ldac:participant</a> | <a href="https://w3id.org/ldac/terms#participant" target="_blank" rel="noopener">https://w3id.org/ldac/terms#participant</a> | The participant was present during the creation of the resource, but did not contribute substantially to its content. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:performer_Dataset" title="#prop_ldac:performer_Dataset"></a> Property: ldac:performer
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:performer_Dataset" title="#prop_ldac:performer_Dataset">ldac:performer</a> | <a href="https://w3id.org/ldac/terms#performer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#performer</a> | The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:photographer_Dataset" title="#prop_ldac:photographer_Dataset"></a> Property: ldac:photographer
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:photographer_Dataset" title="#prop_ldac:photographer_Dataset">ldac:photographer</a> | <a href="https://w3id.org/ldac/terms#photographer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#photographer</a> | The participant took the photograph, or shot the film, that appears in or constitutes the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:recorder_Dataset" title="#prop_ldac:recorder_Dataset"></a> Property: ldac:recorder
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:recorder_Dataset" title="#prop_ldac:recorder_Dataset">ldac:recorder</a> | <a href="https://w3id.org/ldac/terms#recorder" target="_blank" rel="noopener">https://w3id.org/ldac/terms#recorder</a> | The participant operated the recording machinery used to create the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:register_CreativeWork" title="#prop_ldac:register_CreativeWork"></a> Property: ldac:register
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:register_CreativeWork" title="#prop_ldac:register_CreativeWork">ldac:register</a> | <a href="https://w3id.org/ldac/terms#register" target="_blank" rel="noopener">https://w3id.org/ldac/terms#register</a> | The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_ldac:researcher_Dataset" title="#prop_ldac:researcher_Dataset"></a> Property: ldac:researcher
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:researcher_Dataset" title="#prop_ldac:researcher_Dataset">ldac:researcher</a> | <a href="https://w3id.org/ldac/terms#researcher" target="_blank" rel="noopener">https://w3id.org/ldac/terms#researcher</a> | The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:researchParticipant_Dataset" title="#prop_ldac:researchParticipant_Dataset"></a> Property: ldac:researchParticipant
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:researchParticipant_Dataset" title="#prop_ldac:researchParticipant_Dataset">ldac:researchParticipant</a> | <a href="https://w3id.org/ldac/terms#researchParticipant" target="_blank" rel="noopener">https://w3id.org/ldac/terms#researchParticipant</a> | The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:responder_Dataset" title="#prop_ldac:responder_Dataset"></a> Property: ldac:responder
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:responder_Dataset" title="#prop_ldac:responder_Dataset">ldac:responder</a> | <a href="https://w3id.org/ldac/terms#responder" target="_blank" rel="noopener">https://w3id.org/ldac/terms#responder</a> | The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:reviewDate_DataLicense" title="#prop_ldac:reviewDate_DataLicense"></a> Property: ldac:reviewDate
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:reviewDate_DataLicense" title="#prop_ldac:reviewDate_DataLicense">ldac:reviewDate</a> | <a href="https://w3id.org/ldac/terms#reviewDate" target="_blank" rel="noopener">https://w3id.org/ldac/terms#reviewDate</a> | The date that this license should be reviewed. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_DataLicense" title="#class_DataLicense">DataLicense</a> |
+### <a id="prop_ldac:signer_Dataset" title="#prop_ldac:signer_Dataset"></a> Property: ldac:signer
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:signer_Dataset" title="#prop_ldac:signer_Dataset">ldac:signer</a> | <a href="https://w3id.org/ldac/terms#signer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#signer</a> | The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:singer_Dataset" title="#prop_ldac:singer_Dataset"></a> Property: ldac:singer
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:singer_Dataset" title="#prop_ldac:singer_Dataset">ldac:singer</a> | <a href="https://w3id.org/ldac/terms#singer" target="_blank" rel="noopener">https://w3id.org/ldac/terms#singer</a> | The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:speaker_Dataset" title="#prop_ldac:speaker_Dataset"></a> Property: ldac:speaker
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:speaker_Dataset" title="#prop_ldac:speaker_Dataset">ldac:speaker</a> | <a href="https://w3id.org/ldac/terms#speaker" target="_blank" rel="noopener">https://w3id.org/ldac/terms#speaker</a> | The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording). | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:sponsor_Dataset" title="#prop_ldac:sponsor_Dataset"></a> Property: ldac:sponsor
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:sponsor_Dataset" title="#prop_ldac:sponsor_Dataset">ldac:sponsor</a> | <a href="https://w3id.org/ldac/terms#sponsor" target="_blank" rel="noopener">https://w3id.org/ldac/terms#sponsor</a> | The participant contributed financial support to the creation of the resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:subjectLanguage_RepositoryCollection" title="#prop_ldac:subjectLanguage_RepositoryCollection"></a> Property: ldac:subjectLanguage
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:subjectLanguage_RepositoryCollection" title="#prop_ldac:subjectLanguage_RepositoryCollection">ldac:subjectLanguage</a> | <a href="https://w3id.org/ldac/terms#subjectLanguage" target="_blank" rel="noopener">https://w3id.org/ldac/terms#subjectLanguage</a> | The languages that the materials in the collection are about (not the language that it is in). | <a href="#class_Language" title="#class_Language">Language</a> | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a> |
+### <a id="prop_ldac:transcriber_Dataset" title="#prop_ldac:transcriber_Dataset"></a> Property: ldac:transcriber
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:transcriber_Dataset" title="#prop_ldac:transcriber_Dataset">ldac:transcriber</a> | <a href="https://w3id.org/ldac/terms#transcriber" target="_blank" rel="noopener">https://w3id.org/ldac/terms#transcriber</a> | The participant produced a transcription of this or a related resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:translator_Dataset" title="#prop_ldac:translator_Dataset"></a> Property: ldac:translator
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:translator_Dataset" title="#prop_ldac:translator_Dataset">ldac:translator</a> | <a href="https://w3id.org/ldac/terms#translator" target="_blank" rel="noopener">https://w3id.org/ldac/terms#translator</a> | The participant produced a translation of this or a related resource. | <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_ldac:writtenLanguageFormat_CreativeWork" title="#prop_ldac:writtenLanguageFormat_CreativeWork"></a> Property: ldac:writtenLanguageFormat
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_ldac:writtenLanguageFormat_CreativeWork" title="#prop_ldac:writtenLanguageFormat_CreativeWork">ldac:writtenLanguageFormat</a> | <a href="https://w3id.org/ldac/terms#writtenLanguageFormat" target="_blank" rel="noopener">https://w3id.org/ldac/terms#writtenLanguageFormat</a> | The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten). | <a href="#ldac%3AWrittenLanguageTypeTerms" title="ldac:WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_license_Dataset" title="#prop_license_Dataset"></a> Property: license
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_license_Dataset" title="#prop_license_Dataset">license</a> | <a href="http://schema.org/license" target="_blank" rel="noopener">http://schema.org/license</a> | A license document that applies to this content, typically indicated by URL. | <a href="#class_DataReuseLicense" title="#class_DataReuseLicense">DataReuseLicense</a>, <a href="http://schema.org/URL" title="http://schema.org/URL" target="_blank" rel="noopener">URL</a>, <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#Root_Data_Entity" title="#Root_Data_Entity">Root Data Entity</a> |
+### <a id="prop_license_RepositoryObject" title="#prop_license_RepositoryObject"></a> Property: license
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_license_RepositoryObject" title="#prop_license_RepositoryObject">license</a> | <a href="http://schema.org/license" target="_blank" rel="noopener">http://schema.org/license</a> | A license document that applies to this content, typically indicated by URL. | <a href="#class_DataReuseLicense" title="#class_DataReuseLicense">DataReuseLicense</a> | <a href="#class_RepositoryObject" title="#class_RepositoryObject">RepositoryObject</a> |
+### <a id="prop_location_Organization" title="#prop_location_Organization"></a> Property: location
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_location_Organization" title="#prop_location_Organization">location</a> | <a href="http://schema.org/location" target="_blank" rel="noopener">http://schema.org/location</a> | A location for the organisation, e.g. a city for a publisher. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_Organization" title="#class_Organization">Organization</a> |
+### <a id="prop_name_Dataset" title="#prop_name_Dataset"></a> Property: name
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_name_Dataset" title="#prop_name_Dataset">name</a> | <a href="http://schema.org/name" target="_blank" rel="noopener">http://schema.org/name</a> | The name of this data collection. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#Root_Data_Entity" title="#Root_Data_Entity">Root Data Entity</a> |
+### <a id="prop_pcdm:hasMember_Dataset" title="#prop_pcdm:hasMember_Dataset"></a> Property: pcdm:hasMember
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_pcdm:hasMember_Dataset" title="#prop_pcdm:hasMember_Dataset">pcdm:hasMember</a> | <a href="http://pcdm.org/models#hasMember" target="_blank" rel="noopener">http://pcdm.org/models#hasMember</a> | The sub-collections, if any, associated with this collection. | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a>, <a href="#class_RepositoryObject" title="#class_RepositoryObject">RepositoryObject</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_pcdm:memberOf_Dataset" title="#prop_pcdm:memberOf_Dataset"></a> Property: pcdm:memberOf
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_pcdm:memberOf_Dataset" title="#prop_pcdm:memberOf_Dataset">pcdm:memberOf</a> | <a href="http://pcdm.org/models#memberOf" target="_blank" rel="noopener">http://pcdm.org/models#memberOf</a> | Links from a Repository Object or Collection to a containing Repository Object or Collection. | <a href="#class_RepositoryCollection" title="#class_RepositoryCollection">RepositoryCollection</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_publisher_CreativeWork" title="#prop_publisher_CreativeWork"></a> Property: publisher
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_publisher_CreativeWork" title="#prop_publisher_CreativeWork">publisher</a> | <a href="http://schema.org/publisher" target="_blank" rel="noopener">http://schema.org/publisher</a> | The organisation that published this work. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_publisher_Dataset" title="#prop_publisher_Dataset"></a> Property: publisher
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_publisher_Dataset" title="#prop_publisher_Dataset">publisher</a> | <a href="http://schema.org/publisher" target="_blank" rel="noopener">http://schema.org/publisher</a> | The organisation responsible for releasing this dataset. | <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_recipient_CreativeWork" title="#prop_recipient_CreativeWork"></a> Property: recipient
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_recipient_CreativeWork" title="#prop_recipient_CreativeWork">recipient</a> | <a href="http://schema.org/recipient" target="_blank" rel="noopener">http://schema.org/recipient</a> | The person or organisation responsible for creating this work. Authors should be identified using URIs such as ORCiD or ROR. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a>, <a href="#class_Person" title="#class_Person">Person</a>, <a href="#class_Organization" title="#class_Organization">Organization</a> | <a href="#class_CreativeWork" title="#class_CreativeWork">CreativeWork</a> |
+### <a id="prop_spatialCoverage_Dataset" title="#prop_spatialCoverage_Dataset"></a> Property: spatialCoverage
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_spatialCoverage_Dataset" title="#prop_spatialCoverage_Dataset">spatialCoverage</a> | <a href="http://schema.org/spatialCoverage" target="_blank" rel="noopener">http://schema.org/spatialCoverage</a> | The place(s) that are the focus of the content. It is a sub-property of contentLocation intended primarily for more technical and detailed materials. For example, with a dataset, it indicates areas that the dataset describes: a dataset Cape York languages would have spatialCoverage which was the place: the outline of the Cape. | <a href="#class_Place" title="#class_Place">Place</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_temporalCoverage_Dataset" title="#prop_temporalCoverage_Dataset"></a> Property: temporalCoverage
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_temporalCoverage_Dataset" title="#prop_temporalCoverage_Dataset">temporalCoverage</a> | <a href="http://schema.org/temporalCoverage" target="_blank" rel="noopener">http://schema.org/temporalCoverage</a> | The range of years of creation for items in this dataset using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level. | <a href="http://schema.org/DateTime" title="http://schema.org/DateTime" target="_blank" rel="noopener">DateTime</a>, <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |
+### <a id="prop_temporalCoverage_RepositoryObject" title="#prop_temporalCoverage_RepositoryObject"></a> Property: temporalCoverage
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_temporalCoverage_RepositoryObject" title="#prop_temporalCoverage_RepositoryObject">temporalCoverage</a> | <a href="http://schema.org/temporalCoverage" target="_blank" rel="noopener">http://schema.org/temporalCoverage</a> | The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written "2011/2012"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL. Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via "1939/1945". Open-ended date ranges can be written with ".." in place of the end date. For example, "2015-11/.." indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_RepositoryObject" title="#class_RepositoryObject">RepositoryObject</a> |
+### <a id="prop_usageInfo_Dataset" title="#prop_usageInfo_Dataset"></a> Property: usageInfo
+
+| Property | Specialization Of | Description | Range | Occurs in Domain(s) |
+| -------- | ----------------- | ----------- | ----------- | ----------- |
+| <a href="#prop_usageInfo_Dataset" title="#prop_usageInfo_Dataset">usageInfo</a> | <a href="http://schema.org/usageInfo" target="_blank" rel="noopener">http://schema.org/usageInfo</a> | Additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'. | <a href="http://schema.org/Text" title="http://schema.org/Text" target="_blank" rel="noopener">Text</a> | <a href="#class_Dataset" title="#class_Dataset">Dataset</a> |

@@ -922,7 +922,7 @@
       "name": "annotationType",
       "rdfs:label": "annotationType",
       "rdfs:comment": "The type of annotation for Annotation resources.",
-      "inDefinedTermSet": {
+      "rangeIncludes": {
         "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "domainIncludes": {
@@ -956,7 +956,7 @@
       "name": "authorizationWorkflow",
       "rdfs:comment": "By what process a user is granted authorization to a license.",
       "rdfs:label": "authorizationWorkflow",
-      "inDefinedTermSet": {
+      "rangeIncludes": {
         "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
       },
       "domainIncludes": {
@@ -979,14 +979,11 @@
       "name": "collectionEventType",
       "rdfs:comment": "A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment.",
       "rdfs:label": "collectionEventType",
-      "inDefinedTermSet": {
+      "rangeIncludes": {
         "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms"
       },
       "domainIncludes": {
         "@id": "https://w3id.org/ldac/terms#CollectionEvent"
-      },
-      "rangeIncludes": {
-        "@id": "https://w3id.org/ldac/terms#Session"
       }
     },
     {
@@ -995,7 +992,7 @@
       "name": "collectionProtocolType",
       "rdfs:comment": "A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.",
       "rdfs:label": "collectionProtocolType",
-      "inDefinedTermSet": {
+      "rangeIncludes": {
         "@id": "https://w3id.org/ldac/terms#CollectionProtocolTypeTerms"
       },
       "domainIncludes": {
@@ -1344,7 +1341,7 @@
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       },
-      "inDefinedTermSet": {
+      "rangeIncludes": {
         "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
       }
     },
@@ -1364,7 +1361,7 @@
       "name": "openAccessIndex",
       "rdfs:label": "openAccessIndex",
       "rdfs:comment": "One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not.",
-      "inDefinedTermSet": {
+      "rangeIncludes": {
         "@id": "https://w3id.org/ldac/terms#IndexTypes"
       },
       "domainIncludes": {
@@ -1722,7 +1719,7 @@
       "domainIncludes": {
         "@id": "http://schema.org/MediaObject"
       },
-      "inDefinedTermSet": {
+      "rangeIncludes": {
         "@id": "https://w3id.org/ldac/terms#MaterialTypes"
       }
     },
@@ -1732,7 +1729,7 @@
       "name": "linguisticGenre",
       "rdfs:comment": "A linguistic classification of the genre of this resource.",
       "rdfs:label": "linguisticGenre",
-      "inDefinedTermSet": {
+      "rangeIncludes": {
         "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       },
       "domainIncludes": {
@@ -1832,7 +1829,7 @@
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       },
-      "inDefinedTermSet": {
+      "rangeIncludes": {
         "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
       }
     },
@@ -2040,7 +2037,7 @@
       "domainIncludes": {
         "@id": "https://w3id.org/ldac/terms#DataReuseLicense"
       },
-      "inDefinedTermSet": {
+      "rangeIncludes": {
         "@id": "https://w3id.org/ldac/terms#AccessTypes"
       }
     },
