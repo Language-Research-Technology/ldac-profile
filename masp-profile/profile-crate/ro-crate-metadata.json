@@ -718,8 +718,8 @@
     {
       "@id": "#class_CollectionEvent",
       "@type": "rdfs:Class",
-      "rdfs:label": "CollectionEvent",
-      "name": "CollectionEvent",
+      "rdfs:label": "ldac:CollectionEvent",
+      "name": "Collection Event",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#CollectionEvent"
       },
@@ -740,7 +740,7 @@
       "@id": "#class_CreativeWork",
       "@type": "rdfs:Class",
       "rdfs:label": "CreativeWork",
-      "name": "CreativeWork",
+      "name": "Creative Work",
       "prov:specializationOf": {
         "@id": "http://schema.org/CreativeWork"
       },
@@ -766,8 +766,8 @@
     {
       "@id": "#class_DataDepositLicense",
       "@type": "rdfs:Class",
-      "rdfs:label": "DataDepositLicense",
-      "name": "DataDepositLicense",
+      "rdfs:label": "ldac:DataDepositLicense",
+      "name": "Data Deposit License",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#DataDepositLicense"
       },
@@ -782,8 +782,8 @@
     {
       "@id": "#class_DataLicense",
       "@type": "rdfs:Class",
-      "rdfs:label": "DataLicense",
-      "name": "DataLicense",
+      "rdfs:label": "ldac:DataLicense",
+      "name": "Data License",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#DataLicense"
       },
@@ -806,8 +806,8 @@
     {
       "@id": "#class_DataReuseLicense",
       "@type": "rdfs:Class",
-      "rdfs:label": "DataReuseLicense",
-      "name": "DataReuseLicense",
+      "rdfs:label": "ldac:DataReuseLicense",
+      "name": "Data Reuse License",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#DataReuseLicense"
       },
@@ -836,7 +836,7 @@
       "@id": "#class_dct:Collection",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:Collection",
-      "name": "dct:Collection",
+      "name": "Collection",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/Collection"
       },
@@ -849,7 +849,7 @@
       "@id": "#class_dct:Dataset",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:Dataset",
-      "name": "dct:Dataset",
+      "name": "Dataset",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/Dataset"
       },
@@ -862,7 +862,7 @@
       "@id": "#class_dct:Event",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:Event",
-      "name": "dct:Event",
+      "name": "Event",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/Event"
       },
@@ -875,7 +875,7 @@
       "@id": "#class_dct:Image",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:Image",
-      "name": "dct:Image",
+      "name": "Image",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/Image"
       },
@@ -888,7 +888,7 @@
       "@id": "#class_dct:InteractiveResource",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:InteractiveResource",
-      "name": "dct:InteractiveResource",
+      "name": "Interactive Resource",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/InteractiveResource"
       },
@@ -901,7 +901,7 @@
       "@id": "#class_dct:MovingImage",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:MovingImage",
-      "name": "dct:MovingImage",
+      "name": "Moving Image",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/MovingImage"
       },
@@ -914,7 +914,7 @@
       "@id": "#class_dct:PhysicalObject",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:PhysicalObject",
-      "name": "dct:PhysicalObject",
+      "name": "Physical Object",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/PhysicalObject"
       },
@@ -927,7 +927,7 @@
       "@id": "#class_dct:Service",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:Service",
-      "name": "dct:Service",
+      "name": "Service",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/Service"
       },
@@ -940,7 +940,7 @@
       "@id": "#class_dct:Software",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:Software",
-      "name": "dct:Software",
+      "name": "Software",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/Software"
       },
@@ -953,7 +953,7 @@
       "@id": "#class_dct:Sound",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:Sound",
-      "name": "dct:Sound",
+      "name": "Sound",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/Sound"
       },
@@ -966,7 +966,7 @@
       "@id": "#class_dct:StillImage",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:StillImage",
-      "name": "dct:StillImage",
+      "name": "Still Image",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/StillImage"
       },
@@ -979,7 +979,7 @@
       "@id": "#class_dct:Text",
       "@type": "rdfs:Class",
       "rdfs:label": "dct:Text",
-      "name": "dct:Text",
+      "name": "Text",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/Text"
       },
@@ -1031,7 +1031,7 @@
       "@id": "#class_ldac:CollectionProtocol",
       "@type": "rdfs:Class",
       "rdfs:label": "ldac:CollectionProtocol",
-      "name": "ldac:CollectionProtocol",
+      "name": "Collection Protocol",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#CollectionProtocol"
       },
@@ -1086,7 +1086,7 @@
       "@id": "#class_RepositoryCollection",
       "@type": "rdfs:Class",
       "rdfs:label": "RepositoryCollection",
-      "name": "RepositoryCollection",
+      "name": "Repository Collection",
       "prov:specializationOf": {
         "@id": "http://pcdm.org/models#Collection"
       },
@@ -1102,7 +1102,7 @@
       "@id": "#class_RepositoryObject",
       "@type": "rdfs:Class",
       "rdfs:label": "RepositoryObject",
-      "name": "RepositoryObject",
+      "name": "Repository Object",
       "prov:specializationOf": {
         "@id": "http://pcdm.org/models#Object"
       },
@@ -1193,7 +1193,7 @@
       "@id": "#prop_accountablePerson_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "accountablePerson",
-      "name": "accountablePerson",
+      "name": "Accountable Person",
       "prov:specializationOf": {
         "@id": "http://schema.org/accountablePerson"
       },
@@ -1218,7 +1218,7 @@
       "@id": "#prop_address_Place",
       "@type": "rdf:Property",
       "rdfs:label": "address",
-      "name": "address",
+      "name": "Address",
       "prov:specializationOf": {
         "@id": "http://schema.org/address"
       },
@@ -1237,7 +1237,7 @@
       "@id": "#prop_affiliation_Person",
       "@type": "rdf:Property",
       "rdfs:label": "affiliation",
-      "name": "affiliation",
+      "name": "Affiliation",
       "prov:specializationOf": {
         "@id": "http://schema.org/affiliation"
       },
@@ -1256,7 +1256,7 @@
       "@id": "#prop_author_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "author",
-      "name": "author",
+      "name": "Author",
       "prov:specializationOf": {
         "@id": "http://schema.org/author"
       },
@@ -1283,7 +1283,7 @@
       "@id": "#prop_author_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "author",
-      "name": "author",
+      "name": "Author",
       "prov:specializationOf": {
         "@id": "http://schema.org/author"
       },
@@ -1308,7 +1308,7 @@
       "@id": "#prop_citation_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "citation",
-      "name": "citation",
+      "name": "Citation",
       "prov:specializationOf": {
         "@id": "http://schema.org/citation"
       },
@@ -1327,7 +1327,7 @@
       "@id": "#prop_conformsTo_RepositoryCollection",
       "@type": "rdf:Property",
       "rdfs:label": "conformsTo",
-      "name": "conformsTo",
+      "name": "Conforms To",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/conformsTo"
       },
@@ -1350,7 +1350,7 @@
       "@id": "#prop_conformsTo_RepositoryObject",
       "@type": "rdf:Property",
       "rdfs:label": "conformsTo",
-      "name": "conformsTo",
+      "name": "Conforms To",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/conformsTo"
       },
@@ -1369,7 +1369,7 @@
       "@id": "#prop_contentLocation_RepositoryCollection",
       "@type": "rdf:Property",
       "rdfs:label": "contentLocation",
-      "name": "contentLocation",
+      "name": "Content Location",
       "prov:specializationOf": {
         "@id": "http://schema.org/contentLocation"
       },
@@ -1388,7 +1388,7 @@
       "@id": "#prop_contentSize_File",
       "@type": "rdf:Property",
       "rdfs:label": "contentSize",
-      "name": "contentSize",
+      "name": "Content Size",
       "prov:specializationOf": {
         "@id": "http://schema.org/contentSize"
       },
@@ -1407,7 +1407,7 @@
       "@id": "#prop_creator_RepositoryObject",
       "@type": "rdf:Property",
       "rdfs:label": "creator",
-      "name": "creator",
+      "name": "Creator",
       "prov:specializationOf": {
         "@id": "http://schema.org/creator"
       },
@@ -1426,7 +1426,7 @@
       "@id": "#prop_creditText_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "creditText",
-      "name": "creditText",
+      "name": "Credit Text",
       "prov:specializationOf": {
         "@id": "http://schema.org/creditText"
       },
@@ -1445,7 +1445,7 @@
       "@id": "#prop_dateCreated_RepositoryCollection",
       "@type": "rdf:Property",
       "rdfs:label": "dateCreated",
-      "name": "dateCreated",
+      "name": "Date Created",
       "prov:specializationOf": {
         "@id": "http://schema.org/dateCreated"
       },
@@ -1465,7 +1465,7 @@
       "@id": "#prop_dateCreated_RepositoryObject",
       "@type": "rdf:Property",
       "rdfs:label": "dateCreated",
-      "name": "dateCreated",
+      "name": "Date Created",
       "prov:specializationOf": {
         "@id": "http://schema.org/dateCreated"
       },
@@ -1484,7 +1484,7 @@
       "@id": "#prop_datePublished_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "datePublished",
-      "name": "datePublished",
+      "name": "Date Published",
       "prov:specializationOf": {
         "@id": "http://schema.org/datePublished"
       },
@@ -1504,7 +1504,7 @@
       "@id": "#prop_dct:rightsHolder_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "dct:rightsHolder",
-      "name": "dct:rightsHolder",
+      "name": "Rights Holder",
       "prov:specializationOf": {
         "@id": "http://purl.org/dc/terms/rightsHolder"
       },
@@ -1533,7 +1533,7 @@
       "@id": "#prop_description_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "description",
-      "name": "description",
+      "name": "Description",
       "prov:specializationOf": {
         "@id": "http://schema.org/description"
       },
@@ -1553,7 +1553,7 @@
       "@id": "#prop_description_RepositoryObject",
       "@type": "rdf:Property",
       "rdfs:label": "description",
-      "name": "description",
+      "name": "Description",
       "prov:specializationOf": {
         "@id": "http://schema.org/description"
       },
@@ -1572,7 +1572,7 @@
       "@id": "#prop_encodingFormat_File",
       "@type": "rdf:Property",
       "rdfs:label": "encodingFormat",
-      "name": "encodingFormat",
+      "name": "Encoding Format",
       "prov:specializationOf": {
         "@id": "http://schema.org/encodingFormat"
       },
@@ -1599,7 +1599,7 @@
       "@id": "#prop_funder_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "funder",
-      "name": "funder",
+      "name": "Funder",
       "prov:specializationOf": {
         "@id": "http://schema.org/funder"
       },
@@ -1618,7 +1618,7 @@
       "@id": "#prop_geo_Place",
       "@type": "rdf:Property",
       "rdfs:label": "geo",
-      "name": "geo",
+      "name": "Geo",
       "prov:specializationOf": {
         "@id": "http://schema.org/geo"
       },
@@ -1637,7 +1637,7 @@
       "@id": "#prop_geosparql:asWKT_Geometry",
       "@type": "rdf:Property",
       "rdfs:label": "geosparql:asWKT",
-      "name": "geosparql:asWKT",
+      "name": "As WKT",
       "prov:specializationOf": {
         "@id": "http://www.opengis.net/ont/geosparql#asWKT"
       },
@@ -1656,7 +1656,7 @@
       "@id": "#prop_hasPart_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "hasPart",
-      "name": "hasPart",
+      "name": "Has Part",
       "prov:specializationOf": {
         "@id": "http://schema.org/hasPart"
       },
@@ -1683,7 +1683,7 @@
       "@id": "#prop_hasPart_File",
       "@type": "rdf:Property",
       "rdfs:label": "hasPart",
-      "name": "hasPart",
+      "name": "Has Part",
       "prov:specializationOf": {
         "@id": "http://schema.org/hasPart"
       },
@@ -1707,7 +1707,7 @@
       "@id": "#prop_holdingArchive_RepositoryCollection",
       "@type": "rdf:Property",
       "rdfs:label": "holdingArchive",
-      "name": "holdingArchive",
+      "name": "Holding Archive",
       "prov:specializationOf": {
         "@id": "http://schema.org/holdingArchive"
       },
@@ -1732,7 +1732,7 @@
       "@id": "#prop_identifier_RepositoryObject",
       "@type": "rdf:Property",
       "rdfs:label": "identifier",
-      "name": "identifier",
+      "name": "Identifier",
       "prov:specializationOf": {
         "@id": "http://schema.org/identifier"
       },
@@ -1759,7 +1759,7 @@
       "@id": "#prop_inLanguage_RepositoryCollection",
       "@type": "rdf:Property",
       "rdfs:label": "inLanguage",
-      "name": "inLanguage",
+      "name": "In Language",
       "prov:specializationOf": {
         "@id": "http://schema.org/inLanguage"
       },
@@ -1779,7 +1779,7 @@
       "@id": "#prop_isAccessibleForFree_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "isAccessibleForFree",
-      "name": "isAccessibleForFree",
+      "name": "Is Accessible For Free",
       "prov:specializationOf": {
         "@id": "http://schema.org/isAccessibleForFree"
       },
@@ -1799,7 +1799,7 @@
       "@id": "#prop_isBasedOn_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "isBasedOn",
-      "name": "isBasedOn",
+      "name": "Is Based On",
       "prov:specializationOf": {
         "@id": "http://schema.org/isBasedOn"
       },
@@ -1832,7 +1832,7 @@
       "@id": "#prop_isbn_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "isbn",
-      "name": "isbn",
+      "name": "ISBN",
       "prov:specializationOf": {
         "@id": "http://schema.org/isbn"
       },
@@ -1852,7 +1852,7 @@
       "@id": "#prop_isPartOf_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "isPartOf",
-      "name": "isPartOf",
+      "name": "Is Part Of",
       "prov:specializationOf": {
         "@id": "http://schema.org/isPartOf"
       },
@@ -1876,7 +1876,7 @@
       "@id": "#prop_issn_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "issn",
-      "name": "issn",
+      "name": "ISSN",
       "prov:specializationOf": {
         "@id": "http://schema.org/issn"
       },
@@ -1896,7 +1896,7 @@
       "@id": "#prop_ldac:access_DataReuseLicense",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:access",
-      "name": "ldac:access",
+      "name": "Access",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#access"
       },
@@ -1915,7 +1915,7 @@
       "@id": "#prop_ldac:accessControlList_DataReuseLicense",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:accessControlList",
-      "name": "ldac:accessControlList",
+      "name": "Access Control List",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#accessControlList"
       },
@@ -1934,7 +1934,7 @@
       "@id": "#prop_ldac:age_Person",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:age",
-      "name": "ldac:age",
+      "name": "Age",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#age"
       },
@@ -1954,7 +1954,7 @@
       "@id": "#prop_ldac:annotationOf_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:annotationOf",
-      "name": "ldac:annotationOf",
+      "name": "Annotation Of",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#annotationOf"
       },
@@ -1973,7 +1973,7 @@
       "@id": "#prop_ldac:annotationType_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:annotationType",
-      "name": "ldac:annotationType",
+      "name": "Annotation Type",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#annotationType"
       },
@@ -1992,7 +1992,7 @@
       "@id": "#prop_ldac:annotator_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:annotator",
-      "name": "ldac:annotator",
+      "name": "Annotator",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#annotator"
       },
@@ -2016,7 +2016,7 @@
       "@id": "#prop_ldac:authorizationWorkflow_DataReuseLicense",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:authorizationWorkflow",
-      "name": "ldac:authorizationWorkflow",
+      "name": "Authorization Workflow",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#authorizationWorkflow"
       },
@@ -2035,7 +2035,7 @@
       "@id": "#prop_ldac:channels_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:channels",
-      "name": "ldac:channels",
+      "name": "Channels",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#channels"
       },
@@ -2055,7 +2055,7 @@
       "@id": "#prop_ldac:collectionEventType_CollectionEvent",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:collectionEventType",
-      "name": "ldac:collectionEventType",
+      "name": "Collection Event Type",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#collectionEventType"
       },
@@ -2074,7 +2074,7 @@
       "@id": "#prop_ldac:collectionProtocolType_ldac:CollectionProtocol",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:collectionProtocolType",
-      "name": "ldac:collectionProtocolType",
+      "name": "Collection Protocol Type",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#collectionProtocolType"
       },
@@ -2094,7 +2094,7 @@
       "@id": "#prop_ldac:communicationMode_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:communicationMode",
-      "name": "ldac:communicationMode",
+      "name": "Communication Mode",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#communicationMode"
       },
@@ -2113,7 +2113,7 @@
       "@id": "#prop_ldac:compiler_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:compiler",
-      "name": "ldac:compiler",
+      "name": "Compiler",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#compiler"
       },
@@ -2137,7 +2137,7 @@
       "@id": "#prop_ldac:consultant_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:consultant",
-      "name": "ldac:consultant",
+      "name": "Consultant",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#consultant"
       },
@@ -2161,7 +2161,7 @@
       "@id": "#prop_ldac:dataInputter_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:dataInputter",
-      "name": "ldac:dataInputter",
+      "name": "Data Inputter",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#dataInputter"
       },
@@ -2185,7 +2185,7 @@
       "@id": "#prop_ldac:dateFreeText_RepositoryCollection",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:dateFreeText",
-      "name": "ldac:dateFreeText",
+      "name": "Date Free Text",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#dateFreeText"
       },
@@ -2205,7 +2205,7 @@
       "@id": "#prop_ldac:depositor_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:depositor",
-      "name": "ldac:depositor",
+      "name": "Depositor",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#depositor"
       },
@@ -2229,7 +2229,7 @@
       "@id": "#prop_ldac:derivationOf_File",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:derivationOf",
-      "name": "ldac:derivationOf",
+      "name": "Derivation Of",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#derivationOf"
       },
@@ -2253,7 +2253,7 @@
       "@id": "#prop_ldac:developer_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:developer",
-      "name": "ldac:developer",
+      "name": "Developer",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#developer"
       },
@@ -2277,7 +2277,7 @@
       "@id": "#prop_ldac:doi_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:doi",
-      "name": "ldac:doi",
+      "name": "DOI",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#doi"
       },
@@ -2297,7 +2297,7 @@
       "@id": "#prop_ldac:editor_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:editor",
-      "name": "ldac:editor",
+      "name": "Editor",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#editor"
       },
@@ -2321,7 +2321,7 @@
       "@id": "#prop_ldac:hasAnnotation_RepositoryObject",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:hasAnnotation",
-      "name": "ldac:hasAnnotation",
+      "name": "Has Annotation",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#hasAnnotation"
       },
@@ -2340,7 +2340,7 @@
       "@id": "#prop_ldac:hasCollectionProtocol_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:hasCollectionProtocol",
-      "name": "ldac:hasCollectionProtocol",
+      "name": "Has Collection Protocol",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#hasCollectionProtocol"
       },
@@ -2360,7 +2360,7 @@
       "@id": "#prop_ldac:hasDerivation_File",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:hasDerivation",
-      "name": "ldac:hasDerivation",
+      "name": "Has Derivation",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#hasDerivation"
       },
@@ -2379,7 +2379,7 @@
       "@id": "#prop_ldac:illustrator_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:illustrator",
-      "name": "ldac:illustrator",
+      "name": "Illustrator",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#illustrator"
       },
@@ -2403,7 +2403,7 @@
       "@id": "#prop_ldac:indexableText_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:indexableText",
-      "name": "ldac:indexableText",
+      "name": "Indexable Text",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#indexableText"
       },
@@ -2422,7 +2422,7 @@
       "@id": "#prop_ldac:interpreter_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:interpreter",
-      "name": "ldac:interpreter",
+      "name": "Interpreter",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#interpreter"
       },
@@ -2446,7 +2446,7 @@
       "@id": "#prop_ldac:interviewee_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:interviewee",
-      "name": "ldac:interviewee",
+      "name": "Interviewee",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#interviewee"
       },
@@ -2470,7 +2470,7 @@
       "@id": "#prop_ldac:interviewer_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:interviewer",
-      "name": "ldac:interviewer",
+      "name": "Interviewer",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#interviewer"
       },
@@ -2494,7 +2494,7 @@
       "@id": "#prop_ldac:isDeIdentified_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:isDeIdentified",
-      "name": "ldac:isDeIdentified",
+      "name": "Is De-Identified",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#isDeIdentified"
       },
@@ -2514,7 +2514,7 @@
       "@id": "#prop_ldac:itemLocation_RepositoryCollection",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:itemLocation",
-      "name": "ldac:itemLocation",
+      "name": "Item Location",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#itemLocation"
       },
@@ -2539,7 +2539,7 @@
       "@id": "#prop_ldac:linguisticGenre_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:linguisticGenre",
-      "name": "ldac:linguisticGenre",
+      "name": "Linguistic Genre",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#linguisticGenre"
       },
@@ -2557,7 +2557,7 @@
     {
       "@id": "#prop_ldac:mainText_CreativeWork",
       "@type": "rdf:Property",
-      "name": "ldac:mainText",
+      "name": "Main Text",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#mainText"
       },
@@ -2577,7 +2577,7 @@
       "@id": "#prop_ldac:material_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:material",
-      "name": "ldac:material",
+      "name": "Material",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#material"
       },
@@ -2597,7 +2597,7 @@
       "@id": "#prop_ldac:materialType_File",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:materialType",
-      "name": "ldac:materialType",
+      "name": "Material Type",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#materialType"
       },
@@ -2616,7 +2616,7 @@
       "@id": "#prop_ldac:openAccessIndex_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:openAccessIndex",
-      "name": "ldac:openAccessIndex",
+      "name": "Open Access Index",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#openAccessIndex"
       },
@@ -2635,7 +2635,7 @@
     {
       "@id": "#prop_ldac:orthographicNotes_CreativeWork",
       "@type": "rdf:Property",
-      "name": "ldac:orthographicNotes",
+      "name": "Orthographic Notes",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#orthographicNotes"
       },
@@ -2655,7 +2655,7 @@
       "@id": "#prop_ldac:participant_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:participant",
-      "name": "ldac:participant",
+      "name": "Participant",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#participant"
       },
@@ -2679,7 +2679,7 @@
       "@id": "#prop_ldac:performer_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:performer",
-      "name": "ldac:performer",
+      "name": "Performer",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#performer"
       },
@@ -2703,7 +2703,7 @@
       "@id": "#prop_ldac:photographer_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:photographer",
-      "name": "ldac:photographer",
+      "name": "Photographer",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#photographer"
       },
@@ -2727,7 +2727,7 @@
       "@id": "#prop_ldac:recorder_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:recorder",
-      "name": "ldac:recorder",
+      "name": "Recorder",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#recorder"
       },
@@ -2751,7 +2751,7 @@
       "@id": "#prop_ldac:register_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:register",
-      "name": "ldac:register",
+      "name": "Register",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#register"
       },
@@ -2770,7 +2770,7 @@
       "@id": "#prop_ldac:researcher_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:researcher",
-      "name": "ldac:researcher",
+      "name": "Researcher",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#researcher"
       },
@@ -2794,7 +2794,7 @@
       "@id": "#prop_ldac:researchParticipant_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:researchParticipant",
-      "name": "ldac:researchParticipant",
+      "name": "Research Participant",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#researchParticipant"
       },
@@ -2818,7 +2818,7 @@
       "@id": "#prop_ldac:responder_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:responder",
-      "name": "ldac:responder",
+      "name": "Responder",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#responder"
       },
@@ -2842,7 +2842,7 @@
       "@id": "#prop_ldac:reviewDate_DataLicense",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:reviewDate",
-      "name": "ldac:reviewDate",
+      "name": "Review Date",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#reviewDate"
       },
@@ -2862,7 +2862,7 @@
       "@id": "#prop_ldac:signer_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:signer",
-      "name": "ldac:signer",
+      "name": "Signer",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#signer"
       },
@@ -2886,7 +2886,7 @@
       "@id": "#prop_ldac:singer_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:singer",
-      "name": "ldac:singer",
+      "name": "Singer",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#singer"
       },
@@ -2910,7 +2910,7 @@
       "@id": "#prop_ldac:speaker_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:speaker",
-      "name": "ldac:speaker",
+      "name": "Speaker",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#speaker"
       },
@@ -2934,7 +2934,7 @@
       "@id": "#prop_ldac:sponsor_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:sponsor",
-      "name": "ldac:sponsor",
+      "name": "Sponsor",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#sponsor"
       },
@@ -2958,7 +2958,7 @@
       "@id": "#prop_ldac:subjectLanguage_RepositoryCollection",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:subjectLanguage",
-      "name": "ldac:subjectLanguage",
+      "name": "Subject Language",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#subjectLanguage"
       },
@@ -2977,7 +2977,7 @@
       "@id": "#prop_ldac:transcriber_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:transcriber",
-      "name": "ldac:transcriber",
+      "name": "Transcriber",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#transcriber"
       },
@@ -3001,7 +3001,7 @@
       "@id": "#prop_ldac:translator_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:translator",
-      "name": "ldac:translator",
+      "name": "Translator",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#translator"
       },
@@ -3025,7 +3025,7 @@
       "@id": "#prop_ldac:writtenLanguageFormat_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "ldac:writtenLanguageFormat",
-      "name": "ldac:writtenLanguageFormat",
+      "name": "Written Language Format",
       "prov:specializationOf": {
         "@id": "https://w3id.org/ldac/terms#writtenLanguageFormat"
       },
@@ -3044,7 +3044,7 @@
       "@id": "#prop_license_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "license",
-      "name": "license",
+      "name": "License",
       "prov:specializationOf": {
         "@id": "http://schema.org/license"
       },
@@ -3072,7 +3072,7 @@
       "@id": "#prop_license_RepositoryObject",
       "@type": "rdf:Property",
       "rdfs:label": "license",
-      "name": "license",
+      "name": "License",
       "prov:specializationOf": {
         "@id": "http://schema.org/license"
       },
@@ -3091,7 +3091,7 @@
       "@id": "#prop_location_Organization",
       "@type": "rdf:Property",
       "rdfs:label": "location",
-      "name": "location",
+      "name": "Location",
       "prov:specializationOf": {
         "@id": "http://schema.org/location"
       },
@@ -3111,7 +3111,7 @@
       "@id": "#prop_name_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "name",
-      "name": "name",
+      "name": "Name",
       "prov:specializationOf": {
         "@id": "http://schema.org/name"
       },
@@ -3131,7 +3131,7 @@
       "@id": "#prop_pcdm:hasMember_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "pcdm:hasMember",
-      "name": "pcdm:hasMember",
+      "name": "Has Member",
       "prov:specializationOf": {
         "@id": "http://pcdm.org/models#hasMember"
       },
@@ -3155,7 +3155,7 @@
       "@id": "#prop_pcdm:memberOf_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "pcdm:memberOf",
-      "name": "pcdm:memberOf",
+      "name": "Member Of",
       "prov:specializationOf": {
         "@id": "http://pcdm.org/models#memberOf"
       },
@@ -3174,7 +3174,7 @@
       "@id": "#prop_publisher_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "publisher",
-      "name": "publisher",
+      "name": "Publisher",
       "prov:specializationOf": {
         "@id": "http://schema.org/publisher"
       },
@@ -3199,7 +3199,7 @@
       "@id": "#prop_publisher_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "publisher",
-      "name": "publisher",
+      "name": "Publisher",
       "prov:specializationOf": {
         "@id": "http://schema.org/publisher"
       },
@@ -3219,7 +3219,7 @@
       "@id": "#prop_recipient_CreativeWork",
       "@type": "rdf:Property",
       "rdfs:label": "recipient",
-      "name": "recipient",
+      "name": "Recipient",
       "prov:specializationOf": {
         "@id": "http://schema.org/recipient"
       },
@@ -3246,7 +3246,7 @@
       "@id": "#prop_spatialCoverage_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "spatialCoverage",
-      "name": "spatialCoverage",
+      "name": "Spatial Coverage",
       "prov:specializationOf": {
         "@id": "http://schema.org/spatialCoverage"
       },
@@ -3265,7 +3265,7 @@
       "@id": "#prop_temporalCoverage_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "temporalCoverage",
-      "name": "temporalCoverage",
+      "name": "Temporal Coverage",
       "prov:specializationOf": {
         "@id": "http://schema.org/temporalCoverage"
       },
@@ -3289,7 +3289,7 @@
       "@id": "#prop_temporalCoverage_RepositoryObject",
       "@type": "rdf:Property",
       "rdfs:label": "temporalCoverage",
-      "name": "temporalCoverage",
+      "name": "Temporal Coverage",
       "prov:specializationOf": {
         "@id": "http://schema.org/temporalCoverage"
       },
@@ -3308,7 +3308,7 @@
       "@id": "#prop_usageInfo_Dataset",
       "@type": "rdf:Property",
       "rdfs:label": "usageInfo",
-      "name": "usageInfo",
+      "name": "Usage Info",
       "prov:specializationOf": {
         "@id": "http://schema.org/usageInfo"
       },
@@ -3327,7 +3327,7 @@
       "@id": "#RO-Crate_Metadata_Descriptor.about",
       "@type": "rdf:Property",
       "rdfs:label": "about",
-      "name": "about",
+      "name": "About",
       "prov:specializationOf": {
         "@id": "http://schema.org/about"
       },
@@ -3349,6 +3349,7 @@
       "@id": "#RO-Crate_Metadata_Descriptor.id",
       "@type": "rdf:Property",
       "rdfs:label": "@id",
+      "name": "ID",
       "domainIncludes": {
         "@id": "#RO-Crate_Metadata_Descriptor"
       },
@@ -3371,7 +3372,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:AuthorizationWorkflows"
       },
-      "name": "AccessControlList",
+      "name": "Access Control List",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3383,7 +3384,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:AuthorizationWorkflows"
       },
-      "name": "AgreeToTerms",
+      "name": "Agree to Terms",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3407,7 +3408,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:AuthorizationWorkflows"
       },
-      "name": "AuthorizationByApplication",
+      "name": "Authorization By Application",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3419,7 +3420,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:AuthorizationWorkflows"
       },
-      "name": "AuthorizationByInvitation",
+      "name": "Authorization By Invitation",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3431,7 +3432,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:AccessTypes"
       },
-      "name": "AuthorizedAccess",
+      "name": "Authorized Access",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3443,7 +3444,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:MaterialTypes"
       },
-      "name": "DerivedMaterial",
+      "name": "Derived Material",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3479,7 +3480,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:CollectionProtocolTypeTerms"
       },
-      "name": "ElicitationTask",
+      "name": "Elicitation Task",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3503,7 +3504,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:IndexTypes"
       },
-      "name": "FullText",
+      "name": "Full Text",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3599,7 +3600,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:CollectionProtocolTypeTerms"
       },
-      "name": "MaterialSelectionCriteria",
+      "name": "Material Selection Criteria",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3623,7 +3624,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:AccessTypes"
       },
-      "name": "OpenAccess",
+      "name": "Open Access",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3659,7 +3660,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:AnnotationTypeTerms"
       },
-      "name": "PartOfSpeech",
+      "name": "Part Of Speech",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3707,7 +3708,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:MaterialTypes"
       },
-      "name": "PrimaryMaterial",
+      "name": "Primary Material",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3755,7 +3756,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:AuthorizationWorkflows"
       },
-      "name": "SelfAuthorization",
+      "name": "Self Authorization",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3791,7 +3792,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:CommunicationModeTerms"
       },
-      "name": "SignedLanguage",
+      "name": "Signed Language",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3815,7 +3816,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:CommunicationModeTerms"
       },
-      "name": "SpokenLanguage",
+      "name": "Spoken Language",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3902,7 +3903,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:CommunicationModeTerms"
       },
-      "name": "WhistledLanguage",
+      "name": "Whistled Language",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3914,7 +3915,7 @@
       "inDefinedTermSet": {
         "@id": "ldac:CommunicationModeTerms"
       },
-      "name": "WrittenLanguage",
+      "name": "Written Language",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       }
@@ -3922,7 +3923,7 @@
     {
       "@id": "ldac:AccessTypes",
       "@type": "DefinedTermSet",
-      "name": "AccessTypes",
+      "name": "Access Types",
       "description": "Set of defined terms for ldac:access",
       "hasDefinedTerm": [
         {
@@ -3939,7 +3940,7 @@
     {
       "@id": "ldac:AnnotationTypeTerms",
       "@type": "DefinedTermSet",
-      "name": "AnnotationTypeTerms",
+      "name": "Annotation Type Terms",
       "description": "Set of defined terms for ldac:annotationType",
       "hasDefinedTerm": [
         {
@@ -3980,7 +3981,7 @@
     {
       "@id": "ldac:AuthorizationWorkflows",
       "@type": "DefinedTermSet",
-      "name": "AuthorizationWorkflows",
+      "name": "Authorization Workflows",
       "description": "Set of defined terms for ldac:authorizationWorkflow",
       "hasDefinedTerm": [
         {
@@ -4006,7 +4007,7 @@
     {
       "@id": "ldac:CollectionEventTypeTerms",
       "@type": "DefinedTermSet",
-      "name": "CollectionEventTypeTerms",
+      "name": "Collection Event Type Terms",
       "description": "Set of defined terms for ldac:collectionEventType",
       "hasDefinedTerm": {
         "@id": "ldac:Session"
@@ -4018,7 +4019,7 @@
     {
       "@id": "ldac:CollectionProtocolTypeTerms",
       "@type": "DefinedTermSet",
-      "name": "CollectionProtocolTypeTerms",
+      "name": "Collection Protocol Type Terms",
       "description": "Set of defined terms for ldac:collectionProtocolType",
       "hasDefinedTerm": [
         {
@@ -4035,7 +4036,7 @@
     {
       "@id": "ldac:CommunicationModeTerms",
       "@type": "DefinedTermSet",
-      "name": "CommunicationModeTerms",
+      "name": "Communication Mode Terms",
       "description": "Set of defined terms for ldac:communicationMode",
       "hasDefinedTerm": [
         {
@@ -4064,7 +4065,7 @@
     {
       "@id": "ldac:IndexTypes",
       "@type": "DefinedTermSet",
-      "name": "IndexTypes",
+      "name": "Index Types",
       "description": "Set of defined terms for ldac:openAccessIndex",
       "hasDefinedTerm": {
         "@id": "ldac:FullText"
@@ -4076,7 +4077,7 @@
     {
       "@id": "ldac:LinguisticGenreTerms",
       "@type": "DefinedTermSet",
-      "name": "LinguisticGenreTerms",
+      "name": "Linguistic Genre Terms",
       "description": "Set of defined terms for ldac:linguisticGenre",
       "hasDefinedTerm": [
         {
@@ -4123,7 +4124,7 @@
     {
       "@id": "ldac:MaterialTypes",
       "@type": "DefinedTermSet",
-      "name": "MaterialTypes",
+      "name": "Material Types",
       "description": "Set of defined terms for ldac:materialType",
       "hasDefinedTerm": [
         {
@@ -4143,7 +4144,7 @@
     {
       "@id": "ldac:WrittenLanguageTypeTerms",
       "@type": "DefinedTermSet",
-      "name": "WrittenLanguageTypeTerms",
+      "name": "Written Language Type Terms",
       "description": "Set of defined terms for ldac:writtenLanguageFormat",
       "hasDefinedTerm": [
         {
