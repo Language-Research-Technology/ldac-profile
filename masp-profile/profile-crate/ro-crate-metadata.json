@@ -1150,12 +1150,25 @@
       },
       "rdfs:comment": "README file",
       "rangeIncludes": {
-        "@id": "#README_Entity"
+        "@id": "#property_CreativeWork_README.id"
       },
       "sh:minCount": "1",
       "sh:maxCount": "1",
-      "description": "There must with the path `README.html` in the root of the RO-Crate, and it must be described by an entity of type README_Entity with an @id of `README.html`.",
-      "value": "README.html"
+      "description": "There must with the path `README.html` in the root of the RO-Crate, and it must be described by an entity of type README_Entity with an @id of `README.html`."
+    },
+     {
+      "@id": "#property_CreativeWork_README.id",
+      "@type": "rdf:Property",
+      "description": "README file must have an @id matching /^readme\\.md$/i.",
+      "rdfs:label": "@id",
+      "rangeIncludes": {
+        "@id": "#propertyValue_property_CreativeWork_README.id"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork_README"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
     },
     {
       "@id": "#Root_Data_Entity",
@@ -3354,16 +3367,24 @@
         "@id": "#RO-Crate_Metadata_Descriptor"
       },
       "rdfs:comment": "The RO-Crate Metadata Descriptor",
-      "rangeIncludes": {
-        "@id": "#Root_Data_Entity"
+       "rangeIncludes": {
+        "@id": "#propertyValue_RO-Crate_Metadata_Descriptor.id"
       },
       "sh:minCount": "1",
       "isPartOf": {
         "@id": "#hasSpecializedSchema"
       },
       "sh:maxCount": "1",
-      "description": "This is the 'magic' entity that identifies the RO-Crate Metadata Descriptor, which is the root of the graph and the entry point for validation. It must have a @type of RO-Crate_Metadata_Descriptor and its @id must be 'ro-crate-metadata.json'.",
-      "value": "ro-crate-metadata.json"
+      "description": "This is the 'magic' entity that identifies the RO-Crate Metadata Descriptor, which is the root of the graph and the entry point for validation. It must have a @type of RO-Crate_Metadata_Descriptor and its @id must be 'ro-crate-metadata.json'."
+    },
+     {
+      "@id": "#propertyValue_RO-Crate_Metadata_Descriptor.id",
+      "@type": "PropertyValue",
+      "name": "RO-Crate Metadadata Descriptor Identifier Constraint",
+      "description": "Allowed identifier value constraint for RO-Crate Metadadata Descriptor.",
+      "value": "ro-crate-metadata.json",
+      "sh:minCount": 1,
+      "sh:maxCount": 1
     },
     {
       "@id": "ldac:AccessControlList",

@@ -1238,7 +1238,7 @@ Dakota: The University of North Dakota M.A.
 <br>
 <h1>Examples</h1>
 <p><a href="https://www.mpi.nl/ISLE/documents/docs_frame.html">https://www.mpi.nl/ISLE/documents/docs_frame.html</a></p>
-<p><strong>30</strong> classes &middot; <strong>101</strong> properties</p>
+<p><strong>30</strong> classes &middot; <strong>102</strong> properties</p>
 <div class="row">
   <div class="col-md-6 col-panel">
     <h3>Classes</h3>
@@ -1281,6 +1281,7 @@ Dakota: The University of North Dakota M.A.
     <input class="entity-filter" type="search" placeholder="Filter properties…" data-target="prop-list">
     <ul id="prop-list" class="entity-list">
 <li><a href="#README.id" title="#README.id">@id</a> — README file <small style="color:#aaa">#README.id</small></li>
+<li><a href="#property_CreativeWork_README.id" title="#property_CreativeWork_README.id">@id</a> <small style="color:#aaa">#property_CreativeWork_README.id</small></li>
 <li><a href="#RO-Crate_Metadata_Descriptor.about" title="#RO-Crate_Metadata_Descriptor.about">About</a> — This property on the RO-Crate Metadata Descriptor references the Root Data Entity. In a SoSS+ profile there may be Schemas present for more than one 'flavour' of Root Data Entity with different @type arrays or `@conformsTo` references (or other specializations). <small style="color:#aaa">#RO-Crate_Metadata_Descriptor.about</small></li>
 <li><a href="#prop_ldac:access_DataReuseLicense" title="#prop_ldac:access_DataReuseLicense">Access</a> — Whether this is an open or restricted access license. <small style="color:#aaa">#prop_ldac:access_DataReuseLicense</small></li>
 <li><a href="#prop_ldac:accessControlList_DataReuseLicense" title="#prop_ldac:accessControlList_DataReuseLicense">Access Control List</a> — When a license has an authorizationWorkflow property with a value of the DefinedTerm AccessControlList this property has a URI value that points to a list of userIDs. <small style="color:#aaa">#prop_ldac:accessControlList_DataReuseLicense</small></li>
@@ -3337,8 +3338,8 @@ Dakota: The University of North Dakota M.A.
 <td></td>
 <td>Yes</td>
 <td>This is the 'magic' entity that identifies the RO-Crate Metadata Descriptor, which is the root of the graph and the entry point for validation. It must have a @type of RO-Crate_Metadata_Descriptor and its @id must be 'ro-crate-metadata.json'.</td>
-<td><a href="#Root_Data_Entity" title="#Root_Data_Entity">Root Data Entity</a></td>
-<td>ro-crate-metadata.json</td>
+<td><a href="#propertyValue_RO-Crate_Metadata_Descriptor.id" title="#propertyValue_RO-Crate_Metadata_Descriptor.id">RO-Crate Metadadata Descriptor Identifier Constraint</a></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -3385,8 +3386,8 @@ Dakota: The University of North Dakota M.A.
 <td></td>
 <td>Yes</td>
 <td>There must with the path <code>README.html</code> in the root of the RO-Crate, and it must be described by an entity of type README_Entity with an @id of <code>README.html</code>.</td>
-<td><a href="#README_Entity" title="#README_Entity">README Entity</a></td>
-<td>README.html</td>
+<td><a href="#property_CreativeWork_README.id" title="#property_CreativeWork_README.id">@id</a></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -3479,8 +3480,29 @@ Dakota: The University of North Dakota M.A.
 <td><a href="#README.id" title="#README.id">@id</a></td>
 <td></td>
 <td>There must with the path <code>README.html</code> in the root of the RO-Crate, and it must be described by an entity of type README_Entity with an @id of <code>README.html</code>.</td>
+<td><a href="#property_CreativeWork_README.id" title="#property_CreativeWork_README.id">@id</a></td>
 <td><a href="#README_Entity" title="#README_Entity">README Entity</a></td>
-<td><a href="#README_Entity" title="#README_Entity">README Entity</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="property_CreativeWork_README.id" title="#property_CreativeWork_README.id"></a> Property: @id</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Specialization Of</th>
+<th>Description</th>
+<th>Range</th>
+<th>Occurs in Domain(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#property_CreativeWork_README.id" title="#property_CreativeWork_README.id">@id</a></td>
+<td></td>
+<td>README file must have an @id matching /^readme.md$/i.</td>
+<td><a href="#propertyValue_property_CreativeWork_README.id" title="#propertyValue_property_CreativeWork_README.id">propertyValue_property_CreativeWork_README.id</a></td>
+<td><a href="#class_CreativeWork_README" title="#class_CreativeWork_README">class_CreativeWork_README</a></td>
 </tr>
 </tbody>
 </table>
@@ -4529,7 +4551,7 @@ Dakota: The University of North Dakota M.A.
 <td><a href="#RO-Crate_Metadata_Descriptor.id" title="#RO-Crate_Metadata_Descriptor.id">@id</a></td>
 <td></td>
 <td>This is the 'magic' entity that identifies the RO-Crate Metadata Descriptor, which is the root of the graph and the entry point for validation. It must have a @type of RO-Crate_Metadata_Descriptor and its @id must be 'ro-crate-metadata.json'.</td>
-<td><a href="#Root_Data_Entity" title="#Root_Data_Entity">Root Data Entity</a></td>
+<td><a href="#propertyValue_RO-Crate_Metadata_Descriptor.id" title="#propertyValue_RO-Crate_Metadata_Descriptor.id">RO-Crate Metadadata Descriptor Identifier Constraint</a></td>
 <td><a href="#RO-Crate_Metadata_Descriptor" title="#RO-Crate_Metadata_Descriptor">RO-Crate Metadata Descriptor</a></td>
 </tr>
 </tbody>
